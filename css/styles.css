@@ -221,6 +221,7 @@ main {
   height: 50vh;
   background-color: var(--maya-blue);
 }
+
 #connect-box {
   display: flex;
   flex-flow: row wrap;
@@ -266,11 +267,26 @@ main {
 }
 
 /* Media Queries */
+@media screen and (max-width: 341px) {
+  #connect-section {
+    display: block;
+  }
+  #connect-section h1 {
+    text-align: center;
+  }
+  .profile-link { 
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+
 @media screen and (max-width: 402px) {
   .profile-link {
     width: 80px;
     height: 80px;
   }
+
 }
 @media screen and (max-width: 503px) {
   #social-links {
