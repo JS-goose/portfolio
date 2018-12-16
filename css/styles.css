@@ -109,7 +109,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(2, 1fr);
-  height: 80vh;
+  height: 100%;
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -257,6 +257,12 @@ main {
 }
 
 /* Media Queries */
+@media screen and (max-width: 402px) {
+.profile-link {
+  width: 80px;
+  height: 80px;
+}
+}
 @media screen and (max-width: 505px) {
   #social-links {
     width: 55%;
