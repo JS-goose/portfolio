@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* Navbar Styling */
@@ -201,7 +201,7 @@ main {
   width: 100px;
   border-radius: 5px;
   border: 1px solid var(--maya-blue);
-  margin: 20px 0 ;
+  margin: 20px 0;
   cursor: pointer;
   font-weight: bold;
 }
@@ -299,7 +299,8 @@ main {
   }
 
   #show-all {
-    margin-top: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   @keyframes slideIn {
@@ -309,7 +310,7 @@ main {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 756px) {
   #projects-section {
     display: flex;
     flex-flow: row wrap;
@@ -319,7 +320,12 @@ main {
     justify-content: center;
   }
 
+  .project-tile {
+    flex: 45%;
+  }
+
   #show-all {
-    margin: 80px;
+    flex-wrap: wrap;
+    /* flex: 1; */
   }
 }
