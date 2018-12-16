@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* Navbar Styling */
@@ -48,14 +49,14 @@ body {
   width: 100%;
   padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
-  letter-spacing: 0.05cm
+  letter-spacing: 0.05cm;
 }
 
 .nav-link:hover {
-  transition: all 0.1s;
+  transition: all 0.2s;
   transform: scale(1.05);
-  text-transform: capitalize;
-  color: white;
+  text-decoration: underline;
+  color: var(--yellow);
 }
 
 .nav-link {
@@ -73,6 +74,10 @@ body {
   padding-right: 10px;
 }
 
+.social-link:hover {
+  color: var(--yellow);
+  transform: scale(1.05);
+}
 /* Main Styling */
 main {
   margin-top: 80px;
@@ -164,7 +169,7 @@ main {
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -262,10 +267,10 @@ main {
 
 /* Media Queries */
 @media screen and (max-width: 402px) {
-.profile-link {
-  width: 80px;
-  height: 80px;
-}
+  .profile-link {
+    width: 80px;
+    height: 80px;
+  }
 }
 @media screen and (max-width: 505px) {
   #social-links {
@@ -309,8 +314,6 @@ main {
     width: 100vw;
     justify-content: center;
   }
-
-
 
   #show-all {
     margin: 80px;
