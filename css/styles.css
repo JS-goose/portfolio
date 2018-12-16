@@ -289,13 +289,11 @@ main {
   }
 
   .project-tile {
-    height: 100px;
-    padding: 0;
-    margin: 0;
+    flex: 33%;
   }
 
   #projects-section {
-    height: 100vh;
+    flex-direction: row;
   }
 
   #show-all {
@@ -321,11 +319,12 @@ main {
   }
 
   .project-tile {
-    flex: 45%;
+    /* flex: 35%; */
+    height: 28%;
   }
 
   #show-all {
     flex-wrap: wrap;
-    /* flex: 1; */
+    flex-basis: 50%;
   }
 }
