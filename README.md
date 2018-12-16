@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-These are all the files for my personal website.
+These are all the files for my personal website, which I am in the process of revamping!  In the meantime, stop by my [blog](https://jonathansexton.me/blog) to see what I'm up to!
 
 ## Getting Started
 
