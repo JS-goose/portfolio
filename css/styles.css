@@ -201,7 +201,7 @@ main {
   width: 100px;
   border-radius: 5px;
   border: 1px solid var(--maya-blue);
-  margin-bottom: 10px;
+  margin: 20px 0 ;
   cursor: pointer;
   font-weight: bold;
 }
@@ -272,7 +272,7 @@ main {
     height: 80px;
   }
 }
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 503px) {
   #social-links {
     width: 55%;
     font-size: 1.2rem;
@@ -296,6 +296,10 @@ main {
 
   #projects-section {
     height: 100vh;
+  }
+
+  #show-all {
+    margin-top: 0px;
   }
 
   @keyframes slideIn {
