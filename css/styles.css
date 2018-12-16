@@ -46,12 +46,16 @@ body {
   justify-content: flex-start;
   list-style: none;
   width: 100%;
-  padding: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
+  letter-spacing: 0.05cm
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  transition: all 0.1s;
+  transform: scale(1.05);
+  text-transform: capitalize;
+  color: white;
 }
 
 .nav-link {
