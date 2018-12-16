@@ -127,7 +127,6 @@ main {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--dark-blue);
-  /* border-radius: 2px; */
   width: 250px;
   height: 200px;
   color: var(--light-gray);
@@ -258,7 +257,7 @@ main {
 }
 
 /* Media Queries */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 505px) {
   #social-links {
     width: 55%;
     font-size: 1.2rem;
@@ -272,6 +271,16 @@ main {
   #welcome-box {
     width: 80vw;
     height: 25vh;
+  }
+
+  .project-tile {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #projects-section {
+    height: 100vh;
   }
 
   @keyframes slideIn {
@@ -288,13 +297,10 @@ main {
     /* TODO - Keep this section from spilling over at smaller screen width */
     height: 100vh;
     width: 100vw;
-    align-content: center;
     justify-content: center;
   }
 
-  .project-tile {
-    height: 200px;
-  }
+
 
   #show-all {
     margin: 80px;
