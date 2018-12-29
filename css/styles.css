@@ -211,6 +211,13 @@ main {
   color: var(--pale-chestnut);
 }
 
+/* GitHub User Section Styling */
+#github-section {
+  background-color: #2493f3;
+  width: 100%;
+  height: 200px;
+}
+
 /* Connect Section Styling */
 #connect-section {
   display: flex;
