@@ -270,6 +270,7 @@ main {
 @media screen and (max-width: 341px) {
   #connect-section {
     display: block;
+    height: 25vh;
   }
   #connect-section h1 {
     text-align: center;
