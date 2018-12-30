@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+gulp const gulp = require("gulp");
 const cleanCSS = require("gulp-clean-css");
 
 function minifyCSS() {
