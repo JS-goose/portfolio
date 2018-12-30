@@ -276,7 +276,8 @@ main {
 /* Media Queries */
 @media screen and (max-width: 341px) {
   #connect-section {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
   #connect-section h1 {
     text-align: center;
