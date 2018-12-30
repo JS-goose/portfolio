@@ -16,6 +16,7 @@ const getUser = () => {
       }
     })
     .then((user) => {
+      // TODO Build Template and attach to output
       console.log(user);
     })
     .catch((error) => {
