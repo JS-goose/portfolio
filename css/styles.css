@@ -104,11 +104,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: var(--light-gray); */
+  background-color: var(--light-gray);
   color: var(--dark-blue);
-  /* box-shadow: 1px 1px 5px var(--gray); */
+  box-shadow: 1px 1px 5px var(--gray);
   border-radius: 5px;
-  padding: 20px;
+  padding-left: 2%;
   height: 20%;
   min-height: 200px;
   width: 20%;
@@ -278,7 +278,7 @@ main {
 /* Animation for welcome box */
 @keyframes slideIn {
   100% {
-    left: 40%;
+    left: 42%;
   }
 }
 
@@ -336,7 +336,7 @@ main {
 
   @keyframes slideIn {
     100% {
-      left: 4%;
+      left: 9%;
     }
   }
 }
