@@ -18,6 +18,11 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Navbar Styling */
 #navbar {
   position: fixed;
@@ -195,15 +200,18 @@ main {
 }
 
 #show-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-row: 3;
   grid-column: 2;
   height: 50px;
-  width: 100px;
+  width: 150px;
   border-radius: 5px;
-  border: 1px solid var(--maya-blue);
+  border: 2px solid var(--maya-blue);
   margin: 20px 0;
-  cursor: pointer;
   font-weight: bold;
+  box-shadow: 1px 1px 5px grey;
 }
 
 #show-all:hover {
@@ -276,8 +284,8 @@ main {
 /* Media Queries */
 @media screen and (max-width: 341px) {
   #connect-section {
-    display: block;
-    height: 25vh;
+    display: flex;
+    flex-direction: row;
   }
   #connect-section h1 {
     text-align: center;
