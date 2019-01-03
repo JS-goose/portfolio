@@ -6,6 +6,7 @@
   --light-gray: #c8cdd4;
   --pale-chestnut: #d4afb9;
   --yellow: #d7cf07;
+  --white: #f7f0f0;
 }
 
 html,
@@ -86,7 +87,7 @@ a {
 /* Main Styling */
 main {
   margin-top: 80px;
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 /* Welcome Section Styling */
@@ -104,9 +105,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--light-gray);
+  background-color: var(--white);
   color: var(--dark-blue);
-  box-shadow: 1px 1px 5px var(--gray);
+  box-shadow: 2px 2px 8px var(--gray);
   border-radius: 5px;
   padding-left: 2%;
   height: 20%;
@@ -128,7 +129,7 @@ main {
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 #featured-projects {
