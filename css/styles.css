@@ -347,8 +347,7 @@ main {
   #projects-section {
     display: flex;
     flex-flow: row wrap;
-    /* TODO - Keep this section from spilling over at smaller screen width */
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     justify-content: center;
   }
