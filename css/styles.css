@@ -146,8 +146,8 @@ main {
   border: 1px solid var(--dark-blue);
   width: 250px;
   height: 200px;
-  color: var(--light-gray);
   position: relative;
+  box-shadow: 1px 1px 5px var(--gray);
 }
 
 .project-tile:hover .project-tile-overlay {
