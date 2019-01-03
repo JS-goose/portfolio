@@ -95,7 +95,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue-jeans);
+  /* Image courtesy of https://coolbackgrounds.io/ */
+  background: url(../img/cool-background.png) no-repeat center/cover;
   height: 100vh;
 }
 
