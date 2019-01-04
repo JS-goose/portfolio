@@ -17,8 +17,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
-  background: url(../img/cool-background.png) no-repeat center/cover;
-
 }
 
 a {
@@ -41,6 +39,8 @@ a {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
+  background-color: var(--dark-blue);
+  color: var(--blue-jeans);
 }
 
 #navbar a {
@@ -63,7 +63,7 @@ a {
   transition: all 0.2s;
   transform: scale(1.05);
   text-decoration: underline;
-  text-shadow: 1px 1px 1px var(--gray);
+  color: var(--yellow);
 }
 
 .nav-link {
