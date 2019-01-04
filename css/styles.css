@@ -25,7 +25,7 @@ a {
 }
 
 /* Navbar Styling */
-#navbar {
+nav {
   position: absolute;
   top: 0;
   display: flex;
@@ -40,7 +40,8 @@ a {
   font-size: 1.8rem;
   z-index: 1;
   /* TODO This needs to be perfected */
-  background: linear-gradient(135deg, white,blue, purple);
+  background: url(../img/cool-background.png) no-repeat center/cover fixed;
+  background-color: var(--dark-blue);
   color: var(--blue-jeans);
 }
 
@@ -58,6 +59,8 @@ a {
   padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
   letter-spacing: 0.05cm;
+  text-shadow: 1px 1px 2px var(--dark-blue);
+  font-weight: bold;
 }
 
 .nav-link:hover {
@@ -72,10 +75,12 @@ a {
 }
 
 #social-links {
+  font-size: 1.3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
+  text-shadow: 1px 1px 2px var(--dark-blue);
 }
 
 .social-link {
@@ -84,7 +89,8 @@ a {
 
 .social-link:hover {
   color: var(--yellow);
-  transform: scale(1.05);
+  transform: scale(1.03);
+  transition: all 0.2s;
 }
 /* Main Styling */
 main {
@@ -99,7 +105,7 @@ main {
   justify-content: center;
   align-items: center;
   /* Image courtesy of https://coolbackgrounds.io/ */
-  background: url(../img/cool-background.png) no-repeat center/cover;
+  background: url(../img/cool-background.png) no-repeat center/cover fixed;
   height: 100vh;
   border-bottom: 5px solid var(--gray);
 }
@@ -110,7 +116,7 @@ main {
   justify-content: center;
   background-color: var(--white);
   color: var(--dark-blue);
-  box-shadow: 2px 2px 8px var(--gray);
+  box-shadow: 2px 2px 8px rgb(27, 27, 27);
   border-radius: 5px;
   height: 20%;
   /* min-height: 200px; */
