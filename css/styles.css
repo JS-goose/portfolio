@@ -134,6 +134,11 @@ main {
   object-fit: scale-down;
 }
 
+#welcome-box p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 /* Project Section Styling */
 #projects-section {
   display: grid;
