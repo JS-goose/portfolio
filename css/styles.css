@@ -36,7 +36,7 @@ a {
   align-items: center;
   height: 80px;
   width: 100%;
-  color: var(--maya-blue);
+  color: var(--dark-blue);
   padding: 0;
   margin: 0;
   font-size: 1.8rem;
@@ -63,7 +63,7 @@ a {
   transition: all 0.2s;
   transform: scale(1.05);
   text-decoration: underline;
-  color: var(--yellow);
+  text-shadow: 1px 1px 1px var(--gray);
 }
 
 .nav-link {
