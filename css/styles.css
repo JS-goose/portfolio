@@ -39,7 +39,8 @@ a {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  background-color: var(--dark-blue);
+  /* TODO This needs to be perfected */
+  background: linear-gradient(135deg, white,blue, purple);
   color: var(--blue-jeans);
 }
 
