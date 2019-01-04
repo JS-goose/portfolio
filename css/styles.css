@@ -114,12 +114,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--white);
-  color: var(--dark-blue);
-  box-shadow: 2px 2px 8px rgb(27, 27, 27);
-  border-radius: 5px;
+  /* background-color: var(--white); */
+  /* color: var(--dark-blue); */
+  /* box-shadow: 2px 2px 8px rgb(27, 27, 27); */
   height: 20%;
-  /* min-height: 200px; */
+  min-height: 200px;
   width: 20%;
   min-width: 250px;
   animation: slideIn 3s forwards;
@@ -127,6 +126,12 @@ main {
   position: absolute;
   left: 100%;
   text-align: center;
+}
+
+#welcome-box img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px var(--dark-blue);
+  object-fit: scale-down;
 }
 
 /* Project Section Styling */
