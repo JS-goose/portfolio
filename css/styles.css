@@ -17,6 +17,8 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
+  background: url(../img/cool-background.png) no-repeat center/cover;
+
 }
 
 a {
@@ -32,7 +34,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-blue);
   height: 80px;
   width: 100%;
   color: var(--maya-blue);
