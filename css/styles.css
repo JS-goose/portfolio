@@ -99,6 +99,7 @@ main {
   /* Image courtesy of https://coolbackgrounds.io/ */
   background: url(../img/cool-background.png) no-repeat center/cover;
   height: 100vh;
+  border-bottom: 5px solid var(--gray);
 }
 
 #welcome-box {
@@ -109,15 +110,15 @@ main {
   color: var(--dark-blue);
   box-shadow: 2px 2px 8px var(--gray);
   border-radius: 5px;
-  padding-left: 2%;
   height: 20%;
-  min-height: 200px;
+  /* min-height: 200px; */
   width: 20%;
   min-width: 250px;
   animation: slideIn 3s forwards;
   /* TODO - See if there's a better way to transition */
   position: absolute;
   left: 100%;
+  text-align: center;
 }
 
 /* Project Section Styling */
