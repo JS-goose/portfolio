@@ -263,7 +263,7 @@ main {
   align-items: center;
   width: 100%;
   height: 50vh;
-  background-color: var(--maya-blue);
+  background-color: var(--white);
 }
 
 #connect-box {
@@ -286,11 +286,8 @@ main {
 
 .profile-link:hover {
   cursor: pointer;
-  border-color: var(--yellow);
-  color: var(--yellow);
+  color: var(--dark-blue);
   text-decoration: underline;
-  text-shadow: 2px 1px 3px var(--dark-blue);
-  font-size: 1.3em;
 }
 /* Footer Styling */
 #footer {
