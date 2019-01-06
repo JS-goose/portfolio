@@ -250,6 +250,7 @@ main {
   background-color: #2493f3;
   width: 100%;
   height: 100vh;
+  border-top: 5px solid var(--gray);
 }
 
 /* Connect Section Styling */
