@@ -383,9 +383,4 @@ main {
     /* height: 28%; */
     flex-basis: 50%;
   }
-
-  #show-all {
-    flex-wrap: wrap;
-    flex-basis: 50%;
-  }
 }
