@@ -332,14 +332,17 @@ main {
 @media screen and (max-width: 503px) {
   #social-links {
     width: 55%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
+
   #nav-links {
     font-size: 1.2rem;
   }
+
   #welcome-section {
     text-align: center;
   }
+
   #welcome-box {
     width: 80vw;
     height: 25vh;
@@ -351,11 +354,6 @@ main {
 
   #projects-section {
     flex-direction: row;
-  }
-
-  #show-all {
-    padding: 0;
-    margin: 0;
   }
 
   @keyframes slideIn {
@@ -377,10 +375,4 @@ main {
     /* justify-content: center; */
   }
 
-  .project-tile {
-    display: flex;
-    /* flex: 35%; */
-    /* height: 28%; */
-    flex-basis: 50%;
-  }
 }
