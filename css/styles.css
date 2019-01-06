@@ -235,13 +235,14 @@ main {
   border: 2px solid var(--maya-blue);
   margin: 20px 0;
   font-weight: bold;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px var(--dark-blue);
   grid-row: 4
 }
 
 #show-all:hover {
   background-color: var(--dark-blue);
-  color: var(--pale-chestnut);
+  color: var(--yellow);
+  font-size: 1.1em;
 }
 
 /* GitHub User Section Styling */
