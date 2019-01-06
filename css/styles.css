@@ -129,7 +129,7 @@ main {
 }
 
 #welcome-box img {
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 2px 2px 10px var(--dark-blue);
   object-fit: scale-down;
 }
@@ -169,6 +169,7 @@ main {
   height: 200px;
   position: relative;
   box-shadow: 1px 1px 5px var(--gray);
+  border-radius: 5px;
 }
 
 .project-tile:hover .project-tile-overlay {
@@ -183,6 +184,7 @@ main {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .project-tile-overlay {
@@ -278,7 +280,7 @@ main {
   border: 2px solid var(--dark-blue);
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 5px;
   margin-right: 30px;
   box-shadow: 1px 1px 10px var(--dark-blue);
   font-weight: bold;
