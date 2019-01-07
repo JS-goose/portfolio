@@ -234,7 +234,7 @@ main {
   height: 50px;
   width: 150px;
   border-radius: 5px;
-  border: 2px solid var(--maya-blue);
+  border: 2px solid var(--dark-blue);
   margin: 20px 0;
   font-weight: bold;
   box-shadow: 1px 1px 5px var(--dark-blue);
@@ -245,6 +245,7 @@ main {
   background-color: var(--dark-blue);
   color: var(--yellow);
   font-size: 1.1em;
+  border-color: var(--maya-blue);
 }
 
 /* GitHub User Section Styling */
