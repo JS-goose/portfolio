@@ -263,8 +263,12 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
   background-color: var(--white);
+}
+
+#connect-section h1 {
+  text-align: center;
 }
 
 #connect-box {
@@ -316,9 +320,7 @@ main {
     display: flex;
     flex-direction: row;
   }
-  #connect-section h1 {
-    text-align: center;
-  }
+  
   .profile-link {
     border: none;
     border-radius: none;
