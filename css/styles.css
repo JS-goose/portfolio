@@ -208,7 +208,7 @@ main {
 .tile-overlay-text {
   background-color: var(--dark-blue);
   padding: 5px;
-  color: var(--pale-chestnut);
+  color: var(--yellow);
   font-weight: bold;
   border-radius: 3px;
 }
