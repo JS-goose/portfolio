@@ -1,14 +1,16 @@
-let userDataSection = document.querySelector('.user-data');
+let userDataSection = document.querySelector(".user-data");
 
 const getUser = async () => {
   try {
-  const response = await fetch("https://api.github.com/users/js-goose");
-  const data = await response.json();
-  const html = `<h1>GitHub Name: ${data.name}</h1> <img src="${data.avatar_url}">`
+    const response = await fetch("https://api.github.com/users/js-goose");
+    const data = await response.json();
+    console.log(data);
+    const html = `<ul id="github-user-list"><li>GitHub Name: ${data.name}</li> <li><img src="${
+      data.avatar_url
+    }"></li></ul>`;
 
-  userDataSection.innerHTML = html;
-  console.log(data);
-  } catch(error) {
+    userDataSection.innerHTML = html;
+  } catch (error) {
     console.error(`There was an error fetching the data: ${error}`);
   }
 };
