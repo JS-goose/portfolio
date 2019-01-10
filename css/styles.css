@@ -256,6 +256,10 @@ main {
   border-top: 5px solid var(--gray);
 }
 
+#github-user-list {
+  list-style: none;
+}
+
 /* Connect Section Styling */
 #connect-section {
   display: flex;
