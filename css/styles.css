@@ -156,7 +156,12 @@ main {
 #featured-projects {
   grid-column: 1 / span auto;
   text-align: center;
-  text-decoration: underline;
+  color: var(--yellow);
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  padding: 20px;
+  border: 1px solid var(--maya-blue);
+  border-radius: 5px;
 }
 
 .project-tile {
