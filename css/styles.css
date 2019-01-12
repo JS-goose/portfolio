@@ -149,7 +149,7 @@ main {
   width: 100%;
   align-items: center;
   justify-items: center;
-  background-color: var(--white);
+  background: url("../img/asteroids.jpg");
 }
 
 #featured-projects {
