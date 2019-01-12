@@ -149,6 +149,7 @@ main {
   width: 100%;
   align-items: center;
   justify-items: center;
+  /* Image courtesy of http://thepatternlibrary.com/#asteroids*/
   background: url("../img/asteroids.jpg");
 }
 
