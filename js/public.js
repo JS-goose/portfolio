@@ -1,32 +1,18 @@
-let userImg = document.querySelector("#userImg");
-let userName = document.querySelector("#userName");
-let user;
+let userDataSection = document.querySelector(".user-data");
 
-// fetch GitHub user data
-const getUser = () => {
-  fetch("https://api.github.com/users/js-goose")
-    .then((response) => {
-      if (response.status !== 200) {
-        return Promise.reject({
-          status: response.status,
-          statusText: response.statusText,
-        });
-      } else {
-      return response.json()
-      }
-    })
-    .then((user) => {
-      // TODO Build Template and attach to output
-      console.log(user);
-    })
-    .catch((error) => {
-      if (error.status === 404) {
-        let body = document.querySelector('body');
-        body.innerHTML = `Oh no! There was an error of: ${error}`
-        console.error("There was an error fetching the data: " + error)
-      }
-    });
+const getUser = async () => {
+  try {
+    const response = await fetch("https://api.github.com/users/js-goose");
+    const data = await response.json();
+    console.log(data);
+    const html = `<ul id="github-user-list"><li>GitHub Name: ${data.name}</li> <li><img src="${
+      data.avatar_url
+    }"></li></ul>`;
+
+    userDataSection.innerHTML = html;
+  } catch (error) {
+    console.error(`There was an error fetching the data: ${error}`);
+  }
 };
 
 getUser();
-
