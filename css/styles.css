@@ -243,15 +243,17 @@ main {
   border: 2px solid var(--dark-blue);
   margin: 20px 0;
   font-weight: bold;
-  box-shadow: 1px 1px 5px var(--dark-blue);
   grid-row: 4;
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  border-color: var(--maya-blue);
 }
 
 #show-all:hover {
-  background-color: var(--dark-blue);
-  color: var(--yellow);
+  transition: all 0.3s;
   font-size: 1.1em;
-  border-color: var(--maya-blue);
+  text-decoration: underline;
+  box-shadow: 0px 0px 30px var(--yellow);
 }
 
 /* GitHub User Section Styling */
