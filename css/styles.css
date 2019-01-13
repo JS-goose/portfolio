@@ -228,16 +228,16 @@ main {
   cursor: pointer;
 }
 
-.project-four {
+.project-one,
+.project-two,
+.project-three {
   grid-row: 2;
 }
 
-.project-five {
-  grid-row: 2;
-}
-
+.project-four,
+.project-five,
 .project-six {
-  grid-row: 2;
+  grid-row: 3;
 }
 
 #show-all {
