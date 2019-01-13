@@ -34,15 +34,14 @@ nav {
   align-items: center;
   height: 80px;
   width: 100%;
-  color: var(--dark-blue);
   padding: 0;
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
   /* TODO This needs to be perfected */
   background: url(../img/cool-background.png) no-repeat center/cover fixed;
-  background-color: var(--dark-blue);
   color: var(--blue-jeans);
+  color: #5db2e8;
 }
 
 #navbar a {
@@ -59,6 +58,7 @@ nav {
   padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
   letter-spacing: 0.05cm;
+  text-shadow: 1px 1px 2px #001427;
   text-shadow: 1px 1px 2px var(--dark-blue);
   font-weight: bold;
 }
@@ -67,6 +67,7 @@ nav {
   transition: all 0.2s;
   transform: scale(1.05);
   text-decoration: underline;
+  color: #d7cf07;
   color: var(--yellow);
 }
 
@@ -80,6 +81,7 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
+  text-shadow: 1px 1px 2px #001427;
   text-shadow: 1px 1px 2px var(--dark-blue);
 }
 
@@ -88,6 +90,7 @@ nav {
 }
 
 .social-link:hover {
+  color: #d7cf07;
   color: var(--yellow);
   transform: scale(1.03);
   transition: all 0.2s;
@@ -95,6 +98,7 @@ nav {
 /* Main Styling */
 main {
   margin-top: 80px;
+  background-color: #f7f0f0;
   background-color: var(--white);
 }
 
@@ -182,7 +186,6 @@ main {
   height: 100%;
   cursor: pointer;
   box-shadow: 0px 0px 30px var(--yellow);
-
 }
 
 .project-image {
@@ -334,7 +337,7 @@ main {
     display: flex;
     flex-direction: row;
   }
-  
+
   .profile-link {
     border: none;
     border-radius: none;
