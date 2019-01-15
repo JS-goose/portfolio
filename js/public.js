@@ -8,9 +8,9 @@ const getUser = async (cb) => {
     const reposData = await repos.json();
     console.log(userData);
     console.log(reposData);
-    let repoNames = reposData.map((item)=> {
-      console.log(item.name)
-      return item.name
+    let repoNames = reposData.map((item) => {
+      const html = `<ul><li><a href="${item.clone_url}" target="_blank">${item.name}</a></li></ul>`;
+      return html;
     });
     // console.log(reposData);
     const html = `
@@ -18,7 +18,10 @@ const getUser = async (cb) => {
       <li>GitHub Name: ${userData.name}</li> 
       <li><img src="${userData.avatar_url}"></li>
       <li>Public Repositories: ${userData.public_repos}</li>
-      <li><details>${repoNames}</details></li>
+      <li><details>
+      <ul>
+      <li>${repoNames}</li>
+      </ul></details></li>
     </ul>`;
 
     userDataSection.innerHTML = html;
