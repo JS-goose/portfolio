@@ -13,6 +13,7 @@ const getUser = async () => {
       <li>GitHub Name: ${userData.name}</li> 
       <li><img src="${userData.avatar_url}"></li>
       <li>Public Repositories: ${userData.public_repos}</li>
+      <li><details>${repoData.name}</details></li>
     </ul>`;
 
     userDataSection.innerHTML = html;
