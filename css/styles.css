@@ -38,8 +38,7 @@ nav {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  /* TODO This needs to be perfected */
-  background: url(../img/cool-background.png) no-repeat center/cover fixed;
+  background: url(../minified/images/cool-background.png) no-repeat center/cover fixed;
   color: var(--blue-jeans);
   color: #5db2e8;
 }
@@ -109,7 +108,7 @@ main {
   justify-content: center;
   align-items: center;
   /* Image courtesy of https://coolbackgrounds.io/ */
-  background: url(../img/cool-background.png) no-repeat center/cover fixed;
+  background: url(../minified/images/cool-background.png) no-repeat center/cover fixed;
   height: 100vh;
   border-bottom: 5px solid var(--gray);
 }
@@ -118,9 +117,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: var(--white); */
-  /* color: var(--dark-blue); */
-  /* box-shadow: 2px 2px 8px rgb(27, 27, 27); */
   height: 20%;
   min-height: 200px;
   width: 20%;
@@ -154,7 +150,7 @@ main {
   align-items: center;
   justify-items: center;
   /* Image courtesy of http://thepatternlibrary.com/#asteroids*/
-  background: url("../img/asteroids.jpg");
+  background: url("../minified/images/asteroids.jpg") fixed;
 }
 
 #featured-projects {
@@ -169,10 +165,6 @@ main {
 }
 
 .project-tile {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   grid-row: 3;
   border: 1px solid var(--dark-blue);
   width: 250px;
@@ -393,11 +385,6 @@ main {
   #projects-section {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap;  */
     flex: 50%;
-    /* flex-basis: 50%; */
-    /* height: 100%; */
-    /* width: 100vw; */
-    /* justify-content: center; */
   }
 }
