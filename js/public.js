@@ -2,14 +2,17 @@ let userDataSection = document.querySelector(".user-data");
 
 const getUser = async () => {
   try {
-    const response = await fetch("https://api.github.com/users/js-goose");
-    const data = await response.json();
-    console.log(data);
+    const user = await fetch("https://api.github.com/users/js-goose");
+    const repos = await fetch("https://api.github.com/users/js-goose/repos")
+    const repoData = await repos.json();
+    const userData = await user.json();
+    console.log(userData);
+    console.log(repoData);
     const html = `
     <ul id="github-user-list">
-      <li>GitHub Name: ${data.name}</li> 
-      <li><img src="${data.avatar_url}"></li>
-      <li>Public Repositories: ${data.public_repos}</li>
+      <li>GitHub Name: ${userData.name}</li> 
+      <li><img src="${userData.avatar_url}"></li>
+      <li>Public Repositories: ${userData.public_repos}</li>
     </ul>`;
 
     userDataSection.innerHTML = html;
