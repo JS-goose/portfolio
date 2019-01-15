@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const cleanCSS = require("gulp-clean-css");
-const imagemin = requere("gulp-imagemin");
+const imagemin = require("gulp-imagemin");
 
 function imgSquash() {
   return (
