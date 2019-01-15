@@ -1,6 +1,15 @@
 const gulp = require("gulp");
 const cleanCSS = require("gulp-clean-css");
+const imagemin = requere("gulp-imagemin");
 
+function imgSquash() {
+  return (
+    gulp
+    .src("./img/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("./minified/images"))
+  )
+}
 function minifyCSS() {
   return (
     gulp
@@ -11,6 +20,7 @@ function minifyCSS() {
 }
 
 gulp.task("minify-css", minifyCSS);
+gulp.task("imgSquash", imgSquash);
 
 gulp.task("watch", () => {
   gulp.watch("./css/*.css", minifyCSS);
