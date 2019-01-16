@@ -258,7 +258,9 @@ main {
 }
 
 /* GitHub User Section Styling */
-#github-section {
+#around-the-web {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #2493f3;
   width: 100%;
   height: 100%;
