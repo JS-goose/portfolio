@@ -261,6 +261,7 @@ main {
 #around-the-web {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: #2493f3;
   width: 100%;
   height: 100%;
