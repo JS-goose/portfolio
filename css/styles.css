@@ -265,7 +265,7 @@ main {
   border-top: 5px solid var(--gray);
 }
 
-#github-user-list {
+#github-section ul {
   list-style: none;
 }
 
