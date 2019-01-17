@@ -268,8 +268,12 @@ main {
   border-top: 20px solid var(--dark-blue);
 }
 
-#github-section ul {
+#github-user-list {
   list-style: none;
+}
+
+#repo-list {
+  list-style: circle;
 }
 
 /* Connect Section Styling */
