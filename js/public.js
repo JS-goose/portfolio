@@ -27,7 +27,7 @@ const getUser = async (cb) => {
         <details>
           <summary>All Public Repos</summary>
           <ul>
-            <li>${repoNames}</li>
+            <li>${repoNames.join(" ")}</li>
           </ul>
         </details>
       </li>

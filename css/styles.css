@@ -110,7 +110,7 @@ main {
   /* Image courtesy of https://coolbackgrounds.io/ */
   background: url(../minified/images/cool-background.png) no-repeat center/cover fixed;
   height: 100vh;
-  border-bottom: 20px solid var(--blue-jeans);
+  border-bottom: 20px solid var(--dark-blue);
 }
 
 #welcome-box {
@@ -265,7 +265,7 @@ main {
   background-color: #2493f3;
   width: 100%;
   height: 100%;
-  border-top: 20px solid var(--blue-jeans);
+  border-top: 20px solid var(--dark-blue);
 }
 
 #github-section ul {
@@ -281,7 +281,7 @@ main {
   width: 100%;
   /* height: 50vh; */
   background-color: var(--white);
-  border-top: 20px solid var(--blue-jeans);
+  border-top: 20px solid var(--dark-blue);
 }
 
 #connect-section h1 {
