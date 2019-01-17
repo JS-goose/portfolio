@@ -276,6 +276,10 @@ main {
   list-style: circle;
 }
 
+#repo-list li:hover {
+  text-decoration: underline;
+}
+
 /* Connect Section Styling */
 #connect-section {
   display: flex;
