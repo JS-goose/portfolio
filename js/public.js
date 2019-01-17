@@ -1,4 +1,5 @@
 let userDataSection = document.querySelector(".user-data");
+new GitHubCalendar(".calendar", "js-goose");
 
 const getUser = async (cb) => {
   try {
