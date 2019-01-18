@@ -286,6 +286,7 @@ main {
 #github-user-list a:hover {
   color: var(--yellow);
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 /* Connect Section Styling */
