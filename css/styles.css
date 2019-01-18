@@ -270,13 +270,8 @@ main {
   border-top: 20px solid var(--dark-blue);
 }
 
-#github-user-list li:before {
+.gh-items:before {
   content: '↪ ';
-}
-
-#github-user-list li:nth-of-type(1):before,
-#github-user-list li:nth-of-type(5):before {
-  content: "";
 }
 
 #github-user-list li {

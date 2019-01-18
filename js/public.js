@@ -18,9 +18,9 @@ const getUser = async () => {
     });
     const html = `
     <li><img src="${userData.avatar_url}"></li>
-    <li>GitHub Name: <a href="${userData.html_url}" target="_blank">${userData.name}</a></li> 
-    <li>Followers: ${userData.followers}</li>
-    <li>Public Repositories: ${userData.public_repos}</li>
+    <li class="gh-items">GitHub Name: <a href="${userData.html_url}" target="_blank">${userData.name}</a></li> 
+    <li class="gh-items">Followers: ${userData.followers}</li>
+    <li class="gh-items">Public Repositories: ${userData.public_repos}</li>
     <li>
       <details>
         <summary>All Public Repos - Click to see</summary>
