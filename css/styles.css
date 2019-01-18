@@ -275,6 +275,10 @@ main {
   font-weight: 500;
 }
 
+#github-user-list img {
+  width: 60%;
+}
+
 #github-user-list a:hover {
   text-decoration: underline;
 }
