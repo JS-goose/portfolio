@@ -276,7 +276,7 @@ main {
 }
 
 #github-user-list img {
-  width: 60%;
+  max-width: 60%;
 }
 
 #github-user-list a:hover {

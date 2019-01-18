@@ -1,6 +1,6 @@
 const ghUserSection = document.querySelector("#github-user-list");
 
-const getUser = async ()=>{
+const getUser = async () => {
   try {
     const user = await fetch("https://api.github.com/users/js-goose");
     const userData = await user.json();
@@ -17,15 +17,16 @@ const getUser = async ()=>{
       return html;
     });
     const html = `
-      <li>GitHub Name: ${userData.name}</li> 
-      <li><img src="${userData.avatar_url}"></li>
-      <li>Public Repositories: ${userData.public_repos}</li>
-      <li>
-        <details>
-          <summary>All Public Repos</summary>
-            <li>${repoNames.join(" ")}</li>
-        </details>
-      </li>
+    <li><img src="${userData.avatar_url}"></li>
+    <li>GitHub Name: <a href="${userData.html_url}" target="_blank">${userData.name}</a></li> 
+    <li>Public Repositories: ${userData.public_repos}</li>
+    <li>Followers: ${userData.followers}</li>
+    <li>
+      <details>
+        <summary>All Public Repos</summary>
+          <li>${repoNames.join(" ")}</li>
+      </details>
+    </li>
       `;
 
     ghUserSection.innerHTML = html;
