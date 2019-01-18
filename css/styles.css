@@ -271,6 +271,8 @@ main {
 #github-user-list li {
   list-style: none;
   padding: 5px 0;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 #github-user-list a:hover {
