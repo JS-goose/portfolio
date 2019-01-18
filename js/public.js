@@ -1,7 +1,3 @@
-const rp = require('request-promise');
-const cheerio = require('cheerio');
-const Table = require('cli-table');
-
 const ghUserSection = document.querySelector("#github-user-list");
 
 const getUser = async () => {
