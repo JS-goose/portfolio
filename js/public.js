@@ -1,13 +1,18 @@
 const ghUserSection = document.querySelector("#github-user-list");
 
+const fccUserName = 'js-goose'; 
+$.get('https://www.freecodecamp.org/'+fccUserName, (response)=> {
+  console.log(response);
+})
+
 const getUser = async () => {
   try {
     const user = await fetch("https://api.github.com/users/js-goose");
     const userData = await user.json();
     const repos = await fetch("https://api.github.com/users/js-goose/repos");
     const reposData = await repos.json();
-    console.log(userData);
-    console.log(reposData);
+    // console.log(userData);
+    // console.log(reposData);
     let repoNames = reposData.map((item) => {
       const html = `
         <li>
