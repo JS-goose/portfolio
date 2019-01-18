@@ -268,16 +268,12 @@ main {
   border-top: 20px solid var(--dark-blue);
 }
 
-#github-user-list {
+#github-user-list li {
   list-style: none;
-}
-
-#repo-list {
-  list-style: circle;
   padding: 5px 0;
 }
 
-#repo-list li:hover {
+#github-user-list a:hover {
   text-decoration: underline;
 }
 
