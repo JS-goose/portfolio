@@ -283,6 +283,8 @@ main {
 
 #github-user-list img {
   max-width: 60%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--dark-blue);
 }
 
 #github-user-list a {
