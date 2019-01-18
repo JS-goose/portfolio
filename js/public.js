@@ -1,12 +1,4 @@
 const ghUserSection = document.querySelector("#github-user-list");
-
-const fccUserName = 'js-goose'; 
-$.get('https://www.freecodecamp.org/'+fccUserName, (response)=> {
-  console.log(response)
-  const challenges = $(response).find(/<tr>/g);
-  console.log(challenges)
-})
-
 const getUser = async () => {
   try {
     const user = await fetch("https://api.github.com/users/js-goose");
