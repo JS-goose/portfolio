@@ -264,7 +264,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #2493f3;
+  background: linear-gradient(50deg,white,#2493f3);
   width: 100%;
   height: 100%;
   border-top: 20px solid var(--dark-blue);
