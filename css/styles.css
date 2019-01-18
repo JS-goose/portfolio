@@ -279,8 +279,13 @@ main {
   max-width: 60%;
 }
 
-#github-user-list a:hover {
+#github-user-list a {
   text-decoration: underline;
+}
+
+#github-user-list a:hover {
+  color: var(--yellow);
+  text-decoration: none;
 }
 
 /* Connect Section Styling */
