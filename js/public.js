@@ -10,6 +10,7 @@ const getUser = async (cb) => {
     console.log(reposData);
     let repoNames = reposData.map((item) => {
       const html = `
+      // TODO Refactor this ul into the HTML
       <ul id="repo-list">
         <li>
           <a href="${item.clone_url}" target="_blank">${item.name}</a>
@@ -19,6 +20,7 @@ const getUser = async (cb) => {
     });
     // console.log(reposData);
     const html = `
+    // TODO Refactor this ul into the HTML
     <ul id="github-user-list">
       <li>GitHub Name: ${userData.name}</li> 
       <li><img src="${userData.avatar_url}"></li>

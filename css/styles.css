@@ -274,6 +274,7 @@ main {
 
 #repo-list {
   list-style: circle;
+  padding: 5px 0;
 }
 
 #repo-list li:hover {
