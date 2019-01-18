@@ -19,11 +19,11 @@ const getUser = async () => {
     const html = `
     <li><img src="${userData.avatar_url}"></li>
     <li>GitHub Name: <a href="${userData.html_url}" target="_blank">${userData.name}</a></li> 
-    <li>Public Repositories: ${userData.public_repos}</li>
     <li>Followers: ${userData.followers}</li>
+    <li>Public Repositories: ${userData.public_repos}</li>
     <li>
       <details>
-        <summary>All Public Repos</summary>
+        <summary>All Public Repos - Click to see</summary>
           <li>${repoNames.join(" ")}</li>
       </details>
     </li>
