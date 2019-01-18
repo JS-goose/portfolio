@@ -281,6 +281,10 @@ main {
   font-weight: 500;
 }
 
+#github-user-list li:last-of-type {
+  cursor: pointer;
+}
+
 #github-user-list img {
   max-width: 60%;
   border-radius: 5px;
