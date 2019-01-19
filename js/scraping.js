@@ -17,7 +17,7 @@ const puppeteer = require('puppeteer');
     }
   });
 
-  await page.goto('https://freecodecamp.org/js-goose');
+  await page.goto('https://www.freecodecamp.org/js-goose');
   await page.waitFor(10000);
 
   await browser.close();
