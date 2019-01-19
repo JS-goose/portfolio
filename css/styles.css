@@ -273,10 +273,11 @@ main {
   content: "↪ ";
 }
 
-#github-user-list li {
+#github-user-list li,
+#fcc-user-list li {
   list-style: none;
   padding: 5px 0;
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: 500;
 }
 
@@ -290,11 +291,13 @@ main {
   box-shadow: 1px 1px 5px var(--dark-blue);
 }
 
-#github-user-list a {
+#github-user-list a,
+#fcc-user-list a {
   text-decoration: underline;
 }
 
-#github-user-list a:hover {
+#github-user-list a:hover,
+#fcc-user-list a:hover {
   color: var(--yellow);
   text-decoration: none;
   transition: all 0.2s;
