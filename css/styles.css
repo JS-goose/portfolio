@@ -303,7 +303,7 @@ main {
 }
 
 /* fcc container styling */
-.fcc-user-data img {
+#fcc-heatmap {
   display: flex;
   flex-direction: column;
   max-width: 100%;
