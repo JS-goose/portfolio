@@ -270,6 +270,11 @@ main {
 }
 
 /* GitHub/fCC User Section Styling */
+#github-logo {
+  width: 200px;
+  margin-right: 100px;
+}
+
 .gh-items:before {
   content: "↪ ";
 }
@@ -305,7 +310,8 @@ main {
 }
 
 /* fcc container styling */
-#fcc-section {
+#fcc-section,
+#github-section {
   display: flex;
   flex-direction: column;
   align-items: center;
