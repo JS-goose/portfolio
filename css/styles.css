@@ -261,6 +261,7 @@ main {
 #around-the-web {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
   background: #2493f3;
   width: 100%;
@@ -268,7 +269,7 @@ main {
   border-top: 20px solid var(--dark-blue);
 }
 
-/* GitHub User Section Styling */
+/* GitHub/fCC User Section Styling */
 .gh-items:before {
   content: "↪ ";
 }
@@ -304,6 +305,19 @@ main {
 }
 
 /* fcc container styling */
+#fcc-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fcc-logo {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #006400;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--dark-blue);
+}
 #fcc-heatmap {
   display: flex;
   flex-direction: column;
