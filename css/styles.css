@@ -400,6 +400,13 @@ main {
   align-items: center;
 }
 
+.social-link-footer a:hover {
+  color: #d7cf07;
+  color: var(--yellow);
+  transform: scale(1.03);
+  transition: all 0.2s;
+}
+
 /* Animation for welcome box */
 @keyframes slideIn {
   100% {
