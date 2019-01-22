@@ -384,6 +384,7 @@ main {
 /* Footer Styling */
 #footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--dark-blue);
@@ -393,13 +394,17 @@ main {
   font-size: 1.9em;
 }
 
-#social-links-footer-container {
+ #social-links-footer-container {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  align-items: center;
-}
-
+  /* flex-wrap: wrap; */
+  /* height: 100%; */
+  /* align-items: center; */
+} 
+/* 
+.social-link-footer {
+  display: flex;
+  flex-direction: row;
+} */
 .social-link-footer a:hover {
   color: #d7cf07;
   color: var(--yellow);
