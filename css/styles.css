@@ -400,11 +400,18 @@ main {
   /* height: 100%; */
   /* align-items: center; */
 } 
-/* 
+
 .social-link-footer {
-  display: flex;
-  flex-direction: row;
-} */
+  padding-left: 10px;
+}
+
+.social-link-footer::after {
+  content: '/';
+}
+
+.social-link-footer:last-of-type:after {
+  content: "";
+}
 .social-link-footer a:hover {
   color: #d7cf07;
   color: var(--yellow);
