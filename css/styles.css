@@ -479,6 +479,10 @@ main {
       left: 9%;
     }
   }
+
+  .social-link-footer::after {
+    content: '';
+  }
 }
 
 @media screen and (max-width: 756px) {
