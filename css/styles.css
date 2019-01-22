@@ -384,12 +384,19 @@ main {
 #footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: var(--dark-blue);
   color: var(--gray);
-  height: 80px;
+  height: 100%;
   width: 100%;
   font-size: 1.5rem;
+}
+
+#social-links-footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
 }
 
 /* Animation for welcome box */
