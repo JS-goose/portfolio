@@ -95,6 +95,7 @@ nav {
   transform: scale(1.03);
   transition: all 0.2s;
 }
+
 /* Main Styling */
 main {
   margin-top: 80px;
@@ -392,7 +393,7 @@ main {
   font-size: 1.9em;
 }
 
-#social-links-footer {
+#social-links-footer-container {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
