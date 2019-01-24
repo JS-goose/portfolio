@@ -154,6 +154,9 @@ main {
   justify-items: center;
   /* Image courtesy of http://thepatternlibrary.com/#asteroids*/
   background: url("../minified/images/bright_squares.png");
+  background-color: var(--dark-blue);
+  opacity: 100%;
+  background-blend-mode: lighten;
 }
 
 #featured-projects {
