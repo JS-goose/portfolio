@@ -466,9 +466,6 @@ main {
     height: 25vh;
   }
 
-  .project-tile {
-    flex: 33%;
-  }
 
   #projects-section {
     flex-direction: row;
