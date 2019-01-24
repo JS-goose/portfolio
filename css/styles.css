@@ -211,7 +211,7 @@ main {
   border-radius: 5px;
 }
 
-.project-tile-overlay a, p {
+.project-tile-overlay a {
   background-color: var(--dark-blue);
   padding: 5px;
   color: var(--yellow);
