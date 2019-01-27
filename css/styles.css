@@ -104,6 +104,7 @@ nav {
   min-width: 250px;
   padding: 10px;
   text-align: center;
+  text-shadow: 1px 2px 3px var(--dark-blue);
 }
 
 #welcome-title {
@@ -115,16 +116,16 @@ nav {
   color: var(--blue);
 }
 
-/* #welcome-box p {
-  font-weight: bold;
+#welcome-box p {
+  font-weight: 550;
   font-size: 1.2em;
-} */
+  color: var(--white);
+}
 
 #welcome-arrow {
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 3em;
 }
 
 /* Project Section Styling */
