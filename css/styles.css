@@ -107,6 +107,15 @@ nav {
   text-align: center;
 }
 
+#welcome-title {
+  font-size: 3em;
+  color: var(--white);
+}
+
+#welcome-title span {
+  color: var(--blue);
+}
+
 #welcome-box p {
   font-weight: bold;
   font-size: 1.2em;
