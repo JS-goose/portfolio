@@ -95,13 +95,6 @@ nav {
   transition: all 0.2s;
 }
 
-/* Main Styling */
-main {
-  margin-top: 80px;
-  background-color: #f7f0f0;
-  background-color: var(--white);
-}
-
 /* Welcome Section Styling */
 #welcome-section {
   display: flex;
