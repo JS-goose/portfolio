@@ -100,9 +100,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* min-height: 200px; */
-  /* width: 100%; */
-  /* min-width: 250px; */
+  width: 50%;
+  min-width: 250px;
   padding: 10px;
   text-align: center;
 }
@@ -433,8 +432,7 @@ nav {
   }
 
   #welcome-box {
-    width: 80vw;
-    height: 25vh;
+    margin-top: 30%;
   }
 
   #projects-section {
