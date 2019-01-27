@@ -107,12 +107,6 @@ nav {
   text-align: center;
 }
 
-#welcome-box img {
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px var(--dark-blue);
-  object-fit: scale-down;
-}
-
 #welcome-box p {
   font-weight: bold;
   font-size: 1.2em;
