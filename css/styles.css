@@ -17,6 +17,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
+  background: url("../minified/images/bright_squares.png");
 }
 
 a {
@@ -98,9 +99,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Image courtesy of https://coolbackgrounds.io/ */
-  background: url(../minified/images/cool-background.png) no-repeat center/cover
-    fixed;
   height: 100vh;
   border-bottom: 20px solid var(--dark-blue);
 }
@@ -128,7 +126,6 @@ nav {
   font-size: 1.2em;
 }
 
-
 /* Project Section Styling */
 #projects-section {
   display: grid;
@@ -139,9 +136,6 @@ nav {
   width: 100%;
   align-items: center;
   justify-items: center;
-  /* Image courtesy of http://thepatternlibrary.com/#asteroids*/
-  background: url("../minified/images/bright_squares.png");
-  background-color: var(--dark-blue);
   opacity: 100%;
   background-blend-mode: lighten;
 }
@@ -254,7 +248,6 @@ nav {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
-  background: #2493f3;
   width: 100%;
   height: 100%;
   border-top: 20px solid var(--dark-blue);
@@ -384,19 +377,19 @@ nav {
   font-size: 1.9em;
 }
 
- #social-links-footer-container {
+#social-links-footer-container {
   display: flex;
   /* flex-wrap: wrap; */
   /* height: 100%; */
   /* align-items: center; */
-} 
+}
 
 .social-link-footer {
   padding-left: 10px;
 }
 
 .social-link-footer::after {
-  content: '/';
+  content: "/";
 }
 
 .social-link-footer:last-of-type:after {
@@ -449,13 +442,12 @@ nav {
     height: 25vh;
   }
 
-
   #projects-section {
     flex-direction: row;
   }
 
   .social-link-footer::after {
-    content: '';
+    content: "";
   }
 }
 
