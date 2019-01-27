@@ -1,6 +1,6 @@
 :root {
   --gray: #575a5b;
-  --lightblue: #036cb3;
+  --blue: #036cb3;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -37,7 +37,7 @@ nav {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  color: var(--lightblue);
+  color: var(--white);
 }
 
 #navbar a {
@@ -53,18 +53,15 @@ nav {
   width: 100%;
   padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
-  letter-spacing: 0.05cm;
-  text-shadow: 1px 1px 2px #001427;
-  text-shadow: 1px 1px 2px var(--dark-blue);
+  letter-spacing: 0.02cm;
+  text-shadow: 2px 3px 3px var(--dark-blue);
   font-weight: bold;
 }
 
 .nav-link:hover {
-  transition: all 0.2s;
-  transform: scale(1.05);
+  transition: all 0.3s;
   text-decoration: underline;
-  color: #d7cf07;
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 .nav-link {
@@ -77,7 +74,6 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
-  text-shadow: 1px 1px 2px #001427;
   text-shadow: 1px 1px 2px var(--dark-blue);
 }
 
@@ -86,10 +82,8 @@ nav {
 }
 
 .social-link:hover {
-  color: #d7cf07;
-  color: var(--yellow);
-  transform: scale(1.03);
-  transition: all 0.2s;
+  color: var(--blue);
+  transition: all 0.3s;
 }
 
 /* Welcome Section Styling */
