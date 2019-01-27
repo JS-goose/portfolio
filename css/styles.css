@@ -100,11 +100,10 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20%;
-  min-height: 200px;
-  width: 20%;
-  min-width: 250px;
-  animation: slideIn 3s forwards;
+  /* min-height: 200px; */
+  /* width: 100%; */
+  /* min-width: 250px; */
+  padding: 10px;
   text-align: center;
 }
 
