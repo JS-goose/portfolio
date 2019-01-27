@@ -1,5 +1,6 @@
 :root {
-  --gray: #5a5b57;
+  --gray: #575a5b;
+  --lightblue: #036cb3;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -36,7 +37,7 @@ nav {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  color: var(--pale-chestnut);
+  color: var(--lightblue);
 }
 
 #navbar a {
