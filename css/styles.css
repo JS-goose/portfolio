@@ -115,9 +115,16 @@ nav {
   color: var(--blue);
 }
 
-#welcome-box p {
+/* #welcome-box p {
   font-weight: bold;
   font-size: 1.2em;
+} */
+
+#welcome-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 3em;
 }
 
 /* Project Section Styling */
