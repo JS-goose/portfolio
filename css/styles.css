@@ -267,7 +267,7 @@ nav {
 /* GitHub/fCC User Section Styling */
 #github-logo {
   width: 200px;
-  margin-right: 100px;
+  margin-right: 30%;
 }
 
 .gh-items:before {
@@ -299,7 +299,8 @@ nav {
 
 #github-user-list a:hover,
 #fcc-user-list a:hover {
-  color: var(--yellow);
+  color: var(--blue);
+  text-shadow: 1px 1px 3px var(--light-gray);
   text-decoration: none;
   transition: all 0.2s;
 }
