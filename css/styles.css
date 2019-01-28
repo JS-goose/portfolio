@@ -113,7 +113,7 @@ nav {
 }
 
 #welcome-title {
-  font-size: 3em;
+  font-size: 3rem;
   text-shadow: 1px 2px 3px var(--dark-blue);
 }
 
@@ -412,6 +412,9 @@ nav {
 
 /* Media Queries */
  @media screen and (max-width: 341px) {
+   #welcome-box p {
+     font-size: 1rem;
+   }
   #connect-section {
     display: flex;
     flex-direction: row;
@@ -432,6 +435,17 @@ nav {
   }
 }
 @media screen and (max-width: 503px) {
+  #wrapper {
+    width: 90%;
+  }
+
+  #welcome-box {
+    margin-bottom: 50%;
+  }
+  #welcome-title {
+    font-size: 1.9rem;
+   }
+   
   #social-links {
     width: 55%;
     font-size: 1.3rem;
