@@ -1,6 +1,6 @@
 :root {
   --gray: #4c5253;
-  --blue: #036cb3;
+  --blue: #2196F3;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -99,7 +99,6 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border-bottom: 20px solid var(--dark-blue);
 }
 
 #welcome-box {
@@ -151,11 +150,9 @@ nav {
 #featured-projects {
   grid-column: 1 / span auto;
   text-align: center;
-  color: var(--yellow);
-  background-color: var(--dark-blue);
-  color: var(--yellow);
-  padding: 20px;
-  border: 1px solid var(--maya-blue);
+  padding: 5px;
+  font-size: 2.2em;
+  background-color: var(--blue);
   border-radius: 5px;
 }
 
@@ -257,7 +254,6 @@ nav {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  /* height: 100%; */
   border-top: 20px solid var(--dark-blue);
 }
 
