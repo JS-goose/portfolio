@@ -230,24 +230,25 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* grid-row: 3; */
   grid-column: 2;
   height: 50px;
   width: 150px;
-  border-radius: 5px;
-  border: 2px solid var(--maya-blue);
   font-weight: bold;
   grid-row: 4;
-  background-color: var(--dark-blue);
-  color: var(--yellow);
   margin-bottom: 5%;
+  background-color: var(--blue);
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 1px 1px 5px var(--gray);
+  color: var(--white);
+  text-shadow: 1px 1px 2px var(--dark-blue);
 }
 
 #show-all:hover {
   transition: all 0.3s;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   text-decoration: underline;
-  box-shadow: 0px 0px 30px var(--yellow);
+  transform: scale(1.1);
 }
 
 /* GitHub and fCC profiles parent container styling */
