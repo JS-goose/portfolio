@@ -258,7 +258,10 @@ nav {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  border-top: 20px solid var(--dark-blue);
+}
+
+#around-the-web-title {
+  text-align: center;
 }
 
 /* GitHub/fCC User Section Styling */
