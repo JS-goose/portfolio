@@ -44,7 +44,6 @@ nav {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  /* color: var(--white); */
 }
 
 #navbar a {
@@ -111,12 +110,12 @@ nav {
   min-width: 250px;
   padding: 10px;
   text-align: center;
-  text-shadow: 1px 2px 3px var(--dark-blue);
+  color: var(--gray);
 }
 
 #welcome-title {
   font-size: 3em;
-  color: var(--white);
+  text-shadow: 1px 2px 3px var(--dark-blue);
 }
 
 #welcome-title span {
@@ -124,9 +123,8 @@ nav {
 }
 
 #welcome-box p {
-  font-weight: 550;
+  font-weight: 600;
   font-size: 1.2em;
-  color: var(--white);
 }
 
 #welcome-arrow {
