@@ -209,6 +209,16 @@ nav {
   font-weight: bold;
   border-radius: 3px;
   text-shadow: 1px 1px 3px var(--dark-blue);
+  box-shadow: 1px 1px 5px var(--dark-blue);
+}
+
+.tile-overlay-title {
+  color: var(--dark-blue);
+  font-weight: bold;
+  background-color: var(--white);
+  width: 100%;
+  box-shadow: 1px 1px 5px var(--dark-blue);
+  border-radius: 3px;
 }
 
 .tile-overlay-text {
