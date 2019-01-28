@@ -136,8 +136,9 @@ nav {
 /* Project Section Styling */
 #projects-section {
   display: grid;
+  /* grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: repeat(4, 1fr); */
   grid-template-columns: repeat(3, minmax(250px, 1fr));
-  grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 65px;
   /* height: 100%; */
   width: 100%;
@@ -159,7 +160,6 @@ nav {
 }
 
 .project-tile {
-  grid-row: 3;
   border: 1px solid var(--dark-blue);
   width: 250px;
   height: 200px;
@@ -214,7 +214,7 @@ nav {
   cursor: pointer;
 }
 
-.project-one,
+/* .project-one,
 .project-two,
 .project-three {
   grid-row: 2;
@@ -224,13 +224,13 @@ nav {
 .project-five,
 .project-six {
   grid-row: 3;
-}
+} */
 
 #show-all {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: 3;
+  /* grid-row: 3; */
   grid-column: 2;
   height: 50px;
   width: 150px;
@@ -240,6 +240,7 @@ nav {
   grid-row: 4;
   background-color: var(--dark-blue);
   color: var(--yellow);
+  margin-bottom: 5%;
 }
 
 #show-all:hover {
@@ -410,7 +411,7 @@ nav {
 }
 
 /* Media Queries */
-@media screen and (max-width: 341px) {
+ @media screen and (max-width: 341px) {
   #connect-section {
     display: flex;
     flex-direction: row;
@@ -466,5 +467,17 @@ nav {
 
   #show-all {
     margin: 20px 0;
+  }
+} 
+
+@media screen and (max-width: 1071px) {
+  #show-all {
+    grid-column: 1 / span 2; 
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  #projects-section {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
