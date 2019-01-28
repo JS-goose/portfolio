@@ -381,18 +381,13 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--dark-blue);
   color: var(--gray);
-  /* height: 100%; */
   width: 100%;
   font-size: 1.9em;
 }
 
 #social-links-footer-container {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* height: 100%; */
-  /* align-items: center; */
 }
 
 .social-link-footer {
@@ -407,8 +402,7 @@ nav {
   content: "";
 }
 .social-link-footer a:hover {
-  color: #d7cf07;
-  color: var(--yellow);
+  color: var(--blue);
   transform: scale(1.03);
   transition: all 0.2s;
 }
