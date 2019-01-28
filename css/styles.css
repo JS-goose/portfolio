@@ -1,5 +1,5 @@
 :root {
-  --gray: #575a5b;
+  --gray: #4c5253;
   --blue: #036cb3;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
@@ -18,7 +18,9 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
-  background: url("../minified/images/project_papper.png") transparent;
+  /* Patterns courtesy of https://www.toptal.com/designers/subtlepatterns/*/
+  background: url("../minified/images/project_papper.png") fixed 9px 11px transparent;
+  color: var(--gray);
 }
 
 a {
@@ -35,7 +37,7 @@ nav {
   margin: 0;
   font-size: 1.8rem;
   z-index: 1;
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 #navbar a {
@@ -52,7 +54,7 @@ nav {
   padding: 0px 0px 0px 10px;
   font-size: 1.5rem;
   letter-spacing: 0.02cm;
-  text-shadow: 2px 3px 3px var(--dark-blue);
+  text-shadow: 2px 3px 3px var(--light-gray);
   font-weight: bold;
 }
 
@@ -72,7 +74,7 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
-  text-shadow: 1px 1px 2px var(--dark-blue);
+  text-shadow: 1px 1px 2px var(--light-gray);
 }
 
 .social-link {
