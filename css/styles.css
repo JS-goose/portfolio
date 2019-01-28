@@ -170,7 +170,7 @@ nav {
 
 .project-tile:hover .project-tile-overlay {
   height: 100%;
-  box-shadow: 0px 0px 30px var(--yellow);
+  box-shadow: 0px 0px 30px var(--light-gray);
 }
 
 .project-image {
@@ -203,11 +203,12 @@ nav {
 }
 
 .project-tile-overlay a {
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   padding: 5px;
-  color: var(--yellow);
+  color: var(--white);
   font-weight: bold;
   border-radius: 3px;
+  text-shadow: 1px 1px 3px var(--dark-blue);
 }
 
 .tile-overlay-text {
