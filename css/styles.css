@@ -1,6 +1,6 @@
 :root {
   --gray: #4c5253;
-  --blue: #2196F3;
+  --blue: #2196f3;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -19,7 +19,8 @@ body {
   width: 100%;
   font-family: "Courier New", Courier, monospace;
   /* Patterns courtesy of https://www.toptal.com/designers/subtlepatterns/*/
-  background: url("../minified/images/project_papper.png") fixed 9px 11px transparent;
+  background: url("../minified/images/project_papper.png") fixed 9px 11px
+    transparent;
   color: var(--gray);
 }
 
@@ -130,6 +131,17 @@ nav {
   position: absolute;
   bottom: 0;
   left: 50%;
+}
+
+/* About Me Section Styling */
+#about-me-title {
+  font-size: 2.2em;
+  background-color: var(--blue);
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 1px 1px 5px var(--gray);
+  color: var(--white);
+  text-shadow: 1px 1px 2px var(--dark-blue);
 }
 
 /* Project Section Styling */
@@ -408,10 +420,10 @@ nav {
 }
 
 /* Media Queries */
- @media screen and (max-width: 341px) {
-   #welcome-box p {
-     font-size: 1rem;
-   }
+@media screen and (max-width: 341px) {
+  #welcome-box p {
+    font-size: 1rem;
+  }
   #connect-section {
     display: flex;
     flex-direction: row;
@@ -441,8 +453,8 @@ nav {
   }
   #welcome-title {
     font-size: 1.9rem;
-   }
-   
+  }
+
   #social-links {
     width: 55%;
     font-size: 1.3rem;
@@ -479,11 +491,11 @@ nav {
   #show-all {
     margin: 20px 0;
   }
-} 
+}
 
 @media screen and (max-width: 1071px) {
   #show-all {
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2;
   }
 }
 
