@@ -167,6 +167,9 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+#about-me-lists ul {
+  list-style: none;
+}
 /* Project Section Styling */
 #projects-section {
   display: grid;
