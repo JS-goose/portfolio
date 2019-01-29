@@ -134,6 +134,10 @@ nav {
 }
 
 /* About Me Section Styling */
+#about-me-intro {
+  display: flex;
+  flex-flow: row wrap;
+}
 #about-me-title-box {
   background-color: var(--blue);
   border-radius: 5px;
