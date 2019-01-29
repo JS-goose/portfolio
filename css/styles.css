@@ -141,10 +141,13 @@ nav {
 #about-me-intro img {
   width: 300px;
   float: left;
+  /* TODO Adjust this at lower screen sizes so the text falls to next line */
   margin-right: 20px;
   border: 1px solid var(--dark-blue);
   border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--gray);
 }
+
 #about-me-title-box {
   background-color: var(--blue);
   border-radius: 5px;
