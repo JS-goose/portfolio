@@ -172,11 +172,11 @@ nav {
 }
 
 #about-me-list-two li::before {
-  content: "+ ";
-  font-size: 1.2rem;
-  font-weight: bold;
+  content: "➜ ";
+  font-size: 1.3rem;
   color: var(--blue);
 }
+
 /* Project Section Styling */
 #projects-section {
   display: grid;
