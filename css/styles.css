@@ -22,6 +22,7 @@ body {
   background: url("../minified/images/project_papper.png") fixed 9px 11px
     transparent;
   color: var(--gray);
+  scroll-behavior: smooth;
 }
 
 #wrapper {
