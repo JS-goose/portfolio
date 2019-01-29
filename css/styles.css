@@ -170,6 +170,13 @@ nav {
 #about-me-lists ul {
   list-style: none;
 }
+
+#about-me-list-two li::before {
+  content: "+ ";
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--blue);
+}
 /* Project Section Styling */
 #projects-section {
   display: grid;
