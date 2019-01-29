@@ -208,7 +208,7 @@ nav {
 
 .project-tile {
   border: 1px solid var(--dark-blue);
-  width: 250px;
+  width: 200px;
   height: 200px;
   position: relative;
   box-shadow: 1px 1px 5px var(--gray);
@@ -222,7 +222,7 @@ nav {
 
 .project-image {
   height: 200px;
-  width: 250px;
+  width: 200px;
   max-height: 100%;
   max-width: 100%;
   display: block;
