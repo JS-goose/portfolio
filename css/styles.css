@@ -396,6 +396,12 @@ nav {
 #connect-section h1 {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: -8px;
+}
+
+#connect-section-cta {
+  width: 50%;
+  padding-bottom: 3%;
 }
 
 #connect-box {
