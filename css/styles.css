@@ -127,6 +127,11 @@ nav {
   font-size: 1.2em;
 }
 
+#welcome-box-blog-link {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 #welcome-arrow {
   position: absolute;
   bottom: 0;
