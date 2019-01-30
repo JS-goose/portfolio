@@ -443,6 +443,11 @@ nav {
   font-size: 1.3rem;
 }
 
+#to-the-top-link:hover {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
 #social-links-footer-container {
   display: flex;
 }
