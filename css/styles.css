@@ -276,6 +276,11 @@ nav {
   cursor: pointer;
 }
 
+.project-tile-title-outter {
+  text-align: center;
+  font-weight: bold;
+}
+
 #show-all {
   display: flex;
   justify-content: center;
