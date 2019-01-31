@@ -282,12 +282,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 2;
-  height: 50px;
-  width: 150px;
+  height: 60px;
+  width: 190px;
   font-weight: bold;
   grid-row: 4;
-  margin-bottom: 5%;
+  margin: auto;
   background-color: var(--blue);
   border-radius: 5px;
   border: 1px solid var(--light-gray);
@@ -562,16 +561,6 @@ nav {
     display: flex;
     flex-direction: column;
     flex: 50%;
-  }
-
-  #show-all {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width: 1071px) {
-  #show-all {
-    grid-column: 1 / span 2;
   }
 }
 
