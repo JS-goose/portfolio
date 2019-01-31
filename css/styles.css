@@ -41,6 +41,11 @@ hr {
   margin: 5% 0 5% 0;
 }
 
+.section-titles {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+}
+
 /* Navbar Styling */
 nav {
   display: flex;
@@ -59,8 +64,6 @@ nav {
 
 #nav-links {
   font-family: "Lobster", cursive;
-  /* font-family: 'Righteous', cursive; */
-  /* font-family: 'Lobster Two', cursive; */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -168,10 +171,6 @@ nav {
   text-align: center;
 }
 
-#about-me-title {
-  font-size: 2.2em;
-}
-
 #about-me-lists {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -203,7 +202,6 @@ nav {
   grid-column: 1 / span auto;
   text-align: center;
   padding: 3px;
-  font-size: 2.2em;
   background-color: var(--blue);
   border-radius: 5px;
   border: 1px solid var(--light-gray);
@@ -396,7 +394,6 @@ nav {
 
 #connect-section h1 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: -8px;
 }
 
