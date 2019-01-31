@@ -505,13 +505,21 @@ nav {
 }
 
 @media screen and (max-width: 402px) {
+ .project-eight {
+   margin-bottom: 8%;
+ }
   .profile-link {
     width: 100px;
     padding: 5px;
     height: 80px;
   }
 }
+
 @media screen and (max-width: 503px) {
+  #about-me-intro img {
+   width: 95%;
+   margin-left: 2%;
+  }
   #wrapper {
     width: 90%;
   }
