@@ -58,14 +58,16 @@ nav {
 }
 
 #nav-links {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lobster', cursive;
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Lobster Two', cursive; */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   list-style: none;
   width: 100%;
   padding: 0px 0px 0px 10px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 0.02cm;
   text-shadow: 2px 3px 3px var(--light-gray);
   font-weight: bold;
