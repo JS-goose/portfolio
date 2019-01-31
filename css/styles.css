@@ -58,6 +58,7 @@ nav {
 }
 
 #nav-links {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -68,6 +69,7 @@ nav {
   letter-spacing: 0.02cm;
   text-shadow: 2px 3px 3px var(--light-gray);
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .nav-link:hover {
