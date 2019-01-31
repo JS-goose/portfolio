@@ -409,6 +409,8 @@ nav {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  margin: 3% 0 10% 0;
+
 }
 .profile-link {
   display: flex;
