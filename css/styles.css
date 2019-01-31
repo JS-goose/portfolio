@@ -399,11 +399,6 @@ nav {
   margin-bottom: -8px;
 }
 
-#connect-section-cta {
-  width: 50%;
-  padding-bottom: 3%;
-}
-
 #connect-box {
   display: flex;
   flex-flow: row wrap;
@@ -412,6 +407,7 @@ nav {
   margin: 3% 0 10% 0;
 
 }
+
 .profile-link {
   display: flex;
   flex-flow: column nowrap;
@@ -437,6 +433,19 @@ nav {
   text-decoration: underline;
   transform: scale(1.1);
 }
+
+/* Call to Action Section Styling */
+#call-to-action {
+  text-align: center;
+}
+
+#call-to-action p {
+  text-align: center;
+  padding-bottom: 3%;
+  width: 75%;
+  /* text-align: center; */
+}
+
 /* Footer Styling */
 #footer {
   display: flex;
