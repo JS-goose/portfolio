@@ -176,6 +176,7 @@ nav {
   list-style: none;
 }
 
+#about-me-list-one li::before,
 #about-me-list-two li::before {
   content: "➜ ";
   font-size: 1.3rem;
