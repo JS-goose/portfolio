@@ -436,14 +436,16 @@ nav {
 
 /* Call to Action Section Styling */
 #call-to-action {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   text-align: center;
 }
 
 #call-to-action p {
   text-align: center;
   padding-bottom: 3%;
-  width: 75%;
-  /* text-align: center; */
+  width: 50%;
 }
 
 /* Footer Styling */
