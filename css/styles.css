@@ -316,6 +316,7 @@ nav {
 
 #around-the-web-title {
   text-align: center;
+  text-shadow: 1px 1px 5px var(--light-gray);
 }
 
 /* GitHub/fCC User Section Styling */
@@ -395,6 +396,7 @@ nav {
 #connect-section h1 {
   text-align: center;
   margin-bottom: -8px;
+  text-shadow: 1px 1px 5px var(--light-gray);
 }
 
 #connect-box {
