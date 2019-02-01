@@ -530,6 +530,10 @@ nav {
     flex-direction: column;
     flex: 50%;
   }
+
+  .project-tile {
+    margin: 5% 0 10% 0;
+  }
 }
 
 @media screen and (max-width: 1110px) {
