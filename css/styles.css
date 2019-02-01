@@ -407,34 +407,6 @@ nav {
   margin: 5% 0 5% 0;
 }
 
-.profile-link {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 50px;
-  margin-right: 35px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  padding: 0px 5px 0px 5px;
-  background-color: var(--blue);
-  border-radius: 5px;
-  border: 1px solid var(--light-gray);
-  box-shadow: 1px 1px 5px var(--gray);
-  color: var(--white);
-  text-shadow: 1px 1px 2px var(--dark-blue);
-}
-
-.profile-link:hover {
-  transition: all 0.3s;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  transform: scale(1.1);
-  background-color: var(--gray);
-  color: var(--blue);
-}
-
 /* Call to Action Section Styling */
 #call-to-action {
   display: flex;
@@ -468,28 +440,6 @@ nav {
 #to-the-top-link:hover {
   text-decoration: underline;
   color: var(--blue);
-}
-
-#social-links-footer-container {
-  display: flex;
-}
-
-.social-link-footer {
-  padding-left: 10px;
-  font-size: 2rem;
-}
-
-.social-link-footer::after {
-  content: "/";
-}
-
-.social-link-footer:last-of-type:after {
-  content: "";
-}
-.social-link-footer a:hover {
-  color: var(--blue);
-  transform: scale(1.03);
-  transition: all 0.2s;
 }
 
 /* Media Queries */
@@ -555,10 +505,6 @@ nav {
 
   #projects-section {
     flex-direction: row;
-  }
-
-  .social-link-footer::after {
-    content: "";
   }
 }
 
