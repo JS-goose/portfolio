@@ -489,7 +489,7 @@ nav {
 @media screen and (max-width: 503px) {
   #about-me-intro img {
     width: 95%;
-    margin-left: 2%;
+    margin: 5% 0 8% 2%;
   }
   #wrapper {
     width: 90%;
