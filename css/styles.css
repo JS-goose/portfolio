@@ -407,6 +407,13 @@ nav {
   margin: 5% 0 5% 0;
 }
 
+.connect-social-link {
+  font-size: 3.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 25px; 
+}
+
 /* Call to Action Section Styling */
 #call-to-action {
   display: flex;
