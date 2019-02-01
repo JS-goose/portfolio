@@ -435,7 +435,7 @@ nav {
 #call-to-action p {
   text-align: center;
   padding-bottom: 3%;
-  width: 50%;
+  width: 60%;
 }
 
 /* Footer Styling */
@@ -533,6 +533,10 @@ nav {
 
   .project-tile {
     margin: 5% 0 10% 0;
+  }
+
+  #call-to-action p {
+    width: 85%;
   }
 }
 
