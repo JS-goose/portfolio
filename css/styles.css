@@ -73,7 +73,6 @@ nav {
   padding: 0px 0px 0px 10px;
   font-size: 1.8rem;
   letter-spacing: 0.02cm;
-  text-shadow: 2px 3px 3px var(--light-gray);
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -81,7 +80,8 @@ nav {
 .nav-link:hover {
   transition: all 0.3s;
   text-decoration: underline;
-  color: var(--blue);
+  color: var(--white);
+  text-shadow: 2px 3px 3px var(--gray);
 }
 
 .nav-link {
@@ -94,7 +94,6 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  text-shadow: 1px 1px 2px var(--light-gray);
 }
 
 .social-link {
@@ -104,6 +103,7 @@ nav {
 .social-link:hover {
   color: var(--blue);
   transition: all 0.3s;
+  text-shadow: 2px 3px 3px var(--gray);
 }
 
 /* Welcome Section Styling */
@@ -118,7 +118,7 @@ nav {
 } */
 
 #welcome-section {
-  background: url('../minified/images/blue-notebook-vector.jpg') center/cover no-repeat;
+  background: url("../minified/images/blue-notebook-vector.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -423,7 +423,7 @@ nav {
   font-size: 3.5rem;
   display: flex;
   flex-flow: row wrap;
-  padding-right: 25px; 
+  padding-right: 25px;
   color: var(--blue);
   text-shadow: 2px 2px 3px var(--light-gray);
 }
