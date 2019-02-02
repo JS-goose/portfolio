@@ -22,7 +22,7 @@ body {
     "Open Sans", "Helvetica Neue", sans-serif;
   /* Patterns courtesy of https://www.toptal.com/designers/subtlepatterns/*/
   background: url("../minified/images/project_papper.png") fixed 9px 11px transparent;
-  color: var(--gray);
+  color: var(--dark-blue);
   scroll-behavior: smooth;
 }
 
@@ -76,7 +76,6 @@ nav {
   letter-spacing: 0.02cm;
   font-weight: bold;
   text-transform: capitalize;
-  color: var(--gray);
 }
 
 .nav-link:hover {
