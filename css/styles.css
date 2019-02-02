@@ -4,6 +4,7 @@
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
+  --teal: #60D1E1;
   --light-gray: #c8cdd4;
   --pale-chestnut: #d4afb9;
   --yellow: #d7cf07;
@@ -75,6 +76,7 @@ nav {
   letter-spacing: 0.02cm;
   font-weight: bold;
   text-transform: capitalize;
+  color: var(--gray);
 }
 
 .nav-link:hover {
@@ -101,7 +103,7 @@ nav {
 }
 
 .social-link:hover {
-  color: var(--blue);
+  color: var(--white);
   transition: all 0.3s;
   text-shadow: 2px 3px 3px var(--gray);
 }
