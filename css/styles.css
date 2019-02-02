@@ -164,6 +164,9 @@ nav {
 }
 
 /* About Me Section Styling */
+#about-me {
+  margin-top: 10%;
+}
 #about-me-intro img {
   width: 300px;
   float: left;
