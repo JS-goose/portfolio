@@ -4,7 +4,7 @@
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
-  --teal: #60D1E1;
+  --teal: #60d1e1;
   --light-gray: #c8cdd4;
   --pale-chestnut: #d4afb9;
   --yellow: #d7cf07;
@@ -452,6 +452,23 @@ nav {
   text-align: center;
   padding-bottom: 3%;
   width: 60%;
+}
+
+#quote-button {
+  border: 1px solid var(--gray);
+  box-shadow: 1px 1px 5px var(--gray);
+  color: var(--light-gray);
+  background-color: var(--blue);
+  padding: 15px;
+  width: 150px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#quote-button:hover {
+  color: var(--blue);
+  background-color: var(--gray);
 }
 
 /* Footer Styling */
