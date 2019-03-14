@@ -435,7 +435,7 @@ nav {
 .connect-social-link:hover {
   transition: all 0.3s;
   color: var(--gray);
-  text-shadow: 3px 3px 3px var(--blue);
+  text-shadow: 1px 1px 1px var(--blue);
   transform: scale(1.3);
 }
 
