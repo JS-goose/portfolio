@@ -540,7 +540,7 @@ nav {
   }
 
   #welcome-box {
-    margin-bottom: 50%;
+    margin-bottom: 30%;
   }
   #welcome-title {
     font-size: 1.9rem;
@@ -560,7 +560,7 @@ nav {
   }
 
   #welcome-box {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
   #projects-section {
@@ -569,6 +569,13 @@ nav {
 }
 
 @media screen and (max-width: 756px) {
+  nav, .nav-link {
+    font-size: 1.4rem;
+  }
+
+  #welcome-box {
+    margin-bottom: 20%;
+  }
   #projects-section {
     display: flex;
     flex-direction: column;
