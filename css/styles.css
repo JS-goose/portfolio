@@ -89,6 +89,17 @@ nav {
   padding-right: 10px;
 }
 
+#light-dark-mode-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.6em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 #social-links {
   font-size: 1.5em;
   display: flex;
