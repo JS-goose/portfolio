@@ -41,9 +41,14 @@ const getUser = async () => {
 getUser();
 
 // Light / dark mode section
-const modeBtn = document.querySelector('*');
-
-modeBtn.addEventListener('click',function() {})
+const modeBtn = document
+  .querySelector("#light-dark-mode-container")
+  .addEventListener("click", function() {
+    const everything = document.querySelectorAll('*')
+    everything.forEach((item) => {
+      item.classList.toggle('dark');
+    });
+  });
 
 // Typeform button function
 (function() {
