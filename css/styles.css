@@ -26,7 +26,7 @@ body {
   scroll-behavior: smooth;
 }
 
-* {
+.dark {
   color: var(--white) !important;
   background: var(--dark-blue) !important;
   text-shadow: none;
