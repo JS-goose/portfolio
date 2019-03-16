@@ -90,7 +90,7 @@ nav {
 }
 
 #social-links {
-  font-size: 1.3em;
+  font-size: 1.5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,7 +98,7 @@ nav {
 }
 
 .social-link {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .social-link:hover {
