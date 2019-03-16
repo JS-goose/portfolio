@@ -10,18 +10,16 @@ const getUser = async () => {
     let repoNames = reposData.map((item) => {
       const html = `
         <li>
-        <strong>⇝</strong> <a href="${item.clone_url}" target="_blank">${
-        item.name
-      }</a>
+        <strong>⇝</strong> <a href="${item.clone_url}" target="_blank">${item.name}</a>
         </li>
       `;
       return html;
     });
     const html = `
     <li><img src="${userData.avatar_url}" alt="jonathan sexton in a suit"></li>
-    <li class="gh-items">GitHub Name: <a href="${
-      userData.html_url
-    }" target="_blank">${userData.name}</a></li> 
+    <li class="gh-items">GitHub Name: <a href="${userData.html_url}" target="_blank">${
+      userData.name
+    }</a></li> 
     <li class="gh-items">Followers: ${userData.followers}</li>
     <li class="gh-items">Following: ${userData.following}</li>
     <li class="gh-items">Public Repositories: ${userData.public_repos}</li>
@@ -43,4 +41,22 @@ const getUser = async () => {
 
 getUser();
 
-(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+(function() {
+  var qs,
+    js,
+    q,
+    s,
+    d = document,
+    gi = d.getElementById,
+    ce = d.createElement,
+    gt = d.getElementsByTagName,
+    id = "typef_orm_share",
+    b = "https://embed.typeform.com/";
+  if (!gi.call(d, id)) {
+    js = ce.call(d, "script");
+    js.id = id;
+    js.src = b + "embed.js";
+    q = gt.call(d, "script")[0];
+    q.parentNode.insertBefore(js, q);
+  }
+})();
