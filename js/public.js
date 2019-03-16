@@ -1,3 +1,4 @@
+// GitHub user info section
 const ghUserSection = document.querySelector("#github-user-list");
 const getUser = async () => {
   try {
@@ -5,8 +6,6 @@ const getUser = async () => {
     const userData = await user.json();
     const repos = await fetch("https://api.github.com/users/js-goose/repos");
     const reposData = await repos.json();
-    // console.log(userData);
-    // console.log(reposData);
     let repoNames = reposData.map((item) => {
       const html = `
         <li>
@@ -41,6 +40,10 @@ const getUser = async () => {
 
 getUser();
 
+// Light / dark mode section
+
+
+// Typeform button function
 (function() {
   var qs,
     js,
