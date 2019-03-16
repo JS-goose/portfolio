@@ -41,7 +41,9 @@ const getUser = async () => {
 getUser();
 
 // Light / dark mode section
+const modeBtn = document.querySelector('#light-dark-mode-container');
 
+modeBtn.addEventListener('click',function() {})
 
 // Typeform button function
 (function() {
