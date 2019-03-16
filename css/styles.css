@@ -548,9 +548,6 @@ nav {
     width: 90%;
   }
 
-  #welcome-box {
-    margin-bottom: 30%;
-  }
   #welcome-title {
     font-size: 1.9rem;
   }
@@ -568,10 +565,6 @@ nav {
     text-align: center;
   }
 
-  #welcome-box {
-    margin-top: 10%;
-  }
-
   #projects-section {
     flex-direction: row;
   }
@@ -582,9 +575,6 @@ nav {
     font-size: 1.4rem;
   }
 
-  #welcome-box {
-    margin-bottom: 20%;
-  }
   #projects-section {
     display: flex;
     flex-direction: column;
