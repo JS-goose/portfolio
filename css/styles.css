@@ -28,7 +28,8 @@ body {
 
 .dark {
   color: var(--white) !important;
-  background: var(--dark-blue) !important;
+  background-image: none !important;
+  background-color: var(--dark-blue) !important;
   text-shadow: none !important;
   box-shadow: none;
 }

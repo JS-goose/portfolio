@@ -41,7 +41,7 @@ const getUser = async () => {
 getUser();
 
 // Light / dark mode section
-const modeBtn = document.querySelector('#light-dark-mode-container');
+const modeBtn = document.querySelector('*');
 
 modeBtn.addEventListener('click',function() {})
 
