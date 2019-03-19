@@ -503,6 +503,7 @@ nav {
 #to-the-top-link {
   font-weight: bold;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 #to-the-top-link:hover {
