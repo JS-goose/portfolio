@@ -37,10 +37,10 @@ const getUser = async () => {
     console.error(`There was an error fetching the data: ${error}`);
   }
 };
-
+// Function call to get GitHub user data
 getUser();
 
-// Light / dark mode section
+// Light / dark mode selection 
 const modeBtn = document
   .querySelector("#light-dark-mode-container")
   .addEventListener("click", function() {
