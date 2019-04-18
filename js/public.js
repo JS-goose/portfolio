@@ -1,10 +1,10 @@
 // GitHub user info section
-const ghUserSection = document.querySelector("#github-user-list");
+const ghUserSection = document.querySelector('#github-user-list');
 const getUser = async () => {
   try {
-    const user = await fetch("https://api.github.com/users/js-goose");
+    const user = await fetch('https://api.github.com/users/js-goose');
     const userData = await user.json();
-    const repos = await fetch("https://api.github.com/users/js-goose/repos");
+    const repos = await fetch('https://api.github.com/users/js-goose/repos');
     const reposData = await repos.json();
     let repoNames = reposData.map((item) => {
       const html = `
@@ -26,7 +26,7 @@ const getUser = async () => {
       <details>
         <summary>All Public Repositories - Click to see</summary>
           <ul role="list">
-            <li>${repoNames.join(" ")}</li>
+            <li>${repoNames.join(' ')}</li>
           </ul>
       </details>
     </li>
@@ -40,19 +40,20 @@ const getUser = async () => {
 // Function call to get GitHub user data
 getUser();
 
-// Light / dark mode selection 
+// Light / dark mode selection
 const modeBtn = document
-  .querySelector("#light-dark-mode-container")
-  .addEventListener("click", function() {
-    const everything = document.querySelectorAll('*')
+  .querySelector('#light-dark-mode-container')
+  .addEventListener('click', function() {
+    const everything = document.querySelectorAll('*');
     const projectTiles = document.querySelectorAll('.project-tile-overlay');
     everything.forEach((item) => {
       item.classList.toggle('dark');
+      item.style.transition = 'all 0.3s';
     });
 
-    projectTiles.forEach((item)=> {
+    projectTiles.forEach((item) => {
       item.classList.remove('dark');
-    })
+    });
   });
 
 // Typeform button function
@@ -65,13 +66,13 @@ const modeBtn = document
     gi = d.getElementById,
     ce = d.createElement,
     gt = d.getElementsByTagName,
-    id = "typef_orm_share",
-    b = "https://embed.typeform.com/";
+    id = 'typef_orm_share',
+    b = 'https://embed.typeform.com/';
   if (!gi.call(d, id)) {
-    js = ce.call(d, "script");
+    js = ce.call(d, 'script');
     js.id = id;
-    js.src = b + "embed.js";
-    q = gt.call(d, "script")[0];
+    js.src = b + 'embed.js';
+    q = gt.call(d, 'script')[0];
     q.parentNode.insertBefore(js, q);
   }
 })();

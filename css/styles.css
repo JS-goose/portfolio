@@ -27,7 +27,6 @@ body {
 }
 
 .dark {
-  transition: all 0.3s;
   color: var(--white) !important;
   background-image: none !important;
   background-color: var(--dark-blue) !important;
