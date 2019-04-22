@@ -191,6 +191,7 @@ nav {
 }
 #about-me-intro img {
   width: 300px;
+  /* TODO Rework this section to remove float */
   float: left;
   /* TODO Adjust this at lower screen sizes so the text falls to next line */
   margin-right: 20px;
