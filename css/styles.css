@@ -50,6 +50,7 @@ a {
 
 hr {
   margin: 5% 0 5% 0;
+  color: var(--dark-blue);
 }
 
 .section-titles {
