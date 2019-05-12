@@ -459,13 +459,12 @@ nav {
   flex-flow: row wrap;
   padding-right: 25px;
   color: var(--blue);
-  text-shadow: 2px 2px 3px var(--light-gray);
 }
 
 .connect-social-link:hover {
   transition: all 0.3s;
-  color: var(--gray);
-  text-shadow: 1px 1px 1px var(--blue);
+  color: var(--white);
+  text-shadow: 1px 1px 1px var(--dark-blue);
   transform: scale(1.03);
 }
 
@@ -498,7 +497,7 @@ nav {
 
 #quote-button:hover {
   color: var(--blue);
-  background-color: var(--gray);
+  background-color: var(--light-gray);
 }
 
 /* Footer Styling */
