@@ -141,7 +141,7 @@ nav {
 } */
 
 #welcome-section {
-  background: url("../minified/images/blue-notebook-vector.jpg") center/cover no-repeat;
+  background: url("../minified/images/blueDots.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
