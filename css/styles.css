@@ -188,7 +188,11 @@ nav {
 
 /* About Me Section Styling */
 #about-me {
+  font-size: 1.05rem;
   margin-top: 10%;
+  /* box-shadow: 1px 1px 1px var(--gray); */
+  background-color: rgba(0, 20, 39, 0.1);
+  border-radius: 2px;
 }
 #about-me-intro img {
   width: 300px;
@@ -196,14 +200,16 @@ nav {
   float: left;
   /* TODO Adjust this at lower screen sizes so the text falls to next line */
   margin-right: 20px;
+  margin-left: 5px;
   border: 1px solid var(--dark-blue);
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 1px 1px 5px var(--gray);
 }
 
 #about-me-title-box {
   background-color: var(--blue);
-  border-radius: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   border: 1px solid var(--dark-blue);
   box-shadow: 1px 1px 5px var(--gray);
   color: var(--white);
