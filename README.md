@@ -22,6 +22,7 @@ Simply fork the repo or download it to your local machine.  Open `index.html` an
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
 ## Contributing
 
@@ -29,7 +30,9 @@ Outside of [Hacktoberfest](https://hacktoberfest.digitalocean.com/) I will not b
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/JS-goose/freeCodeCamp-Projects/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/JS-goose/freeCodeCamp-Projects/blob/master/LICENSE) file for details.  You are free to use this project and all of it's files (aside from the ones specific to me) for your own personal/professional use.
+
+If you'd like to get your own portofolio set up I'd be more than happy to help you with that.  Contact me here on GitHub, on [Twitter](https://twitter.com/jj_goose), or by e-mail at me @ jonathansexton.me
 
 ## Acknowledgments
 Thanks to:
