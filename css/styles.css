@@ -1,7 +1,7 @@
 :root {
   --gray: #454a4b;
   /* --blue: #2196f3;  old blue*/
-  --blue: #5db2e8;
+  --blue: #186594;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -22,7 +22,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
   /* Patterns courtesy of https://www.toptal.com/designers/subtlepatterns/*/
-  background: url("../minified/images/colorLines.jpg") fixed;
+  background: url("../minified/images/blueDots.jpg") fixed;
   color: var(--dark-blue);
   scroll-behavior: smooth;
 }
