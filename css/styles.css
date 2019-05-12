@@ -237,11 +237,12 @@ nav {
   text-align: center;
   padding: 3px;
   background-color: var(--blue);
-  border-radius: 5px;
-  border: 1px solid var(--light-gray);
-  box-shadow: 1px 1px 5px var(--gray);
+  border-radius: 3px;
+  border: 1px solid var(--dark-blue);
+  box-shadow: 1px 1px 5px var(--dark-blue);
   color: var(--white);
   text-shadow: 1px 1px 2px var(--dark-blue);
+  padding: 30px 0 30px 0;
 }
 
 .project-tile {
