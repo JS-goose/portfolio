@@ -1,4 +1,6 @@
-# Personal Portfolio
+# Personal Portfolio version 1.0
+
+![my portfolio website before revamp](/minified/img/previewV1.png)
 
 These are all the files for my personal website, which I am in the process of revamping!  In the meantime, stop by my [blog](https://jonathansexton.me/blog) to see what I'm up to!
 
