@@ -1,7 +1,7 @@
 :root {
   --gray: #454a4b;
   /* --blue: #2196f3;  old blue*/
-  --blue: rgba(118, 238, 245, 1);
+  --blue: #5db2e8;
   --maya-blue: #53d8fb;
   --blue-jeans: #5db2e8;
   --dark-blue: #001427;
@@ -9,7 +9,7 @@
   --light-gray: #c8cdd4;
   --pale-chestnut: #d4afb9;
   --yellow: #d7cf07;
-  --white: #f7f0f0;
+  --white: #e6e6e6;
 }
 
 html,
