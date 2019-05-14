@@ -182,6 +182,7 @@ nav {
   background-color: rgba(0, 20, 39, 0.05);
   border-radius: 3px;
   font-weight: 400;
+  padding: 0 5px 0 5px;
 }
 #about-me-intro img {
   width: 300px;
