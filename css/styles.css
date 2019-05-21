@@ -151,12 +151,12 @@ nav {
 
 #welcome-title {
   font-size: 3rem;
-  text-shadow: 1px 2px 3px var(--dark-blue);
 }
 
 #welcome-title span {
   font-family: "Lobster", cursive;
   color: var(--blue);
+  text-shadow: 1px 2px 3px var(--dark-blue);
 }
 
 #welcome-box p {
