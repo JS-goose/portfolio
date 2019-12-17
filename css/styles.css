@@ -19,11 +19,11 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   /* Background image courtesy of https://pixabay.com/illustrations/background-abstract-line-2462431/*/
   /* Follow the artist on Instagram https://www.instagram.com/manuchi7/ */
-  background: url("../minified/images/blueDots.jpg") fixed no-repeat;
+  background: url('../minified/images/blueDots.jpg') fixed no-repeat;
   background-size: cover;
   color: var(--dark-blue);
   scroll-behavior: smooth;
@@ -55,7 +55,7 @@ hr {
 }
 
 .section-titles {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 3rem;
 }
 
@@ -66,7 +66,6 @@ nav {
   align-items: center;
   width: 100%;
   font-size: 1.8rem;
-  
 }
 
 #navbar a {
@@ -75,7 +74,7 @@ nav {
 }
 
 #nav-links {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -155,7 +154,7 @@ nav {
 }
 
 #welcome-title span {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   color: var(--blue);
   text-shadow: 1px 2px 3px var(--dark-blue);
 }
@@ -166,7 +165,7 @@ nav {
 }
 
 #welcome-box-blog-link {
-  color: var(--blue);
+  color: var(--dark-blue);
   text-decoration: underline;
 }
 
@@ -178,13 +177,15 @@ nav {
 
 /* About Me Section Styling */
 #about-me {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   margin-top: 10%;
-  background-color: rgba(0, 20, 39, 0.05);
+  background-color: rgba(0, 20, 39, 0.5);
   border-radius: 3px;
   font-weight: 400;
   padding: 0 5px 0 5px;
+  color: var(--white);
 }
+
 #about-me-intro img {
   width: 300px;
   /* TODO Rework this section to remove float */
@@ -220,9 +221,7 @@ nav {
 
 #about-me-list-one li::before,
 #about-me-list-two li::before {
-  content: "➜ ";
-  font-size: 1.3rem;
-  color: var(--blue);
+  content: '➜ ';
 }
 
 /* Project Section Styling */
@@ -370,7 +369,7 @@ nav {
 }
 
 .gh-items:before {
-  content: "↪ ";
+  content: '↪ ';
 }
 
 #github-user-list li,
@@ -585,7 +584,8 @@ nav {
 }
 
 @media screen and (max-width: 756px) {
-  nav, .nav-link {
+  nav,
+  .nav-link {
     font-size: 1.4rem;
   }
 
