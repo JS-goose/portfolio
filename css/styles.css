@@ -23,7 +23,8 @@ body {
     "Open Sans", "Helvetica Neue", sans-serif;
   /* Background image courtesy of https://pixabay.com/illustrations/background-abstract-line-2462431/*/
   /* Follow the artist on Instagram https://www.instagram.com/manuchi7/ */
-  background: url("../minified/images/blueDots.jpg") fixed;
+  background: url("../minified/images/blueDots.jpg") fixed no-repeat;
+  background-size: cover;
   color: var(--dark-blue);
   scroll-behavior: smooth;
 }
