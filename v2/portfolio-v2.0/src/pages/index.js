@@ -7,7 +7,9 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <div>Page Under Construction</div>
+    <div>
+      <h1>Page Under Construction</h1>
+    </div>
   </Layout>
 )
 
