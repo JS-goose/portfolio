@@ -16,6 +16,15 @@ module.exports = {
         component: require.resolve(`./src/components/layout.js`)
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
