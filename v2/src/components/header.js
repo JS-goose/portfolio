@@ -23,10 +23,10 @@ function Header() {
   `);
 
   return (
-    <header>
+    <header className="bg-myPurple text-white">
       <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl md:p-8">
         <Link to="/">
-          <Image fluid={queryData.brand.childImageSharp.fluid} className="h-10 w-10" />
+          <Image fluid={queryData.brand.childImageSharp.fluid} className="h-32 w-32 absolute top-0 left-0 -mt-4" />
           {/* <h1 className="flex items-center no-underline">
             <svg
               className="w-8 h-8 mr-2 fill-current"
@@ -76,10 +76,11 @@ function Header() {
             {
               route: `#hireme`,
               title: `Hire Me`,
+              classname: `bg-myRed p-2 rounded-sm`
             },
           ].map((link) => (
             <Link
-              className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
+              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname}`}
               key={link.title}
               to={link.route}
             >
