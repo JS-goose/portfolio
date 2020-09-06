@@ -1,15 +1,23 @@
-import React from "react";
-
-import SEO from "../components/seo";
+import React from 'react';
+import CTA from '../components/cta';
+import SEO from '../components/seo';
 
 function IndexPage() {
   return (
     <>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[
+          `freelance`,
+          `home`,
+          `jonathan`,
+          `sexton`,
+          `development`,
+          `website`,
+          `small business`,
+        ]}
         title="Home"
       />
-      <h1>Jonathan Sexton | Freelance Web Developer</h1>
+      <CTA></CTA>
     </>
   );
 }
