@@ -19,30 +19,6 @@ function Header() {
           }
         }
       }
-
-      planet: file(relativePath: { eq: "planet1-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      astronaut: file(relativePath: { eq: "Astronaut-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      rocket: file(relativePath: { eq: "rocket-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
     }
   `);
 
