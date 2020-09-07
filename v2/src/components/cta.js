@@ -15,9 +15,9 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="bg-white h-full w-full">
-      <article>
-        <Image fluid={query.me.childImageSharp.fluid} />
+    <section className="bg-white h-full w-full flex">
+      <article className="p-3">
+        <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64"/>
       </article>
       <article>
         <h4 className="text-2xl">Hi, I{`'`}m Jonathan</h4>
