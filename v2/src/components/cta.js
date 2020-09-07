@@ -12,15 +12,26 @@ const CallToAction = () => {
           }
         }
       }
+
+      hand: file(relativePath: { eq: "waving hand.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 50) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
   return (
-    <section className="bg-white h-full w-full flex">
+    <section className="bg-white h-full w-full flex rounded-sm">
       <article className="p-3">
-        <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64"/>
+        <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64" />
       </article>
       <article>
-        <h4 className="text-2xl">Hi, I{`'`}m Jonathan</h4>
+        <div className="flex">
+          <h4 className="text-2xl">Hi, I{`'`}m Jonathan</h4>
+          <Image fluid={query.hand.childImageSharp.fluid} className="h-8 w-8" />
+        </div>
         <p>
           I{`'`}m a freelance developer who specializes in helping people and businesses expand
           their online presence, reach more customers, and broaden their audience! If you’re looking
