@@ -23,7 +23,7 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="bg-white h-full w-full flex rounded-sm shadow-2xl">
+    <section className="bg-white h-full w-full flex mt-10 md:mt-16 lg:mt-32 justify-center rounded-sm shadow-2xl">
       <article className="p-3">
         <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64" />
       </article>
