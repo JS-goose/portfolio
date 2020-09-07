@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 const CallToAction = () => {
   const query = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "me also-min.png" }) {
+      me: file(relativePath: { eq: "me-min.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 600) {
             ...GatsbyImageSharpFluid_withWebp
