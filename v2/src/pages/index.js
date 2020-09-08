@@ -1,8 +1,8 @@
-import React from "react";
-import CTA from "../components/cta";
-import SEO from "../components/seo";
-import Image from "gatsby-image";
-import { graphql, useStaticQuery } from "gatsby";
+import React from 'react';
+import CTA from '../components/cta';
+import SEO from '../components/seo';
+import Image from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -34,11 +34,51 @@ function IndexPage() {
   `);
   return (
     <>
-      <SEO keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]} title='Home' />
+      <SEO
+        keywords={[
+          `freelance`,
+          `home`,
+          `jonathan`,
+          `sexton`,
+          `development`,
+          `website`,
+          `small business`,
+        ]}
+        title="Home"
+      />
+      <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
+      <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
       <CTA></CTA>
-      <Image fluid={query.planet.childImageSharp.fluid} className='h-64 w-64'/>
-      <Image fluid={query.astronaut.childImageSharp.fluid} className='h-64 w-64'/>
-      <Image fluid={query.rocket.childImageSharp.fluid} className='h-64 w-64'/>
+      <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
+      <style jsx>
+        {`
+          .planet {
+            height: 40rem;
+            width: 40rem;
+            position: absolute !important;
+            z-index: 5;
+            margin-top: -13rem;
+            margin-left: 10rem;
+          }
+          .astronaut {
+            height: 40rem;
+            width: 21rem;
+            position: absolute !important;
+            top: 0;
+            right: 0;
+            margin-top: -8rem;
+          }
+          .rocket {
+            height: 65rem;
+            width: 28rem;
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            margin-left: 10rem;
+            margin-top: 18rem;
+          }
+        `}
+      </style>
     </>
   );
 }
