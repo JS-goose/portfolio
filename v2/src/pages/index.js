@@ -1,8 +1,9 @@
 import React from 'react';
-import CTA from '../components/cta';
-import SEO from '../components/seo';
 import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
+import CTA from '../components/cta';
+import SEO from '../components/seo';
+import ServicesList from '../components/servicesList';
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -79,6 +80,7 @@ function IndexPage() {
           }
         `}
       </style>
+      <ServicesList />
     </>
   );
 }
