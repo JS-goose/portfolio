@@ -99,7 +99,7 @@ function Header() {
             to="https://form.typeform.com/to/LNZI5h"
             data-mode="popup"
             target="__blank"
-            className="bg-myRed p-2 rounded-sm"
+            className="bg-myRed p-2 rounded-sm ml-6"
             onClick={(function () {
               // eslint-disable-next-line
               let qs;
