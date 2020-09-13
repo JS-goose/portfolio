@@ -52,7 +52,6 @@ const CallToAction = () => {
         {`
           .cta {
             position: relative;
-            z-index: 10;
           }
         `}
       </style>

@@ -23,7 +23,7 @@ function Header() {
   `);
 
   return (
-    <header className="bg-myPurple text-white">
+    <header className="bg-myPurple text-white z-10">
       <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl md:p-8">
         <Link to="/">
           <Image
@@ -79,11 +79,13 @@ function Header() {
               route: `/team`,
               title: `Team`,
             },
-            {
-              route: `#hireme`,
-              title: `Hire Me`,
-              classname: `bg-myRed p-2 rounded-sm`,
-            },
+            // {
+            //   route: `https://form.typeform.com/to/LNZI5h`,
+            //   title: `Hire Me`,
+            //   classname: `bg-myRed p-2 rounded-sm`,
+            //   dataMode: `popup`,
+            //   function:
+            // }
           ].map((link) => (
             <Link
               className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname}`}
@@ -93,6 +95,36 @@ function Header() {
               {link.title}
             </Link>
           ))}
+          <Link
+            to="https://form.typeform.com/to/LNZI5h"
+            data-mode="popup"
+            target="__blank"
+            className="bg-myRed p-2 rounded-sm"
+            onClick={(function () {
+              // eslint-disable-next-line
+              let qs;
+              let js;
+              let q;
+              // eslint-disable-next-line
+              let s;
+              const d = document;
+              const gi = d.getElementById;
+              const ce = d.createElement;
+              const gt = d.getElementsByTagName;
+              const id = 'typef_orm_share';
+              const b = 'https://embed.typeform.com/';
+              if (!gi.call(d, id)) {
+                js = ce.call(d, 'script');
+                js.id = id;
+                js.src = `${b}embed.js`;
+                // eslint-disable-next-line prefer-destructuring
+                q = gt.call(d, 'script')[0];
+                q.parentNode.insertBefore(js, q);
+              }
+            })()}
+          >
+            Hire Me
+          </Link>
         </nav>
       </div>
     </header>

@@ -16,7 +16,7 @@ function IndexPage() {
         }
       }
 
-      astronaut: file(relativePath: { eq: "Astronaut-min.png" }) {
+      astronaut: file(relativePath: { eq: "Astronaut-min-rotated.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 600) {
             ...GatsbyImageSharpFluid_withWebp
@@ -61,17 +61,17 @@ function IndexPage() {
               height: 40rem;
               width: 40rem;
               position: absolute !important;
-              z-index: 5;
               margin-top: -13rem;
               margin-left: 10rem;
+              z-index: 0;
             }
             .astronaut {
               height: 40rem;
-              width: 21rem;
+              width: 21.5rem;
               position: absolute !important;
               top: 0;
               right: 0;
-              margin-top: -8rem;
+              margin-top: -1rem;
             }
             .rocket {
               height: 65rem;
