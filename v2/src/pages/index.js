@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import CTA from '../components/cta';
 import SEO from '../components/seo';
 import ServicesList from '../components/servicesList';
+import GetStarted from '../components/getStarted';
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -86,6 +87,7 @@ function IndexPage() {
         </style>
       </div>
       <ServicesList />
+      <GetStarted />
     </>
   );
 }

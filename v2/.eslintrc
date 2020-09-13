@@ -12,11 +12,10 @@
   },
   "settings": {
     "react": {
-       "version": "detect"
-     }
+      "version": "detect"
+    }
   },
   "extends": [
-    "wesbos",
     // https://eslint.org/docs/rules/
     "eslint:recommended",
     // https://github.com/yannickcr/eslint-plugin-react#recommended
