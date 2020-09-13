@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'gatsby-image';
-import { graphql, useStaticQuery } from 'gatsby';
-import CTA from '../components/cta';
-import SEO from '../components/seo';
-import ServicesList from '../components/servicesList';
-import GetStarted from '../components/getStarted';
+import React from "react";
+import Image from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
+import CTA from "../components/cta";
+import SEO from "../components/seo";
+import ServicesList from "../components/servicesList";
+import GetStarted from "../components/getStarted";
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -37,23 +37,12 @@ function IndexPage() {
   return (
     <>
       <SEO
-        keywords={[
-          `freelance`,
-          `home`,
-          `jonathan`,
-          `sexton`,
-          `development`,
-          `website`,
-          `small business`,
-        ]}
+        keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
         title="Home"
       />
       <div>
         <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
-        <Image
-          fluid={query.astronaut.childImageSharp.fluid}
-          className="astronaut"
-        />
+        <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
         <CTA />
         <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
         <style jsx>

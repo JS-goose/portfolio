@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery, Link } from 'gatsby';
-import React, { useState } from 'react';
-import Image from 'gatsby-image';
+import { graphql, useStaticQuery, Link } from "gatsby";
+import React, { useState } from "react";
+import Image from "gatsby-image";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -26,10 +26,7 @@ function Header() {
     <header className="bg-myPurple text-white z-10">
       <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl md:p-8">
         <Link to="/">
-          <Image
-            fluid={queryData.brand.childImageSharp.fluid}
-            className="h-32 w-32 absolute top-0 left-0 -mt-4"
-          />
+          <Image fluid={queryData.brand.childImageSharp.fluid} className="h-32 w-32 absolute top-0 left-0 -mt-4" />
           {/* <h1 className="flex items-center no-underline">
             <svg
               className="w-8 h-8 mr-2 fill-current"
@@ -47,23 +44,14 @@ function Header() {
         <button
           type="button"
           className="items-center block px-3 py-2 border-white rounded md:hidden"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          onClick={() => toggleExpansion(!isExpanded)}>
+          <svg className="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
 
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:items-center w-full md:w-auto`}
-        >
+        <nav className={`${isExpanded ? `block` : `hidden`} md:block md:items-center w-full md:w-auto`}>
           {[
             {
               route: `/about`,
@@ -90,8 +78,7 @@ function Header() {
             <Link
               className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname}`}
               key={link.title}
-              to={link.route}
-            >
+              to={link.route}>
               {link.title}
             </Link>
           ))}
@@ -111,18 +98,17 @@ function Header() {
               const gi = d.getElementById;
               const ce = d.createElement;
               const gt = d.getElementsByTagName;
-              const id = 'typef_orm_share';
-              const b = 'https://embed.typeform.com/';
+              const id = "typef_orm_share";
+              const b = "https://embed.typeform.com/";
               if (!gi.call(d, id)) {
-                js = ce.call(d, 'script');
+                js = ce.call(d, "script");
                 js.id = id;
                 js.src = `${b}embed.js`;
                 // eslint-disable-next-line prefer-destructuring
-                q = gt.call(d, 'script')[0];
+                q = gt.call(d, "script")[0];
                 q.parentNode.insertBefore(js, q);
               }
-            })()}
-          >
+            })()}>
             Hire Me
           </Link>
         </nav>
