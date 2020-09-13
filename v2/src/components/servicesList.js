@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesList = () => {
     return (
-        <div>
+        <div className="h-screen border border-white">
             <ul>
                 <li>Service One</li>
                 <li>Service Two</li>
