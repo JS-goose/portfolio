@@ -75,8 +75,8 @@ function IndexPage() {
             position: absolute !important;
             top: 0;
             left: 0;
-            margin-left: 10rem;
-            margin-top: 18rem;
+            margin-left: 6rem;
+            margin-top: 12rem;
           }
         `}
       </style>
