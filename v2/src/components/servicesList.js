@@ -10,7 +10,7 @@ const services = [{ number: `1`, desc: `text about the service here` },
 
 const ServicesList = () => {
     return (
-        <div className="bg-white flex flex-col justify-between h-full mt-12 p-1 border border-white grid-row-3">
+        <div className="bg-white flex flex-col justify-between h-full mt-12 p-1 border border-white grid-row-3 rounded-sm">
             <div className="services-list border border-red-500 p-2">
                 <ul>
                     {services.map((service) => {
