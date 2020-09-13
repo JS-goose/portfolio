@@ -47,12 +47,13 @@ function IndexPage() {
         ]}
         title="Home"
       />
-      <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
-      <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
-      <CTA></CTA>
-      <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
-      <style jsx>
-        {`
+      <div>
+        <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
+        <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
+        <CTA></CTA>
+        <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
+        <style jsx>
+          {`
           .planet {
             height: 40rem;
             width: 40rem;
@@ -79,7 +80,8 @@ function IndexPage() {
             margin-top: 12rem;
           }
         `}
-      </style>
+        </style>
+      </div>
       <ServicesList />
     </>
   );
