@@ -27,17 +27,19 @@ const CallToAction = () => {
       <article className="p-3">
         <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64" />
       </article>
-      <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-3"></span>
+      <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-3" />
       <article className="p-3">
         <div className="flex">
-          <h4 className="text-2xl">Hi, I{`'`}m Jonathan</h4>
+          <h4 className="text-2xl">Hi, I'm Jonathan</h4>
           <Image fluid={query.hand.childImageSharp.fluid} className="h-8 w-8" />
         </div>
         <p>
-          I{`'`}m a freelance developer who specializes in helping people and businesses expand
-          their online presence, reach more customers, and broaden their audience! If you’re looking
-          for a developer to get your business website designed, built, and published for the world
-          to see then you’ve come to the right place my friend. Let’s launch your project together!
+          I'm a freelance developer who specializes in helping people and
+          businesses expand their online presence, reach more customers, and
+          broaden their audience! If you’re looking for a developer to get your
+          business website designed, built, and published for the world to see
+          then you’ve come to the right place my friend. Let’s launch your
+          project together!
         </p>
         <a href="#" target="_blank" rel="noopener noreferrer">
           Hire Me For Your Project
@@ -47,10 +49,12 @@ const CallToAction = () => {
         </a>
       </article>
       <style jsx>
-        {`.cta {
-          position: relative;
-          z-index: 10;
-        }`}
+        {`
+          .cta {
+            position: relative;
+            z-index: 10;
+          }
+        `}
       </style>
     </section>
   );
