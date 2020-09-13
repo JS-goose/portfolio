@@ -30,21 +30,21 @@ const CallToAction = () => {
       <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-3" />
       <article className="p-3">
         <div className="flex">
-          <h4 className="text-2xl">Hi, I'm Jonathan</h4>
+          <h4 className="text-2xl">Hi, I&apos;m Jonathan</h4>
           <Image fluid={query.hand.childImageSharp.fluid} className="h-8 w-8" />
         </div>
         <p>
-          I'm a freelance developer who specializes in helping people and
+          I&apos;m a freelance developer who specializes in helping people and
           businesses expand their online presence, reach more customers, and
           broaden their audience! If you’re looking for a developer to get your
           business website designed, built, and published for the world to see
           then you’ve come to the right place my friend. Let’s launch your
           project together!
         </p>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://localhost" target="_blank" rel="noopener noreferrer">
           Hire Me For Your Project
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://localhost" target="_blank" rel="noopener noreferrer">
           See My Services
         </a>
       </article>

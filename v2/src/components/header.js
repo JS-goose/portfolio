@@ -45,6 +45,7 @@ function Header() {
         </Link>
 
         <button
+          type="button"
           className="items-center block px-3 py-2 border-white rounded md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
