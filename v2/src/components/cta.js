@@ -53,13 +53,6 @@ const CallToAction = () => {
           </div>
         </div>
       </article>
-      <style jsx>
-        {`
-          .cta {
-            position: relative;
-          }
-        `}
-      </style>
     </section>
   );
 };
