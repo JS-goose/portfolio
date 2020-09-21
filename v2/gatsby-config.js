@@ -11,6 +11,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Open Sans','Roboto','Kumbh Sans','Rubik']
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/components/layout.js`),
@@ -36,7 +44,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
-        icon: ``,
+        // icon: ``,
       },
     },
     {
