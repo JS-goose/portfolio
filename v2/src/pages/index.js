@@ -45,35 +45,6 @@ function IndexPage() {
         <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
         <CTA />
         <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
-        <style jsx>
-          {`
-            .planet {
-              height: 40rem;
-              width: 40rem;
-              position: absolute !important;
-              margin-top: -13rem;
-              margin-left: 10rem;
-              z-index: 0;
-            }
-            .astronaut {
-              height: 40rem;
-              width: 21.5rem;
-              position: absolute !important;
-              top: 0;
-              right: 0;
-              margin-top: -1rem;
-            }
-            .rocket {
-              height: 65rem;
-              width: 28rem;
-              position: absolute !important;
-              top: 0;
-              left: 0;
-              margin-left: 6rem;
-              margin-top: 12rem;
-            }
-          `}
-        </style>
       </div>
       <ServicesList />
       <GetStarted />
