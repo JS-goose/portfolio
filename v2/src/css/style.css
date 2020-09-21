@@ -6,3 +6,27 @@
 
 @import "./cta.css";
 @import "./index.css";
+
+body,
+html {
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
