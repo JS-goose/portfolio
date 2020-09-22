@@ -11,9 +11,12 @@ module.exports = {
       },
     },
   },
-  variants: {},
   // https://github.com/tailwindcss/custom-forms
   plugins: [require('@tailwindcss/custom-forms')],
+  variants: {
+    backgroundColor: [`responsive`, `hover`, `focus`, `active`],
+    textColor: [`responsive`, `hover`, `focus`, `active`],
+  },
   future: {
     removeDeprecatedGapUtilities: true,
   },
