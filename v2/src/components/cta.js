@@ -42,14 +42,18 @@ const CallToAction = () => {
             If you’re looking for a developer to get your business website designed, built, and published for the world
             to see then you’ve come to the right place my friend.
           </p>
-          <p className="mt-4"> Let’s launch your project together!</p>
-          <div>
-            <a href="https://localhost" className="cta-buttons pr-48" target="_blank" rel="noopener noreferrer">
-              Hire Me For Your Project
-            </a>
-            <a href="https://localhost" className="cta-buttons" target="_blank" rel="noopener noreferrer">
-              See My Services
-            </a>
+          <h4 className="mt-4 font-bold"> Let’s launch your project together!</h4>
+          <div className="mt-10 text-white">
+            <span className="bg-myPurple p-2 rounded cta-buttons text-lg hover:underline">
+              <a href="https://localhost" target="_blank" rel="noopener noreferrer">
+                Hire Me For Your Project
+              </a>
+            </span>
+            <span className="ml-48 bg-myRed p-2 rounded cta-buttons text-lg hover:underline">
+              <a href="https://localhost" target="_blank" rel="noopener noreferrer">
+                See My Services
+              </a>
+            </span>
           </div>
         </div>
       </article>
