@@ -4,6 +4,9 @@ import Image from "gatsby-image";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
+  let [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(true);
+  const toggleHover2 = () => setHovered(false);
   const queryData = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,8 +28,8 @@ function Header() {
   return (
     <header className="bg-myPurple text-white z-10">
       <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl md:p-8">
-        <Link to="/">
-          <Image fluid={queryData.brand.childImageSharp.fluid} className="h-32 w-32 absolute top-0 left-0 -mt-4" />
+        <Link to="/" onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
+          <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? "logoNotHovered" : "logo"} />
         </Link>
 
         <button
@@ -57,7 +60,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname}`}
+              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed`}
               key={link.title}
               to={link.route}>
               {link.title}
@@ -67,7 +70,7 @@ function Header() {
             to="https://form.typeform.com/to/LNZI5h"
             data-mode="popup"
             target="__blank"
-            className="bg-myRed p-2 rounded-sm ml-6"
+            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed hover:bg-white"
             onClick={(function () {
               // eslint-disable-next-line
               let qs;
@@ -94,6 +97,32 @@ function Header() {
           </Link>
         </nav>
       </div>
+      <style jsx>
+        {`
+          .logoNotHovered {
+            transition: transform 0.5s ease-in;
+            transform: rotate(0);
+            height: 8rem;
+            width: 8rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: -3rem;
+          }
+          .logo {
+            height: 8rem;
+            width: 8rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: -3rem;
+          }
+          .logo:hover {
+            transition: transform 0.5s ease-out;
+            transform: rotate(45deg);
+          }
+        `}
+      </style>
     </header>
   );
 }

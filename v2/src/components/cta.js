@@ -25,7 +25,7 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="cta bg-white w-full flex mt-10 md:mt-16 lg:mt-32 justify-center rounded-sm shadow-2xl">
+    <section className="cta bg-white w-full flex mt-10 md:mt-16 lg:mt-32 justify-center rounded shadow-2xl">
       <article className="p-4">
         <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64" />
       </article>
@@ -53,7 +53,7 @@ const CallToAction = () => {
                 rel="noopener noreferrer"
                 className="flex justify-center items-center">
                 Hire Me For Your Project
-                <img src={checkmark} alt="" className="pl-2"/>
+                <img src={checkmark} alt="" className="pl-2" />
               </a>
             </span>
             <span className="ml-48 bg-white p-2 rounded cta-buttons text-lg border-2 border-transparent hover:underline hover:border-myRed hover:border-8 text-myRed">
@@ -63,7 +63,7 @@ const CallToAction = () => {
                 rel="noopener noreferrer"
                 className="flex justify-center items-center">
                 See My Services
-                <img src={scroll} alt="" className="pl-2"/>
+                <img src={scroll} alt="" className="pl-2" />
               </a>
             </span>
           </div>
