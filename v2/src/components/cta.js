@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
+import checkmark from "../images/icons/check.png";
+import scroll from "../images/icons/scroll.png";
 
 const CallToAction = () => {
   const query = useStaticQuery(graphql`
@@ -43,15 +45,25 @@ const CallToAction = () => {
             to see then you’ve come to the right place my friend.
           </p>
           <h4 className="mt-4 font-bold"> Let’s launch your project together!</h4>
-          <div className="mt-10 text-white">
-            <span className="bg-myPurple p-2 rounded cta-buttons text-lg hover:underline">
-              <a href="https://localhost" target="_blank" rel="noopener noreferrer">
+          <div className="flex mt-10 text-white w-full">
+            <span className="flex bg-myPurple p-2 rounded cta-buttons text-lg hover:underline">
+              <a
+                href="https://localhost"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center items-center">
                 Hire Me For Your Project
+                <img src={checkmark} alt="" className="pl-2"/>
               </a>
             </span>
-            <span className="ml-48 bg-myRed p-2 rounded cta-buttons text-lg hover:underline">
-              <a href="https://localhost" target="_blank" rel="noopener noreferrer">
+            <span className="ml-48 bg-white p-2 rounded cta-buttons text-lg border-2 border-transparent hover:underline hover:border-myRed hover:border-8 text-myRed">
+              <a
+                href="https://localhost"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center items-center">
                 See My Services
+                <img src={scroll} alt="" className="pl-2"/>
               </a>
             </span>
           </div>
