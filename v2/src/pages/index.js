@@ -5,6 +5,7 @@ import CTA from "../components/cta";
 import SEO from "../components/seo";
 import ServicesList from "../components/servicesList";
 import GetStarted from "../components/getStarted";
+import SocialSection from "../components/social";
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -40,11 +41,12 @@ function IndexPage() {
         keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
         title="Home"
       />
-      <div>
+      <div className="w-full flex items-center">
         <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
         <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
         <CTA />
         <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
+        <SocialSection />
       </div>
       <ServicesList />
       <GetStarted />
