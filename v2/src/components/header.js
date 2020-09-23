@@ -60,7 +60,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed`}
+              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed hover:underline`}
               key={link.title}
               to={link.route}>
               {link.title}
@@ -70,7 +70,7 @@ function Header() {
             to="https://form.typeform.com/to/LNZI5h"
             data-mode="popup"
             target="__blank"
-            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed hover:bg-white"
+            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed border hover:bg-white hover:underline"
             onClick={(function () {
               // eslint-disable-next-line
               let qs;
