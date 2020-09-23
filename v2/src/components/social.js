@@ -7,15 +7,15 @@ import dev from "../images/icons/DEV.svg";
 
 const SocialSection = () => {
   return (
-    <div className="flex flex-col h-full">
-      <ul>
-        <li>Connect with me!</li>
-        <li><img src={twitter} alt=""/></li>
-        <li><img src={linkedin} alt=""/></li>
-        <li><img src={github} alt=""/></li>
-        <li><img src={medium} alt=""/></li>
-        <li><img src={dev} alt=""/></li>
-        {/* <li><img src={} alt=""/></li> */}
+    <div>
+      <ul className="flex flex-col h-full justify-center">
+        <li className="pb-2">Connect with me!</li>
+        <li className="pt-4"><img src={twitter} alt=""/></li>
+        <li className="pt-4"><img src={linkedin} alt=""/></li>
+        <li className="pt-4"><img src={github} alt=""/></li>
+        <li className="pt-4"><img src={medium} alt=""/></li>
+        <li className="pt-4"><img src={dev} alt=""/></li>
+        {/* <li className=""><img src={} alt=""/></li> */}
       </ul>
     </div>
   );
