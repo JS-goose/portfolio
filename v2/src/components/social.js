@@ -8,7 +8,7 @@ import facebook from "../images/icons/facebook.svg";
 
 const SocialSection = () => {
   return (
-    <div className="absolute right-0 text-white text-lg pr-4 mt-32">
+    <div className="social-container absolute right-0 text-white text-lg pr-4 mt-32">
       <div className="vertical-text font-semibold">Connect with me!</div>
       <ul className="flex flex-col justify-center">
         <li className="pt-6">
