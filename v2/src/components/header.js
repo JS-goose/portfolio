@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <header className="bg-myPurple text-white z-10">
-      <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl md:p-8">
+      <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl">
         <Link to="/" onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
           <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? "logoNotHovered" : "logo"} />
         </Link>
@@ -107,7 +107,7 @@ function Header() {
             position: absolute;
             top: 0;
             left: 0;
-            margin-top: -3rem;
+            margin-top: -0.80rem;
           }
           .logo {
             height: 8rem;
@@ -115,11 +115,11 @@ function Header() {
             position: absolute;
             top: 0;
             left: 0;
-            margin-top: -3rem;
+            margin-top: -0.80rem;
           }
           .logo:hover {
             transition: transform 0.5s ease-out;
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
           }
         `}
       </style>
