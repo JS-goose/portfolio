@@ -48,7 +48,7 @@ const CallToAction = () => {
           <div className="flex mt-10 text-white w-full">
             <span className="flex bg-myPurple p-2 rounded cta-buttons text-lg border-2 border-transparent hover:underline transform hover:scale-105">
               <a
-                href="https://localhost"
+                href="https://jonathan135406.typeform.com/to/LNZI5h"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center font-semibold">

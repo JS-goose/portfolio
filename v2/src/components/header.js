@@ -66,35 +66,13 @@ function Header() {
               {link.title}
             </Link>
           ))}
-          <Link
-            to="https://form.typeform.com/to/LNZI5h"
-            data-mode="popup"
+          <a
+            href="https://jonathan135406.typeform.com/to/LNZI5h"
             target="__blank"
-            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed border hover:bg-white hover:underline"
-            onClick={(function () {
-              // eslint-disable-next-line
-              let qs;
-              let js;
-              let q;
-              // eslint-disable-next-line
-              let s;
-              const d = document;
-              const gi = d.getElementById;
-              const ce = d.createElement;
-              const gt = d.getElementsByTagName;
-              const id = "typef_orm_share";
-              const b = "https://embed.typeform.com/";
-              if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = `${b}embed.js`;
-                // eslint-disable-next-line prefer-destructuring
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q);
-              }
-            })()}>
+            rel="noopener noreferrer"
+            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed border hover:bg-white hover:underline">
             Hire Me
-          </Link>
+          </a>
         </nav>
       </div>
       <style jsx>
@@ -107,7 +85,7 @@ function Header() {
             position: absolute;
             top: 0;
             left: 0;
-            margin-top: -0.80rem;
+            margin-top: -0.8rem;
           }
           .logo {
             height: 8rem;
@@ -115,7 +93,7 @@ function Header() {
             position: absolute;
             top: 0;
             left: 0;
-            margin-top: -0.80rem;
+            margin-top: -0.8rem;
           }
           .logo:hover {
             transition: transform 0.5s ease-out;
