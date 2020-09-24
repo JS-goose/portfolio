@@ -8,9 +8,11 @@ import facebook from "../images/icons/facebook.svg";
 
 const SocialSection = () => {
   return (
-    <div className="social-container absolute right-0 text-white text-lg pr-4 mt-32">
-      <div className="vertical-text font-semibold">Connect with me!</div>
-      <ul className="flex flex-col justify-center">
+    <div className="social-container">
+      <ul className="social-list">
+        <li>
+          <div className="vertical-text font-semibold">Connect with me!</div>
+        </li>
         <li className="pt-6">
           <img src={twitter} alt="Twitter" />
         </li>
@@ -30,14 +32,6 @@ const SocialSection = () => {
           <img src={facebook} alt="Facebook" />
         </li>
       </ul>
-      <style jsx>
-        {`
-          .vertical-text {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-          }
-        `}
-      </style>
     </div>
   );
 };

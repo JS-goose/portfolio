@@ -1,5 +1,42 @@
+.social-container {
+    position: absolute;
+    right: 0;
+    color: white;
+    margin-top: 8rem;
+    padding-right: 1rem;
+    font-size: 1.125rem;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl !important;
+    text-orientation: mixed;
+}
 @media screen and (max-width: 1220px) {
     .social-container {
-        background-color: orange;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .social-list {
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-list li {
+        padding-right: 1rem;
+    }
+
+    .vertical-text {
+        writing-mode: horizontal-tb !important;
+        text-orientation: mixed;
+        padding-top: 1.25rem;
     }
 }
