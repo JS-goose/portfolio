@@ -27,7 +27,7 @@ const services = [
 
 const ServicesList = () => (
   <div className="bg-white flex flex-col justify-between h-full mt-12 p-1 border border-white grid-row-3 rounded-sm">
-    <h2>Here&apos;s what I can do for you and your business:</h2>
+    <h2>What I Can Do For You and Your Business:</h2>
     <div className="services-list border border-red-500 p-2">
       <ul>
         {services.map((service) => (
@@ -37,7 +37,7 @@ const ServicesList = () => (
         ))}
       </ul>
     </div>
-    <h2>Why should you hire me as your freelance developer?</h2>
+    <h2>Why Should You Hire Me As Your Freelance Developer?</h2>
     <div className="why-hire-me border border-purple-500 p-2">
       <p>
         Having a digital presence has never been more important than it is now. With consumers shifting to online
