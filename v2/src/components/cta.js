@@ -26,7 +26,7 @@ const CallToAction = () => {
   return (
     <section className="cta bg-white w-full flex pt-0 mt-0 lg:mt-10 justify-center rounded shadow-2xl">
       <article className="p-4">
-        <Image fluid={query.me.childImageSharp.fluid} className="h-72 w-64" />
+        <Image fluid={query.me.childImageSharp.fluid} className="me-img" />
       </article>
       <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4" />
       <article className="p-3">
