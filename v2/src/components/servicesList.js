@@ -3,26 +3,34 @@ import React from "react";
 const services = [
   {
     number: `1`,
-    desc: `Design a custom web solution from start to finish that you sign off on before any build work is started.`,
+    desc: `Provide a consultation to discuss any current pain points you currently have with your web presence (or lack of).`,
   },
   {
     number: `2`,
-    desc: `Tailor that solution with ease of use in mind to draw in more customers and expand your presence.`,
+    desc: `Assess your current website to identify issues, propose solutions, and ultimately correct those issues.`,
   },
   {
     number: `3`,
-    desc: `Ensure SEO is at the forefront of the work I do so you're website get's in front of your prospective audience`,
+    desc: `Design a custom website from start to finish that you sign off on before any build work is started.`,
   },
   {
     number: `4`,
-    desc: `Handle the building, hosting, deployment, and maintenance of your website so you can focus on your business. `,
+    desc: `Tailor that solution with ease of use in mind to draw in more customers and expand your presence.`,
   },
-  { number: `5`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
+  {
+    number: `5`,
+    desc: `Ensure SEO is at the forefront of the work I do so you're website get's in front of your prospective audience`,
+  },
   {
     number: `6`,
+    desc: `Handle the building, hosting, deployment, and maintenance of your website so you can focus on your business. `,
+  },
+  { number: `7`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
+  {
+    number: `8`,
     desc: `Communicate openly and honestly with you and/or your stakeholders about the progress of the project.`,
   },
-  { number: `7`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
+  { number: `9`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
 ];
 
 const ServicesList = () => (
@@ -47,17 +55,18 @@ const ServicesList = () => (
       </p>
       <p>
         I bring current industry knowledge with experience and know how. I&apos;ve taught others to do what I do when I
-        was a mentor at <a href="https://udacity.com" target="__blank" rel="noopener noreferrer">Udacity</a> - one of the most
-        prominent web development bootcamps.
+        was a mentor at{" "}
+        <a href="https://udacity.com" target="__blank" rel="noopener noreferrer">
+          Udacity
+        </a>{" "}
+        - one of the most prominent web development bootcamps.
       </p>
       <p>
         If you&apos;re built sprawling, complex web applications for businesses and I&apos;ve built smaller projects for
         hobbyists/local businesses so I&apos;m familiar and comfortable with both. I provide agency level work and
         support with the same care and attention you&apos;d get by being my only client.
       </p>
-      <p>
-        I communicate well with clients, teams, stakeholders.
-      </p>
+      <p>I communicate well with clients, teams, stakeholders.</p>
     </div>
   </div>
 );
