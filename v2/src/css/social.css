@@ -18,9 +18,15 @@
 }
 
 .social-list-svg:hover {
-    transition: all 0.5s;
-    transform: rotate(-45deg);
     fill: #FF4945 !important;
+    animation: rotate 0.8s;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(45deg);}
+    50% {transform: rotate(-45deg);}
+    100% {transform: rotate(0);}
 }
 
 .vertical-text {
