@@ -8,7 +8,7 @@ function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen font-sans text-myBlack bg-myPurple">
       <Header />
-      <main className="grid grid-flow-col grid-cols-1 grid-rows-4 gap-y-64 h-screen justify-between flex-1 w-full max-w-6xl px-4 py-8 mx-auto md:px-8 md:py-16">
+      <main className="grid grid-flow-col grid-cols-1 grid-rows-3 gap-y-64 h-screen justify-between flex-1 w-full max-w-6xl px-4 py-8 mx-auto md:px-8 md:py-16">
         {children}
       </main>
       <Footer />
