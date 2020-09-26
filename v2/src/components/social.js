@@ -11,24 +11,24 @@ const SocialSection = () => {
     <div className="social-container">
       <ul className="social-list">
         <li>
-          <div className="vertical-text font-semibold">Connect with me!</div>
+          <div className="vertical-text">Connect with me!</div>
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-2">
           <img src={twitter} alt="Twitter" />
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-2">
           <img src={linkedin} alt="LinkedIn" />
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-2">
           <img src={github} alt="GitHub" />
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-2">
           <img src={medium} alt="Medium" />
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-1">
           <img src={dev} alt="DEV.to" />
         </li>
-        <li className="pt-6">
+        <li className="pt-6 pl-2">
           <img src={facebook} alt="Facebook" />
         </li>
       </ul>
