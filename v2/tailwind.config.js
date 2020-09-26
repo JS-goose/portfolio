@@ -14,6 +14,7 @@ module.exports = {
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
   variants: {
+    backgroundImage: [`responsive`, `hover`, `focus`],
     backgroundColor: [`responsive`, `hover`, `focus`, `active`],
     textColor: [`responsive`, `hover`, `focus`, `active`],
     borderColor: [`responsive`, `hover`, `focus`],

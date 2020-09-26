@@ -80,7 +80,7 @@ function Header() {
           a.nav-link,
           a.nav-link:visited {
             text-decoration: none;
-            background-image: linear-gradient(transparent 2px, #FF4945 2px, #FF4945 10px, transparent 4px),
+            background-image: linear-gradient(transparent 2px, #ff4945 2px, #ff4945 10px, transparent 4px),
               linear-gradient(transparent 2px, #d8dce9 2px, #d8dce9 4px, transparent 4px);
             background-size: 0% 6px, 0% 6px;
             background-position: 0 bottom, 0 bottom;
@@ -95,7 +95,7 @@ function Header() {
           @supports (-ms-ime-align: auto) {
             a.nav-link,
             a.nav-link:visited {
-              background-image: linear-gradient(#FF4945, #FF4945), linear-gradient(#d8dce9, #d8dce9);
+              background-image: linear-gradient(#ff4945, #ff4945), linear-gradient(#d8dce9, #d8dce9);
               background-size: 0% 2px, 100% 2px;
               padding-bottom: 2px;
             }
