@@ -26,9 +26,9 @@
 
   @media screen and (max-width: 1840px) {
     .astronaut {
-      width: 19.5rem;
+      width: 19rem;
       height: 35rem;
-      transform: rotate(-8.5deg);
+      margin-top: 1rem;
     }
 
     .planet {
