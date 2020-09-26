@@ -60,7 +60,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className={`block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed hover:underline`}
+              className={`nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed`}
               key={link.title}
               to={link.route}>
               {link.title}
@@ -70,13 +70,39 @@ function Header() {
             href="https://jonathan135406.typeform.com/to/LNZI5h"
             target="__blank"
             rel="noopener noreferrer"
-            className="bg-myRed pt-2 pb-2 pr-4 pl-4 rounded-sm ml-6 text-xl hover:text-myRed border hover:bg-white hover:underline">
+            className=" p-2 rounded-sm text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline">
             Hire Me
           </a>
         </nav>
       </div>
       <style jsx>
         {`
+          a.nav-link,
+          a.nav-link:visited {
+            text-decoration: none;
+            background-image: linear-gradient(transparent 2px, #FF4945 2px, #FF4945 10px, transparent 4px),
+              linear-gradient(transparent 2px, #d8dce9 2px, #d8dce9 4px, transparent 4px);
+            background-size: 0% 6px, 0% 6px;
+            background-position: 0 bottom, 0 bottom;
+            transition: background-size 0.3s ease-in-out;
+            background-repeat: no-repeat;
+            padding-bottom: 4px;
+            border-bottom: 10px solid transparent;
+          }
+          a.nav-link:hover {
+            background-size: 100% 6px;
+          }
+          @supports (-ms-ime-align: auto) {
+            a.nav-link,
+            a.nav-link:visited {
+              background-image: linear-gradient(#FF4945, #FF4945), linear-gradient(#d8dce9, #d8dce9);
+              background-size: 0% 2px, 100% 2px;
+              padding-bottom: 2px;
+            }
+            a.nav-link:hover {
+              background-size: 100% 2px;
+            }
+          }
           .logoNotHovered {
             transition: transform 0.5s ease-in;
             transform: rotate(0);
