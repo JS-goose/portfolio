@@ -18,7 +18,10 @@ module.exports = {
     backgroundColor: [`responsive`, `hover`, `focus`, `active`],
     textColor: [`responsive`, `hover`, `focus`, `active`],
     borderColor: [`responsive`, `hover`, `focus`],
-    borderWidth: [`responsive`]
+    borderWidth: [`responsive`],
+  },
+  corePlugins: {
+    fontFamily: false,
   },
   future: {
     removeDeprecatedGapUtilities: true,
