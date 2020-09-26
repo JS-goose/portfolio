@@ -30,7 +30,7 @@ const CallToAction = () => {
       </article>
       <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4" />
       <article className="p-3">
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center sm:pt-2 lg:pt-6 xl:pt-8">
           <h4 className="text-2xl font-Rubik">Hi, I&apos;m Jonathan</h4>
           <Image fluid={query.hand.childImageSharp.fluid} className="h-8 w-8 ml-2" />
         </div>
