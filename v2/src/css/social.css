@@ -18,6 +18,8 @@
 }
 
 .social-list-svg:hover {
+    transition: all 0.5s;
+    transform: rotate(-45deg);
     fill: #FF4945 !important;
 }
 
