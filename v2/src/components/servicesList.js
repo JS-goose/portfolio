@@ -28,7 +28,7 @@ const services = [
   { number: `7`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
   {
     number: `8`,
-    desc: `Communicate openly and honestly with you and/or your stakeholders about the progress of the project.`,
+    desc: `Communicate openly and honestly with you and/or your stakeholders about the cost/time/progress of the project.`,
   },
   { number: `9`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
 ];
@@ -62,11 +62,23 @@ const ServicesList = () => (
         - one of the most prominent web development bootcamps.
       </p>
       <p>
-        If you&apos;re built sprawling, complex web applications for businesses and I&apos;ve built smaller projects for
-        hobbyists/local businesses so I&apos;m familiar and comfortable with both. I provide agency level work and
-        support with the same care and attention you&apos;d get by being my only client.
+        If you&apos;re project involves a sprawling, complex web application or something smaller, more custom I&apos;m\
+        familiar and comfortable with both. I provide big agency level work and support with the same care and attention
+        you get from local, hometown businesses.
       </p>
-      <p>I communicate well with clients, teams, stakeholders.</p>
+      <p>
+        I communicate well on an individual or team basis, I&apos;m comfortable working with your current team or in a
+        solo scenario, I&apos;m independent & capable of managing myself so you can focus on your business.
+      </p>
+      <p>
+        This is a partnership that I want to last beyond this project and I want you to be a part of the process. From
+        the initial meeting, through the design and build process, all the way to launching your website I&apos;ll be
+        right by your side providing help and support.
+      </p>
+      <p>
+        I want you to know you&apos;re in good hands! I am very proud of the work I do and I know you&apos;ll love the
+        result!
+      </p>
     </div>
   </div>
 );
