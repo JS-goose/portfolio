@@ -34,25 +34,26 @@ const services = [
 ];
 
 const ServicesList = () => (
-  <div className="bg-white flex flex-col justify-between h-full mt-12 p-1 border border-white grid-row-3 rounded-sm">
+  <div className="bg-white flex flex-col justify-between items-center h-full mt-12 grid-row-3 rounded-sm">
+    <div className="services-list text-lg max-w-4xl">
     <h2>What I Can Do For You and Your Business:</h2>
-    <div className="services-list border border-red-500 p-2">
       <ul>
         {services.map((service) => (
-          <li key={service.number}>
+          <li key={service.number} className="pb-4">
             {service.number}. {service.desc}
           </li>
         ))}
       </ul>
     </div>
     <h2>Why Should You Hire Me As Your Freelance Developer?</h2>
-    <div className="why-hire-me border border-purple-500 p-2">
+    <div className="why-hire-me text-lg">
       <p>
         Having a digital presence has never been more important than it is now. With consumers shifting to online
         purchasing more and more you&apos;re missing out on customers and profits if you don&apos; have a user friendly,
         functional, SEO optimized website. I can provide that for you at a cost much more reasonable than hiring a big
         firm.
       </p>
+      &nbsp;
       <p>
         I bring current industry knowledge with experience and know how. I&apos;ve taught others to do what I do when I
         was a mentor at{" "}
@@ -61,20 +62,24 @@ const ServicesList = () => (
         </a>{" "}
         - one of the most prominent web development bootcamps.
       </p>
+      &nbsp;
       <p>
         If you&apos;re project involves a sprawling, complex web application or something smaller, more custom I&apos;m\
         familiar and comfortable with both. I provide big agency level work and support with the same care and attention
         you get from local, hometown businesses.
       </p>
+      &nbsp;
       <p>
         I communicate well on an individual or team basis, I&apos;m comfortable working with your current team or in a
         solo scenario, I&apos;m independent & capable of managing myself so you can focus on your business.
       </p>
+      &nbsp;
       <p>
         This is a partnership that I want to last beyond this project and I want you to be a part of the process. From
         the initial meeting, through the design and build process, all the way to launching your website I&apos;ll be
         right by your side providing help and support.
       </p>
+      &nbsp;
       <p>
         I want you to know you&apos;re in good hands! I am very proud of the work I do and I know you&apos;ll love the
         result!
