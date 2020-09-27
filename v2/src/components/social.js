@@ -1,6 +1,4 @@
 import React from "react";
-import dev from "../images/icons/DEV.svg";
-import facebook from "../images/icons/facebook.svg";
 
 const SocialSection = () => {
   return (
@@ -60,8 +58,14 @@ const SocialSection = () => {
           </a>
         </li>
         <li className="pt-6 pl-2">
-          <a href="" rel="noopener noreferrer" target="__blank">
-            <svg className="social-list-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://medium.com/@joncsexton" rel="noopener noreferrer" target="__blank">
+            <svg
+              className="social-list-svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -75,10 +79,34 @@ const SocialSection = () => {
           </a>
         </li>
         <li className="pt-6 pl-1">
-          <img src={dev} alt="DEV.to" />
+          <a href="https://dev.to/jsgoose" target="__blank" rel="noopener noreferrer">
+            <svg
+              className="social-list-svg"
+              width="33"
+              height="13"
+              viewBox="0 0 33 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.142578 13V0.203125H4.08008C5.20508 0.203125 6.20996 0.458008 7.09473 0.967773C7.98535 1.47168 8.67969 2.19238 9.17773 3.12988C9.67578 4.06152 9.9248 5.12207 9.9248 6.31152V6.90039C9.9248 8.08984 9.67871 9.14746 9.18652 10.0732C8.7002 10.999 8.01172 11.7168 7.12109 12.2266C6.23047 12.7363 5.22559 12.9941 4.10645 13H0.142578ZM2.7793 2.33887V10.8818H4.05371C5.08496 10.8818 5.87305 10.5449 6.41797 9.87109C6.96289 9.19727 7.24121 8.2334 7.25293 6.97949V6.30273C7.25293 5.00195 6.9834 4.01758 6.44434 3.34961C5.90527 2.67578 5.11719 2.33887 4.08008 2.33887H2.7793ZM19.5488 7.4541H14.4863V10.8818H20.4277V13H11.8496V0.203125H20.4102V2.33887H14.4863V5.38867H19.5488V7.4541ZM26.7031 9.82715L29.6035 0.203125H32.5391L28.083 13H25.332L20.8936 0.203125H23.8203L26.7031 9.82715Z" />
+            </svg>
+          </a>
         </li>
         <li className="pt-6 pl-2">
-          <img src={facebook} alt="Facebook" />
+          <a href="https://www.facebook.com/jonathansextonwebdev" target="__blank" rel="noopener noreferrer">
+            <svg
+              className="social-list-svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5ZM13.8029 19.8497V13.0491H15.6802L15.929 10.7055H13.8029L13.8061 9.53255C13.8061 8.92132 13.8642 8.59381 14.7421 8.59381H15.9157V6.25H14.0381C11.7829 6.25 10.9891 7.38687 10.9891 9.29873V10.7058H9.58333V13.0493H10.9891V19.8497H13.8029Z"
+              />
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
