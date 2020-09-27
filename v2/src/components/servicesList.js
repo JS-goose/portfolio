@@ -34,9 +34,9 @@ const services = [
 ];
 
 const ServicesList = () => (
-  <div className="bg-white flex flex-col justify-between items-center h-full mt-12 grid-row-3 rounded-sm">
-    <div className="services-list text-lg max-w-4xl">
-    <h2>What I Can Do For You and Your Business:</h2>
+  <div className="bg-white flex flex-col items-center h-full grid-row-3 rounded-sm self-start">
+    <div className="services-list text-lg h-full max-w-4xl">
+      <h2>What I Can Do For You and Your Business:</h2>
       <ul>
         {services.map((service) => (
           <li key={service.number} className="pb-4">
@@ -45,8 +45,8 @@ const ServicesList = () => (
         ))}
       </ul>
     </div>
-    <h2>Why Should You Hire Me As Your Freelance Developer?</h2>
-    <div className="why-hire-me text-lg">
+    <div className="why-hire-me text-lg h-full max-w-4xl">
+      <h2>Why Should You Hire Me As Your Freelance Developer?</h2>
       <p>
         Having a digital presence has never been more important than it is now. With consumers shifting to online
         purchasing more and more you&apos;re missing out on customers and profits if you don&apos; have a user friendly,
@@ -64,7 +64,7 @@ const ServicesList = () => (
       </p>
       &nbsp;
       <p>
-        If you&apos;re project involves a sprawling, complex web application or something smaller, more custom I&apos;m\
+        If you&apos;re project involves a sprawling, complex web application or something smaller, more custom I&apos;m
         familiar and comfortable with both. I provide big agency level work and support with the same care and attention
         you get from local, hometown businesses.
       </p>
