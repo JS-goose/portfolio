@@ -41,7 +41,8 @@ function IndexPage() {
         keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
         title="Home"
       />
-      <div className="w-full flex items-center bg-myPurple">
+      {/* w-full flex items-center bg-myPurple */}
+      <div className="index-wrapper">
         <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
         <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
         <CTA />

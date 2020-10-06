@@ -6,9 +6,11 @@ import Footer from './footer';
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-myBlack">
+    // layout-wrapper flex flex-col min-h-screen font-sans text-myBlack
+    <div className="layout-wrapper">
       <Header />
-      <main className="grid grid-flow-col grid-cols-1 grid-rows-3 gap-y-12 h-screen justify-between flex-1 w-full">
+      {/* grid grid-flow-col grid-cols-1 grid-rows-3 gap-y-12 h-screen justify-between flex-1 w-full */}
+      <main>
         {children}
       </main>
       <Footer />

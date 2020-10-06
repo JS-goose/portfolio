@@ -34,7 +34,7 @@ const services = [
 ];
 
 const ServicesList = () => (
-  <div className="bg-white flex flex-col items-center grid-row-3 rounded-sm self-start -mt-40">
+  <div className="bg-white flex flex-col items-center grid-row-3 rounded-sm self-start">
     <div className="services-list text-lg h-full max-w-4xl pt-8">
       <h2>What I Can Do For You and Your Business:</h2>
       <ul>

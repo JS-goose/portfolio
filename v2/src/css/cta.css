@@ -1,5 +1,15 @@
 .cta {
   position: relative;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  padding-top: 0;
+  align-self: flex-start;
+  justify-content: center;
+  border-radius: 0.25rem;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .me-img {

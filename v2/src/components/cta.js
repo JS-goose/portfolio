@@ -24,7 +24,8 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="cta bg-white w-full flex pt-0 self-start lg:mt-48 justify-center rounded shadow-2xl max-w-6xl mx-auto">
+    // bg-white w-full flex pt-0 self-start lg:mt-48 justify-center rounded shadow-2xl max-w-6xl mx-auto
+    <section className="cta lg:mt-48 shadow-2xl">
       <article className="p-4">
         <Image fluid={query.me.childImageSharp.fluid} className="me-img" />
       </article>

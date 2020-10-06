@@ -4,6 +4,7 @@
 /*! purgecss end ignore */
 @tailwind utilities;
 
+@import "./layout.css";
 @import "./cta.css";
 @import "./index.css";
 @import "./social.css";
