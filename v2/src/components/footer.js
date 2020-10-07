@@ -26,6 +26,13 @@ const Footer = () => (
       </div>
       <div>
         <ul>
+          <li>Featured Article 1</li>
+          <li>Featured Article 2</li>
+          <li>Featured Article 3</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
           <li>
             <Link to="/">Freelance Developer</Link>
           </li>
