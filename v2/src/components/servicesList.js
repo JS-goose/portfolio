@@ -65,13 +65,13 @@ const ServicesList = () => {
         <h2 className="text-myPurple pb-10">Why Should You Hire Me As Your Freelance Developer?</h2>
         <p>
           Having a digital presence has never been more important than it is now. With consumers shifting more of their
-          activities to online you&apos;re missing out on customers and profits if you don&apos; have a user friendly,
-          functional, SEO optimized website.
+          activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
+          presence.
         </p>
         &nbsp;
         <p>
-          By partnering with me, you&apos;ll get that and much more because I&apos;ll invested in your business and
-          sucess from the very beginning.
+          I use the most up to date and stable technologies and tools to ensure a great user experience. By partnering
+          with me, you&apos;ll get a responsive, easy to use, functional, easy to navigate, SEO optimized website.
         </p>
         &nbsp;
         <p>
@@ -82,8 +82,8 @@ const ServicesList = () => {
         </p>
         &nbsp;
         <p>
-          I communicate well and often, I&apos;m comfortable working with your current team or in a
-          solo scenario, I&apos;m independent and trustworth giving you time to do what matters - focus on your business.
+          I communicate well and often, I&apos;m comfortable working with your current team or in a solo scenario,
+          I&apos;m independent and trustworth giving you time to do what matters - focus on your business.
         </p>
         &nbsp;
         <p>
@@ -93,8 +93,8 @@ const ServicesList = () => {
         </p>
         &nbsp;
         <p>
-          I want you to know you&apos;re in good hands! I am very proud of the work I do and I&apos;m confident you will love the
-          results!
+          I want you to know you&apos;re in good hands! I am very proud of the work I do and I&apos;m confident you will
+          love the results!
         </p>
       </div>
     </div>
