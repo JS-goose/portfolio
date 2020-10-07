@@ -62,7 +62,7 @@ const ServicesList = () => {
       </div>
       <Image fluid={query.devices.childImageSharp.fluid} className="w-1/2 h-1/2" />
       <div className="why-hire-me text-lg h-full max-w-4xl">
-        <h2 className="text-myPurple pb-10">Why Should You Hire Me As Your Freelance Developer?</h2>
+        <h2 className="text-myPurple pb-10">Why Should You Hire Me As Your Developer?</h2>
         <p>
           Having a digital presence has never been more important than it is now. With consumers shifting more of their
           activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
