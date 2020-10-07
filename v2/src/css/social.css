@@ -1,58 +1,66 @@
 .social-container {
-    position: absolute;
-    right: 0;
-    color: #FF4945;
-    margin-top: -19rem;
-    padding-right: 1rem;
-    font-size: 1.125rem;
+  position: absolute;
+  right: 0;
+  color: #ff4945;
+  margin-top: -11rem;
+  padding-right: 1rem;
+  font-size: 1.125rem;
 }
 
 .social-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .social-list-svg {
-    fill: white !important;
+  fill: white !important;
 }
 
 .social-list-svg:hover {
-    fill: #FF4945 !important;
-    animation: rotate 0.8s;
+  fill: #ff4945 !important;
+  animation: rotate 0.8s;
 }
 
 @keyframes rotate {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(45deg);}
-    50% {transform: rotate(-45deg);}
-    100% {transform: rotate(0);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .vertical-text {
-    writing-mode: vertical-rl !important;
-    text-orientation: mixed;
+  writing-mode: vertical-rl !important;
+  text-orientation: mixed;
 }
 @media screen and (max-width: 1220px) {
-    .social-container {
-        bottom: 0;
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+  .social-container {
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 
-    .social-list {
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: center;
-    }
+  .social-list {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .social-list li {
-        padding-right: 1rem;
-    }
+  .social-list li {
+    padding-right: 1rem;
+  }
 
-    .vertical-text {
-        writing-mode: horizontal-tb !important;
-        text-orientation: mixed;
-        padding-top: 1.25rem;
-    }
+  .vertical-text {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed;
+    padding-top: 1.25rem;
+  }
 }
