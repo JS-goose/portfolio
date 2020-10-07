@@ -32,7 +32,7 @@ function Header() {
           <Link to="/" onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
             <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? "logoNotHovered" : "logo"} />
           </Link>
-            <p className="mb-6">Jonathan Sexton</p>
+          <p className="mb-6">Jonathan Sexton</p>
         </span>
 
         <button
@@ -47,11 +47,11 @@ function Header() {
 
         <nav className={`${isExpanded ? `block` : `hidden`} md:block md:items-center w-full md:w-auto`}>
           {[
+            { route: `/consulting`, title: `Consulting` },
             {
               route: `/about`,
               title: `About`,
             },
-            { route: `#services`, title: `Services` },
             { route: `https://jonathansexton.me/blog`, title: `Articles` },
             {
               route: `/projects`,
