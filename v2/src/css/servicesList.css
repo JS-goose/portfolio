@@ -1,0 +1,7 @@
+.services-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-left: 10rem;
+  column-gap: 2rem;
+}

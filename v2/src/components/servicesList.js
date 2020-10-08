@@ -1,11 +1,11 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
+// import Image from "gatsby-image";
 
 const services = [
   {
     number: `1`,
-    desc: `Provide a consultation to discuss any current pain points you currently have with your web presence (or lack of).`,
+    desc: `Provide a consultation to discuss any pain points you have with your web presence (or lack of).`,
   },
   {
     number: `2`,
@@ -32,72 +32,96 @@ const services = [
     number: `8`,
     desc: `Communicate openly and honestly with you and/or your stakeholders about the cost/time/progress of the project.`,
   },
-  { number: `9`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
+  {
+    number: `9`,
+    desc: `Take care of any updates, changes, edits, or technical overhauls of your website via reoccuring service subscription.`,
+  },
+  { number: `10`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
 ];
 
 const ServicesList = () => {
   const query = useStaticQuery(graphql`
     query {
-      devices: file(relativePath: { eq: "devices-min.jpg" }) {
+      decisions: file(relativePath: { eq: "undraw_business_decisions_gjwy.svg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 3200) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(quality: 100, maxWidth: 600) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
+        extension
+        publicURL
+      }
+      shop: file(relativePath: { eq: "undraw_business_shop_qw5t.svg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 600) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+        extension
+        publicURL
       }
     }
   `);
 
   return (
-    <div className="bg-white flex flex-col items-center grid-row-3 rounded-sm self-start">
-      <div className="services-list text-lg h-full max-w-4xl pt-8">
-        <h2 className="text-myRed pb-10">What I Can Do For You and Your Business?</h2>
-        <ul>
-          {services.map((service) => (
-            <li key={service.number} className="pb-4">
-              {service.number}. {service.desc}
-            </li>
-          ))}
-        </ul>
+    <section className="flex flex-col mt-16 bg-white grid-row-3 items-center w-full h-full">
+      <div className="services-list-container text-lg items-center mb-20">
+        <div>
+          <h2 className="text-myRed pb-6">What Can I Do For You and Your Business?</h2>
+          <ul>
+            {services.map((service) => (
+              <li key={service.number} className="pb-4">
+                {service.number}. {service.desc}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <img src={query.decisions.publicURL} alt="a man pointing at charts" className="w-full" />
+        </div>
       </div>
-      <Image fluid={query.devices.childImageSharp.fluid} className="w-1/2 h-1/2" />
-      <div className="why-hire-me text-lg h-full max-w-4xl">
-        <h2 className="text-myPurple pb-10">Why Should You Hire Me As Your Developer?</h2>
-        <p>
-          Having a digital presence has never been more important than it is now. With consumers shifting more of their
-          activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
-          presence.
-        </p>
-        &nbsp;
-        <p>
-          I use the most up to date and stable technologies and tools to ensure a great user experience. By partnering
-          with me, you&apos;ll get a responsive, easy to use, functional, easy to navigate, SEO optimized website.
-        </p>
-        &nbsp;
-        <p>
-          I bring current industry knowledge with experience and know how to any project. No matter if you&apos;re
-          project involves a sprawling, complex web application or something smaller, more custom I&apos;m familiar and
-          comfortable with both. I provide big agency level work and support with the same care and attention you get
-          from local, hometown businesses.
-        </p>
-        &nbsp;
-        <p>
-          I communicate well and often, I&apos;m comfortable working with your current team or in a solo scenario,
-          I&apos;m independent and trustworth giving you time to do what matters - focus on your business.
-        </p>
-        &nbsp;
-        <p>
-          This is a partnership that I want to last beyond this project and I want you to be a part of the process. From
-          the initial meeting, through the design and build process, all the way to launching your website I&apos;ll be
-          right by your side providing help and support.
-        </p>
-        &nbsp;
-        <p>
-          I want you to know you&apos;re in good hands! I am very proud of the work I do and I&apos;m confident you will
-          love the results!
-        </p>
+      <div className="why-hire-me text-lg h-full flex">
+        <div>
+          <img src={query.shop.publicURL} alt="" className="w-full" />
+        </div>
+        <div>
+          <h2 className="text-myPurple pb-10">Why Should You Hire Me As Your Developer?</h2>
+          <p>
+            Having a digital presence has never been more important than it is now. With consumers shifting more of
+            their activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
+            presence.
+          </p>
+          &nbsp;
+          <p>
+            I use the most up to date and stable technologies and tools to ensure a great user experience. By partnering
+            with me, you&apos;ll get a responsive, easy to use, functional, easy to navigate, SEO optimized website.
+          </p>
+          &nbsp;
+          <p>
+            I bring current industry knowledge with experience and know how to any project. No matter if you&apos;re
+            project involves a sprawling, complex web application or something smaller, more custom I&apos;m familiar
+            and comfortable with both. I provide big agency level work and support with the same care and attention you
+            get from local, hometown businesses.
+          </p>
+          &nbsp;
+          <p>
+            I communicate well and often, I&apos;m comfortable working with your current team or in a solo scenario,
+            I&apos;m independent and trustworth giving you time to do what matters - focus on your business.
+          </p>
+          &nbsp;
+          <p>
+            This is a partnership that I want to last beyond this project and I want you to be a part of the process.
+            From the initial meeting, through the design and build process, all the way to launching your website
+            I&apos;ll be right by your side providing help and support.
+          </p>
+          &nbsp;
+          <p>
+            I want you to know you&apos;re in good hands! I am very proud of the work I do and I&apos;m confident you
+            will love the results!
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
