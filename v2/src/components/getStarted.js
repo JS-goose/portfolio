@@ -12,17 +12,24 @@ const GetStarted = () => {
     <section className="p-2 flex flex-col items-center">
       <article className="border border-1 p-12 rounded shadow mb-8">
         <h2>Let&apos;s get started on your project!</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
+          <p className="invisible">
+            <label htmlFor="bots-say-what">
+              Bots say what? <input type="text" name="bots-say-what" id="bots-say-what" />
+            </label>
+          </p>
           <legend className="invisible">Information About You</legend>
           <fieldset>
             <p className="flex flex-col pb-4">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">What you like to be addressed as</label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 aria-required
                 required
+                minLength="5"
+                maxLength="100"
                 className="border border-1 p-2"
                 placeholder="First and Last Names"
                 aria-placeholder="First and Last Names"
@@ -36,6 +43,8 @@ const GetStarted = () => {
                 id="email"
                 aria-required
                 required
+                minLength="5"
+                maxLength="100"
                 className="border border-1 p-2"
                 placeholder="name@domain.com"
                 aria-placeholder="name@domain.com"
