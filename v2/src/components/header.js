@@ -15,7 +15,7 @@ function Header() {
         }
       }
 
-      brand: file(relativePath: { eq: "Brand-min.png" }) {
+      brand: file(relativePath: { eq: "icons/Brand-min.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 200) {
             ...GatsbyImageSharpFluid_withWebp
