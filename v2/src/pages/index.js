@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import ServicesList from "../components/servicesList";
 import GetStarted from "../components/getStarted";
 import SocialSection from "../components/social";
+import Testimonials from "../components/testimonials";
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -41,7 +42,6 @@ function IndexPage() {
         keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
         title="Home"
       />
-      {/* w-full flex items-center bg-myPurple */}
       <div className="index-wrapper">
         <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
         <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
@@ -51,6 +51,7 @@ function IndexPage() {
       </div>
       <ServicesList />
       <GetStarted />
+      <Testimonials />
     </>
   );
 }
