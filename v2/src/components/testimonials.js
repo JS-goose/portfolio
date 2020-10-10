@@ -10,7 +10,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <article>
+    <article className="w-full h-full flex">
       <ul>
         {testimonials.map((test) => (
           <li key={test.name}>
