@@ -14,7 +14,7 @@ const CallToAction = () => {
         }
       }
 
-      hand: file(relativePath: { eq: "waving hand.png" }) {
+      hand: file(relativePath: { eq: "icons/waving hand.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 50) {
             ...GatsbyImageSharpFluid_withWebp
