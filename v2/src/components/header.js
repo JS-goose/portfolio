@@ -47,34 +47,41 @@ function Header() {
 
         <nav className={`${isExpanded ? `block` : `hidden`} md:block md:items-center w-full md:w-auto`}>
           {[
-            { route: `/consulting`, title: `Consulting` },
+            {
+              route: `/consulting`,
+              title: `Consulting`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+            },
             {
               route: `/about`,
               title: `About`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
             },
-            { route: `https://jonathansexton.me/blog`, title: `Articles` },
+            {
+              route: `https://jonathansexton.me/blog`,
+              title: `Articles`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+            },
             {
               route: `/projects`,
               title: `Projects`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
             },
             {
               route: `/team`,
               title: `Team`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+            },
+            {
+              route: `#hire-me`,
+              title: `Hire Me`,
+              classname: `pt-2 pr-2 pl-2 pb-1 rounded-sm text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline`,
             },
           ].map((link) => (
-            <Link
-              className={`nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl ${link.classname} hover:text-myRed`}
-              key={link.title}
-              to={link.route}>
+            <Link className={link.classname} key={link.title} to={link.route} rel="noopener noreferrer">
               {link.title}
             </Link>
           ))}
-          <a
-            href="#hire-me"
-            rel="noopener noreferrer"
-            className="pt-2 pr-2 pl-2 pb-1 rounded-sm text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline">
-            Hire Me 
-          </a>
         </nav>
       </div>
     </header>
