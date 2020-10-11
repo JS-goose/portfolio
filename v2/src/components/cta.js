@@ -45,7 +45,7 @@ const CallToAction = () => {
           </p>
           <h4 className="mt-4 font-bold"> Let’s launch your project together!</h4>
           <div className="flex mt-10 text-white w-full">
-            <span className="flex bg-myPurple p-2 rounded cta-buttons text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
+            <span className="flex bg-myPurple p-2 rounded-sm cta-buttons text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
               <a
                 href="https://jonathan135406.typeform.com/to/LNZI5h"
                 target="_blank"
@@ -55,7 +55,7 @@ const CallToAction = () => {
                 <img src={checkmark} alt="" className="pl-2" />
               </a>
             </span>
-            <span className="ml-48 p-2 rounded cta-buttons text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
+            <span className="ml-48 p-2 rounded-sm cta-buttons text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
               <a
                 href="https://localhost"
                 target="_blank"
