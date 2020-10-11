@@ -36,10 +36,18 @@ const Footer = () => (
       </div>
       <div>
         <ul>
-          <li>Follow me on Twitter</li>
-          <li>Follow me on Instagram</li>
-          <li>Follow me on LinkedIn</li>
-          <li>Follow me on Facebook</li>
+          <li>
+            Follow me on <a href="https://twitter.com/jj_goose">Twitter</a>
+          </li>
+          <li>
+            Follow me on <a href="https://www.instagram.com/js_goose/">Instagram</a>
+          </li>
+          <li>
+            Follow me on <a href="https://www.linkedin.com/in/jj-goose/">LinkedIn</a>
+          </li>
+          <li>
+            Follow me on <a href="https://www.facebook.com/jonathansextonwebdev">Facebook</a>
+          </li>
         </ul>
       </div>
       <div>
