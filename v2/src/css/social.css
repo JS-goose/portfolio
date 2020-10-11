@@ -19,7 +19,7 @@
 
 .social-list-svg:hover {
   fill: #ff4945 !important;
-  animation: rotate 0.8s;
+  animation: rotate 2.5s;
 }
 
 @keyframes rotate {
@@ -27,10 +27,10 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(45deg);
+    transform: rotate(-50deg);
   }
   50% {
-    transform: rotate(-45deg);
+    transform: rotate(50deg);
   }
   100% {
     transform: rotate(0);
