@@ -2,9 +2,9 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <section className="p-2 flex flex-col items-center">
+    <section className="bg-white p-2 flex flex-col items-center">
       <article className="get-started-form-container border border-1 p-12 rounded-sm shadow mb-8">
-        <h2>Let&apos;s get started on your project!</h2>
+        <h2 className="text-myRed">Let&apos;s get started on your project!</h2>
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
           <p className="invisible">
             <label htmlFor="bots-say-what">
@@ -70,7 +70,7 @@ const GetStarted = () => {
           </fieldset>
           <button
             type="submit"
-            className="flex border border-1 shadow-md text-lg p-4 rounded-sm transition duration-500 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
+            className="flex border border-1 bg-white shadow-md text-lg p-4 rounded-sm transition duration-500 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
             <span className="pr-2">Submit Request</span>{" "}
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="done_outline_24px">
