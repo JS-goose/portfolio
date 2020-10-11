@@ -4,9 +4,27 @@ import React from "react";
 const d = new Date();
 const year = d.getFullYear();
 
+const articles = [
+  {
+    title: "Get a Basic Understanding of the Life Cycles of Software Development",
+    link: "https://jonathansexton.me/blog/get-a-basic-understanding-of-the-life-cycles-of-software-development/",
+  },
+  {
+    title: "How to Install and Begin Using TypeScript",
+    link: "https://jonathansexton.me/blog/how-to-install-and-begin-using-typescript/",
+  },
+  {
+    title: "SQL Create Table Statement - With Example Syntax",
+    link: "https://www.freecodecamp.org/news/sql-create-table-statement-with-example-syntax/",
+  },
+  {
+    title: "SQL Update Statement — Example Queries for Updating Table Values",
+    link: "https://www.freecodecamp.org/news/sql-update-statement-example-queries-for-updating-table-values/",
+  },
+];
 const Footer = () => (
   <footer className="text-white bg-myPurple">
-    <article className="flex justify-between p-10 mx-auto text-sm md:p-8 bg-myRed">
+    <article className="flex justify-between mx-auto text-sm md:p-8 bg-myRed">
       <div>
         <ul>
           <li>
@@ -26,9 +44,15 @@ const Footer = () => (
       </div>
       <div>
         <ul>
-          <li>Featured Article 1</li>
-          <li>Featured Article 2</li>
-          <li>Featured Article 3</li>
+          {articles.map((article, index) => {
+            return (
+              <li data-key={index + 1} key={index + 1}>
+                <a href={article.link} rel="noopener noreferrer">
+                  {article.title}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div>
