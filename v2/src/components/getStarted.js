@@ -70,7 +70,7 @@ const GetStarted = () => {
           </fieldset>
           <button
             type="submit"
-            className="flex border border-1 bg-white shadow-md text-lg p-4 rounded-sm transition duration-500 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
+            className="flex border border-1 bg-white shadow-md text-lg p-4 rounded-sm transition duration-300 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
             <span className="pr-2">Submit Request</span>{" "}
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="done_outline_24px">
