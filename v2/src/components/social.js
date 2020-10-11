@@ -5,7 +5,7 @@ const SocialSection = () => {
     <div className="social-container">
       <ul className="social-list">
         <li>
-          <div className="vertical-text">Connect with me!</div>
+          <div className="vertical-text">Let&apos;s Connect!</div>
         </li>
         <li className="pt-6 pl-2">
           <a href="https://twitter.com/jj_goose" rel="noopener noreferrer" target="__blank">
