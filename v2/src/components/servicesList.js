@@ -66,7 +66,7 @@ const ServicesList = () => {
   return (
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full h-full">
       <div className="services-list-container text-lg items-center">
-        <div>
+        <div id="services">
           <h2 className="text-myRed pb-12">What Can I Do For You and Your Business?</h2>
           <ul>
             {services.map((service) => (

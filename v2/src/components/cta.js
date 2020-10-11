@@ -47,8 +47,7 @@ const CallToAction = () => {
           <div className="flex mt-10 text-white w-full">
             <span className="flex bg-myPurple p-2 rounded-sm cta-buttons text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
               <a
-                href="https://jonathan135406.typeform.com/to/LNZI5h"
-                target="_blank"
+                href="#hire-me"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center font-semibold">
                 Hire Me For Your Project
@@ -57,8 +56,7 @@ const CallToAction = () => {
             </span>
             <span className="ml-48 p-2 rounded-sm cta-buttons text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
               <a
-                href="https://localhost"
-                target="_blank"
+                href="#services"
                 rel="noopener noreferrer"
                 className="flex justify-center items-center font-semibold">
                 See My Services

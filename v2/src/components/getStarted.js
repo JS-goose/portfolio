@@ -2,7 +2,7 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <section className="bg-white p-2 flex flex-col items-center">
+    <section className="bg-white p-2 flex flex-col items-center" id="hire-me">
       <article className="get-started-form-container border border-1 p-12 rounded-sm shadow mb-8">
         <h2 className="text-myRed">Let&apos;s get started on your project!</h2>
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">

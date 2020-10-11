@@ -70,11 +70,10 @@ function Header() {
             </Link>
           ))}
           <a
-            href="https://jonathan135406.typeform.com/to/LNZI5h"
-            target="__blank"
+            href="#hire-me"
             rel="noopener noreferrer"
             className="pt-2 pr-2 pl-2 pb-1 rounded-sm text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline">
-            Hire Me
+            Hire Me 
           </a>
         </nav>
       </div>
