@@ -5,8 +5,8 @@ const d = new Date();
 const year = d.getFullYear();
 
 const Footer = () => (
-  <footer className="text-white">
-    <article className="flex justify-between p-4 mx-auto text-sm md:p-8 bg-myRed">
+  <footer className="text-white bg-myPurple">
+    <article className="flex justify-between p-10 mx-auto text-sm md:p-8 bg-myRed">
       <div>
         <ul>
           <li>
