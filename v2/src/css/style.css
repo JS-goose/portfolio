@@ -17,7 +17,8 @@
 /* Firefox only - for now */
 * {
   scrollbar-color: white #421ed2;
-  scrollbar-width: thing;
+  scrollbar-width: thin;
+  border-radius: 2px;
 }
 
 /* Chrome/Edge/Safari */
