@@ -26,7 +26,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="w-full h-full flex items-center justify-center">
+    <section className="bg-white w-full h-full flex items-center justify-center">
       <article className="items-center">
         <ul>
           {testimonials.map((card, index) => (

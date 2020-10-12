@@ -3,53 +3,53 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #421ED2;
+  /* background-color: #421ED2; */
 }
 
 .planet {
-    height: 40rem;
-    width: 40rem;
-    position: absolute !important;
-    /* margin-top: -50rem; */
-    top: 0;
-    margin-left: 10rem;
-    z-index: 0;
+  height: 40rem;
+  width: 40rem;
+  position: absolute !important;
+  /* margin-top: -50rem; */
+  top: 0;
+  margin-left: 10rem;
+  z-index: 0;
+}
+
+.astronaut {
+  height: 40rem;
+  width: 21.5rem;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+.rocket {
+  height: 65rem;
+  width: 28rem;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  margin-top: 12rem;
+}
+
+@media screen and (max-width: 1840px) {
+  .astronaut {
+    width: 19rem;
+    height: 35rem;
+    margin-top: 1rem;
   }
 
-  .astronaut {
-    height: 40rem;
-    width: 21.5rem;
-    position: absolute !important;
-    top: 0;
+  .planet {
+    height: 35rem;
+    width: 35rem;
+    margin-left: 0;
+  }
+
+  .rocket {
+    height: 50rem;
+    width: 20rem;
+    margin-top: 10rem;
     right: 0;
   }
-  
-  .rocket {
-    height: 65rem;
-    width: 28rem;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    margin-top: 12rem;
-  }
-
-  @media screen and (max-width: 1840px) {
-    .astronaut {
-      width: 19rem;
-      height: 35rem;
-      margin-top: 1rem;
-    }
-
-    .planet {
-      height: 35rem;
-      width: 35rem;
-      margin-left: 0;
-    }
-
-    .rocket {
-      height: 50rem;
-      width: 20rem;
-      margin-top: 10rem;
-      right: 0;
-    }
-  }
+}
