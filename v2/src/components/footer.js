@@ -24,9 +24,12 @@ const articles = [
 ];
 const Footer = () => (
   <footer className="text-white bg-myPurple">
-    <article className="flex justify-between mx-auto text-sm md:p-8 bg-myRed">
+    <article className="flex justify-between mx-auto md:p-8 bg-myRed">
       <div>
         <ul>
+          <li className="pb-4">
+            <h4 className="text-xl">ME</h4>
+          </li>
           <li>
             <a href="mailto:hello@jonathansexton.me?subject=Email_inquiry_from_jonathansexton.me">Email Me</a>
           </li>
@@ -35,27 +38,73 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <ul>
-          <li>
-            Follow me on <a href="https://twitter.com/jj_goose">Twitter</a>
+        <ul className="w-full">
+          <li className="pb-4">
+            <h4 className="text-xl">CONNECT</h4>
           </li>
           <li>
-            Follow me on <a href="https://www.instagram.com/js_goose/">Instagram</a>
+            <span className="flex">
+              <p>Follow me on</p>
+              <a
+                href="https://twitter.com/jj_goose"
+                target="__blank"
+                rel="noopener noreferrer"
+                className="flex flex-col font-bold underline">
+                Twitter
+                <span className="social-link-underline w-16"></span>
+              </a>
+            </span>
           </li>
           <li>
-            Follow me on <a href="https://www.linkedin.com/in/jj-goose/">LinkedIn</a>
+            <span className="flex">
+              <p>Follow me on</p>
+              <a
+                href="https://twitter.com/jj_goose"
+                target="__blank"
+                rel="noopener noreferrer"
+                className="flex flex-col font-bold underline">
+                LinkedIn
+                <span className="social-link-underline w-20"></span>
+              </a>
+            </span>
           </li>
           <li>
-            Follow me on <a href="https://www.facebook.com/jonathansextonwebdev">Facebook</a>
+            <span className="flex">
+              <p>Follow me on</p>
+              <a
+                href="https://twitter.com/jj_goose"
+                target="__blank"
+                rel="noopener noreferrer"
+                className="flex flex-col font-bold underline">
+                Instagram
+                <span className="social-link-underline w-20"></span>
+              </a>
+            </span>
+          </li>
+          <li>
+            <span className="flex">
+              <p>Follow me on</p>
+              <a
+                href="https://twitter.com/jj_goose"
+                target="__blank"
+                rel="noopener noreferrer"
+                className="flex flex-col font-bold underline">
+                Facebook
+                <span className="social-link-underline w-20"></span>
+              </a>
+            </span>
           </li>
         </ul>
       </div>
       <div>
         <ul>
+          <li className="pb-4">
+            <h4 className="text-xl">READ</h4>
+          </li>
           {articles.map((article, index) => {
             return (
               <li data-key={index + 1} key={index + 1}>
-                <a href={article.link} rel="noopener noreferrer">
+                <a href={article.link} rel="noopener noreferrer" className="hover:underline">
                   {article.title}
                 </a>
               </li>
@@ -65,6 +114,9 @@ const Footer = () => (
       </div>
       <div>
         <ul>
+          <li className="pb-4">
+            <h4 className="text-xl">WORK</h4>
+          </li>
           <li>
             <Link to="/">Freelance Developer</Link>
           </li>
@@ -82,7 +134,7 @@ const Footer = () => (
       <p>
         I code on{` `}
         <a
-          className="font-bold no-underline"
+          className="font-bold hover:underline"
           href="https://github.com/JS-goose"
           target="_blank"
           rel="noopener noreferrer">
