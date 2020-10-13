@@ -33,8 +33,10 @@ const Footer = () => (
           <li>
             <a href="mailto:hello@jonathansexton.me?subject=Email_inquiry_from_jonathansexton.me">Email Me</a>
           </li>
-          <li>About Me</li>
-          <li>Blog</li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li><a href="https://jonathansexton.me/blog" target="__blank" rel="noopener noreferrer">Blog</a></li>
         </ul>
       </div>
       <div>
@@ -99,7 +101,7 @@ const Footer = () => (
       <div>
         <ul>
           <li className="pb-4">
-            <h4 className="text-xl">READ</h4>
+            <h4 className="text-xl">READ: Recent Articles</h4>
           </li>
           {articles.map((article, index) => {
             return (
@@ -118,9 +120,12 @@ const Footer = () => (
             <h4 className="text-xl">WORK</h4>
           </li>
           <li>
-            <Link to="/">Freelance Developer</Link>
+            <Link to="#services">Services</Link>
           </li>
-          <li>Freelance Consultant (links to Consultant page)</li>
+          <li>
+            <Link to="#hire-me">Hire Me Today</Link>
+          </li>
+          <li><Link to="/consultanting">Freelance Consultant</Link></li>
           <li>Resume (download)</li>
         </ul>
       </div>
