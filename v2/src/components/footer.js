@@ -125,7 +125,7 @@ const Footer = () => (
           <li>
             <Link to="#hire-me">Hire Me Today</Link>
           </li>
-          <li><Link to="/consultanting">Freelance Consultant</Link></li>
+          <li><Link to="/consulting">Freelance Consultant</Link></li>
           <li>Resume (download)</li>
         </ul>
       </div>
