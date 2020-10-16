@@ -53,7 +53,7 @@ const ServicesList = () => {
       }
       shop: file(relativePath: { eq: "undraw_business_shop_qw5t.svg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 600) {
+          fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
