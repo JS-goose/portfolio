@@ -49,34 +49,56 @@ const Testimonials = () => {
         extension
         publicURL
       }
+      icon3: file(relativePath: { eq: "undraw_male_avatar_323b.svg" }) {
+        extension
+        publicURL
+      }
     }
   `);
 
   return (
     <section className="bg-white w-full flex items-center justify-center">
-      <article className="items-center">
-        <ul>
-          {testimonials.map((card, index) => (
-            <li key={index} data-key={index + 1}>
-              <div className="flex shadow rounded-sm p-6 items-center justify-around">
-                {/* Avatars courtesy of Undraw.co */}
-                {index + 1 === 2 ? (
-                  <img src={query.icon2.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a female avatar " />
-                ) : (
-                  <img src={query.icon.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a male avatar" />
-                )}
-                <div>
-                  <h4 className="text-2xl">{card.name}</h4>
-                  <p>{card.title}</p>
-                  <p>
-                    <a href={card.website}>{card.company}</a>
-                  </p>
-                  <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg">{card.comment}</p>
-                </div>
-              </div>{" "}
-            </li>
-          ))}
-        </ul>
+      <article className="testimonials-container w-full items-center p-12">
+        <div className="testimonials-container-1">
+          <h3>Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        {testimonials.map((card, index) => (
+          <div
+            key={index}
+            data-key={index + 1}
+            className="testimonials-container-2 flex rounded-sm p-8 items-center justify-around max-w-2xl">
+            {index + 1 === 2 ? (
+              <img src={query.icon2.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a female avatar " />
+            ) : index + 1 === 5 ? (
+              <img src={query.icon3.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a male avatar" />
+            ) : (
+              <img src={query.icon.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a male avatar" />
+            )}
+            <div>
+              <h4 className="text-2xl">{card.name}</h4>
+              <p>{card.title}</p>
+              <p>
+                <a href={card.website}>{card.company}</a>
+              </p>
+              <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg">{card.comment}</p>
+            </div>
+          </div>
+        ))}
+        <div className="testimonials-container-link-container">
+          <a href="#hire-me">
+            Contact Me
+          </a>
+        </div>
       </article>
     </section>
   );
