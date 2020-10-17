@@ -84,7 +84,7 @@ const ServicesList = () => {
       <div className="why-hire-me-container text-lg items-center">
         <div>
           {/* Image courtesy of https://undraw.co */}
-          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="w-full" />
+          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="max-w-3xl" />
         </div>
         <div>
           <h2 className="text-myPurple pb-12">Why Hire Me As Your Developer?</h2>
