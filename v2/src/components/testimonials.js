@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import Image from "gatsby-image";
 
 const Testimonials = () => {
   const testimonials = [
@@ -41,17 +42,40 @@ const Testimonials = () => {
 
   const query = useStaticQuery(graphql`
     query {
-      icon: file(relativePath: { eq: "undraw_profile_pic_ic5t.svg" }) {
-        extension
-        publicURL
+      stu: file(relativePath: { eq: "Stu.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 250) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
       }
-      icon2: file(relativePath: { eq: "undraw_female_avatar_w3jk.svg" }) {
-        extension
-        publicURL
+      tracy: file(relativePath: { eq: "tracy-min.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 250) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
       }
-      icon3: file(relativePath: { eq: "undraw_male_avatar_323b.svg" }) {
-        extension
-        publicURL
+      mike: file(relativePath: { eq: "mike-min.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 250) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      caleb: file(relativePath: { eq: "caleb-min.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 250) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      keith: file(relativePath: { eq: "keith.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 250) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
       }
     }
   `);
@@ -77,14 +101,23 @@ const Testimonials = () => {
             key={index}
             data-key={index + 1}
             className="testimonials-container-2 flex rounded-sm p-8 items-center justify-around max-w-2xl">
-            {index + 1 === 2 ? (
-              <img src={query.icon2.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a female avatar " />
-            ) : index + 1 === 5 ? (
-              <img src={query.icon3.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a male avatar" />
-            ) : (
-              <img src={query.icon.publicURL} className="sm:h-20 md:h-26 lg:h-32 mr-4" alt="a male avatar" />
-            )}
             <div>
+              <Image
+                className="h-64 w-64 rounded-full"
+                fluid={
+                  index + 1 === 1
+                    ? query.stu.childImageSharp.fluid
+                    : index + 1 === 2
+                    ? query.tracy.childImageSharp.fluid
+                    : index + 1 === 3
+                    ? query.mike.childImageSharp.fluid
+                    : index + 1 === 4
+                    ? query.caleb.childImageSharp.fluid
+                    : index + 1 === 5
+                    ? query.keith.childImageSharp.fluid
+                    : ""
+                }
+              />
               <h4 className="text-2xl">{card.name}</h4>
               <p>{card.title}</p>
               <p>
@@ -95,9 +128,7 @@ const Testimonials = () => {
           </div>
         ))}
         <div className="testimonials-container-link-container">
-          <a href="#hire-me">
-            Contact Me
-          </a>
+          <a href="#hire-me">Contact Me</a>
         </div>
       </article>
     </section>
