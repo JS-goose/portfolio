@@ -19,3 +19,9 @@
 .testimonials-container-2 {
   grid-column: 2;
 }
+
+.testimonials-images {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 20%;
+}

@@ -101,23 +101,23 @@ const Testimonials = () => {
             key={index}
             data-key={index + 1}
             className="testimonials-container-2 flex rounded-sm p-8 items-center justify-around max-w-2xl">
+            <Image
+              className="testimonials-images"
+              fluid={
+                index + 1 === 1
+                  ? query.stu.childImageSharp.fluid
+                  : index + 1 === 2
+                  ? query.tracy.childImageSharp.fluid
+                  : index + 1 === 3
+                  ? query.mike.childImageSharp.fluid
+                  : index + 1 === 4
+                  ? query.caleb.childImageSharp.fluid
+                  : index + 1 === 5
+                  ? query.keith.childImageSharp.fluid
+                  : ""
+              }
+            />
             <div>
-              <Image
-                className="h-64 w-64 rounded-full"
-                fluid={
-                  index + 1 === 1
-                    ? query.stu.childImageSharp.fluid
-                    : index + 1 === 2
-                    ? query.tracy.childImageSharp.fluid
-                    : index + 1 === 3
-                    ? query.mike.childImageSharp.fluid
-                    : index + 1 === 4
-                    ? query.caleb.childImageSharp.fluid
-                    : index + 1 === 5
-                    ? query.keith.childImageSharp.fluid
-                    : ""
-                }
-              />
               <h4 className="text-2xl">{card.name}</h4>
               <p>{card.title}</p>
               <p>
