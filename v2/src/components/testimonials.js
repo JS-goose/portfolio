@@ -8,34 +8,34 @@ const Testimonials = () => {
       name: `Stu Finn`,
       company: `Borealis Web Development`,
       title: `Owner/Developer`,
-      comment: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      comment: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."`,
       website: `https://borealisweb.ca`,
     },
     {
       name: `Tracy Johnson`,
       company: `Tracy's Upholstery`,
       title: `Owner`,
-      comment: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      comment: `"Knowledgeable, independent, and trustworthy - working with Jonathan was nothing but a phenomenal experience!"`,
       website: `https://https://www.tracys-upholstery.com/`,
     },
     {
       name: `Michael Masor`,
       company: `Annuity Market Pro`,
       title: `CEO/Founder`,
-      comment: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      comment: `"I like to get straight to the point. Jonathan helped my business see increased growth and revenue - he's amazing!"`,
       website: `https://www.annuitymarketpro.com/`,
     },
     {
       name: `Caleb Helton`,
       company: `Long State Breaks`,
-      comment: `We're a niche market company, so it was nice to find someone like Jonathan who could narrow down pain points and address them quickly`,
-      website: ``,
+      title: `Owner/Founder`,
+      comment: `"Jonathan was able to identify pain points about our previous website and then deliver solutions to those issues - I'm looking for reasons to work with him again!"`,
     },
     {
       name: `Keith Olson`,
       company: `Conduit PC Shop`,
-      comment: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      website: ``,
+      title: `Owner`,
+      comment: `"I came to Jonathan with only a vision. He worked with me every step of the way through frequent communication and brought that vision to life. I'm very happy with the results he provided."`,
     },
     // {name: `Steve Flannery`, company: `Steve's PC Shop`, comment: `Testimonial here`, website: `https://www.localcomputer.expert/`},
   ];
@@ -120,10 +120,8 @@ const Testimonials = () => {
             <div className="pl-4">
               <h4 className="text-2xl text-myRed">{card.name}</h4>
               <p className="text-myPurple">{card.title}</p>
-              <p className="text-myPurple">
-                <a href={card.website}>{card.company}</a>
-              </p>
-              <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg">{card.comment}</p>
+              <p className="text-myPurple">{card.company}</p>
+              <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg italic">{card.comment}</p>
             </div>
           </div>
         ))}
