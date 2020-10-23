@@ -34,20 +34,20 @@ const CallToAction = () => {
       </article>
       <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4" />
       <article className="p-3 text-lg">
-        <div className="flex flex-col max-w-3xl h-full mt-2">
+        <div className="flex flex-col justify-evenly max-w-3xl h-full">
           <h1 className="text-3xl">
             I build blazing fast, functional websites that help businesses connect with their customers!
           </h1>
-          <p className="mt-6 leading-8">
-            I&apos;m a freelance developer specializing in helping people and businesses expand their online
-            presence, reach more customers, and broaden their audience!
+          <p className="leading-8">
+            I&apos;m a freelance developer specializing in helping people and businesses expand their online presence,
+            reach more customers, and broaden their audience!
           </p>
-          <p className="mt-6 leading-8">
-            Are you looking for a developer to get your website designed, built, and published for the world
-            to see? You&apos;ve come to the right place then my friend!
+          <p className="leading-8">
+            Are you looking for a developer design, build, and publish your website for the world to see? You&apos;ve
+            come to the right place then my friend!
           </p>
-          <h4 className="mt-6 font-bold"> Let’s launch your project together!</h4>
-          <div className="flex mt-16 text-white w-full">
+          <h4 className="mt-2 font-bold"> Let’s launch your project together!</h4>
+          <div className="flex mt-4 text-white w-full">
             <span className="flex bg-myPurple p-2 rounded-sm cta-buttons text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
               <a href="#hire-me" rel="noopener noreferrer" className="flex justify-center items-center font-semibold">
                 Hire Me For Your Project
