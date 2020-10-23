@@ -24,8 +24,8 @@ const GetStarted = () => {
                 minLength="5"
                 maxLength="100"
                 className="border border-1 p-2 rounded-sm"
-                placeholder="First and Last Names"
-                aria-placeholder="First and Last Names"
+                placeholder="First and Last (optional) Names"
+                aria-placeholder="First and Last (optional) Names"
               />
             </p>
             <p className="flex flex-col pb-4">
@@ -39,20 +39,8 @@ const GetStarted = () => {
                 minLength="5"
                 maxLength="100"
                 className="border border-1 p-2 rounded-sm"
-                placeholder="name@domain.com"
-                aria-placeholder="name@domain.com"
-              />
-            </p>
-            <p className="flex flex-col pb-4">
-              <label htmlFor="phone-number">Phone Number (optional)</label>
-              <input
-                type="tel"
-                name="phone-number"
-                id="phone-number"
-                aria-required
-                required
-                className="border border-1 p-2 rounded-sm"
-                placeholder="888-555-1234"
+                placeholder="e.g. dave@gmail.com"
+                aria-placeholder="e.g. dave@gmail.com"
               />
             </p>
             <p className="flex flex-col pb-4">
@@ -65,7 +53,9 @@ const GetStarted = () => {
                 aria-required
                 required
                 maxLength="300"
-                className="border border-1 p-2 rounded-sm"></textarea>
+                className="border border-1 p-2 rounded-sm"
+                placeholder="Tell me about your project :)"
+                aria-placeholder="Tell me about your project :)"></textarea>
             </p>
           </fieldset>
           <button
