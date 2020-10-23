@@ -24,7 +24,7 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="cta md:mt-12 xl:mt-48 shadow-2xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl">
+    <section className="cta md:mt-12 xl:mt-24 shadow-2xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl">
       <article className="p-6">
         <Image fluid={query.me.childImageSharp.fluid} className="me-img" />
         <div className="flex flex-row justify-center sm:pt-2">

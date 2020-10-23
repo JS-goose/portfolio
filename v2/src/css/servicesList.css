@@ -2,13 +2,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  margin: 8rem 8rem 0 8rem;
+  margin: 6rem;
   column-gap: 2rem;
 }
 .why-hire-me-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  margin: 6rem 8rem 8rem 8rem;
+  margin: 6rem;
   column-gap: 2rem;
+}
+
+@media screen and (max-width: 1281px) {
+  .services-list-container {
+    margin: 3rem;
+  }
+  .why-hire-me-container {
+    margin: 3rem;
+  }
 }

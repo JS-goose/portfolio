@@ -67,10 +67,12 @@ const ServicesList = () => {
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full">
       <div className="services-list-container text-lg items-center">
         <div id="services">
-          <h2 className="text-myRed pb-12">What Can I Do For You and Your Business?</h2>
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">
+            What Can I Do For You and Your Business?
+          </h1>
           <ul>
             {services.map((service) => (
-              <li key={service.number} className="pb-4">
+              <li key={service.number} className="pb-4 sm:text-sm md:text-base lg:text-lg">
                 {service.number}. {service.desc}
               </li>
             ))}
@@ -78,16 +80,18 @@ const ServicesList = () => {
         </div>
         <div>
           {/* Image courtesy of https://undraw.co */}
-          <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts" className="w-full" />
+          <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts" />
         </div>
       </div>
-      <div className="why-hire-me-container text-lg items-center">
+      <div className="why-hire-me-container text-lg items-center sm:text-sm md:text-base lg:text-lg">
         <div>
           {/* Image courtesy of https://undraw.co */}
-          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="max-w-3xl" />
+          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" />
         </div>
         <div>
-          <h2 className="text-myRed pb-12">Why Hire Me As Your Developer?</h2>
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">
+            Why Hire Me As Your Developer?
+          </h1>
           <p>
             Having a digital presence has never been more important than it is now. With consumers shifting more of
             their activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
@@ -116,9 +120,9 @@ const ServicesList = () => {
           </p>
           &nbsp;
           <p>
-            This is a partnership that will last beyond this project and I want you to be a part of the process.
-            From the initial meeting, through the design and build process, all the way to launching your website
-            I&apos;ll be right by your side providing help and support.
+            This is a partnership that will last beyond this project and I want you to be a part of the process. From
+            the initial meeting, through the design and build process, all the way to launching your website I&apos;ll
+            be right by your side providing help and support.
           </p>
           &nbsp;
           <p>
