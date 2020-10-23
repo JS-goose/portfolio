@@ -24,7 +24,7 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="cta lg:mt-48 shadow-2xl">
+    <section className="cta md:mt-12 xl:mt-48 shadow-2xl">
       <article className="p-6">
         <Image fluid={query.me.childImageSharp.fluid} className="me-img" />
         <div className="flex flex-row justify-center sm:pt-2">
@@ -33,28 +33,28 @@ const CallToAction = () => {
         </div>
       </article>
       <span className="border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4" />
-      <article className="p-3 text-lg">
+      <article className="p-3 sm:text-sm md:text-base lg:text-lg">
         <div className="flex flex-col justify-evenly max-w-3xl h-full">
-          <h1 className="text-3xl">
+          <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             I build blazing fast, functional websites that help businesses connect with their customers!
           </h1>
-          <p className="leading-8">
+          <p className="lg:leading-8">
             I&apos;m a freelance developer specializing in helping people and businesses expand their online presence,
             reach more customers, and broaden their audience!
           </p>
-          <p className="leading-8">
+          <p className="lg:leading-8">
             Are you looking for a developer design, build, and publish your website for the world to see? You&apos;ve
             come to the right place then my friend!
           </p>
           <h4 className="mt-2 font-bold"> Let’s launch your project together!</h4>
           <div className="flex mt-4 text-white w-full">
-            <span className="flex bg-myPurple p-2 rounded-sm cta-buttons text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
+            <span className="flex bg-myPurple p-2 rounded-sm cta-buttons sm:text-sm md:text-base lg:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
               <a href="#hire-me" rel="noopener noreferrer" className="flex justify-center items-center font-semibold">
                 Hire Me For Your Project
-                <img src={checkmark} alt="" className="pl-2" />
+                <img src={checkmark} alt="" className="pl-2 sm:invisible lg:visible" />
               </a>
             </span>
-            <span className="ml-48 p-2 rounded-sm cta-buttons text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
+            <span className="ml-48 p-2 rounded-sm cta-buttons sm:text-sm md:text-base lg:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
               <a href="#services" rel="noopener noreferrer" className="flex justify-center items-center font-semibold">
                 See My Services
                 <svg

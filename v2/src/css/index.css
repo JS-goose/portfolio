@@ -12,7 +12,7 @@
   position: absolute !important;
   /* margin-top: -50rem; */
   top: 0;
-  margin-left: 10rem;
+  margin-left: 20rem;
   z-index: 0;
 }
 
@@ -31,6 +31,7 @@
   top: 0;
   left: 0;
   margin-top: 12rem;
+  z-index: 0;
 }
 
 @media screen and (max-width: 1840px) {
@@ -43,7 +44,7 @@
   .planet {
     height: 35rem;
     width: 35rem;
-    margin-left: 0;
+    margin-left: 5rem;
   }
 
   .rocket {
