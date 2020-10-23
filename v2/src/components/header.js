@@ -27,7 +27,7 @@ function Header() {
 
   return (
     <header className="bg-myPurple text-white z-10">
-      <div className="flex flex-wrap items-center md:justify-center lg:justify-between max-w-6xl">
+      <div className="flex flex-wrap items-center md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full">
         <span className="flex items-center">
           <Link to="/" onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
             <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? "logoNotHovered" : "logo"} />
