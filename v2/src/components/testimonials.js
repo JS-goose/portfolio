@@ -100,7 +100,7 @@ const Testimonials = () => {
           <div
             key={index}
             data-key={index + 1}
-            className="testimonials-container-2 flex rounded-sm p-8 items-center justify-around max-w-2xl">
+            className="testimonials-container-2 flex rounded-sm p-6 items-center justify-around max-w-2xl">
             <Image
               className="testimonials-images"
               fluid={
@@ -117,10 +117,10 @@ const Testimonials = () => {
                   : ""
               }
             />
-            <div>
-              <h4 className="text-2xl">{card.name}</h4>
-              <p>{card.title}</p>
-              <p>
+            <div className="pl-4">
+              <h4 className="text-2xl text-myRed">{card.name}</h4>
+              <p className="text-myPurple">{card.title}</p>
+              <p className="text-myPurple">
                 <a href={card.website}>{card.company}</a>
               </p>
               <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg">{card.comment}</p>
