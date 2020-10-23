@@ -29,7 +29,7 @@ const Testimonials = () => {
       name: `Caleb Helton`,
       company: `Long State Breaks`,
       title: `Owner/Founder`,
-      comment: `"Jonathan was able to identify pain points about our previous website and then deliver solutions to those issues - I'm looking for reasons to work with him again."`,
+      comment: `"Jonathan was able to identify pain points with our previous website and then address those issues with the website he built. He's my go-to for any future projects."`,
     },
     {
       name: `Keith Olson`,
@@ -104,7 +104,7 @@ const Testimonials = () => {
             data-key={index + 1}
             className="testimonials-container-2 flex rounded-sm p-6 items-center justify-around max-w-2xl">
             <Image
-              className="testimonials-images"
+              className="testimonials-images shadow-lg"
               fluid={
                 index + 1 === 1
                   ? query.stu.childImageSharp.fluid
