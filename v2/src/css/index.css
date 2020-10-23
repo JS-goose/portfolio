@@ -34,6 +34,20 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .astronaut {
+    display: none;
+  }
+
+  .planet {
+    display: none;
+  }
+
+  .rocket {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1840px) {
   .astronaut {
     width: 19rem;
