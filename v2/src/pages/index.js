@@ -45,8 +45,8 @@ function IndexPage() {
       <div className="index-wrapper">
         <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
         <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
-        <CTA />
         <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
+        <CTA />
         <SocialSection />
       </div>
       <ServicesList />
