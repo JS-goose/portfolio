@@ -3,6 +3,7 @@
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: repeat(auto, 1fr);
   max-width: 100rem;
+  column-gap: 8rem;
 }
 
 [data-key]:nth-of-type(odd) {
@@ -11,7 +12,6 @@
 
 .testimonials-container-1 {
   grid-column: 1;
-  align-items: center;
   height: 100%;
   grid-row: 3 / span 3;
 }

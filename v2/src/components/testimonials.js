@@ -15,27 +15,27 @@ const Testimonials = () => {
       name: `Tracy Johnson`,
       company: `Tracy's Upholstery`,
       title: `Owner`,
-      comment: `"Knowledgeable, independent, and trustworthy - working with Jonathan was nothing but a phenomenal experience!"`,
+      comment: `"Jonathan helped my business see increased growth and revenue with the website he built - I will gladly work with him again on future projects."`,
       website: `https://https://www.tracys-upholstery.com/`,
     },
     {
       name: `Michael Masor`,
       company: `Annuity Market Pro`,
       title: `CEO/Founder`,
-      comment: `"I like to get straight to the point. Jonathan helped my business see increased growth and revenue - he's amazing!"`,
+      comment: `"Knowledgeable, independent, fair, and trustworthy - working with Jonathan was nothing but a phenomenal experience!"`,
       website: `https://www.annuitymarketpro.com/`,
     },
     {
       name: `Caleb Helton`,
       company: `Long State Breaks`,
       title: `Owner/Founder`,
-      comment: `"Jonathan was able to identify pain points about our previous website and then deliver solutions to those issues - I'm looking for reasons to work with him again!"`,
+      comment: `"Jonathan was able to identify pain points about our previous website and then deliver solutions to those issues - I'm looking for reasons to work with him again."`,
     },
     {
       name: `Keith Olson`,
       company: `Conduit PC Shop`,
       title: `Owner`,
-      comment: `"I came to Jonathan with only a vision. He worked with me every step of the way through frequent communication and brought that vision to life. I'm very happy with the results he provided."`,
+      comment: `"I came to Jonathan with only a vision. He worked with me every step of the way through frequent communication and brought that vision to life. I'm very happy with the results."`,
     },
     // {name: `Steve Flannery`, company: `Steve's PC Shop`, comment: `Testimonial here`, website: `https://www.localcomputer.expert/`},
   ];
@@ -85,16 +85,18 @@ const Testimonials = () => {
       <article className="testimonials-container w-full items-center p-12">
         <div className="testimonials-container-1">
           <h3>Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
+          <p className="pt-4">
+            If you have a project or an idea, I&apos;d love to work with you to bring it to life. My passon is helping
+            people and small businesses get up and running with a fast, reliable, customer focused website.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p className="pt-4">Let me put that passion to work for you.</p>
+          <div className="testimonials-container-link-container mt-6">
+            <a
+              href="#hire-me"
+              className="bg-myPurple pt-3 pl-4 pr-4 pb-2 rounded-sm text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
+              Get Started Today!
+            </a>
+          </div>
         </div>
         {testimonials.map((card, index) => (
           <div
@@ -125,9 +127,6 @@ const Testimonials = () => {
             </div>
           </div>
         ))}
-        <div className="testimonials-container-link-container">
-          <a href="#hire-me">Contact Me</a>
-        </div>
       </article>
     </section>
   );
