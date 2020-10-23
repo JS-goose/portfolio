@@ -87,7 +87,7 @@ const ServicesList = () => {
           <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="max-w-3xl" />
         </div>
         <div>
-          <h2 className="text-myPurple pb-12">Why Hire Me As Your Developer?</h2>
+          <h2 className="text-myRed pb-12">Why Hire Me As Your Developer?</h2>
           <p>
             Having a digital presence has never been more important than it is now. With consumers shifting more of
             their activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
