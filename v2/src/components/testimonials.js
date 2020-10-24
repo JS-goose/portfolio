@@ -84,7 +84,7 @@ const Testimonials = () => {
     <section className="bg-white w-full flex items-center justify-center">
       <article className="testimonials-container w-full items-center p-12">
         <div className="testimonials-container-1">
-          <h3>Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
+          <h3 className="text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
           <p className="pt-4">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life. My passon is helping
             people and small businesses get up and running with a fast, reliable, customer focused website.

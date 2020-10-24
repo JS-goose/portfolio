@@ -67,7 +67,7 @@ const ServicesList = () => {
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full">
       <div className="services-list-container text-lg items-center">
         <div id="services">
-          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
             What Can I Do For You and Your Business?
           </h1>
           <ul>
@@ -89,7 +89,7 @@ const ServicesList = () => {
           <img src={query.shop.publicURL} alt="a man standing outside a shop of books" />
         </div>
         <div>
-          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
             Why Hire Me As Your Developer?
           </h1>
           <p>
