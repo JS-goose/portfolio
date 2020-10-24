@@ -13,6 +13,27 @@
   column-gap: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .services-list-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .why-hire-me-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-list {
+    margin-top: 3rem;
+  }
+
+  .why-hire-me-container-books-img {
+    max-width: 40rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
 @media screen and (max-width: 1281px) {
   .services-list-container {
     margin: 3rem;

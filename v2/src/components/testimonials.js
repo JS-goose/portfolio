@@ -83,7 +83,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white w-full flex items-center justify-center">
       <article className="testimonials-container w-full items-center p-12">
-        <div className="testimonials-container-1">
+        <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg">
           <h3 className="text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
           <p className="pt-4">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life. My passon is helping
@@ -102,7 +102,7 @@ const Testimonials = () => {
           <div
             key={index}
             data-key={index + 1}
-            className="testimonials-container-2 flex rounded-sm p-6 items-center justify-around max-w-2xl">
+            className="testimonials-container-2 flex rounded-sm p-6 items-center justify-around max-w-2xl sm:text-sm md:text-base">
             <Image
               className="testimonials-images shadow-lg"
               fluid={

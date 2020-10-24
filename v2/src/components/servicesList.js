@@ -66,7 +66,7 @@ const ServicesList = () => {
   return (
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full">
       <div className="services-list-container text-lg items-center">
-        <div id="services">
+        <div className="services-list">
           <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
             What Can I Do For You and Your Business?
           </h1>
@@ -80,13 +80,13 @@ const ServicesList = () => {
         </div>
         <div>
           {/* Image courtesy of https://undraw.co */}
-          <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts" />
+          <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts"/>
         </div>
       </div>
       <div className="why-hire-me-container text-lg items-center sm:text-sm md:text-base lg:text-lg">
         <div>
           {/* Image courtesy of https://undraw.co */}
-          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" />
+          <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="why-hire-me-container-books-img"/>
         </div>
         <div>
           <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
