@@ -82,7 +82,7 @@ const Testimonials = () => {
 
   return (
     <section className="bg-white w-full flex items-center justify-center">
-      <article className="testimonials-container w-full items-center p-12">
+      <article className="testimonials-container w-full items-center p-12 md:gap-4">
         <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg">
           <h3 className="text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
           <p className="pt-4">
