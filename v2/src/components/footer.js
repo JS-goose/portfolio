@@ -46,7 +46,7 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="md:hidden">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p>
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
@@ -59,7 +59,7 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="md:hidden">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p>
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
@@ -72,7 +72,7 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="md:hidden">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p>
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
@@ -85,7 +85,7 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="md:hidden">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p>
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
