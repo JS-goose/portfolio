@@ -1,5 +1,5 @@
 const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+const tailwindConfig = require("./tailwind.config");
 
 const fullConfig = resolveConfig(tailwindConfig);
 
@@ -52,7 +52,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require(`tailwindcss`)(tailwindConfig),
-          require(`autoprefixer`),
+          // require(`autoprefixer`),
           ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
         ],
       },
