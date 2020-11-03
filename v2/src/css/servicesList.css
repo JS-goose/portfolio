@@ -36,8 +36,18 @@
 
 @media screen and (max-width: 1281px) {
   .services-list-container {
+    margin: 1.5rem;
+  }
+  .why-hire-me-container {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .services-list-container {
     margin: 3rem;
   }
+
   .why-hire-me-container {
     margin: 3rem;
   }
