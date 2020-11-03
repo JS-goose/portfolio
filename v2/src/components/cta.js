@@ -49,16 +49,16 @@ const CallToAction = () => {
           <h4 className="mt-2 font-bold"> Let’s launch your project together!</h4>
           <div className="flex mt-4 text-white w-full">
             <span className="flex bg-myPurple p-2 rounded-sm cta-buttons sm:text-sm md:text-base lg:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
-              <a href="#hire-me" rel="noopener noreferrer" className="flex justify-center items-center font-semibold">
+              <a href="#hire-me" rel="noopener noreferrer" className="flex justify-center items-center lg:font-semibold">
                 Hire Me For Your Project
                 <img src={checkmark} alt="" className="pl-2 sm:invisible lg:visible" />
               </a>
             </span>
             <span className="ml-48 p-2 rounded-sm cta-buttons sm:text-sm md:text-base lg:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
-              <a href="#services" rel="noopener noreferrer" className="flex justify-center items-center font-semibold">
+              <a href="#services" rel="noopener noreferrer" className="flex justify-center items-center lg:font-semibold">
                 See My Services
                 <svg
-                  className="fill-current ml-1"
+                  className="fill-current ml-1 sm:invisible lg:visible"
                   width="26"
                   height="25"
                   viewBox="0 0 26 25"
