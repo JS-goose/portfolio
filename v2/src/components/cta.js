@@ -24,11 +24,11 @@ const CallToAction = () => {
     }
   `);
   return (
-    <section className="cta md:mt-12 xl:mt-24 shadow-2xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl">
-      <article className="p-6">
+    <section className="cta md:mt-12 xl:mt-24 shadow-2xl sm:max-w-full md:max-w-4xl lg:max-w-6xl">
+      <article className="sm:p-2 lg:p-6">
         <Image fluid={query.me.childImageSharp.fluid} className="me-img" />
         <div className="flex flex-row justify-center sm:pt-2">
-          <h5 className="text-lg font-Rubik">Hi, I&apos;m Jonathan</h5>
+          <h5 className="md:text-base lg:text-lg font-Rubik">Hi, I&apos;m Jonathan</h5>
           <Image fluid={query.hand.childImageSharp.fluid} className="h-8 w-8 ml-2" />
         </div>
       </article>
@@ -47,14 +47,14 @@ const CallToAction = () => {
             come to the right place then my friend!
           </p>
           <h4 className="mt-2 font-bold"> Let’s launch your project together!</h4>
-          <div className="flex sm:flex-col lg:flex-row mt-4 text-white w-full">
-            <span className="flex bg-myPurple p-2 rounded-sm cta-buttons sm:w-64 sm:text-sm md:text-base lg:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
+          <div className="flex flex-col md:flex-row mt-4 text-white w-full">
+            <span className="flex bg-myPurple p-2 rounded-sm cta-buttons sm:justify-center sm:w-full sm:text-sm md:text-base lg:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline">
               <a href="#hire-me" rel="noopener noreferrer" className="flex justify-center items-center lg:font-semibold">
                 Hire Me For Your Project
                 <img src={checkmark} alt="" className="pl-2" />
               </a>
             </span>
-            <span className="sm:ml-0 md:ml-4 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-64 sm:text-sm md:text-base lg:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
+            <span className="md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full sm:text-sm md:text-base lg:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
               <a href="#services" rel="noopener noreferrer" className="flex justify-center items-center lg:font-semibold">
                 See My Services
                 <svg

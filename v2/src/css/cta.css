@@ -26,18 +26,27 @@
     width: 12rem;
   }
 }
-@media screen and (min-width: 768px) {
-  .me-img {
-    height: 20rem;
-    width: 16rem;
+
+@media screen and (max-width: 640px) {
+  .why-hire-me-container-books-img {
+    max-width: 18rem !important;
   }
 }
+
+@media screen and (min-width: 868px) {
+  .me-img {
+    height: 16rem;
+    width: 12rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .me-img {
     height: 22rem;
     width: 18rem;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .me-img {
     height: 24rem;
