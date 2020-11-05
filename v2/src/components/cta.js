@@ -32,7 +32,7 @@ const CallToAction = () => {
           <Image fluid={query.hand.childImageSharp.fluid} className='h-8 w-8 ml-2' />
         </div>
       </article>
-      <span className='invisible md:visible border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4' />
+      <span className='hidden md:visible border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4' />
       <article className='p-3 sm:text-sm md:text-base lg:text-lg'>
         <div className='flex flex-col justify-evenly max-w-3xl h-full'>
           <h1 className='sm:text-xs md:text-xl lg:text-2xl xl:text-3xl'>
@@ -48,7 +48,7 @@ const CallToAction = () => {
           </p>
           <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4>
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
-            <span className='flex bg-myPurple p-2 rounded-sm cta-buttons justify-center sm:w-full sm:text-sm md:text-base xl:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline'>
+            <span className='flex bg-myPurple p-2 rounded-sm cta-buttons justify-center mb-4 sm:w-full sm:text-sm md:text-base xl:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline'>
               <a
                 href='#hire-me'
                 rel='noopener noreferrer'
@@ -57,7 +57,7 @@ const CallToAction = () => {
                 <img src={checkmark} alt='' className='pl-2' />
               </a>
             </span>
-            <span className='md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full sm:text-sm md:text-base xl:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
+            <span className='md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
               <a
                 href='#services'
                 rel='noopener noreferrer'

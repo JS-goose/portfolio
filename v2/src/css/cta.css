@@ -20,12 +20,12 @@
   box-shadow: 3px 3px 10px rgba(22, 21, 20, 0.65);
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .me-img {
     height: 18rem;
     width: 12rem;
   }
-}
+} */
 
 @media screen and (max-width: 640px) {
   .cta {
@@ -39,8 +39,8 @@
 
   .me-img {
     align-self: center;
-    height: 12rem;
-    width: 8rem;
+    height: 14rem;
+    width: 10rem;
   }
 
   .me-img img {
