@@ -34,6 +34,12 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .why-hire-me-container-books-img {
+    max-width: 18rem !important;
+  }
+}
+
 @media screen and (max-width: 1281px) {
   .services-list-container {
     margin: 1.5rem;
