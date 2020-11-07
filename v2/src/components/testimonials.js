@@ -98,35 +98,37 @@ const Testimonials = () => {
             </a>
           </div>
         </div>
-        {testimonials.map((card, index) => (
-          <div
-            key={index}
-            data-key={index + 1}
-            className="testimonials-container-2 flex rounded-sm p-6 items-center justify-around max-w-2xl sm:text-sm md:text-base">
-            <Image
-              className="testimonials-images shadow-lg"
-              fluid={
-                index + 1 === 1
-                  ? query.stu.childImageSharp.fluid
-                  : index + 1 === 2
-                  ? query.tracy.childImageSharp.fluid
-                  : index + 1 === 3
-                  ? query.mike.childImageSharp.fluid
-                  : index + 1 === 4
-                  ? query.caleb.childImageSharp.fluid
-                  : index + 1 === 5
-                  ? query.keith.childImageSharp.fluid
-                  : ""
-              }
-            />
-            <div className="pl-4">
-              <h4 className="text-2xl text-myRed">{card.name}</h4>
-              <p className="text-myPurple">{card.title}</p>
-              <p className="text-myPurple">{card.company}</p>
-              <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg italic">{card.comment}</p>
+        <div className="testimonials-container-2">
+          {testimonials.map((card, index) => (
+            <div
+              key={index}
+              data-key={index + 1}
+              className="flex rounded-sm p-6 items-center justify-around max-w-2xl sm:text-sm md:text-base">
+              <Image
+                className="testimonials-images shadow-lg"
+                fluid={
+                  index + 1 === 1
+                    ? query.stu.childImageSharp.fluid
+                    : index + 1 === 2
+                    ? query.tracy.childImageSharp.fluid
+                    : index + 1 === 3
+                    ? query.mike.childImageSharp.fluid
+                    : index + 1 === 4
+                    ? query.caleb.childImageSharp.fluid
+                    : index + 1 === 5
+                    ? query.keith.childImageSharp.fluid
+                    : ""
+                }
+              />
+              <div className="pl-4">
+                <h4 className="text-2xl text-myRed">{card.name}</h4>
+                <p className="text-myPurple">{card.title}</p>
+                <p className="text-myPurple">{card.company}</p>
+                <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg italic">{card.comment}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </article>
     </section>
   );
