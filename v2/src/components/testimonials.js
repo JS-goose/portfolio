@@ -1,6 +1,6 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 
 const Testimonials = () => {
   const testimonials = [
@@ -81,31 +81,33 @@ const Testimonials = () => {
   `);
 
   return (
-    <section className="bg-white w-full flex items-center justify-center">
-      <article className="testimonials-container w-full items-center p-12 md:gap-4">
-        <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg">
-          <h3 className="text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-3xl">Here&apos;s Some of the Great Companies & People I&apos;ve Helped</h3>
-          <p className="pt-4">
+    <section className='bg-white w-full flex items-center justify-center'>
+      <article className='testimonials-container w-full items-center p-12 md:gap-4'>
+        <div className='testimonials-container-1 sm:text-sm md:text-base lg:text-lg'>
+          <h3 className='text-myRed sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
+            Here Are Just A Few of the Great Companies & People I&apos;ve Helped
+          </h3>
+          <p className='pt-4 sm:text-base md:text-xl'>
             If you have a project or an idea, I&apos;d love to work with you to bring it to life. My passon is helping
             people and small businesses get up and running with a fast, reliable, customer focused website.
           </p>
-          <p className="pt-4">Let me put that passion to work for you.</p>
-          <div className="testimonials-container-link-container mt-6">
+          <p className='pt-4 sm:text-base md:text-xl'>Let me put that passion to work for you.</p>
+          <div className='testimonials-container-link-container mt-6'>
             <a
-              href="#hire-me"
-              className="bg-myPurple pt-3 pl-4 pr-4 pb-2 rounded-sm text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white">
+              href='#hire-me'
+              className='bg-myPurple pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
               Get Started Today!
             </a>
           </div>
         </div>
-        <div className="testimonials-container-2">
+        <div className='testimonials-container-2'>
           {testimonials.map((card, index) => (
             <div
               key={index}
               data-key={index + 1}
-              className="flex rounded-sm p-6 items-center justify-around max-w-2xl sm:text-sm md:text-base">
+              className='customer-testimonial-container flex rounded-sm sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
               <Image
-                className="testimonials-images shadow-lg"
+                className='testimonials-images shadow-lg'
                 fluid={
                   index + 1 === 1
                     ? query.stu.childImageSharp.fluid
@@ -117,14 +119,14 @@ const Testimonials = () => {
                     ? query.caleb.childImageSharp.fluid
                     : index + 1 === 5
                     ? query.keith.childImageSharp.fluid
-                    : ""
+                    : ''
                 }
               />
-              <div className="pl-4">
-                <h4 className="text-2xl text-myRed">{card.name}</h4>
-                <p className="text-myPurple">{card.title}</p>
-                <p className="text-myPurple">{card.company}</p>
-                <p className="sm:max-w-xs md:max-w-sm lg:max-w-lg italic">{card.comment}</p>
+              <div className='pl-4 sm:text-lg md:text-xl'>
+                <h4 className='lg:text-2xl text-myRed'>{card.name}</h4>
+                <p className='text-myPurple hidden md:inline'>{card.title}</p>
+                <p className='text-myPurple hidden md:inline'>{card.company}</p>
+                <p className='sm:max-w-full md:max-w-sm lg:max-w-lg italic'>{card.comment}</p>
               </div>
             </div>
           ))}
