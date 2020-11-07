@@ -27,25 +27,25 @@ function Header() {
 
   return (
     <header className='bg-myPurple text-white z-10'>
-      <div className='flex flex-wrap items-center md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full'>
+      <div className='flex flex-wrap items-center justify-between md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full'>
         <span className='flex items-center'>
           <Link to='/' onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
             <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? 'logoNotHovered' : 'logo'} />
           </Link>
-          <p className='mb-6'>Jonathan Sexton</p>
+          <p className='hidden md:visible mb-2 md:mb-4 lg:mb-6 sm:text-sm md:text-base lg:text-lg'>Jonathan Sexton</p>
         </span>
 
         <button
           type='button'
           className='items-center block px-3 py-2 border-white rounded-sm md:hidden'
           onClick={() => toggleExpansion(!isExpanded)}>
-          <svg className='w-3 h-3 fill-current' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+          <svg className='w-8 h-8 fill-current' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
             <title>Menu</title>
             <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
           </svg>
         </button>
 
-        <nav className={`${isExpanded ? `block` : `hidden`} md:block md:items-center w-full md:w-auto`}>
+        <nav className={`${isExpanded ? `flex` : `hidden`} justify-around md:block md:items-center w-full md:w-auto`}>
           {[
             {
               route: `/consulting`,
