@@ -67,12 +67,12 @@ const ServicesList = () => {
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full">
       <div className="services-list-container text-lg items-center">
         <div className="services-list">
-          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
             What Can I Do For You and Your Business?
           </h1>
           <ul>
             {services.map((service) => (
-              <li key={service.number} className="pb-4 sm:text-sm md:text-base lg:text-lg">
+              <li key={service.number} className="pb-4 sm:text-base md:text-lg lg:text-xl">
                 {service.number}. {service.desc}
               </li>
             ))}
@@ -83,13 +83,13 @@ const ServicesList = () => {
           <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts"/>
         </div>
       </div>
-      <div className="why-hire-me-container text-lg items-center sm:text-sm md:text-base lg:text-lg">
+      <div className="why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl">
         <div>
           {/* Image courtesy of https://undraw.co */}
           <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="why-hire-me-container-books-img"/>
         </div>
         <div>
-          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
+          <h1 className="text-myRed md:pb-6 lg:pb-12 sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
             Why Hire Me As Your Developer?
           </h1>
           <p>

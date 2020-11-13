@@ -2,10 +2,10 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <section className="p-2 flex flex-col items-center" id="hire-me">
-      <article className="get-started-form-container border border-1 p-12 rounded-sm shadow mb-8">
-        <h2 className="text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">Let&apos;s get started on your project!</h2>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
+    <section className="get-started-section-container md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl" id="hire-me">
+      <article className="get-started-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8">
+        <h2 className="text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">Let&apos;s get started on your project!</h2>
+        <form className="get-started-contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
           <p className="invisible">
             <label htmlFor="bots-say-what">
               Bots say what? <input type="text" name="bots-say-what" id="bots-say-what" />
@@ -60,9 +60,9 @@ const GetStarted = () => {
           </fieldset>
           <button
             type="submit"
-            className="flex border border-1 bg-white shadow-md text-lg p-4 rounded-sm transition duration-300 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
-            <span className="pr-2">Submit Request</span>{" "}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            className="flex border border-1 bg-white shadow-md p2 rounded-sm transition duration-300 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed">
+            <span className="get-started-form-button-span">Submit Request</span>{" "}
+            <svg className="sm:hidden lg:inline-block lg:mt-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="done_outline_24px">
                 <path
                   id="icon/action/done_outline_24px"

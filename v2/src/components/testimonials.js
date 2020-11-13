@@ -83,7 +83,7 @@ const Testimonials = () => {
   return (
     <section className='bg-white w-full flex items-center justify-center'>
       <article className='testimonials-container w-full items-center p-12 md:gap-4'>
-        <div className='testimonials-container-1 sm:text-sm md:text-base lg:text-lg'>
+        <div className='testimonials-container-1 sm:text-sm md:text-base lg:text-lg sm:mb-10 md:mb-8 lg:mb-0'>
           <h3 className='text-myRed sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
             Here Are Just A Few of the Great Companies & People I&apos;ve Helped
           </h3>
