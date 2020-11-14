@@ -50,32 +50,32 @@ function Header() {
             {
               route: `/consulting`,
               title: `Consulting`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
               route: `/about`,
               title: `About`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
               route: `https://jonathansexton.me/blog`,
               title: `Articles`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
               route: `/projects`,
               title: `Projects`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
               route: `/team`,
               title: `Team`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 text-xl hover:text-myRed`,
+              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
               route: `#hire-me`,
               title: `Hire Me`,
-              classname: `pt-2 pr-2 pl-2 pb-1 rounded-sm text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline`,
+              classname: `pt-2 pr-2 pl-2 pb-1 rounded-sm sm:lg md:text-xl lg:text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline`,
             },
           ].map((link) =>
             link.route === 'https://jonathansexton.me/blog' ? (

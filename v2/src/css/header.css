@@ -10,9 +10,11 @@ a.nav-link:visited {
   padding-bottom: 4px;
   border-bottom: 10px solid transparent;
 }
+
 a.nav-link:hover {
   background-size: 100% 6px;
 }
+
 @supports (-ms-ime-align: auto) {
   a.nav-link,
   a.nav-link:visited {
@@ -24,6 +26,7 @@ a.nav-link:hover {
     background-size: 100% 2px;
   }
 }
+
 .logoNotHovered {
   transition: transform 0.5s ease-in;
   transform: rotate(0);
