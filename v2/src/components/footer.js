@@ -23,11 +23,11 @@ const articles = [
   },
 ];
 const Footer = () => (
-  <footer className="text-white bg-myPurple">
+  <footer className="text-white bg-myPurple sm:text-base md:text-lg">
     <article className="flex justify-between mx-auto md:p-8 bg-myRed">
       <div>
         <ul>
-          <li className="pb-4">
+          <li className="pb-4 hidden lg:inline-block">
             <h4 className="text-xl">ME</h4>
           </li>
           <li>
@@ -41,7 +41,7 @@ const Footer = () => (
       </div>
       <div>
         <ul className="w-full">
-          <li className="pb-4">
+          <li className="pb-4 hidden lg:inline-block">
             <h4 className="text-xl">CONNECT</h4>
           </li>
           <li>
@@ -98,9 +98,9 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div>
+      <div className="hidden md:inline">
         <ul>
-          <li className="pb-4">
+          <li className="pb-4 hidden lg:inline-block">
             <h4 className="text-xl">READ: Recent Articles</h4>
           </li>
           {articles.map((article, index) => {
@@ -116,7 +116,7 @@ const Footer = () => (
       </div>
       <div>
         <ul>
-          <li className="pb-4">
+          <li className="pb-4 hidden lg:inline-block">
             <h4 className="text-xl">WORK</h4>
           </li>
           <li>

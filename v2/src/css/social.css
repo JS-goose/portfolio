@@ -42,6 +42,12 @@
   text-orientation: mixed;
 }
 
+@media screen and (max-width: 450px) {
+  .social-container {
+    padding-left: 6rem !important;
+  }
+}
+
 @media screen and (max-width: 641px) {
   .social-container {
     margin-bottom: -3rem !important;
