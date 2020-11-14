@@ -35,7 +35,7 @@ const CallToAction = () => {
       <span className='hidden md:visible border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4' />
       <article className='p-3 sm:text-sm md:text-base lg:text-lg'>
         <div className='flex flex-col justify-evenly max-w-3xl h-full'>
-          <h1 className='sm:text-xs md:text-xl lg:text-2xl xl:text-3xl'>
+          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
             I build blazing fast, functional websites that help businesses connect with their customers!
           </h1>
           <p className='lg:leading-8'>

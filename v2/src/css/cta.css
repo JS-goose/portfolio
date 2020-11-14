@@ -39,12 +39,17 @@
 
   .me-img {
     align-self: center;
-    height: 14rem;
-    width: 10rem;
   }
 
   .me-img img {
     padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .me-img {
+    height: 16rem;
+    width: 12rem;
   }
 }
 
