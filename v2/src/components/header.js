@@ -32,7 +32,7 @@ function Header() {
           <Link to='/' onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
             <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? 'logoNotHovered' : 'logo'} />
           </Link>
-          <p className='hidden md:visible mb-2 md:mb-4 lg:mb-6 sm:text-sm md:text-base lg:text-lg'>Jonathan Sexton</p>
+          <p className='hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:text-sm md:text-base lg:text-lg'>Jonathan Sexton</p>
         </span>
 
         <button
