@@ -1,5 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
+import ProjectList from '../components/projectList'
 
 const Projects = () => (
   <>
@@ -14,7 +15,9 @@ const Projects = () => (
       ]}
       title="Projects"
     />
-    <div>Hello from projects page!</div>
+    <div>Hello from projects page!
+      <ProjectList />
+    </div>
   </>
 );
 
