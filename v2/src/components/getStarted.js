@@ -4,7 +4,7 @@ const GetStarted = () => {
   return (
     <section className="get-started-section-container md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl" id="hire-me">
       <article className="get-started-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8">
-        <h2 className="text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">Let&apos;s get started on your project!</h2>
+        <h2 className="text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">Let&apos;s get started on your project today!</h2>
         <form className="get-started-contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
           <p className="invisible">
             <label htmlFor="bots-say-what">
