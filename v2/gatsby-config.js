@@ -1,5 +1,5 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config");
+const resolveConfig = require('tailwindcss/resolveConfig');
+const tailwindConfig = require('./tailwind.config');
 
 const fullConfig = resolveConfig(tailwindConfig);
 
@@ -11,10 +11,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ["Open Sans", "Roboto", "Kumbh Sans", "Rubik"],
+          families: ['Open Sans', 'Roboto', 'Kumbh Sans', 'Rubik'],
         },
       },
     },
@@ -42,9 +42,9 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
-        // icon: ``,
+        icon: `src/images/icons/Brand-min.png`,
       },
     },
     {
@@ -52,7 +52,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require(`tailwindcss`)(tailwindConfig),
-          // require(`autoprefixer`),
+          require(`autoprefixer`),
           ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
         ],
       },

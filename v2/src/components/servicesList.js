@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-// import Image from "gatsby-image";
 
 const services = [
   {
@@ -43,20 +42,10 @@ const ServicesList = () => {
   const query = useStaticQuery(graphql`
     query {
       decisions: file(relativePath: { eq: "undraw_business_decisions_gjwy.svg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
         extension
         publicURL
       }
       shop: file(relativePath: { eq: "undraw_business_shop_qw5t.svg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
         extension
         publicURL
       }
