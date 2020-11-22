@@ -14,8 +14,10 @@ const BlogPost = ({ data }) => {
         description={data.wordpressPost.excerpt}
       />
       <h1>{data.wordpressPost.title}</h1>
+      {/* !This needs work as the images are not loading */}
+        {/* <Image fluid={} /> */}
       <div>{data.wordpressPost.excerpt}</div>
-      <div className="text-white">
+      <div className='text-white'>
         Categories here:
         {data.wordpressPost.categories.map((category) => {
           return category.name;
@@ -30,9 +32,6 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
   data: propTypes.object.isRequired,
-  title: propTypes.string.isRequired,
-  excerpt: propTypes.string.isRequired,
-  date: propTypes.string.isRequired,
 };
 
 export default BlogPost;
@@ -47,6 +46,9 @@ export const query = graphql`
         name
       }
       author {
+        name
+      }
+      tags {
         name
       }
     }
