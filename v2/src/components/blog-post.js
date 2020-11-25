@@ -16,7 +16,7 @@ const BlogPost = ({ data }) => {
       <h1>{data.wordpressPost.title}</h1>
       {/* !This needs work as the images are not loading */}
         {/* <Image fluid={} /> */}
-      <div>{data.wordpressPost.excerpt}</div>
+      <div dangerouslySetInnerHTML={{__html:data.wordpressPost.excerpt}}></div>
       <div className='text-white'>
         Categories here:
         {data.wordpressPost.categories.map((category) => {
