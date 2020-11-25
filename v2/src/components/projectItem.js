@@ -4,7 +4,11 @@ import propTypes from 'prop-types';
 // import BackgroundImage from 'gatsby-background-image';
 
 const ProjectItem = (props) => {
-  return <div>{props.projects.companyName}</div>;
+  return (
+    <article className='text-white border border-2 h-full w-full p-2'>
+      {props.projects.projectName} - {props.projects.link}
+    </article>
+  );
 };
 
 ProjectItem.propTypes = {
