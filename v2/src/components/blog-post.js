@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
         })}
       </div>
       <p>
-        Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
+        Written by: {data.wordpressPost.author.name} on {data.wordpressPost.date}
       </p>
     </div>
   );
