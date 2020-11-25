@@ -6,6 +6,8 @@ import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 
 const BlogPost = ({ data }) => {
+  // ! This needs some work as it's not complete //
+  // ! Also, I need to build the page component for all blog posts //
   return (
     <div>
       <SEO
