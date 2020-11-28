@@ -4,9 +4,9 @@ import Image from 'gatsby-image';
 
 function AboutPage() {
   return (
-    <section className="flex flex-col items-center">
+    <section className='flex flex-col items-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className="p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl">
+      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
         <Image></Image>
         <p>
           I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
