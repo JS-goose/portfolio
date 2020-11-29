@@ -4,11 +4,10 @@ import SEO from '../components/seo';
 
 function AboutPage() {
   return (
-    // flex flex-col items-center min-w-full
     <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
-        <h1>Who I Am</h1>
+      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Who I Am</h1>
         <p>Hello! I&apos;m Jonathan</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet velit vel tellus accumsan dignissim
@@ -17,8 +16,8 @@ function AboutPage() {
           id mi eu, aliquam blandit sapien.
         </p>
       </article>
-      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
-        <h1>What I Love</h1>
+      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">What I Love</h1>
         <p>
           When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
           <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the chance
@@ -27,8 +26,8 @@ function AboutPage() {
           most important people in my life.
         </p>
       </article>
-      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
-        <h1>What I Do</h1>
+      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">What I Do</h1>
         <p>
           I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
           I&apos;ve been creating in one form or another since I began exploring the internet in the late 90&apos;s.
@@ -49,7 +48,7 @@ function AboutPage() {
           &nbsp; where I write articles and share resources.
         </p>
       </article>
-      <article className='about-containers p-4 mx-auto' id='hire-me'>
+      <article className='about-containers md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl' id='hire-me'>
         <div className='about-form-container border border-1 p-12 rounded-sm shadow mb-8'>
           <h2 className='text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-4xl'>
             Let&apos;s get started on your project!
