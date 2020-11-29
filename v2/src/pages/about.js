@@ -4,13 +4,13 @@ import SEO from '../components/seo';
 
 function AboutPage() {
   return (
-    <section className='w-screen flex flex-col items-center overflow-hidden'>
+    <section className='overflow-hidden flex flex-col'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
+      <article className='p-4 bg-white text-myBlack'>
         <h1>Who I Am</h1>
         <p>Hello! I&apos;m Jonathan</p>
       </article>
-      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
+      <article className='p-4 bg-white text-myBlack'>
         <h1>What I Love</h1>
         <p>
           When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
@@ -20,7 +20,7 @@ function AboutPage() {
           most important people in my life.
         </p>
       </article>
-      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
+      <article className='p-4 bg-white text-myBlack'>
         <h1>What I Do</h1>
         <p>
           I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
