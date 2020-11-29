@@ -1,28 +1,17 @@
 import React from 'react';
 import SEO from '../components/seo';
-import Image from 'gatsby-image';
+// import Image from 'gatsby-image';
 
 function AboutPage() {
   return (
-    <section className='flex flex-col items-center'>
+    <section className='w-screen flex flex-col items-center overflow-hidden'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
       <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
-        <Image></Image>
-        <p>
-          I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
-          I&apos;ve been creating in one form or another since I began exploring the internet in the late 90&apos;s.
-          I&apos;ve always been passionate about finding creative solutions to problems and I apply that to everything I
-          do. My specialty is full website development from the ground up using semantic HTML, CSS, and JavaScript.
-        </p>
-
-        <p>
-          I love using technology to bring people together and sharing everything I&apos;ve learned. I even have a
-          <a href='https://jonathansexton.me/blog' target='_blank' rel='noopener noreferrer'>
-            blog
-          </a>
-          where I write articles and share resources.
-        </p>
-
+        <h1>Who I Am</h1>
+        <p>Hello! I&apos;m Jonathan</p>
+      </article>
+      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
+        <h1>What I Love</h1>
         <p>
           When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
           <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the chance
@@ -30,11 +19,27 @@ function AboutPage() {
           project or fixing something around the house you&apos;ll likely find me outside on an adventure with the two
           most important people in my life.
         </p>
-
+      </article>
+      <article className='p-4 bg-white text-myBlack sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
+        <h1>What I Do</h1>
+        <p>
+          I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
+          I&apos;ve been creating in one form or another since I began exploring the internet in the late 90&apos;s.
+          I&apos;ve always been passionate about finding creative solutions to problems and I apply that to everything I
+          do. My specialty is full website development from the ground up using semantic HTML, CSS, and JavaScript.
+        </p>
         <p>
           If you have any questions about me or would like to talk, all my social media links can be found at the top
           and bottom of this page. I would love to connect with you! You can also swing by my blog and read some
           articles to see what I&apos;m up to.
+        </p>
+        <p>
+          I love using technology to bring people together and sharing everything I&apos;ve learned. I even have a
+          &nbsp;
+          <a href='https://jonathansexton.me/blog' target='_blank' rel='noopener noreferrer'>
+            blog
+          </a>
+          &nbsp; where I write articles and share resources.
         </p>
       </article>
       <article className='p-2 flex flex-col items-center' id='hire-me'>
