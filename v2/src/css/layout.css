@@ -1,11 +1,11 @@
-.layout-wrapper {
+/* .layout-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   color: #161514;
-}
+} */
 
-main {
+/* main {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -16,4 +16,4 @@ main {
   width: 100%;
   justify-content: space-between;
   flex: 1 1 0%;
-}
+} */
