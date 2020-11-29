@@ -7,17 +7,20 @@ function AboutPage() {
     <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Who I Am</h1>
-        <p>Hello! I&apos;m Jonathan</p>
+        <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 mb-8'>Who I Am</h1>
+        <p className="text-2xl mb-4">
+          Hello! I&apos;m Jonathan and I&apos;ve been creating in one form or another since I began exploring the
+          internet in the late 90&apos;s.
+        </p>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet velit vel tellus accumsan dignissim
-          tincidunt vel erat. Nam interdum tristique eros vel euismod. Maecenas eget bibendum orci. Proin volutpat
-          condimentum pulvinar. Nunc id erat efficitur, mollis mi nec, posuere odio. Suspendisse nisl lacus, fermentum
-          id mi eu, aliquam blandit sapien.
+          It all started when my brothers and I received our first PC and 56kb modem as a gift one year. As I explored
+          and grew older, I started to realize the power and reach of the internet could be so much more than just
+          chatting to people around the world (which was a blast!).
         </p>
       </article>
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">What I Love</h1>
+        <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>What I Love</h1>
         <p>
           When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
           <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the chance
@@ -27,10 +30,13 @@ function AboutPage() {
         </p>
       </article>
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">What I Do</h1>
+        <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>What I Do</h1>
+        <p>
+          I&apos;m a freelance web developer who primarily works with small businesses to generate more leads, reach
+          their customers, and increase revenue.
+        </p>
         <p>
           I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
-          I&apos;ve been creating in one form or another since I began exploring the internet in the late 90&apos;s.
           I&apos;ve always been passionate about finding creative solutions to problems and I apply that to everything I
           do. My specialty is full website development from the ground up using semantic HTML, CSS, and JavaScript.
         </p>
@@ -48,7 +54,9 @@ function AboutPage() {
           &nbsp; where I write articles and share resources.
         </p>
       </article>
-      <article className='about-containers md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl' id='hire-me'>
+      <article
+        className='about-containers md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl'
+        id='hire-me'>
         <div className='about-form-container border border-1 p-12 rounded-sm shadow mb-8'>
           <h2 className='text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-4xl'>
             Let&apos;s get started on your project!
