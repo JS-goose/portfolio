@@ -18,18 +18,20 @@ function AboutPage() {
   return (
     <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 mb-8'>Who I Am</h1>
-        <p className='text-2xl mb-4'>
-          Hello! I&apos;m Jonathan and I&apos;ve been creating in one form or another since I began exploring the
-          internet in the late 90&apos;s.
-        </p>
+      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <div>
+          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 mb-8'>Who I Am</h1>
+          <p className='text-2xl mb-4'>
+            Hello! I&apos;m Jonathan and I&apos;ve been creating in one form or another since I began exploring the
+            internet in the late 90&apos;s.
+          </p>
 
-        <p>
-          It all started when my brothers and I received our first PC and 56kb modem as a gift one year. As I explored
-          and grew older, I started to realize the power and reach of the internet could be so much more than just
-          chatting to people around the world (which was a blast!).
-        </p>
+          <p>
+            It all started when my brothers and I received our first PC and 56kb modem as a gift one year. As I explored
+            and grew older, I started to realize the power and reach of the internet could be so much more than just
+            chatting to people around the world (which was a blast!).
+          </p>
+        </div>
 
         <Image fluid={query.me.childImageSharp.fluid} className='me-in-dallas' />
       </article>
