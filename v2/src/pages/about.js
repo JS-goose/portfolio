@@ -4,13 +4,20 @@ import SEO from '../components/seo';
 
 function AboutPage() {
   return (
-    <section className='overflow-hidden flex flex-col'>
+    // flex flex-col items-center min-w-full
+    <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className='p-4 bg-white text-myBlack'>
+      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
         <h1>Who I Am</h1>
         <p>Hello! I&apos;m Jonathan</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet velit vel tellus accumsan dignissim
+          tincidunt vel erat. Nam interdum tristique eros vel euismod. Maecenas eget bibendum orci. Proin volutpat
+          condimentum pulvinar. Nunc id erat efficitur, mollis mi nec, posuere odio. Suspendisse nisl lacus, fermentum
+          id mi eu, aliquam blandit sapien.
+        </p>
       </article>
-      <article className='p-4 bg-white text-myBlack'>
+      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
         <h1>What I Love</h1>
         <p>
           When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
@@ -20,7 +27,7 @@ function AboutPage() {
           most important people in my life.
         </p>
       </article>
-      <article className='p-4 bg-white text-myBlack'>
+      <article className='about-containers p-4 bg-white text-myBlack mx-auto'>
         <h1>What I Do</h1>
         <p>
           I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
@@ -42,7 +49,7 @@ function AboutPage() {
           &nbsp; where I write articles and share resources.
         </p>
       </article>
-      <article className='p-2 flex flex-col items-center' id='hire-me'>
+      <article className='about-containers p-4 mx-auto' id='hire-me'>
         <div className='about-form-container border border-1 p-12 rounded-sm shadow mb-8'>
           <h2 className='text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-4xl'>
             Let&apos;s get started on your project!
