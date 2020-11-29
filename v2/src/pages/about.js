@@ -1,14 +1,26 @@
 import React from 'react';
 import SEO from '../components/seo';
-// import Image from 'gatsby-image';
+import Image from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 function AboutPage() {
+  const query = useStaticQuery(graphql`
+    query {
+      me: file(relativePath: { eq: "me_in_dallas.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
   return (
     <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 mb-8'>Who I Am</h1>
-        <p className="text-2xl mb-4">
+        <p className='text-2xl mb-4'>
           Hello! I&apos;m Jonathan and I&apos;ve been creating in one form or another since I began exploring the
           internet in the late 90&apos;s.
         </p>
@@ -18,6 +30,8 @@ function AboutPage() {
           and grew older, I started to realize the power and reach of the internet could be so much more than just
           chatting to people around the world (which was a blast!).
         </p>
+
+        <Image fluid={query.me.childImageSharp.fluid} className='me-in-dallas' />
       </article>
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>What I Love</h1>
