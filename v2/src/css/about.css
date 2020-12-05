@@ -7,6 +7,9 @@
   background-image: url('../images/formPattern.svg');
 }
 
-.me-in-dallas {
-  width: 10rem;
+.wifey-and-i-golfing {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10% 70% 10% 10%/70% 20% 10% 10%; */
+  border-radius: 10% 10%;
 }

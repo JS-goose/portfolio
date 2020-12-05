@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 function AboutPage() {
   const query = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "me_in_dallas.jpg" }) {
+      me: file(relativePath: { eq: "me_and_wifey_golfing.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
@@ -16,7 +16,7 @@ function AboutPage() {
     }
   `);
   return (
-    <section className='flex flex-col min-w-full max-w-screen items-center content-center'>
+    <section className='flex flex-col min-w-full max-w-screen items-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div>
@@ -27,13 +27,15 @@ function AboutPage() {
           </p>
 
           <p>
-            It all started when my brothers and I received our first PC and 56kb modem as a gift one year. As I explored
-            and grew older, I started to realize the power and reach of the internet could be so much more than just
-            chatting to people around the world (which was a blast!).
+            It all started when my brothers and I received our first PC and modem as a gift one year. We explored and
+            learned about the early internet with its seemingly endless possibilities.
+          </p>
+          <p>
+            As I explored and got older, I realized the power and reach of the internet could be so much more than just
+            chatting with people around the world (which was a blast in and of itself!).
           </p>
         </div>
-
-        <Image fluid={query.me.childImageSharp.fluid} className='me-in-dallas' />
+        <Image fluid={query.me.childImageSharp.fluid} className='wifey-and-i-golfing' />
       </article>
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>What I Love</h1>
