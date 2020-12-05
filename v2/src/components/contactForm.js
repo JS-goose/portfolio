@@ -1,11 +1,10 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   return (
-    <article className="get-started-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8">
-      <h2 className='text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl'>
-        Let&apos;s get started on your project today!
-      </h2>
+    <article className='get-started-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8'>
+      <h2 className='text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl'>{props.formTitle}</h2>
       <form
         className='get-started-contact-form'
         name='contact'
@@ -90,6 +89,10 @@ const ContactForm = () => {
       </form>
     </article>
   );
+};
+
+ContactForm.propTypes = {
+  formTitle: propTypes.string.isRequired,
 };
 
 export default ContactForm;
