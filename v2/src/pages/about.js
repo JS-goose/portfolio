@@ -77,7 +77,7 @@ function AboutPage() {
         id='hire-me'>
         <div className='about-form-container border border-1 p-12 rounded-sm shadow mb-8'>
           <h2 className='text-myRed sm:text-xs md:text-xl lg:text-2xl xl:text-4xl'>
-            Let&apos;s get started on your project!
+            I&apos;m available for hire!
           </h2>
           <form name='contact' method='POST' data-netlify='true' netlify-honeypot='bots-say-what'>
             <p className='invisible'>
