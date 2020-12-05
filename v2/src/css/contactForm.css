@@ -1,21 +1,21 @@
-.get-started-form-container {
+.contact-form-container {
   /* Image courtesy of https://www.svgbackgrounds.com */
   background-image: url('../images/formPattern.svg');
 }
 
-.get-started-contact-form input:valid {
+.contact-form input:valid {
   border: 3px solid #421ed2;
 }
 
 @media screen and (min-width: 400px) {
-  .get-started-form-button-span {
+  .contact-form-button-span {
     padding: 0.5rem;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .get-started-form-container {
+  .contact-form-container {
     padding: 1rem;
     margin-left: 1.5rem;
   }
