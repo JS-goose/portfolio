@@ -5,6 +5,7 @@ const ContactForm = (props) => {
   return (
     <article className='contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8'>
       <h2 className='text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl'>{props.formTitle}</h2>
+      <p>Let&apos;s talk about your project - I respond within 24 hours :)</p>
       <form
         className='contact-form'
         name='contact'
@@ -66,9 +67,9 @@ const ContactForm = (props) => {
         <button
           type='submit'
           className='flex border border-1 bg-white shadow-md p2 rounded-sm transition duration-300 hover:underline hover:text-white hover:bg-gradient-to-r from-myPurple to-myRed'>
-          <span className='get-started-form-button-span'>Submit Request</span>{' '}
+          <span className='contact-form-button-span'>Submit Request</span>{' '}
           <svg
-            className='sm:hidden lg:inline-block lg:mt-2'
+            className='sm:hidden lg:inline-block lg:mt-2 pr-1'
             width='24'
             height='24'
             viewBox='0 0 24 24'
