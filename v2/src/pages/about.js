@@ -9,7 +9,14 @@ const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl
 function AboutPage() {
   const query = useStaticQuery(graphql`
     query {
-      golfing: file(relativePath: { eq: "me_and_wifey_golfing.jpg" }) {
+      golfing: file(relativePath: { eq: "me_and_wifey_golfing-min.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      wedding: file(relativePath: { eq: "me_and_wifey_wedding-min.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,9 +45,14 @@ function AboutPage() {
             chatting with people around the world (which was a blast in and of itself!).
           </p>
         </div>
-        <Image fluid={query.golfing.childImageSharp.fluid} className='aboutImg w-full h-auto' />
+        <Image
+          fluid={query.golfing.childImageSharp.fluid}
+          className='aboutImg w-full h-auto'
+          alt='my wife and I on the golf course with black sunglasses on'
+        />
       </article>
-      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <Image fluid={query.wedding.childImageSharp.fluid} className='aboutImg w-full h-auto'/>
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
           <p>

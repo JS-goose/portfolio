@@ -1,5 +1,5 @@
 .about-containers {
-  max-width: 65%;
+  max-width: 75%;
 }
 
 .about-form-container {
@@ -8,5 +8,7 @@
 }
 
 .aboutImg {
-  border-radius: 10% 70% 10% 70%/70% 20% 70% 10%;
+  border-radius: 10% 70% 20% 70%/70% 20% 70% 20%;
+  max-width: 400px;
+  min-width: 250px;
 }
