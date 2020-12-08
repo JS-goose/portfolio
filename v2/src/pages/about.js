@@ -52,7 +52,7 @@ function AboutPage() {
         />
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <Image fluid={query.wedding.childImageSharp.fluid} className='aboutImg w-full h-auto'/>
+        <Image fluid={query.wedding.childImageSharp.fluid} className='aboutImg w-full h-auto' />
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
           <p>
@@ -99,6 +99,9 @@ function AboutPage() {
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
             make a type specimen book.
           </p>
+          <a
+            href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
+            rel='noopener noreferrer'>If/Else Podcast</a>
         </div>
       </article>
       <article
