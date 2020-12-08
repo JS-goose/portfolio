@@ -4,18 +4,19 @@ import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import ContactForm from '../components/contactForm';
 
-const H1 = ({ textContent }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>{textContent}</h1>;
+const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>{children}</h1>;
 
 function AboutPage() {
   const query = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "me_and_wifey_golfing.jpg" }) {
+      golfing: file(relativePath: { eq: "me_and_wifey_golfing.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
+
     }
   `);
   return (
@@ -38,12 +39,12 @@ function AboutPage() {
             chatting with people around the world (which was a blast in and of itself!).
           </p>
         </div>
-        <Image fluid={query.me.childImageSharp.fluid} className='wifey-and-i-golfing' />
+        <Image fluid={query.golfing.childImageSharp.fluid} className='aboutImg w-full h-auto' />
       </article>
       <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <H1>What I Love</H1>
         <p>
-          When I&apos;m not working I enjoy spending time with my <del>girlfriend</del>
+          When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
           <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the chance
           (rarely ever :D). I love wine, cooking, sports, technology, and the outdoors. If I&apos;m not building a
           project or fixing something around the house you&apos;ll likely find me outside on an adventure with the two
