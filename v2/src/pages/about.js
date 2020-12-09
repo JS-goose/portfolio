@@ -60,7 +60,7 @@ function AboutPage() {
             <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the
             chance (rarely ever :D). I love wine, cooking, sports, technology, and the outdoors. If I&apos;m not
             building a project or fixing something around the house you&apos;ll likely find me outside on an adventure
-            with the two most important people in my life.
+            with the three most important people in my life.
           </p>
         </div>
       </article>

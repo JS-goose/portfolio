@@ -12,3 +12,9 @@
   max-width: 400px;
   min-width: 250px;
 }
+
+.aboutImg:nth-of-type(1) {
+  border-radius: 70% 10% 70% 10%/10% 70% 10% 70%;
+  max-width: 400px;
+  min-width: 250px;
+}
