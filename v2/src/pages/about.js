@@ -23,6 +23,20 @@ function AboutPage() {
           }
         }
       }
+      working: file(relativePath: { eq: "me_working-min.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      fcc: file(relativePath: { eq: "fcc-min.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `);
   return (
@@ -64,7 +78,7 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>What I Do</H1>
           <p>
@@ -90,8 +104,10 @@ function AboutPage() {
             &nbsp; where I write articles and share resources.
           </p>
         </div>
+        <Image fluid={query.working.childImageSharp.fluid} className='aboutImg w-full h-auto' />
       </article>
-      <article className='about-containers bg-white p-4 flex flex-col sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+        <Image fluid={query.fcc.childImageSharp.fluid} className='aboutImg w-full h-auto' />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
           <p>
@@ -101,7 +117,9 @@ function AboutPage() {
           </p>
           <a
             href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
-            rel='noopener noreferrer'>If/Else Podcast</a>
+            rel='noopener noreferrer'>
+            If/Else Podcast
+          </a>
         </div>
       </article>
       <article
