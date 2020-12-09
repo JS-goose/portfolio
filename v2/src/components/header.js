@@ -26,13 +26,13 @@ function Header() {
   `);
 
   return (
-    <header className='bg-myPurple text-white z-10'>
+    <header className='bg-myPurple text-white z-20'>
       <div className='flex flex-wrap items-center justify-between md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full'>
         <span className='flex items-center'>
           <Link to='/' onMouseLeave={toggleHover} onMouseEnter={toggleHover2}>
             <Image fluid={queryData.brand.childImageSharp.fluid} className={hovered ? 'logoNotHovered' : 'logo'} />
           </Link>
-          <p className='hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:text-sm md:text-base lg:text-lg'>Jonathan Sexton</p>
+          <p className='hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:lg md:text-xl lg:text-2xl'>Jonathan Sexton</p>
         </span>
 
         <button

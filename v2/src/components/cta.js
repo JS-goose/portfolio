@@ -43,10 +43,10 @@ const CallToAction = () => {
             reach more customers, and broaden their audience!
           </p>
           <p className='lg:leading-8'>
-            Are you looking for a developer design, build, and publish your website for the world to see? You&apos;ve
+            Are you looking for a to developer design, build, and publish your website for the world to see? You&apos;ve
             come to the right place then my friend!
           </p>
-          <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4>
+          {/* <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4> */}
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
             <span className='flex bg-myPurple p-2 rounded-sm cta-buttons justify-center mb-4 sm:w-full sm:text-sm md:text-base xl:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline'>
               <a
@@ -62,7 +62,7 @@ const CallToAction = () => {
                 href='#services'
                 rel='noopener noreferrer'
                 className='flex justify-center items-center lg:font-semibold'>
-                See My Services
+                Browse My Services
                 <svg
                   className='fill-current ml-1'
                   width='26'

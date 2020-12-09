@@ -6,12 +6,13 @@
 }
 
 .planet {
-  height: 40rem;
-  width: 40rem;
+  height: 25rem;
+  width: 22.5rem;
   position: absolute !important;
   /* margin-top: -50rem; */
   top: 0;
-  margin-left: 20rem;
+  margin-left: 28rem;
+  left: 0;
   z-index: 0;
 }
 
@@ -55,9 +56,8 @@
   }
 
   .planet {
-    height: 35rem;
-    width: 35rem;
-    margin-left: 5rem;
+    height: 25rem;
+    width: 22.5rem;
   }
 
   .rocket {
