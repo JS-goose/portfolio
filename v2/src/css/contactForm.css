@@ -1,8 +1,3 @@
-.contact-form-container {
-  /* Image courtesy of https://www.svgbackgrounds.com */
-  background-image: url('../images/formPattern.svg');
-}
-
 .contact-form input:valid {
   border: 3px solid #421ed2;
 }
