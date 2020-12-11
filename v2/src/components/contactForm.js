@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 const ContactForm = (props) => {
   return (
-    <article className='contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8'>
+    <article className={`${props.bgColor} contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8`}>
       <h2 className='text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl'>{props.formTitle}</h2>
       <p>Let&apos;s talk about your project - I respond within 24 hours :)</p>
       <form className='contact-form' name='contact' method='POST' data-netlify='true' netlify-honeypot='bots-say-what'>
@@ -89,6 +89,7 @@ const ContactForm = (props) => {
 
 ContactForm.propTypes = {
   formTitle: propTypes.string.isRequired,
+  bgColor: propTypes.string.isRequired,
 };
 
 export default ContactForm;
