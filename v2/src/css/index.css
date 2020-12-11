@@ -17,8 +17,9 @@
 }
 
 .astronaut {
-  height: 40rem;
-  width: 21.5rem;
+  height: 30rem;
+  width: 21rem;
+  margin-top: 5rem;
   position: absolute !important;
   top: 0;
   right: 0;
@@ -52,12 +53,13 @@
   .astronaut {
     width: 19rem;
     height: 35rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 
   .planet {
     height: 25rem;
     width: 22.5rem;
+    margin-top: 4rem;
   }
 
   .rocket {
