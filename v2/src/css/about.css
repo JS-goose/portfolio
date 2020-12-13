@@ -2,9 +2,8 @@
   max-width: 75%;
 }
 
-.about-form-container {
-  /* Image courtesy of https://www.svgbackgrounds.com */
-  background-image: url('../images/formPattern.svg');
+.form-parent-container {
+  width: 75%;
 }
 
 .aboutImg {
