@@ -10,7 +10,12 @@
 .social-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+.socail-list-items-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .social-list-svg {
@@ -66,10 +71,18 @@
     justify-content: center;
     align-items: center;
   }
-
-  .social-list li {
-    padding-right: 1rem;
+  /* 
+  .socail-list-items-container {
+    flex-direction: row;
   }
+
+  .socail-list-items-container a {
+    padding-right: 1rem;
+  } */
+
+  /* .social-list li {
+    padding-right: 1rem;
+  } */
 
   .vertical-text {
     writing-mode: horizontal-tb !important;

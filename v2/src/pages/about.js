@@ -3,6 +3,7 @@ import SEO from '../components/seo';
 import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import ContactForm from '../components/contactForm';
+import SocialList from '../components/socialList';
 
 const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>{children}</h1>;
 
@@ -120,6 +121,11 @@ function AboutPage() {
             rel='noopener noreferrer'>
             If/Else Podcast
           </a>
+          <ul>
+            <li className="social-list">
+              <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items'} />
+            </li>
+          </ul>{' '}
         </div>
       </article>
       <article

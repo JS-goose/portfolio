@@ -17,3 +17,16 @@
   max-width: 400px;
   min-width: 250px;
 }
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons {
+  fill: black !important;
+}
+
+.social-list-items {
+  list-style: none;
+}
