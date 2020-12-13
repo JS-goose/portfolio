@@ -123,9 +123,9 @@ function AboutPage() {
         </div>
       </article>
       <article
-        className='about-containers md:p-2 flex flex-col items-center sm:text-base md:text-lg lg:text-xl'
+        className='form-parent-container bg-white p-4 flex flex-col items-center sm:text-base md:text-lg lg:text-xl'
         id='hire-me'>
-        <ContactForm formTitle={`I'm available for hire!`} />
+        <ContactForm formTitle={`I'm available for hire!`} bgColor={`myPurple`} />
       </article>
     </section>
   );
