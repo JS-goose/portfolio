@@ -62,12 +62,12 @@ function AboutPage() {
         </div>
         <Image
           fluid={query.golfing.childImageSharp.fluid}
-          className='aboutImg w-full h-auto'
+          className='aboutImg aboutImg-odd w-full h-auto'
           alt='my wife and I on the golf course with black sunglasses on'
         />
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <Image fluid={query.wedding.childImageSharp.fluid} className='aboutImg w-full h-auto' />
+        <Image fluid={query.wedding.childImageSharp.fluid} className='aboutImg aboutImg-even w-full h-auto' />
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
           <p>
@@ -105,10 +105,10 @@ function AboutPage() {
             &nbsp; where I write articles and share resources.
           </p>
         </div>
-        <Image fluid={query.working.childImageSharp.fluid} className='aboutImg w-full h-auto' />
+        <Image fluid={query.working.childImageSharp.fluid} className='aboutImg aboutImg-even w-full h-auto' />
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
-        <Image fluid={query.fcc.childImageSharp.fluid} className='aboutImg w-full h-auto' />
+        <Image fluid={query.fcc.childImageSharp.fluid} className='aboutImg aboutImg-odd w-full h-auto' />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
           <p>

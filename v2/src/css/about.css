@@ -7,15 +7,16 @@
 }
 
 .aboutImg {
-  border-radius: 10% 70% 20% 70%/70% 20% 70% 20%;
   max-width: 400px;
   min-width: 250px;
 }
 
-.aboutImg:nth-of-type(1) {
+.aboutImg-even {
   border-radius: 70% 10% 70% 10%/10% 70% 10% 70%;
-  max-width: 400px;
-  min-width: 250px;
+}
+
+.aboutImg-odd {
+  border-radius: 10% 70% 20% 70%/70% 20% 70% 20%;
 }
 
 .about-social-list {
