@@ -122,7 +122,7 @@ function AboutPage() {
             If/Else Podcast
           </a>
           <ul>
-            <li className="social-list">
+            <li className="about-social-list">
               <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items'} />
             </li>
           </ul>{' '}
