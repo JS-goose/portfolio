@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import checkmark from '../images/icons/check.svg';
+import HireLink from './hireLink';
 
 const CallToAction = () => {
   const query = useStaticQuery(graphql`
@@ -48,15 +48,7 @@ const CallToAction = () => {
           </p>
           {/* <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4> */}
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
-            <span className='flex bg-myPurple p-2 rounded-sm cta-buttons justify-center mb-4 sm:w-full sm:text-sm md:text-base xl:text-lg hover:bg-gradient-to-r from-myPurple to-myRed hover:underline'>
-              <a
-                href='#hire-me'
-                rel='noopener noreferrer'
-                className='flex justify-center items-center lg:font-semibold'>
-                Hire Me For Your Project
-                <img src={checkmark} alt='' className='pl-2' />
-              </a>
-            </span>
+            <HireLink href={'#hire-me'} textContent={'Hire Me For Your Project'} />
             <span className='md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
               <a
                 href='#services'
