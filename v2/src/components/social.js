@@ -1,9 +1,9 @@
 import React from 'react';
 import SocialList from './socialList';
 
-const SocialSection = () => {
+const SocialSection = (props) => {
   return (
-    <div className='social-container'>
+    <div className={`${props.socialContainerClassName} social-container`}>
       <ul className='social-list'>
         <li>
           <div className='vertical-text'>Let&apos;s Connect!</div>
