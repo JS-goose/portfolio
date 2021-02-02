@@ -1,12 +1,12 @@
-import React from "react";
-import Image from "gatsby-image";
-import { graphql, useStaticQuery } from "gatsby";
-import CTA from "../components/cta";
-import SEO from "../components/seo";
-import ServicesList from "../components/servicesList";
-import GetStarted from "../components/getStarted";
-import SocialSection from "../components/social";
-import Testimonials from "../components/testimonials";
+import React from 'react';
+import Image from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
+import CTA from '../components/cta';
+import SEO from '../components/seo';
+import ServicesList from '../components/servicesList';
+import GetStarted from '../components/getStarted';
+import SocialSection from '../components/social';
+import Testimonials from '../components/testimonials';
 
 function IndexPage() {
   const query = useStaticQuery(graphql`
@@ -40,14 +40,14 @@ function IndexPage() {
     <>
       <SEO
         keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
-        title="Home"
+        title='Home'
       />
-      <div className="index-wrapper">
-        <Image fluid={query.planet.childImageSharp.fluid} className="planet" />
-        <Image fluid={query.astronaut.childImageSharp.fluid} className="astronaut" />
-        <Image fluid={query.rocket.childImageSharp.fluid} className="rocket" />
+      <div className='index-wrapper'>
+        <Image fluid={query.planet.childImageSharp.fluid} className='planet' />
+        <Image fluid={query.astronaut.childImageSharp.fluid} className='astronaut' />
+        <Image fluid={query.rocket.childImageSharp.fluid} className='rocket' />
         <CTA />
-        <SocialSection />
+        <SocialSection socialContainerClassName={'lg:mb-24'} />
       </div>
       <ServicesList />
       <GetStarted />
