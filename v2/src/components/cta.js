@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import HireLink from './hireLink';
+import ServicesLink from './servicesLink';
 
 const CallToAction = () => {
   const query = useStaticQuery(graphql`
@@ -49,7 +50,7 @@ const CallToAction = () => {
           {/* <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4> */}
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
             <HireLink href={'#hire-me'} textContent={'Hire Me For Your Project'} />
-            <span className='md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
+            {/* <span className='md:ml-0 lg:ml-40 p-2 rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg border-transparent text-myBlack hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
               <a
                 href='#services'
                 rel='noopener noreferrer'
@@ -69,7 +70,9 @@ const CallToAction = () => {
                   />
                 </svg>
               </a>
-            </span>
+            </span> */}
+            {/* ! Still need to add props to the component ! */}
+            <ServicesLink />
           </div>
         </div>
       </article>
