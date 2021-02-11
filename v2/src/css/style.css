@@ -14,6 +14,7 @@
 @import './contactForm.css';
 @import './about.css';
 @import './footer.css';
+@import './consulting.css';
 
 /* Firefox only - for now */
 * {
