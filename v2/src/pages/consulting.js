@@ -17,7 +17,7 @@ const Consulting = () => {
     }
   `);
   return (
-    <section className='flex flex-col w-screen items-center'>
+    <section className='flex flex-col items-center'>
       <SEO
         keywords={[
           `boerne web developer`,
