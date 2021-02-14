@@ -95,7 +95,7 @@ const Testimonials = () => {
           <div className='testimonials-container-link-container mt-6'>
             <a
               href='#hire-me'
-              className='bg-myPurple pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-r from-myRed to-myPurple hover:text-white'>
+              className='bg-myPurple shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-l from-myRed to-myPurple hover:text-white'>
               Get Started Today!
             </a>
           </div>
@@ -107,7 +107,7 @@ const Testimonials = () => {
               data-key={index + 1}
               className='customer-testimonial-container flex rounded-sm sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
               <Image
-                className='testimonials-images shadow-lg'
+                className='testimonials-images shadow-lg border-2 border-solid border-black-100'
                 fluid={
                   index + 1 === 1
                     ? query.stu.childImageSharp.fluid

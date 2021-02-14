@@ -24,7 +24,7 @@
 .testimonials-images {
   height: 10rem;
   width: 10rem;
-  border-radius: 30%;
+  border-radius: 10%;
 }
 
 @media screen and (max-width: 800px) {
@@ -58,9 +58,6 @@
 
 @media screen and (max-width: 645px) {
   .testimonials-images {
-    /* height: 8rem;
-    width: 10rem; */
-    border-radius: 5%;
     margin: 10px;
   }
 
