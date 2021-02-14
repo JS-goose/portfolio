@@ -44,6 +44,7 @@ html {
     Cantarell, 'Helvetica Neue', sans-serif !important;
   background-color: #421ed2;
   display: flex;
+  overflow-x: hidden;
 }
 
 h1,

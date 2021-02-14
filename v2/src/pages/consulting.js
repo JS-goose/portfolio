@@ -1,18 +1,14 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import SEO from '../components/seo';
-import Image from 'gatsby-image';
 import ContactForm from '../components/contactForm';
 
 const Consulting = () => {
   const query = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "me-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
+      collab: file(relativePath: { eq: "undraw_Online_collaboration_re_bkpm.svg" }) {
+        extension
+        publicURL
       }
     }
   `);
@@ -31,9 +27,9 @@ const Consulting = () => {
       />
       <article className='consulting-inner-container flex bg-white p-4 sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='consulting-img-container'>
-          <Image fluid={query.me.childImageSharp.fluid} className='me-img' />
+          <img src={query.collab.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
         </div>
-        <div className='consulting-content-container p-2'>
+        <div className='consulting-content-container p-4'>
           <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
             Looking for a reliable partner to help with your existing website or application?
           </h1>
