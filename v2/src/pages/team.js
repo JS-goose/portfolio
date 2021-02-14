@@ -1,5 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
+import TeamList from '../components/teamList'
 
 const Team = () => (
   <>
@@ -14,7 +15,9 @@ const Team = () => (
       ]}
       title="Projects"
     />
-    <div>Hello from Team page!</div>
+    <div>
+      <TeamList />
+    </div>
   </>
 );
 
