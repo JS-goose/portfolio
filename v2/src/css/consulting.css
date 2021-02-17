@@ -2,6 +2,10 @@ section {
   width: calc(100vw - 10px);
 }
 
+.consulting-innder-container {
+  max-width: 80%;
+}
+
 .consulting-collab-img {
   width: 30rem;
   height: 30rem;
