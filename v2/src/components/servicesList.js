@@ -1,10 +1,14 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const services = [
   {
     number: `1`,
-    desc: `Provide a consultation to discuss any pain points you have with your web presence (or lack of).`,
+    // TODO This needs work as it does not have the intended result
+    desc: `Provide a 
+      ${(
+        <Link to='/consulting'>consultation</Link>
+      )} to discuss any pain points you have with your web presence (or lack of).`,
   },
   {
     number: `2`,
