@@ -2,14 +2,13 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const services = [
-  {
-    number: `1`,
-    // TODO This needs work as it does not have the intended result
-    desc: `Provide a 
-      ${(
-        <Link to='/consulting'>consultation</Link>
-      )} to discuss any pain points you have with your web presence (or lack of).`,
-  },
+  // {
+  //   number: `1`,
+  //   // TODO This needs work as it does not have the intended result
+  //   desc: 'Provide a' +
+  //       `${<Link to="/consulting">consulting</Link>}` +
+  //       'to discuss any pain points you have with your web presence (or lack of).',
+  // },
   {
     number: `2`,
     desc: `Assess your current website to identify issues, propose solutions, and ultimately correct those issues.`,
@@ -24,7 +23,7 @@ const services = [
   },
   {
     number: `5`,
-    desc: `Ensure SEO is at the forefront of the work I do so you're website get's in front of your prospective audience`,
+    desc: `Ensure SEO is at the forefront of the work I do so you're website reaches your audience`,
   },
   {
     number: `6`,
@@ -64,6 +63,16 @@ const ServicesList = () => {
             What Can I Do For You and Your Business?
           </h1>
           <ul>
+            {/* I couldn't get the link to work correctly when this was part of the services object so it has been hard coded here */}
+            <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
+              <p>
+                1. Provide a&nbsp;{' '}
+                <Link to='/consulting' className='services-list-page-link underline'>
+                  consultation
+                </Link>{' '}
+                &nbsp;to discuss any pain points you have with your web presence.
+              </p>
+            </li>
             {services.map((service) => (
               <li key={service.number} className='pb-4 sm:text-base md:text-lg lg:text-xl'>
                 {service.number}. {service.desc}

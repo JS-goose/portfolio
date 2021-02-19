@@ -5,6 +5,23 @@
   margin: 6rem;
   column-gap: 2rem;
 }
+
+.services-list p a::before {
+  height: 4px;
+  position: absolute;
+  background: #421ed2;
+  content: '';
+  width: 7rem;
+  transform: skew(10deg) rotate(1.3deg);
+  margin-top: 1.5rem;
+}
+
+.services-list p a:hover::before {
+  transition: all 0.2s;
+  background-color: #ff4945;
+  scale: 1.05;
+}
+
 .why-hire-me-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
