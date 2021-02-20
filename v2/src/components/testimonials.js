@@ -105,9 +105,9 @@ const Testimonials = () => {
             <div
               key={index}
               data-key={index + 1}
-              className='customer-testimonial-container flex rounded-sm sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
+              className='customer-testimonial-container flex sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
               <Image
-                className='testimonials-images shadow-lg border-2 border-solid border-black-100'
+                className='testimonials-images rounded-md shadow-lg border-2 border-solid border-black-100'
                 fluid={
                   index + 1 === 1
                     ? query.stu.childImageSharp.fluid
