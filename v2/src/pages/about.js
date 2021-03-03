@@ -46,27 +46,23 @@ function AboutPage() {
       <article className='about-containers bg-white p-6 sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>The Lowdown on yours truly...</H1>
-          <p className='text-2xl mb-4'>
+          <p className='text-2xl mb-4 italic'>
             Howdy! I&apos;m Jonathan. I live in Texas and I&apos;ve been creating in one form or another since I began
             exploring the internet in the late 90&apos;s.
           </p>
 
           <p className='mb-4'>
             My fascination with technology started when my brothers and I received our first PC and modem as a Christmas
-            gift one year. I remember exploring and learning about the early internet with its seemingly endless
+            gift in 1998. I remember exploring and learning about the early internet with its seemingly endless
             possibilities.
           </p>
           <p className='mb-4'>
-            I have over a decade of experience in the sales, customer support/service, and lead generation. I decided to
-            start teaching myself to code one sunny afternoon when I had some extra time on my hands. (STOPPED RIGHT HERE)
+            Out of curiosity, I decided to teach myself to program/code as a hobby.  It soon became an obsession - I couldn&apos;t get enough of it.
+            Before teaching myself how to code, I worked in the sales industry where I have over a decade of customer support, service, and lead generation experience.
+            Obession quickly turned into a profession when I decided to put that experience and knowledge to use for myself and my clients.
           </p>
           <p className='mb-4'>
-            I found that the internet was a wealth of information and instruction - all I needed to do was start digging
-            in. I started with resources like{' '}
-            <a href='https://freecodecamp.org' rel='noopener noreferrer'>
-              freeCodeCamp
-            </a>{' '}
-            and couldn&apos;t help myself from there. I consumed knowledge left and right. Fast forward and I&apos;m now
+            Fast forward almost 5 years and I&apos;m now
             a full time developer working on projects that excite me, fascinate me, and still give me that same sense of
             wonder I got the first time I saw one of my programs run.
           </p>
@@ -84,21 +80,21 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>What I Do</H1>
-          <p>
+          <p className="mb-4">
             I&apos;m a freelance web developer who primarily works with small businesses to generate more leads, reach
             their customers, and increase revenue.
           </p>
-          <p>
+          <p className="mb-4">
             I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
             I&apos;ve always been passionate about finding creative solutions to problems and I apply that to everything
             I do. My specialty is full website development from the ground up using semantic HTML, CSS, and JavaScript.
           </p>
-          <p>
+          <p className="mb-4">
             If you have any questions about me or would like to talk, all my social media links can be found at the top
             and bottom of this page. I would love to connect with you! You can also swing by my blog and read some
             articles to see what I&apos;m up to.
           </p>
-          <p>
+          <p className="mb-4">
             I love using technology to bring people together and sharing everything I&apos;ve learned. I even have a
             &nbsp;
             <a href='https://jonathansexton.me/blog' target='_blank' rel='noopener noreferrer'>
@@ -111,12 +107,14 @@ function AboutPage() {
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
-          <p>
+          <p className="mb-4">
             When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
             <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the
-            chance (rarely ever :D). I love wine, cooking, sports, technology, and the outdoors. If I&apos;m not
-            building a project or fixing something around the house you&apos;ll likely find me outside on an adventure
-            with the three most important people in my life.
+            chance (rarely ever :D). </p>
+
+          <p className="mb-4">I love wine, cooking, sports, technology, and the outdoors. If I&apos;m not
+          building a project or fixing something around the house you&apos;ll likely find me outside on an adventure
+          with the three most important people in my life.
           </p>
         </div>
         <Image
@@ -131,7 +129,13 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
-          <p>
+          <p className="mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book.
+          </p>
+
+          <p className="mb-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
             make a type specimen book.
@@ -141,7 +145,7 @@ function AboutPage() {
             rel='noopener noreferrer'>
             If/Else Podcast
           </a>
-          <ul className='about-social-list'>
+          <ul className='about-social-list mt-4'>
             <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items'} />
           </ul>{' '}
         </div>
