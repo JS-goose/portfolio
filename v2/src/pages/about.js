@@ -80,7 +80,7 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>What I Do</H1>
-          <p className="mb-4">
+          <p className="text-2xl mb-4 italic">
             I&apos;m a freelance web developer who primarily works with small businesses to generate more leads, reach
             their customers, and increase revenue.
           </p>
@@ -107,7 +107,7 @@ function AboutPage() {
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
-          <p className="mb-4">
+          <p className="text-2xl mb-4 italic">
             When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
             <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the
             chance (rarely ever :D). </p>
@@ -129,12 +129,15 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
+          <p className="text-2xl mb-4 italic">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
           <p className="mb-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
             make a type specimen book.
           </p>
-
           <p className="mb-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
