@@ -15,15 +15,6 @@
   max-width: 500px;
 }
 
-.about-social-list {
-  display: flex;
-  flex-direction: row;
-}
-
 .social-icons {
   fill: black !important;
-}
-
-.social-list-items {
-  list-style: none;
 }

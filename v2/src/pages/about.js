@@ -145,7 +145,7 @@ function AboutPage() {
             rel='noopener noreferrer'>
             If/Else Podcast
           </a>
-          <ul className='about-social-list mt-4'>
+          <ul className='about-social-list flex justify-evenly mt-4'>
             <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items'} />
           </ul>{' '}
         </div>
