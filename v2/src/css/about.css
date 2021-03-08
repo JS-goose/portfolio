@@ -1,5 +1,5 @@
 .about-containers {
-  max-width: 80%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   column-gap: 1rem;
