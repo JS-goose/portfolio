@@ -46,7 +46,7 @@ function AboutPage() {
       <article className='about-containers bg-white p-6 sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>The Lowdown on yours truly...</H1>
-          <p className='text-2xl mb-4 italic'>
+          <p className='text-2xl mb-4'>
             Howdy! I&apos;m Jonathan. I live in Texas and I&apos;ve been creating in one form or another since I began
             exploring the internet in the late 90&apos;s.
           </p>
@@ -80,34 +80,32 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>What I Do</H1>
-          <p className="text-2xl mb-4 italic">
-            I&apos;m a freelance web developer who primarily works with small businesses to generate more leads, reach
-            their customers, and increase revenue.
+          <p className="text-2xl mb-4">
+            I&apos;m a freelance web developer who specializes in working with small businesses looking for a &quot;one-stop-shop&quot; for their website/web application solution.
           </p>
+          <p className="mb-4">What exactly does that mean you ask?  It means I can design, build, publish, and maintain your website, take care of the technical details involved in that, and provide
+            a solution instead of a distraction for you so you can focus on running your business.</p>
           <p className="mb-4">
-            I&apos;m passionate about designing, developing, and deploying easy to use and user friendly websites.
             I&apos;ve always been passionate about finding creative solutions to problems and I apply that to everything
             I do. My specialty is full website development from the ground up using semantic HTML, CSS, and JavaScript.
           </p>
           <p className="mb-4">
             If you have any questions about me or would like to talk, all my social media links can be found at the top
-            and bottom of this page. I would love to connect with you! You can also swing by my blog and read some
-            articles to see what I&apos;m up to.
+            and bottom of this page. I would love to connect with you!
           </p>
           <p className="mb-4">
-            I love using technology to bring people together and sharing everything I&apos;ve learned. I even have a
+            I also enjoy writing and sharing the knowledge I have gained on my
             &nbsp;
             <a href='https://jonathansexton.me/blog' target='_blank' rel='noopener noreferrer'>
               blog
-            </a>
-            &nbsp; where I write articles and share resources.
+            </a>.
           </p>
         </div>
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
-          <p className="text-2xl mb-4 italic">
+          <p className="text-2xl mb-4">
             When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
             <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the
             chance (rarely ever :D). </p>
@@ -115,6 +113,10 @@ function AboutPage() {
           <p className="mb-4">I love wine, cooking, sports, technology, and the outdoors. If I&apos;m not
           building a project or fixing something around the house you&apos;ll likely find me outside on an adventure
           with the three most important people in my life.
+          </p>
+          <p>When the circumstances allow, we enjoy visiting parks around the state, going to the river, hiking, fishing, or just sitting
+          around the fire sharing stories. Most summers you&apos;ll be hard pressed to find us indoors.  If we are inside, you can bet
+          we are playing a board game (read as: I&apos;m losing that board game) or messing around on the <a href="https://en.wikipedia.org/wiki/Nintendo_Switch" rel="noreferrer noopener">Swtich</a> :)
           </p>
         </div>
         <Image
@@ -129,27 +131,32 @@ function AboutPage() {
         />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
-          <p className="text-2xl mb-4 italic">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <p className="text-2xl mb-4">
+            I believe it&apos;s important to be a memeber of the community (virtual and physical) you love.
           </p>
 
           <p className="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book.
+            To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.
+            <ul className="mt-4">
+              <li className="mb-4">
+                I write articles about programming/coding/technology as a way to give back to a community that is near and dear to my heart: <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a>
+
+              </li>
+              <li className="mb-4">
+                Here&apos; my interview on the <a
+                  href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
+                  rel='noopener noreferrer'>
+                  If/Else Podcast
+              </a> about choosing an in person or remote developer position
+              </li>
+              <li>My DM&apos; are open on all social media platforms where I try to answer any questions I can</li>
+            </ul>
           </p>
-          <p className="mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book.
+          <p className="mb-4 font-bold">
+            Connect with me!
           </p>
-          <a
-            href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
-            rel='noopener noreferrer'>
-            If/Else Podcast
-          </a>
-          <ul className='about-social-list flex justify-evenly mt-4'>
-            <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items'} />
+          <ul className='about-social-list flex align-center mt-4'>
+            <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items mr-6'} />
           </ul>{' '}
         </div>
       </article>
