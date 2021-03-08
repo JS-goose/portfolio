@@ -4,6 +4,7 @@ import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import ContactForm from '../components/contactForm';
 import SocialList from '../components/socialList';
+import AnchorLink from '../components/anchorLink';
 
 const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl pb-6'>{children}</h1>;
 
@@ -96,9 +97,7 @@ function AboutPage() {
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my
             &nbsp;
-            <a href='https://jonathansexton.me/blog' target='_blank' rel='noopener noreferrer'>
-              blog
-            </a>.
+            <AnchorLink linkAddress={'https://jonathansexton.me/blog'} addressText={'blog'} />.
           </p>
         </div>
       </article>
