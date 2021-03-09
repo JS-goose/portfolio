@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SocialList = (props) => {
+  const devIconStyling = props.devIconStyling || '';
   const socialLinks = [
     {
       link: 'https://twitter.com/jj_goose',
@@ -86,7 +87,7 @@ const SocialList = (props) => {
       linkName: 'DEV',
       icon: (
         <svg
-          className={props.svgClassName}
+          className={props.svgClassName + ' ' + devIconStyling}
           width='33'
           height='13'
           viewBox='0 0 33 13'

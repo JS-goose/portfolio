@@ -135,22 +135,21 @@ function AboutPage() {
           </p>
 
           <p className="mb-4">
-            To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.
-            <ul className="mt-4">
-              <li className="mb-4">
-                I write articles about programming/coding/technology as a way to give back to a community that is near and dear to my heart: <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a>
+            To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.</p>
+          <ul className="mt-4">
+            <li className="mb-4">
+              I write articles about programming/coding/technology as a way to give back to a community that is near and dear to my heart: <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a>
 
-              </li>
-              <li className="mb-4">
-                Here&apos; my interview on the <a
-                  href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
-                  rel='noopener noreferrer'>
-                  If/Else Podcast
+            </li>
+            <li className="mb-4">
+              Here&apos; my interview on the <a
+                href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
+                rel='noopener noreferrer'>
+                If/Else Podcast
               </a> about choosing an in person or remote developer position
               </li>
-              <li>My DM&apos; are open on all social media platforms where I try to answer any questions I can</li>
-            </ul>
-          </p>
+            <li>My DM&apos; are open on all social media platforms where I try to answer any questions I can</li>
+          </ul>
           <p className="mb-4 font-bold">
             Connect with me!
           </p>
