@@ -138,7 +138,8 @@ function AboutPage() {
             To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.</p>
           <ul className="mt-4">
             <li className="mb-4">
-              I write articles about programming/coding/technology as a way to give back to a community that is near and dear to my heart: <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a>
+              I write articles about programming/coding/technology as a way to give back to the <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a> community.
+              It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
 
             </li>
             <li className="mb-4">
@@ -154,7 +155,7 @@ function AboutPage() {
             Connect with me!
           </p>
           <ul className='about-social-list flex align-center mt-4'>
-            <SocialList svgClassName={'social-icons'} mediumFillColor={'#FFF'} liClassName={'social-list-items mr-6'} />
+            <SocialList svgClassName={'social-icons'} devIconStyling={'mt-2'} mediumFillColor={'#FFF'} liClassName={'social-list-items mr-6'} />
           </ul>{' '}
         </div>
       </article>
