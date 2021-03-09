@@ -42,7 +42,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal['400'],
+        // theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
         icon: `src/images/icons/Brand-min.png`,
       },
@@ -59,27 +59,28 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: {
-        baseUrl: 'jonathansexton.me/blog',
-        protocol: 'https',
-        hostingWPCOM: false,
-        useACF: false,
-        acfOptionPageIds: [],
-        verboseOutput: false,
-        perPage: 100,
-        searchAndReplaceContentUrls: {
-          sourceUrl: 'https://www.jonathansexton.me/blog',
-          replacementUrl: 'https://localhost:8000',
-        },
-        concurrentRequests: 10,
-        includedRoutes: ['**/categories', '**/posts', '**/pages', '**/media', '**/tags', '**/taxonomies', '**/users'],
-        excludedRoutes: [],
-        normalizer: function ({ entities }) {
-          return entities;
-        },
-      },
-    },
+    // ! *** This was commented out because the plugins need to be updated *** ! //
+    // {
+    //   resolve: 'gatsby-source-wordpress',
+    //   options: {
+    //     url: 'https://jonathansexton.me/blog',
+    //     protocol: 'https',
+    //     hostingWPCOM: false,
+    //     useACF: false,
+    //     acfOptionPageIds: [],
+    //     verboseOutput: false,
+    //     perPage: 100,
+    //     searchAndReplaceContentUrls: {
+    //       sourceUrl: 'https://www.jonathansexton.me/blog',
+    //       replacementUrl: 'https://localhost:8000',
+    //     },
+    //     concurrentRequests: 10,
+    //     includedRoutes: ['**/categories', '**/posts', '**/pages', '**/media', '**/tags', '**/taxonomies', '**/users'],
+    //     excludedRoutes: [],
+    //     normalizer: function ({ entities }) {
+    //       return entities;
+    //     },
+    //   },
+    // },
   ],
 };
