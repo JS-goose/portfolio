@@ -20,7 +20,7 @@
 }
 
 /* This styling needs to be moved into component file */
-.about-containers p a::before {
+/* .about-containers p a::before {
   height: 4px;
   position: absolute;
   background: #421ed2;
@@ -34,4 +34,4 @@
   transition: all 0.2s;
   background-color: #ff4945;
   scale: 1.05;
-}
+} */

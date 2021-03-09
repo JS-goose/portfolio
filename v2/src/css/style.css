@@ -12,9 +12,9 @@
 @import './servicesList.css';
 @import './testimonials.css';
 @import './contactForm.css';
-@import './about.css';
+@import './about.module.css';
 @import './footer.css';
-@import './consulting.css';
+@import './consulting.module.css';
 
 /* Firefox only - for now */
 * {
