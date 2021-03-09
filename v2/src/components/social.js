@@ -8,11 +8,7 @@ const SocialSection = (props) => {
         <li>
           <div className='vertical-text'>Let&apos;s Connect!</div>
         </li>
-        {/* <li> */}
-          {/* <div className="socail-list-items-container"> */}
-            <SocialList svgClassName={'social-list-svg'} mediumFillColor={'#421ED2'} liClassName={'pt-6'}/>
-          {/* </div> */}
-        {/* </li> */}
+        <SocialList svgClassName={'social-list-svg'} mediumFillColor={'#421ED2'} liClassName={'pt-6'} />
       </ul>
     </div>
   );
