@@ -138,10 +138,14 @@ function AboutPage() {
             To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.</p>
           <ul className="mt-4">
             <li className="mb-4">
+              ***This section needs a rework***
               I write articles about programming/coding/technology as a way to give back to the <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a> community.
               It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
 
             </li>
+            <li><a href="https://www.freecodecamp.org/news/fcc100-top-contributors-2019/">Top Contributor for 2019</a></li>
+            <li><a href="https://www.freecodecamp.org/news/2020-top-contributors/">Top Contributor for 2019</a></li>
+            <li><a href="https://www.freecodecamp.org/news/author/jonathan/">Top Contributor for 2019</a></li>
             <li className="mb-4">
               Here&apos; my interview on the <a
                 href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'

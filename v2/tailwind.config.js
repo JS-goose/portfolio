@@ -24,20 +24,16 @@ module.exports = {
     )
   })],
   variants: {
-    extend: {
-    },
     backgroundImage: [`responsive`, `hover`, `focus`],
     backgroundColor: [`responsive`, `hover`, `focus`, `active`, `before`],
     textColor: [`responsive`, `hover`, `focus`, `active`],
     borderColor: [`responsive`, `hover`, `focus`],
     borderWidth: [`responsive`],
-    width: [`before`, `hover`],
-    height: [`before`, `hover`],
-    position: [`before`, `hover`],
-    margin: [`before`, `hover`],
-    transform: [`before`, `hover`],
-    transition: [`before`, `hover`],
-    scale: [`before`, `hover`]
+    width: [`responsive`, `before`, `hover`],
+    height: [`responsive`, `before`, `hover`],
+    position: [`responsive`, `before`, `hover`],
+    margin: [`responsive`, `before`, `hover`],
+    padding: [`responsive`, `before`, `hover`],
   },
   corePlugins: {
     fontFamily: false,

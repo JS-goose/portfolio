@@ -7,7 +7,9 @@ const AnchorLink = (props) => {
     if (props.linkType === 'internal') {
         return <Link to={props.linkAddress}>{props.addressText}</Link>
     } else {
-        return <a href={props.linkAddress} rel="noopener noreferrer">{props.addressText}</a>
+        return (<>
+            <a href={props.linkAddress} className="before:empty-content before:w-10 before:h-1 before:absolute before:bg-myPurple before:mt-5 hover:bg-myPurple hover:text-white" rel="noopener noreferrer">{props.addressText}</a>
+        </>)
     }
 }
 

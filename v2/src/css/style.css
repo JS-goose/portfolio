@@ -15,6 +15,7 @@
 @import './about.module.css';
 @import './footer.css';
 @import './consulting.module.css';
+@import './anchorLink.module.css';
 
 /* Firefox only - for now */
 * {

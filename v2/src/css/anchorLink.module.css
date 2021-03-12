@@ -1,0 +1,13 @@
+a::before {
+  transform: skew(20deg) rotate(2deg);
+}
+
+a:hover {
+  padding: 0.12rem;
+  transition: all 0.1s;
+}
+
+a:hover::before {
+  transition: all 0.1s !important;
+  background: transparent !important;
+}
