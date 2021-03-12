@@ -54,7 +54,8 @@
     "cssnano": "4.1.10",
     "eslint-loader": "4.0.2",
     "gatsby-plugin-eslint": "3.0.0",
-    "tailwindcss": "2.0.3"
+    "tailwindcss": "2.0.3",
+    "tailwindcss-pseudo-elements": "^1.5.1"
   },
   "repository": {
     "type": "git",
