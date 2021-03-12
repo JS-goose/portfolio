@@ -18,20 +18,3 @@
 .social-icons {
   fill: black !important;
 }
-
-/* This styling needs to be moved into component file */
-/* .about-containers p a::before {
-  height: 4px;
-  position: absolute;
-  background: #421ed2;
-  content: '';
-  width: 7rem;
-  transform: skew(10deg) rotate(1.3deg);
-  margin-top: 1.5rem;
-}
-
-.about-containers p a:hover::before {
-  transition: all 0.2s;
-  background-color: #ff4945;
-  scale: 1.05;
-} */
