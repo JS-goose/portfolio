@@ -17,9 +17,15 @@
 @import './consulting.module.css';
 @import './anchorLink.module.css';
 
+:root {
+  --myPurple: #421ed2;
+  --myRed: #ff4945;
+  --myBlack: #161514;
+}
+
 /* Firefox only - for now */
 * {
-  scrollbar-color: white #421ed2;
+  scrollbar-color: white var(--myPurple);
   scrollbar-width: thin;
 }
 
@@ -29,7 +35,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #421ed2;
+  background: var(--myPurple);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -43,7 +49,7 @@ html {
   font-size: 14px;
   font-family: 'Kumbh Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Helvetica Neue', sans-serif !important;
-  background-color: #421ed2;
+  background-color: var(--myPurple);
   display: flex;
   overflow-x: hidden;
 }
