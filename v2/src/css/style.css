@@ -12,10 +12,10 @@
 @import './servicesList.css';
 @import './testimonials.css';
 @import './contactForm.css';
-@import './about.module.css';
+@import './about.css';
 @import './footer.css';
-@import './consulting.module.css';
-@import './anchorLink.module.css';
+@import './consulting.css';
+@import './anchorLink.css';
 
 :root {
   --myPurple: #421ed2;

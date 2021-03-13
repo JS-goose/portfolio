@@ -25,7 +25,7 @@ function AboutPage() {
           }
         }
       }
-      working: file(relativePath: { eq: "me_working-min.jpg" }) {
+      working: file(relativePath: { eq: "me_working-min2.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
@@ -70,14 +70,14 @@ function AboutPage() {
         </div>
         <Image
           fluid={query.golfing.childImageSharp.fluid}
-          className='aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
+          className='transform rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
           alt='my wife and I on the golf course with black sunglasses on'
         />
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <Image
           fluid={query.working.childImageSharp.fluid}
-          className='aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
+          className='transform -rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
         />
         <div className='about-copy-containers'>
           <H1>What I Do</H1>
@@ -122,13 +122,13 @@ function AboutPage() {
         </div>
         <Image
           fluid={query.wedding.childImageSharp.fluid}
-          className='aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
+          className='transform rotate-3 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
         />
       </article>
       <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
         <Image
           fluid={query.fcc.childImageSharp.fluid}
-          className='aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
+          className='transform -rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
         />
         <div className='about-copy-containers'>
           <H1>Community Involvement</H1>
