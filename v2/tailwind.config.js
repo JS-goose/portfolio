@@ -33,10 +33,6 @@ module.exports = {
     height: [`responsive`, `before`, `hover`],
     position: [`responsive`, `before`, `hover`],
     margin: [`responsive`, `before`, `hover`],
-    padding: [`responsive`, `before`, `hover`],
-    transform: [`responsive`, `before`, `hover`],
-    rotate: [`responsive`, `before`, `hover`],
-    skew: [`responsive`, `before`, `hover`]
   },
   corePlugins: {
     fontFamily: false,

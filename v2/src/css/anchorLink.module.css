@@ -1,10 +1,13 @@
+/* a::before {
+  transform: scale(1.03);
+} */
+
 a:hover {
-  padding: 0.12rem;
-  text-decoration-line: underline;
   transition: all 0.1s;
 }
 
 a:hover::before {
+  transform: rotate(0.5deg);
   transition: all 0.1s !important;
-  background: transparent !important;
+  background: linear-gradient(90deg, var(--myPurple), var(--myRed), var(--myPurple));
 }
