@@ -97,7 +97,9 @@ function AboutPage() {
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my
             &nbsp;
-            <AnchorLink linkAddress={'https://jonathansexton.me/blog'} addressText={'blog'} />.
+            <AnchorLink linkAddress={'https://jonathansexton.me/blog'}
+              styling={{ height: 'before:w-10', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'blog'} />.
           </p>
         </div>
       </article>
