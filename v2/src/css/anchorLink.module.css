@@ -4,6 +4,8 @@ a::before {
 
 a:hover {
   padding: 0.12rem;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
   transition: all 0.1s;
 }
 
