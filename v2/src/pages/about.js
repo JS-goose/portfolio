@@ -145,15 +145,31 @@ function AboutPage() {
               It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
 
             </li>
-            <li><a href="https://www.freecodecamp.org/news/fcc100-top-contributors-2019/">Top Contributor for 2019</a></li>
-            <li><a href="https://www.freecodecamp.org/news/2020-top-contributors/">Top Contributor for 2019</a></li>
-            <li><a href="https://www.freecodecamp.org/news/author/jonathan/">Top Contributor for 2019</a></li>
+            <li>
+              <AnchorLink linkAddress={'https://www.freecodecamp.org/js-goose'}
+                styling={{ height: 'before:w-56', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple' }}
+                addressText={'freeCodeCamp Profile'} />
+            </li>
+            <li>
+              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/fcc100-top-contributors-2019/'}
+                styling={{ height: 'before:w-60', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple' }}
+                addressText={'Top Contributor for 2019'} />
+            </li>
+            <li>
+              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/2020-top-contributors/'}
+                styling={{ height: 'before:w-60', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple' }}
+                addressText={'Top Contributor for 2020'} />
+            </li>
+            <li>
+              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/author/jonathan/'}
+                styling={{ height: 'before:w-72', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple' }}
+                addressText={'freeCodeCamp Writer Profile'} />
+            </li>
             <li className="mb-4">
-              Here&apos; my interview on the <a
-                href='https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'
-                rel='noopener noreferrer'>
-                If/Else Podcast
-              </a> about choosing an in person or remote developer position
+              Here&apos; my interview on the &nbsp;
+              <AnchorLink linkAddress={'https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'}
+                styling={{ height: 'before:w-36', hoverTextColor: 'hover:text-white', hoverBgColor: 'hover:bg-myPurple', beforeBgColor: 'before:bg-myPurple'}}
+                addressText={'If/Else Podcast'} /> about choosing an in person or remote developer position
               </li>
             <li>My DM&apos; are open on all social media platforms where I try to answer any questions I can</li>
           </ul>
