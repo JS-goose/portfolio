@@ -47,15 +47,15 @@
   text-orientation: mixed;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .social-container {
-    padding-left: 6rem !important;
+    padding-left: 2rem !important;
   }
 }
 
 @media screen and (max-width: 641px) {
   .social-container {
-    margin-bottom: -3rem !important;
+    margin-bottom: -5rem !important;
   }
 }
 
@@ -71,14 +71,6 @@
     justify-content: center;
     align-items: center;
   }
-  /* 
-  .socail-list-items-container {
-    flex-direction: row;
-  }
-
-  .socail-list-items-container a {
-    padding-right: 1rem;
-  } */
 
   .social-list li {
     padding-right: 1rem;
