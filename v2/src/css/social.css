@@ -80,13 +80,13 @@
     padding-right: 1rem;
   } */
 
-  /* .social-list li {
+  .social-list li {
     padding-right: 1rem;
-  } */
+  }
 
   .vertical-text {
     writing-mode: horizontal-tb !important;
     text-orientation: mixed;
-    padding-top: 1.25rem;
+    padding-top: 1.7rem;
   }
 }
