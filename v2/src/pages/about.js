@@ -25,7 +25,7 @@ function AboutPage() {
           }
         }
       }
-      working: file(relativePath: { eq: "me_working-min2.jpg" }) {
+      working: file(relativePath: { eq: "me_working-min.jpg" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
