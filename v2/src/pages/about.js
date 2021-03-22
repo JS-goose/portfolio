@@ -6,35 +6,35 @@ import ContactForm from '../components/contactForm';
 import SocialList from '../components/socialList';
 import AnchorLink from '../components/anchorLink';
 
-const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl pb-6'>{children}</h1>;
+const H1 = ({ children }) => <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl pb-6 text-myRed'>{children}</h1>;
 
 function AboutPage() {
   const query = useStaticQuery(graphql`
     query {
       golfing: file(relativePath: { eq: "me_and_wifey_golfing-min.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
+          fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       wedding: file(relativePath: { eq: "me_and_wifey_wedding-min.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
+          fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       working: file(relativePath: { eq: "me_working-min.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
+          fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       fcc: file(relativePath: { eq: "fcc-min.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
+          fluid(quality: 100, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -44,11 +44,11 @@ function AboutPage() {
   return (
     <section className='flex flex-col min-w-full max-w-screen items-center'>
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title='About' />
-      <article className='about-containers bg-white p-6 sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>The Lowdown on yours truly...</H1>
           <p className='text-2xl mb-4'>
-            Howdy! I&apos;m Jonathan. I live in Texas and I&apos;ve been creating in one form or another since I began
+            Howdy! I&apos;m Jonathan Sexton. I live in Texas and I&apos;ve been creating in one form or another since I began
             exploring the internet in the late 90&apos;s.
           </p>
 
@@ -74,7 +74,7 @@ function AboutPage() {
           alt='my wife and I on the golf course with black sunglasses on'
         />
       </article>
-      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:text-base md:text-lg lg:text-xl'>
         <Image
           fluid={query.working.childImageSharp.fluid}
           className='transform -rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
@@ -103,7 +103,7 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:text-base md:text-lg lg:text-xl'>
         <div className='about-copy-containers'>
           <H1>What I Love</H1>
           <p className="text-2xl mb-4">
@@ -125,7 +125,7 @@ function AboutPage() {
           className='transform rotate-3 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
         />
       </article>
-      <article className='about-containers bg-white p-4 flex sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='about-containers bg-white p-4 flex sm:text-base md:text-lg lg:text-xl'>
         <Image
           fluid={query.fcc.childImageSharp.fluid}
           className='transform -rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100'
@@ -137,10 +137,9 @@ function AboutPage() {
           </p>
 
           <p className="mb-4">
-            To that end, I try to be active in the online learning community and the self led learning community as that is how I learned to code.</p>
+            To that end, I try to be somewhat active in the online learning community and the self led learning community because that&apos;s how I learned to code.</p>
           <ul className="mt-4">
             <li className="mb-4">
-              ***This section needs a rework***
               I write articles about programming/coding/technology as a way to give back to the <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a> community.
               It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
 
@@ -171,7 +170,6 @@ function AboutPage() {
                 styling={{ height: 'before:w-36', beforeBgColor: 'before:bg-myPurple'}}
                 addressText={'If/Else Podcast'} /> about choosing an in person or remote developer position
               </li>
-            <li>My DM&apos; are open on all social media platforms where I try to answer any questions I can</li>
           </ul>
           <p className="mb-4 font-bold">
             Connect with me!

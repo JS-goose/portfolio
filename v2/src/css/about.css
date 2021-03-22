@@ -1,5 +1,6 @@
 .about-containers {
   width: 80%;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   column-gap: 1rem;
@@ -8,6 +9,7 @@
 
 .form-parent-container {
   width: 80%;
+  max-width: 1200px;
 }
 
 /* .about-copy-containers {

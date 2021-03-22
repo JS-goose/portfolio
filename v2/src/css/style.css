@@ -27,6 +27,8 @@
 * {
   scrollbar-color: white var(--myPurple);
   scrollbar-width: thin;
+  box-sizing: border-box;
+  line-height: 1.8;
 }
 
 /* Chrome/Edge/Safari */

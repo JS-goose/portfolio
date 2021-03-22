@@ -25,7 +25,7 @@ const Consulting = () => {
         ]}
         title='Consulting'
       />
-      <article className='consulting-inner-container flex bg-white p-4 sm:leading-8 sm:text-base md:text-lg lg:text-xl'>
+      <article className='consulting-inner-container flex bg-white p-4 sm:text-base md:text-lg lg:text-xl'>
         <div className='consulting-img-container'>
           <img src={query.collab.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
         </div>

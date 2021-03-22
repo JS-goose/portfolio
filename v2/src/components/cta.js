@@ -39,11 +39,11 @@ const CallToAction = () => {
           <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-4xl'>
             I build blazing fast, functional websites that help businesses connect with their customers!
           </h1>
-          <p className='lg:leading-8'>
+          <p>
             I&apos;m a freelance developer specializing in helping people and businesses expand their online presence,
             reach more customers, and broaden their audience!
           </p>
-          <p className='lg:leading-8'>
+          <p>
             Are you looking for a to developer design, build, and publish your website for the world to see? You&apos;ve
             come to the right place then my friend!
           </p>
