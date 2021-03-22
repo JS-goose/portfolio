@@ -92,10 +92,10 @@ const Testimonials = () => {
             people and small businesses get up and running with a fast, reliable, customer focused website.
           </p>
           <p className='pt-4 sm:text-base md:text-xl'>Let me put that passion to work for you.</p>
-          <div className='testimonials-container-link-container mt-6'>
+          <div className='testimonials-container-link-container transform hover:scale-105 transition-all duration-500 ease-in-out mt-6'>
             <a
               href='#hire-me'
-              className='bg-myPurple shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg border-transparent shadow text-white hover:underline hover:bg-gradient-to-l from-myRed to-myPurple hover:text-white'>
+              className='cta-button shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-gradient-to-l from-myRed to-myPurple'>
               Get Started Today!
             </a>
           </div>
