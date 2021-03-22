@@ -64,7 +64,7 @@ function Header() {
             },
             {
               route: `/projects`,
-              title: `Portfolio`,
+              title: `Projects`,
               classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {

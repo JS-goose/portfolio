@@ -137,40 +137,41 @@ function AboutPage() {
           </p>
 
           <p className="mb-4">
-            To that end, I try to be somewhat active in the online learning community and the self led learning community because that&apos;s how I learned to code.</p>
-          <ul className="mt-4">
-            <li className="mb-4">
-              I write articles about programming/coding/technology as a way to give back to the <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a> community.
-              It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
-
-            </li>
-            <li>
-              <AnchorLink linkAddress={'https://www.freecodecamp.org/js-goose'}
-                styling={{ height: 'before:w-56', beforeBgColor: 'before:bg-myPurple' }}
-                addressText={'freeCodeCamp Profile'} />
-            </li>
-            <li>
-              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/fcc100-top-contributors-2019/'}
-                styling={{ height: 'before:w-60', beforeBgColor: 'before:bg-myPurple' }}
-                addressText={'Top Contributor for 2019'} />
-            </li>
-            <li>
-              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/2020-top-contributors/'}
-                styling={{ height: 'before:w-60', beforeBgColor: 'before:bg-myPurple' }}
-                addressText={'Top Contributor for 2020'} />
-            </li>
-            <li>
-              <AnchorLink linkAddress={'https://www.freecodecamp.org/news/author/jonathan/'}
-                styling={{ height: 'before:w-72', beforeBgColor: 'before:bg-myPurple' }}
-                addressText={'freeCodeCamp Writer Profile'} />
-            </li>
-            <li className="mb-4">
-              Here&apos; my interview on the &nbsp;
+            So I try to be as active as possible in the online learning community and the self led learning community because that&apos;s how I learned to code.</p>
+          <p className="mb-4">
+            I write articles about programming/coding/technology as a way to give back to the <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">freeCodeCamp</a> community.
+                It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
+              </p>
+          <p className="mb-4">Below you will find some of my recent contributions:</p>
+          <p className="mb-4">
+            - Here is my <AnchorLink linkAddress={'https://www.freecodecamp.org/js-goose'}
+              styling={{ height: 'before:w-56', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'freeCodeCamp Profile'} /> where you can see my learning journey.
+            </p>
+          <p className="mb-4">
+            - I was a publication author <AnchorLink linkAddress={'https://www.freecodecamp.org/news/fcc100-top-contributors-2019/'}
+              styling={{ height: 'before:w-60', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'Top Contributor for 2019'} />.
+            </p>
+          <p className="mb-4">
+            - I was a publication author <AnchorLink linkAddress={'https://www.freecodecamp.org/news/2020-top-contributors/'}
+              styling={{ height: 'before:w-60', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'Top Contributor for 2020'} /> as well.
+            </p>
+          <p className="mb-4">
+            - You can see all of my fCC articles on my <AnchorLink linkAddress={'https://www.freecodecamp.org/news/author/jonathan/'}
+              styling={{ height: 'before:w-72', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'freeCodeCamp Writer Profile'} />
+          </p>
+          <p className="mb-4">
+            Here&apos; my interview on the &nbsp;
               <AnchorLink linkAddress={'https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman'}
-                styling={{ height: 'before:w-36', beforeBgColor: 'before:bg-myPurple'}}
-                addressText={'If/Else Podcast'} /> about choosing an in person or remote developer position
-              </li>
-          </ul>
+              styling={{ height: 'before:w-36', beforeBgColor: 'before:bg-myPurple' }}
+              addressText={'If/Else Podcast'} /> about choosing an in person or remote developer position
+              </p>
+              <p className="mb-4">
+                <i>If you have a technology focused podcast I&apos;d be happy to be a guest - use the form below to get in touch! </i>
+              </p>
           <p className="mb-4 font-bold">
             Connect with me!
           </p>
