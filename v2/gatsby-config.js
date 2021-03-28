@@ -58,7 +58,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-sitemap`,
     // ! *** This was commented out because the plugins need to be updated *** ! //
     // {
     //   resolve: 'gatsby-source-wordpress',
