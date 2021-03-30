@@ -5,11 +5,11 @@
   align-items: center;
 }
 
-.planet {
+/* .planet {
   height: 25rem;
   width: 22.5rem;
   position: absolute !important;
-  /* margin-top: -50rem; */
+  margin-top: -50rem;
   top: 0;
   margin-left: 28rem;
   left: 0;
@@ -68,4 +68,4 @@
     margin-top: 10rem;
     right: 0;
   }
-}
+} */
