@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesLink = () => {
   return (
-    <span className='md:ml-0 lg:ml-40 p-2 transform hover:scale-105 transition duration-500 ease-in-out rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg hover:underline bg-gradient-to-l from-myRed to-myPurple'>
+    <span className='md:ml-0 lg:ml-40 p-2 transform hover:scale-105 transition duration-700 ease-in-out rounded-sm cta-buttons sm:w-full mb-4 sm:text-sm md:text-base xl:text-lg hover:underline bg-myRed'>
       <a href='#services' rel='noopener noreferrer' className='flex justify-center items-center lg:font-semibold'>
         Browse My Services
         <svg

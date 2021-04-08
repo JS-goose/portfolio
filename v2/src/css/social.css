@@ -1,7 +1,7 @@
 .social-container {
   position: absolute;
   right: 0;
-  color: #ff4945;
+  color: white;
   margin-top: -11rem;
   padding-right: 1rem;
   font-size: 1.125rem;
@@ -45,6 +45,7 @@
 .vertical-text {
   writing-mode: vertical-rl !important;
   text-orientation: mixed;
+  padding-right: 0.1rem;
 }
 
 @media screen and (max-width: 400px) {

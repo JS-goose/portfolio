@@ -17,7 +17,7 @@
 }
 
 .cta-buttons {
-  box-shadow: 3px 3px 10px rgba(22, 21, 20, 0.65);
+  box-shadow: 1px 1px 20px rgba(22, 21, 20, 0.35);
   border: 1px solid var(--myBlack);
 }
 
