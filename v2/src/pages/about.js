@@ -6,7 +6,7 @@ import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
 import AnchorLink from "../components/anchorLink";
 
-const H1 = ({ children }) => <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl pb-6 text-myRed">{children}</h1>;
+const H1 = ({ children }) => <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl py-6">{children}</h1>;
 
 function AboutPage() {
   const query = useStaticQuery(graphql`
@@ -45,16 +45,17 @@ function AboutPage() {
     <section className="flex flex-col min-w-full max-w-screen items-center">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <H1>The Lowdown on yours truly...</H1>
+        <p class="mb-4">Howdy! I&apos;m Jonathan Sexton.</p>
         <Image
           fluid={query.golfing.childImageSharp.fluid}
           className="aboutImg justify-self-center rounded-md shadow-lg border-2 border-solid border-gray-100"
           alt="my wife and I on the golf course with black sunglasses on"
         />
+        <H1>The Lowdown on yours truly...</H1>
         <div className="about-copy-containers mt-4">
           <p className="mb-4">
-            Howdy! I&apos;m Jonathan Sexton. I live in Texas and I&apos;ve been creating in one form or another since I began exploring
-            the internet in the late 90&apos;s.
+            I live in Texas and I&apos;ve been creating in one form or another since I began exploring the internet in the late
+            90&apos;s.
           </p>
           <p className="mb-4">
             My fascination with technology started when my brothers and I received our first PC and modem as a Christmas gift in 1998.
@@ -72,14 +73,13 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      {/* // ! NEED TO MAKE THE REST OF THE PAGE LIKE THE TOP SECTION */}
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        <H1>What I Do</H1>
-        <p className="text-2xl mb-4">
-          I&apos;m a freelance web developer who specializes in working with small businesses looking for a &quot;one-stop-shop&quot;
-          for their website/web application solution.
-        </p>
         <Image fluid={query.working.childImageSharp.fluid} className="aboutImg justify-self-center rounded-md" />
+        <H1>What I Do</H1>
+        <p className="mb-4">
+          <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
+          &quot;one-stop-shop&quot; for their website/web application solution.
+        </p>
         <div className="about-copy-containers">
           <p className="mb-4">
             What exactly does that mean you ask? It means I can design, build, publish, and maintain your website, take care of the
@@ -96,22 +96,26 @@ function AboutPage() {
           </p>
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my &nbsp;
-            <AnchorLink
-              linkAddress={"https://jonathansexton.me/blog"}
-              styling={{ height: "before:w-10", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"blog"}
-            />
+            <a href="http://jonathansexton.me.blog" target="_blank" rel="noopener noreferrer">
+              slam
+            </a>
             .
           </p>
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
+        <Image
+          fluid={query.wedding.childImageSharp.fluid}
+          className="transform rotate-3 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100"
+        />
         <div className="about-copy-containers">
           <H1>What I Love</H1>
-          <p className="text-2xl mb-4">
-            When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
-            <del>fiance</del> wife, our <del>daughter</del> daughters, and playing a few video games when I get the chance (rarely ever
-            :D).{" "}
+          <p className="mb-4">
+            <span>
+              When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
+              <del>fiance</del> wife, our <del>daughter</del> daughters
+            </span>
+            , and playing a few video games when I get the chance (rarely ever :D).{" "}
           </p>
 
           <p className="mb-4">
@@ -128,10 +132,6 @@ function AboutPage() {
             :)
           </p>
         </div>
-        <Image
-          fluid={query.wedding.childImageSharp.fluid}
-          className="transform rotate-3 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100"
-        />
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <Image
@@ -140,12 +140,8 @@ function AboutPage() {
         />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
-          <p className="text-2xl mb-4">
-            I believe it&apos;s important to be a memeber of the community (virtual and physical) you love.
-          </p>
           <p className="mb-4">
-            So I try to be as active as possible in the online learning community and the self led learning community because
-            that&apos;s how I learned to code.
+            <span>I believe it&apos;s important to be active in the community</span> (virtual and physical) you love.
           </p>
           <p className="mb-4">
             I write articles about programming/coding/technology as a way to give back to the{" "}
@@ -200,7 +196,7 @@ function AboutPage() {
             about choosing an in person or remote developer position
           </p>
           <p className="mb-4">
-            <i>If you have a technology focused podcast I&apos;d be happy to be a guest - use the form below to get in touch! </i>
+            <i>If you have a podcast you&apos;d like me to be a guest on use the form below to get in touch! </i>
           </p>
           <p className="mb-4 font-bold">Connect with me!</p>
           <ul className="about-social-list flex align-center mt-4">
