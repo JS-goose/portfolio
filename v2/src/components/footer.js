@@ -23,12 +23,12 @@ const articles = [
   },
 ];
 const Footer = () => (
-  <footer className="text-white bg-myPurple sm:text-base md:text-lg">
-    <article className="flex justify-between mx-auto md:p-8 bg-myRed">
+  <footer className="text-white sm:text-base md:text-lg">
+    <article className="flex justify-between mx-auto md:p-8 bg-myDarkPurple">
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-xl">ME</h4>
+            <h4 className="text-myRed text-xl">ME</h4>
           </li>
           <li>
             <a href="mailto:hello@jonathansexton.me?subject=Email_inquiry_from_jonathansexton.me">Email Me</a>
@@ -42,7 +42,7 @@ const Footer = () => (
       <div>
         <ul className="w-full">
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-xl">CONNECT</h4>
+            <h4 className="text-myRed text-xl">CONNECT</h4>
           </li>
           <li>
             <span className="flex">
@@ -101,7 +101,7 @@ const Footer = () => (
       <div className="hidden md:inline">
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-xl">READ: Recent Articles</h4>
+            <h4 className="text-myRed text-xl">READ: Recent Articles</h4>
           </li>
           {articles.map((article, index) => {
             return (
@@ -117,7 +117,7 @@ const Footer = () => (
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-xl">WORK</h4>
+            <h4 className="text-myRed text-xl">WORK</h4>
           </li>
           <li>
             <Link to="#services">Services</Link>
@@ -137,7 +137,7 @@ const Footer = () => (
       </p>
 
       <p>
-        I code on{` `}
+        I write code on{` `}
         <a
           className="font-bold hover:underline"
           href="https://github.com/JS-goose"

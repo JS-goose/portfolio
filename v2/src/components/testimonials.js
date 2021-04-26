@@ -95,7 +95,7 @@ const Testimonials = () => {
           <div className='testimonials-container-link-container transform hover:scale-105 transition-all duration-700 ease-in-out mt-6'>
             <a
               href='#hire-me'
-              className='shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed'>
+              className='shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed hover:bg-myDarkRed'>
               Get Started Today!
             </a>
           </div>
