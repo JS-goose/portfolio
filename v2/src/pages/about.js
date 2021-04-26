@@ -48,7 +48,7 @@ function AboutPage() {
         <p class="mb-4">Howdy! I&apos;m Jonathan Sexton.</p>
         <Image
           fluid={query.golfing.childImageSharp.fluid}
-          className="aboutImg justify-self-center rounded-md shadow-lg border-2 border-solid border-gray-100"
+          className="aboutImg justify-self-center rounded-sm shadow-lg border-2 border-solid border-gray-100"
           alt="my wife and I on the golf course with black sunglasses on"
         />
         <H1>The Lowdown on yours truly...</H1>
@@ -74,7 +74,7 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        <Image fluid={query.working.childImageSharp.fluid} className="aboutImg justify-self-center rounded-md" />
+        <Image fluid={query.working.childImageSharp.fluid} className="aboutImg justify-self-center rounded-sm" />
         <H1>What I Do</H1>
         <p className="mb-4">
           <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
@@ -106,7 +106,7 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <Image
           fluid={query.wedding.childImageSharp.fluid}
-          className="transform rotate-3 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100"
+          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
         />
         <div className="about-copy-containers">
           <H1>What I Love</H1>
@@ -136,7 +136,7 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <Image
           fluid={query.fcc.childImageSharp.fluid}
-          className="transform -rotate-2 aboutImg rounded-md shadow-lg border-2 border-solid border-gray-100"
+          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
         />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>

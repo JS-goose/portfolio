@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: `Stu Finn`,
       company: `Borealis Web Development`,
       title: `Owner/Developer`,
-      comment: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."`,
+      comment: `"I have hired Jonathan for multiple Borealis Web Development projects and it is always a pleasure working with him.  Jonathan is easygoing, incredibly helpful, and is an excellent developer."`,
       website: `https://borealisweb.ca`,
     },
     {
@@ -95,7 +95,7 @@ const Testimonials = () => {
           <div className='testimonials-container-link-container transform hover:scale-105 transition-all duration-500 ease-in-out mt-6'>
             <a
               href='#hire-me'
-              className='cta-button shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-gradient-to-l from-myRed to-myPurple'>
+              className='shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed'>
               Get Started Today!
             </a>
           </div>
@@ -107,19 +107,19 @@ const Testimonials = () => {
               data-key={index + 1}
               className='customer-testimonial-container flex sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
               <Image
-                className='testimonials-images rounded-md shadow-lg border-2 border-solid border-black-100'
+                className='testimonials-images rounded-sm shadow-lg border-2 border-solid border-black-100'
                 fluid={
                   index + 1 === 1
                     ? query.stu.childImageSharp.fluid
                     : index + 1 === 2
-                    ? query.tracy.childImageSharp.fluid
-                    : index + 1 === 3
-                    ? query.mike.childImageSharp.fluid
-                    : index + 1 === 4
-                    ? query.caleb.childImageSharp.fluid
-                    : index + 1 === 5
-                    ? query.keith.childImageSharp.fluid
-                    : ''
+                      ? query.tracy.childImageSharp.fluid
+                      : index + 1 === 3
+                        ? query.mike.childImageSharp.fluid
+                        : index + 1 === 4
+                          ? query.caleb.childImageSharp.fluid
+                          : index + 1 === 5
+                            ? query.keith.childImageSharp.fluid
+                            : ''
                 }
               />
               <div className='pl-4 sm:text-lg md:text-xl'>
