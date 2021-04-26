@@ -36,7 +36,7 @@ const CallToAction = () => {
       <span className='hidden md:visible border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4' />
       <article className='p-3 sm:text-sm md:text-base lg:text-lg'>
         <div className='flex flex-col justify-evenly max-w-3xl h-full'>
-          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-4xl'>
+          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-4xl underline'>
             I build blazing fast, functional websites that help businesses connect with their customers!
           </h1>
           <p>
@@ -47,7 +47,6 @@ const CallToAction = () => {
             Are you looking for a to developer design, build, and publish your website for the world to see? You&apos;ve
             come to the right place then my friend!
           </p>
-          {/* <h4 className='mt-2 font-bold'> Let’s launch your project together!</h4> */}
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
             <HireLink href={'#hire-me'} textContent={'Hire Me For Your Project'} />
             <ServicesLink />

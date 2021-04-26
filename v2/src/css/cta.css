@@ -16,11 +16,6 @@
   width: 6rem;
 }
 
-.cta-buttons {
-  box-shadow: 1px 1px 20px rgba(22, 21, 20, 0.35);
-  border: 1px solid var(--myBlack);
-}
-
 /* @media screen and (min-width: 576px) {
   .me-img {
     height: 18rem;
