@@ -61,10 +61,10 @@ const ContactForm = (props) => {
         </fieldset>
         <button
           type='submit'
-          className='flex border-gray-400 border-2 shadow-lg bg-myPurple p2 rounded transition duration-300 hover:underline text-white hover:bg-gradient-to-r from-myPurple to-myRed'>
+          className='flex text-white shadow-lg bg-myRed p2 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline'>
           <span className='contact-form-button-span'>Submit Request</span>{' '}
           <svg
-            className='sm:hidden lg:inline-block lg:mt-2 pr-1'
+            className='mt-1 md:mt-2 lg:mt-3 pr-1'
             width='24'
             height='24'
             viewBox='0 0 24 24'
@@ -77,7 +77,7 @@ const ContactForm = (props) => {
                 clipRule='evenodd'
                 d='M8.43005 13.44L19.77 2.1L24 6.33L8.43005 21.9L0 13.47L4.22998 9.24L8.43005 13.44ZM21.1699 6.33L19.7699 4.93L8.42993 16.27L4.22998 12.07L2.82996 13.47L8.42993 19.07L21.1699 6.33Z'
                 fill='white'
-                fillOpacity='0.54'
+                fillOpacity='1'
               />
             </g>
           </svg>
