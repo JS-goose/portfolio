@@ -58,17 +58,17 @@ function AboutPage() {
             90&apos;s.
           </p>
           <p className="mb-4">
-            My fascination with technology started when my brothers and I received our first PC and modem as a Christmas gift in 1998.
+            My fascination with technology started when my brothers and I received our first PC and modem as a gift in the early 90s.
             I remember exploring and learning about the early internet with its seemingly endless possibilities.
           </p>
           <p className="mb-4">
             Out of curiosity, I decided to teach myself to program/code as a hobby. It soon became an obsession - I couldn&apos;t get
             enough of it. Before teaching myself how to code, I worked in the sales industry where I have over a decade of customer
             support, service, and lead generation experience. Obession quickly turned into a profession when I decided to put that
-            experience and knowledge to use for myself and my clients.
+            experience and knowledge to use for my clients.
           </p>
           <p className="mb-4">
-            Fast forward almost 5 years and I&apos;m now a full time developer working on projects that excite me, fascinate me, and
+            Fast forward and I&apos;m now a full time developer working on projects that excite me, fascinate me, and
             still give me that same sense of wonder I got the first time I saw one of my programs run.
           </p>
         </div>
