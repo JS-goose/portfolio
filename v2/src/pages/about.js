@@ -4,7 +4,6 @@ import Image from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
-import AnchorLink from "../components/anchorLink";
 
 const H1 = ({ children }) => <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl py-6">{children}</h1>;
 
@@ -58,8 +57,8 @@ function AboutPage() {
             90&apos;s.
           </p>
           <p className="mb-4">
-            My fascination with technology started when my brothers and I received our first PC and modem as a gift in the early 90s.
-            I remember exploring and learning about the early internet with its seemingly endless possibilities.
+            My fascination with technology started when my brothers and I received our first PC and modem as a gift in the early 90s. I
+            remember exploring and learning about the early internet with its seemingly endless possibilities.
           </p>
           <p className="mb-4">
             Out of curiosity, I decided to teach myself to program/code as a hobby. It soon became an obsession - I couldn&apos;t get
@@ -68,8 +67,8 @@ function AboutPage() {
             experience and knowledge to use for my clients.
           </p>
           <p className="mb-4">
-            Fast forward and I&apos;m now a full time developer working on projects that excite me, fascinate me, and
-            still give me that same sense of wonder I got the first time I saw one of my programs run.
+            Fast forward and I&apos;m now a full time developer working on projects that excite me, fascinate me, and still give me
+            that same sense of wonder I got the first time I saw one of my programs run.
           </p>
         </div>
       </article>
@@ -97,7 +96,7 @@ function AboutPage() {
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my &nbsp;
             <a href="http://jonathansexton.me.blog" target="_blank" rel="noopener noreferrer">
-              slam
+              blog
             </a>
             .
           </p>
@@ -145,54 +144,37 @@ function AboutPage() {
           </p>
           <p className="mb-4">
             I write articles about programming/coding/technology as a way to give back to the{" "}
-            <a href="https://www.freecodecamp.org/js-goose" rel="noopener noreferrer">
+            <a href="https://www.freecodecamp.org/js-goose" target="__blank" rel="noopener noreferrer">
               freeCodeCamp
             </a>{" "}
             community. It&apos;s near and dear to my heart as I leaned on them heavily when I was learning to code.
           </p>
           <p className="mb-4">Below you will find some of my recent contributions:</p>
           <p className="mb-4">
-            - Here is my{" "}
-            <AnchorLink
-              linkAddress={"https://www.freecodecamp.org/js-goose"}
-              styling={{ height: "before:w-56", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"freeCodeCamp Profile"}
-            />{" "}
-            where you can see my learning journey.
-          </p>
-          <p className="mb-4">
-            - I was a publication author{" "}
-            <AnchorLink
-              linkAddress={"https://www.freecodecamp.org/news/fcc100-top-contributors-2019/"}
-              styling={{ height: "before:w-60", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"Top Contributor for 2019"}
-            />
-            .
-          </p>
-          <p className="mb-4">
-            - I was a publication author{" "}
-            <AnchorLink
-              linkAddress={"https://www.freecodecamp.org/news/2020-top-contributors/"}
-              styling={{ height: "before:w-60", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"Top Contributor for 2020"}
-            />{" "}
-            as well.
-          </p>
-          <p className="mb-4">
-            - You can see all of my fCC articles on my{" "}
-            <AnchorLink
-              linkAddress={"https://www.freecodecamp.org/news/author/jonathan/"}
-              styling={{ height: "before:w-72", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"freeCodeCamp Writer Profile"}
-            />
-          </p>
-          <p className="mb-4">
+            Here is my{" "}
+            <a href="https://www.freecodecamp.org/js-goose" target="_blank" rel="noopener noreferrer">
+              freeCodeCamp Profile
+            </a>{" "}
+            where you can see my learning journey and learn to code for yourself as well. I was a publication author{" "}
+            <a href="https://www.freecodecamp.org/news/fcc100-top-contributors-2019/" target="_blank" rel="noopener noreferrer">
+              Top Contributor for 2019
+            </a>
+            . I was a publication author{" "}
+            <a href="https://www.freecodecamp.org/news/2020-top-contributors/" target="_blank" rel="noopener noreferrer">
+              Top Contributor for 2020
+            </a>{" "}
+            as well. - You can see all of my fCC articles on my{" "}
+            <a href="https://www.freecodecamp.org/news/author/jonathan/" target="_blank" rel="noopener noreferrer">
+              freeCodeCamp Author Profile
+            </a>
             Here&apos; my interview on the &nbsp;
-            <AnchorLink
-              linkAddress={"https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman"}
-              styling={{ height: "before:w-36", beforeBgColor: "before:bg-myPurple" }}
-              addressText={"If/Else Podcast"}
-            />{" "}
+            <a
+              href="https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              If/Else Podcast
+            </a>{" "}
             about choosing an in person or remote developer position
           </p>
           <p className="mb-4">
