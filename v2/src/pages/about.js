@@ -159,7 +159,7 @@ function AboutPage() {
             <a href="https://www.freecodecamp.org/news/fcc100-top-contributors-2019/" target="_blank" rel="noopener noreferrer">
               Top Contributor for 2019
             </a>{" "}
-            and
+            and{" "}
             <a href="https://www.freecodecamp.org/news/2020-top-contributors/" target="_blank" rel="noopener noreferrer">
               2020
             </a>{" "}
@@ -194,7 +194,7 @@ function AboutPage() {
                 svgClassName={"social-icons"}
                 devIconStyling={"mt-2"}
                 mediumFillColor={"#FFF"}
-                liClassName={"social-list-items mr-6 h-12"}
+                liClassName={"mr-6"}
               />
             </ul>{" "}
         </div>
