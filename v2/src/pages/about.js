@@ -95,7 +95,7 @@ function AboutPage() {
           </p>
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my &nbsp;
-            <a href="http://jonathansexton.me.blog" target="_blank" rel="noopener noreferrer">
+            <a href="http://jonathansexton.me/blog" target="_blank" rel="noopener noreferrer">
               blog
             </a>
             .
@@ -158,16 +158,21 @@ function AboutPage() {
             where you can see my learning journey and learn to code for yourself as well. I was a publication author{" "}
             <a href="https://www.freecodecamp.org/news/fcc100-top-contributors-2019/" target="_blank" rel="noopener noreferrer">
               Top Contributor for 2019
-            </a>
-            . I was a publication author{" "}
-            <a href="https://www.freecodecamp.org/news/2020-top-contributors/" target="_blank" rel="noopener noreferrer">
-              Top Contributor for 2020
             </a>{" "}
-            as well. - You can see all of my fCC articles on my{" "}
+            and
+            <a href="https://www.freecodecamp.org/news/2020-top-contributors/" target="_blank" rel="noopener noreferrer">
+              2020
+            </a>{" "}
+            as well.{" "}
+          </p>
+          <p class="mb-4">
+            You can see all of my fCC articles on my{" "}
             <a href="https://www.freecodecamp.org/news/author/jonathan/" target="_blank" rel="noopener noreferrer">
               freeCodeCamp Author Profile
             </a>
-            Here&apos; my interview on the &nbsp;
+          </p>
+          <p class="mb-4">
+            I also have an interview on the &nbsp;
             <a
               href="https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman"
               target="_blank"
@@ -175,20 +180,23 @@ function AboutPage() {
             >
               If/Else Podcast
             </a>{" "}
-            about choosing an in person or remote developer position
+            about choosing an in person or remote developer position.
           </p>
           <p className="mb-4">
-            <i>If you have a podcast you&apos;d like me to be a guest on use the form below to get in touch! </i>
+            <i>
+              If you have a podcast you&apos;d like me to be a guest on or are interested in me writing a guest article on your blog
+              please use the form below to get in touch!{" "}
+            </i>
           </p>
-          <p className="mb-4 font-bold">Connect with me!</p>
-          <ul className="about-social-list flex align-center mt-4">
-            <SocialList
-              svgClassName={"social-icons"}
-              devIconStyling={"mt-2"}
-              mediumFillColor={"#FFF"}
-              liClassName={"social-list-items mr-6"}
-            />
-          </ul>{" "}
+            <p className="mb-4 font-bold">Let's Connect!</p>
+            <ul className="about-social-list flex align-center mt-4">
+              <SocialList
+                svgClassName={"social-icons"}
+                devIconStyling={"mt-2"}
+                mediumFillColor={"#FFF"}
+                liClassName={"social-list-items mr-6 h-12"}
+              />
+            </ul>{" "}
         </div>
       </article>
       <article

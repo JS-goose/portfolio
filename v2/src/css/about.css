@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  overflow-wrap: anywhere;
+  /* overflow-wrap: anywhere; */
 }
 
 .about-containers p span {
@@ -18,16 +18,15 @@
 
 p a {
   position: relative;
-  color: var(--myDarkGray);
 }
 
 p a:hover {
   text-decoration: underline;
-  color: var(--myBlack);
+  color: var(--myDarkGray);
 }
 
 p a:before {
-  height: .3rem;
+  height: 1.5rem;
   position: absolute;
   background: var(--myRed);
   content: "";
@@ -36,8 +35,10 @@ p a:before {
   z-index: -1;
 }
 
-p a::before:hover {
-  background-color: var(--myDarkRed);
+p a:hover:before {
+  height: 0.3rem;
+  transform: skew(1deg, 1deg);
+  transition: all ease-in-out 0.1s;
 
 }
 
@@ -53,4 +54,5 @@ p a::before:hover {
 
 .social-icons {
   fill: black !important;
+  font-size: 2rem;
 }
