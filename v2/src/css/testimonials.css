@@ -63,4 +63,8 @@
   .customer-testimonial-container {
     padding: 5px;
   }
+
+  .testimonials-container-2 div {
+    flex-direction: column;
+  }
 }

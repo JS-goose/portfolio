@@ -62,14 +62,18 @@ const ServicesList = () => {
           <h1 className='text-myRed md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl'>
             What Can I Do For You and Your Business?
           </h1>
-          <ul>
+          <div>
+            {/* Image courtesy of https://undraw.co */}
+            <img src={query.decisions.publicURL} alt='a man in a suit pointing at charts' />
+          </div>
+          <ul class="mt-8">
             {/* I couldn't get the link to work correctly when this was part of the services object so it has been hard coded here */}
             <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
               <p>
                 1. Provide a&nbsp;{' '}
-                <Link to='/consulting' className='services-list-page-link underline'>
+                <a className="bacon" href='/consulting'>
                   consultation
-                </Link>{' '}
+                </a>{' '}
                 &nbsp;to discuss any pain points you have with your web presence.
               </p>
             </li>
@@ -80,24 +84,20 @@ const ServicesList = () => {
             ))}
           </ul>
         </div>
-        <div>
-          {/* Image courtesy of https://undraw.co */}
-          <img src={query.decisions.publicURL} alt='a man in a suit pointing at charts' />
-        </div>
       </div>
       <div className='why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl'>
-        <div>
-          {/* Image courtesy of https://undraw.co */}
-          <img
-            src={query.shop.publicURL}
-            alt='a man standing outside a shop of books'
-            className='why-hire-me-container-books-img'
-          />
-        </div>
         <div>
           <h1 className='text-myRed md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl'>
             Why Hire Me As Your Developer?
           </h1>
+          <div class="mb-8">
+            {/* Image courtesy of https://undraw.co */}
+            <img
+              src={query.shop.publicURL}
+              alt='a man standing outside a shop of books'
+              className='why-hire-me-container-books-img'
+            />
+          </div>
           <p>
             Having a digital presence has never been more important than it is now. With consumers shifting more activities
             online you could be missing out on customers and profits if you don&apos; have an online
@@ -126,11 +126,11 @@ const ServicesList = () => {
           </p>
           &nbsp;
           <p>
-            This is a partnership and I want you to be a part of the process. 
+            This is a partnership and I want you to be a part of the process.
           </p>
           &nbsp;
           <p>
-          From
+            From
             the initial meeting, through the design and build process, all the way to launching your website we&apos;ll be there together.
           </p>
         </div>
