@@ -37,14 +37,14 @@ const CallToAction = () => {
       <article className='p-3 sm:text-sm md:text-base lg:text-lg'>
         <div className='flex flex-col justify-evenly max-w-3xl h-full'>
           <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-4xl underline'>
-            I build blazing fast, functional websites that help businesses connect with their customers!
+            I build blazing fast, functional websites that help businesses convert visitors to customers!
           </h1>
           <p>
             I&apos;m a freelance developer specializing in helping people and businesses expand their online presence,
             reach more customers, and broaden their audience!
           </p>
           <p>
-            Are you looking for a to developer design, build, and publish your website for the world to see? You&apos;ve
+            Are you looking for a developer to design, build, and publish your website?  Do you need an audit of your existing website? You&apos;ve
             come to the right place then my friend!
           </p>
           <div className='flex flex-col lg:flex-row mt-4 text-white sm:w-3/4 lg:w-full'>
