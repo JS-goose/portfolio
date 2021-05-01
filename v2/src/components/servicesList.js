@@ -99,23 +99,23 @@ const ServicesList = () => {
             Why Hire Me As Your Developer?
           </h1>
           <p>
-            Having a digital presence has never been more important than it is now. With consumers shifting more of
-            their activities to online you&apos;re missing out on customers and profits if you don&apos; have an online
+            Having a digital presence has never been more important than it is now. With consumers shifting more activities
+            online you could be missing out on customers and profits if you don&apos; have an online
             presence.
           </p>
           &nbsp;
           <p>
-            By partnering with me, you&apos;ll get a responsive, easy to use, functional, SEO optimized website built
-            using the most up to date and stable technologies that ensure a great user experience.
+            By partnering with me, you&apos;ll get a responsive, easy to use, functional, SEO optimized website
+            that will ensure a great user experience.
           </p>
           &nbsp;
           <p>
-            From sprawling, complex web application to something smaller, more custom I&apos;ll put my industry
+            From sprawling, complex web applications to custom landing pages and sales funnels I&apos;ll put my industry
             knowledge and experience to work for you.
           </p>
           &nbsp;
           <p>
-            I provide big agency level work and support with the same care and attention you get from local, hometown
+            I provide big agency level service and support with the same care and attention you get from local, hometown
             businesses.
           </p>
           &nbsp;
@@ -126,14 +126,12 @@ const ServicesList = () => {
           </p>
           &nbsp;
           <p>
-            This is a partnership that will last beyond this project and I want you to be a part of the process. From
-            the initial meeting, through the design and build process, all the way to launching your website I&apos;ll
-            be right by your side providing help and support.
+            This is a partnership and I want you to be a part of the process. 
           </p>
           &nbsp;
           <p>
-            You&apos;re in good hands! I am very proud of the work I do and I&apos;m confident you will love the
-            results!
+          From
+            the initial meeting, through the design and build process, all the way to launching your website we&apos;ll be there together.
           </p>
         </div>
       </div>

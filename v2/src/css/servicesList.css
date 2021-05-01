@@ -22,6 +22,10 @@
   scale: 1.05;
 }
 
+.services-list-container, .why-hire-me-container {
+  max-width: 1000px;
+}
+
 .why-hire-me-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
