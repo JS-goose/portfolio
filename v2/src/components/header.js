@@ -59,7 +59,7 @@ function Header() {
             },
             {
               route: `https://jonathansexton.me/blog`,
-              title: `Articles`,
+              title: `Blog`,
               classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
@@ -67,11 +67,11 @@ function Header() {
               title: `Projects`,
               classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
-            {
-              route: `/team`,
-              title: `Team`,
-              classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
-            },
+            // {
+            //   route: `/team`,
+            //   title: `Team`,
+            //   classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
+            // },
             {
               route: `#hire-me`,
               title: `Hire Me`,
@@ -80,7 +80,7 @@ function Header() {
           ].map((link) =>
             link.route === 'https://jonathansexton.me/blog' ? (
               <a href='https://jonathansexton.me/blog' className={link.classname} key={link.title}>
-                Articles
+                Blog
               </a>
             ) : (
               <Link className={link.classname} key={link.title} to={link.route} rel='noopener noreferrer'>
