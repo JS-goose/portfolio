@@ -27,7 +27,7 @@ a.nav-link:hover {
   }
 }
 
-.logoNotHovered {
+/* .logoNotHovered {
   transition: transform 0.5s ease-in;
   transform: rotate(0);
   height: 8rem;
@@ -37,17 +37,17 @@ a.nav-link:hover {
   left: 0;
   margin-top: -0.8rem;
   cursor: pointer;
-}
+} */
 .logo {
   height: 8rem;
   width: 8rem;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
-  margin-top: -0.8rem;
+  margin-top: -0.8rem; */
   cursor: pointer;
 }
-.logo:hover {
+/* .logo:hover {
   transition: transform 0.5s ease-out;
   transform: rotate(-45deg);
-}
+} */
