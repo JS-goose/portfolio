@@ -66,7 +66,7 @@ const ServicesList = () => {
             {/* Image courtesy of https://undraw.co */}
             <img src={query.decisions.publicURL} alt='a man in a suit pointing at charts' />
           </div>
-          <ul class="mt-8">
+          <ul className="mt-8">
             {/* I couldn't get the link to work correctly when this was part of the services object so it has been hard coded here */}
             <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
               <p>
@@ -90,7 +90,7 @@ const ServicesList = () => {
           <h1 className='text-myRed md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl'>
             Why Hire Me As Your Developer?
           </h1>
-          <div class="mb-8">
+          <div className="mb-8">
             {/* Image courtesy of https://undraw.co */}
             <img
               src={query.shop.publicURL}

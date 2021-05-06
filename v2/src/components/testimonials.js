@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Testimonials = () => {
   const testimonials = [
@@ -40,45 +40,59 @@ const Testimonials = () => {
     // {name: `Steve Flannery`, company: `Steve's PC Shop`, comment: `Testimonial here`, website: `https://www.localcomputer.expert/`},
   ];
 
-  const query = useStaticQuery(graphql`
-    query {
-      stu: file(relativePath: { eq: "Stu.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 250) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
-      tracy: file(relativePath: { eq: "tracy-min.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 250) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
-      mike: file(relativePath: { eq: "mike-min.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 250) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
-      caleb: file(relativePath: { eq: "caleb-min.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 250) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
-      keith: file(relativePath: { eq: "keith.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 250) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
-          }
-        }
-      }
+  const query = useStaticQuery(graphql`{
+  stu: file(relativePath: {eq: "Stu.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(
+        quality: 100
+        width: 250
+        placeholder: TRACED_SVG
+        layout: CONSTRAINED
+      )
     }
-  `);
+  }
+  tracy: file(relativePath: {eq: "tracy-min.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(
+        quality: 100
+        width: 250
+        placeholder: TRACED_SVG
+        layout: CONSTRAINED
+      )
+    }
+  }
+  mike: file(relativePath: {eq: "mike-min.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(
+        quality: 100
+        width: 250
+        placeholder: TRACED_SVG
+        layout: CONSTRAINED
+      )
+    }
+  }
+  caleb: file(relativePath: {eq: "caleb-min.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(
+        quality: 100
+        width: 250
+        placeholder: TRACED_SVG
+        layout: CONSTRAINED
+      )
+    }
+  }
+  keith: file(relativePath: {eq: "keith.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(
+        quality: 100
+        width: 250
+        placeholder: TRACED_SVG
+        layout: CONSTRAINED
+      )
+    }
+  }
+}
+`);
 
   return (
     <section className='bg-white w-full flex items-center justify-center'>
@@ -106,22 +120,21 @@ const Testimonials = () => {
               key={index}
               data-key={index + 1}
               className='customer-testimonial-container flex sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-2xl sm:text-sm md:text-base'>
-              <Image
-                className='testimonials-images rounded-sm shadow-lg border-2 border-solid border-black-100'
-                fluid={
-                  index + 1 === 1
-                    ? query.stu.childImageSharp.fluid
-                    : index + 1 === 2
-                      ? query.tracy.childImageSharp.fluid
-                      : index + 1 === 3
-                        ? query.mike.childImageSharp.fluid
-                        : index + 1 === 4
-                          ? query.caleb.childImageSharp.fluid
-                          : index + 1 === 5
-                            ? query.keith.childImageSharp.fluid
-                            : ''
-                }
-              />
+                {/* //! Need to set the alt for each of these !// */}
+              <GatsbyImage
+                image={index + 1 === 1
+                  ? query.stu.childImageSharp.gatsbyImageData
+                  : index + 1 === 2
+                    ? query.tracy.childImageSharp.gatsbyImageData
+                    : index + 1 === 3
+                      ? query.mike.childImageSharp.gatsbyImageData
+                      : index + 1 === 4
+                        ? query.caleb.childImageSharp.gatsbyImageData
+                        : index + 1 === 5
+                          ? query.keith.childImageSharp.gatsbyImageData
+                          : ''}
+                className='testimonials-images rounded-sm shadow-lg border-2 border-solid border-black-100' 
+                alt=''/>
               <div className='pl-4 sm:text-lg md:text-xl'>
                 <h4 className='lg:text-2xl text-myPurple font-bold'>{card.name}</h4>
                 <p className='text-myBlack hidden md:inline'>{card.title} - </p>

@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "../components/seo";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
@@ -8,48 +8,38 @@ import SocialList from "../components/socialList";
 const H1 = ({ children }) => <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl py-6">{children}</h1>;
 
 function AboutPage() {
-  const query = useStaticQuery(graphql`
-    query {
-      golfing: file(relativePath: { eq: "me_and_wifey_golfing-min.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      wedding: file(relativePath: { eq: "me_and_wifey_wedding-min.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      working: file(relativePath: { eq: "what-i-do-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      fcc: file(relativePath: { eq: "fcc-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const query = useStaticQuery(graphql`{
+  golfing: file(relativePath: {eq: "me_and_wifey_golfing-min.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
     }
-  `);
+  }
+  wedding: file(relativePath: {eq: "me_and_wifey_wedding-min.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+    }
+  }
+  working: file(relativePath: {eq: "what-i-do-min.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+    }
+  }
+  fcc: file(relativePath: {eq: "fcc-min.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+    }
+  }
+}
+`);
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <p class="mb-4">Howdy! I&apos;m Jonathan Sexton.</p>
-        <Image
-          fluid={query.golfing.childImageSharp.fluid}
+        <p className="mb-4">Howdy! I&apos;m Jonathan Sexton.</p>
+        <GatsbyImage
+          image={query.golfing.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm shadow-lg border-2 border-solid border-gray-100"
-          alt="my wife and I on the golf course with black sunglasses on"
-        />
+          alt="my wife and I on the golf course with black sunglasses on" />
         <H1>The Lowdown on yours truly...</H1>
         <div className="about-copy-containers mt-4">
           <p className="mb-4">
@@ -73,7 +63,9 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        <Image fluid={query.working.childImageSharp.fluid} className="aboutImg justify-self-center rounded-sm" />
+        <GatsbyImage
+          image={query.working.childImageSharp.gatsbyImageData}
+          className="aboutImg justify-self-center rounded-sm" />
         <H1>What I Do</H1>
         <p className="mb-4">
           <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
@@ -103,10 +95,9 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        <Image
-          fluid={query.wedding.childImageSharp.fluid}
-          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
-        />
+        <GatsbyImage
+          image={query.wedding.childImageSharp.gatsbyImageData}
+          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100" />
         <div className="about-copy-containers">
           <H1>What I Love</H1>
           <p className="mb-4">
@@ -133,10 +124,9 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        <Image
-          fluid={query.fcc.childImageSharp.fluid}
-          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
-        />
+        <GatsbyImage
+          image={query.fcc.childImageSharp.gatsbyImageData}
+          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100" />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
@@ -165,13 +155,13 @@ function AboutPage() {
             </a>{" "}
             as well.{" "}
           </p>
-          <p class="mb-4">
+          <p className="mb-4">
             You can see all of my fCC articles on my{" "}
             <a href="https://www.freecodecamp.org/news/author/jonathan/" target="_blank" rel="noopener noreferrer">
               freeCodeCamp Author Profile
             </a>
           </p>
-          <p class="mb-4">
+          <p className="mb-4">
             I also have an interview on the &nbsp;
             <a
               href="https://www.ifelsepodcast.com/episodes/remote-vs-on-site-with-guests-katie-womersley-emily-freeman"

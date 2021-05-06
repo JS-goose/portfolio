@@ -1,33 +1,27 @@
 import React from 'react';
-import Image from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from 'gatsby';
 import HireLink from './hireLink';
 import ServicesLink from './servicesLink';
 
 const CallToAction = () => {
-  const query = useStaticQuery(graphql`
-    query {
-      me: file(relativePath: { eq: "me-min.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      hand: file(relativePath: { eq: "icons/waving hand.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 50) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const query = useStaticQuery(graphql`{
+  me: file(relativePath: {eq: "me-min.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, width: 600, layout: CONSTRAINED)
     }
-  `);
+  }
+  hand: file(relativePath: {eq: "icons/waving hand.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, width: 50, layout: CONSTRAINED)
+    }
+  }
+}
+`);
   return (
     <section className='cta md:mt-12 xl:mt-24 text-white sm:max-w-full md:max-w-4xl lg:max-w-6xl'>
       <article className='cta-img-container sm:p-2 lg:p-6'>
-        <Image fluid={query.me.childImageSharp.fluid} className='me-img' />
+        <GatsbyImage image={query.me.childImageSharp.gatsbyImageData} alt="Jonathan Sexton pretending to write something clever in his journal while sitting at a desk" className='me-img' />
         <div className='flex flex-row justify-center sm:pt-2'>
           <h5 className='md:text-base lg:text-lg font-Rubik'>Hi, I&apos;m Jonathan :)</h5>
           {/* <Image fluid={query.hand.childImageSharp.fluid} className='h-8 w-8 ml-2' /> */}
