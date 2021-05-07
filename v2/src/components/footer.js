@@ -24,7 +24,7 @@ const articles = [
 ];
 const Footer = () => (
   <footer className="text-white sm:text-base md:text-lg">
-    <article className="flex justify-between mx-auto md:p-8 bg-myDarkPurple">
+    <article className="flex justify-between mx-auto md:p-8">
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">

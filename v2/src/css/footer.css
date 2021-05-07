@@ -8,3 +8,7 @@
   transform: skew(30deg) rotate(-3deg);
   z-index: 0;
 }
+
+footer article:first-of-type {
+  background-color: var(--myDarkPurple10);
+}
