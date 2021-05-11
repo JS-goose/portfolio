@@ -112,18 +112,20 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
+        {/* className="shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed hover:bg-myDarkRed" */}
         <div className="testimonials-container-3">
           <p className="pt-4 sm:text-base md:text-xl">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life.
           </p>
           <p className="pt-4 sm:text-base md:text-xl">Let me put that passion to work for you.</p>
-          <div className="testimonials-container-link-container transform hover:scale-105 transition-all duration-700 ease-in-out mt-6">
-            <a
-              href="#hire-me"
-              className="shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed hover:bg-myDarkRed"
+          <div className="mt-6">
+            <span
+              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
+            justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
+             hover:underline"
             >
-              Get Started Today!
-            </a>
+              <a href="#hire-me">Get Started Today!</a>
+            </span>
           </div>
         </div>
       </article>
