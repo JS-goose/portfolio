@@ -112,8 +112,8 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        {/* className="shadow-lg pt-3 pl-4 pr-4 pb-2 rounded-sm sm:text-base md:text-xl text-lg shadow text-white hover:underline bg-myRed hover:bg-myDarkRed" */}
         <div className="testimonials-container-3">
+          <p className="text-myPurple font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-4 sm:text-base md:text-xl">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life.
           </p>
