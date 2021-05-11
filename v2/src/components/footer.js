@@ -36,7 +36,11 @@ const Footer = () => (
           <li>
             <Link to="/about">About Me</Link>
           </li>
-          <li><a href="https://jonathansexton.me/blog" target="__blank" rel="noopener noreferrer">Blog</a></li>
+          <li>
+            <a href="https://jonathansexton.me/blog" target="__blank" rel="noopener noreferrer">
+              Blog
+            </a>
+          </li>
         </ul>
       </div>
       <div>
@@ -46,12 +50,13 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p> &nbsp;
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
                 rel="noopener noreferrer"
-                className="flex flex-col font-bold underline">
+                className="flex flex-col font-bold underline"
+              >
                 Twitter
                 <span className="social-link-underline w-16"></span>
               </a>
@@ -59,12 +64,13 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p> &nbsp;
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
                 rel="noopener noreferrer"
-                className="flex flex-col font-bold underline">
+                className="flex flex-col font-bold underline"
+              >
                 LinkedIn
                 <span className="social-link-underline w-20"></span>
               </a>
@@ -72,12 +78,13 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p> &nbsp;
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
                 rel="noopener noreferrer"
-                className="flex flex-col font-bold underline">
+                className="flex flex-col font-bold underline"
+              >
                 Instagram
                 <span className="social-link-underline w-20"></span>
               </a>
@@ -85,12 +92,13 @@ const Footer = () => (
           </li>
           <li>
             <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p>
+              <p className="hidden lg:inline">Follow me on</p> &nbsp;
               <a
                 href="https://twitter.com/jj_goose"
                 target="__blank"
                 rel="noopener noreferrer"
-                className="flex flex-col font-bold underline">
+                className="flex flex-col font-bold underline"
+              >
                 Facebook
                 <span className="social-link-underline w-20"></span>
               </a>
@@ -125,7 +133,9 @@ const Footer = () => (
           <li>
             <Link to="#hire-me">Hire Me Today</Link>
           </li>
-          <li><Link to="/consulting">Freelance Consultant</Link></li>
+          <li>
+            <Link to="/consulting">Freelance Consultant</Link>
+          </li>
           <li>Resume (download)</li>
         </ul>
       </div>
@@ -138,11 +148,7 @@ const Footer = () => (
 
       <p>
         I write code on{` `}
-        <a
-          className="font-bold hover:underline"
-          href="https://github.com/JS-goose"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a className="font-bold hover:underline" href="https://github.com/JS-goose" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </p>
