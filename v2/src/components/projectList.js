@@ -33,40 +33,12 @@ const projects = [
     techSpecs: [],
   },
   {
-    projectName: `React Todo List`,
+    projectName: `Luna Repair`,
     image: ``,
-    link: `https://github.com`,
+    link: `https://netlify.lunarepair.com`,
     key: Math.random(),
     techSpecs: [],
-  },
-  {
-    projectName: `Arcade Game Replica`,
-    image: ``,
-    link: `https://github.com`,
-    key: Math.random(),
-    techSpecs: [],
-  },
-  {
-    projectName: `Matching Game`,
-    image: ``,
-    link: `https://github.com`,
-    key: Math.random(),
-    techSpecs: [],
-  },
-  {
-    projectName: `RGB Color Guessing Game`,
-    image: ``,
-    link: `https://github.com`,
-    key: Math.random(),
-    techSpecs: [],
-  },
-  {
-    projectName: `Strongly Worded Virtual Robot Disagreements`,
-    image: ``,
-    link: `https://github.com`,
-    key: Math.random(),
-    techSpecs: [],
-  },
+  }
 ];
 
 const ProjectList = () => {

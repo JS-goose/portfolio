@@ -10,8 +10,8 @@ const SocialList = (props) => {
         // TODO I need to implement props passing of SVG height/width //
         <svg
           className={props.svgClassName}
-          width='25'
-          height='25'
+          width={props.svgSizes.width}
+          height={props.svgSizes.height}
           viewBox='0 0 20 20'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
@@ -25,8 +25,8 @@ const SocialList = (props) => {
       icon: (
         <svg
           className={props.svgClassName}
-          width='25'
-          height='25'
+          width={props.svgSizes.width}
+          height={props.svgSizes.height}
           viewBox='0 0 20 20'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
@@ -44,8 +44,8 @@ const SocialList = (props) => {
       icon: (
         <svg
           className={props.svgClassName}
-          width='25'
-          height='25'
+          width={props.svgSizes.width}
+          height={props.svgSizes.height}
           viewBox='0 0 25 25'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
@@ -66,8 +66,8 @@ const SocialList = (props) => {
       icon: (
         <svg
           className={props.svgClassName}
-          width='25'
-          height='25'
+          width={props.svgSizes.width}
+          height={props.svgSizes.height}
           viewBox='0 0 25 25'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
@@ -89,8 +89,8 @@ const SocialList = (props) => {
       icon: (
         <svg
           className={props.svgClassName + ' ' + devIconStyling}
-          width='33'
-          height='13'
+          width={props.svgSizes.devWidth}
+          height={props.svgSizes.devHeight}
           viewBox='0 0 33 13'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
@@ -104,8 +104,8 @@ const SocialList = (props) => {
       icon: (
         <svg
           className={props.svgClassName}
-          width='25'
-          height='25'
+          width={props.svgSizes.width}
+          height={props.svgSizes.height}
           viewBox='0 0 25 25'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>

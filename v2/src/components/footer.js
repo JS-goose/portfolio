@@ -49,60 +49,40 @@ const Footer = () => (
             <h4 className="text-myRed text-xl">CONNECT</h4>
           </li>
           <li>
-            <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p> &nbsp;
-              <a
-                href="https://twitter.com/jj_goose"
-                target="__blank"
-                rel="noopener noreferrer"
-                className="flex flex-col font-bold underline"
-              >
-                Twitter
-                <span className="social-link-underline w-16"></span>
+            <a
+              href="https://twitter.com/jj_goose"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
               </a>
-            </span>
           </li>
           <li>
-            <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p> &nbsp;
-              <a
-                href="https://twitter.com/jj_goose"
-                target="__blank"
-                rel="noopener noreferrer"
-                className="flex flex-col font-bold underline"
-              >
-                LinkedIn
-                <span className="social-link-underline w-20"></span>
+            <a
+              href="https://twitter.com/jj_goose"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
               </a>
-            </span>
           </li>
           <li>
-            <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p> &nbsp;
-              <a
-                href="https://twitter.com/jj_goose"
-                target="__blank"
-                rel="noopener noreferrer"
-                className="flex flex-col font-bold underline"
-              >
-                Instagram
-                <span className="social-link-underline w-20"></span>
+            <a
+              href="https://twitter.com/jj_goose"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
               </a>
-            </span>
           </li>
           <li>
-            <span className="flex">
-              <p className="hidden lg:inline">Follow me on</p> &nbsp;
-              <a
-                href="https://twitter.com/jj_goose"
-                target="__blank"
-                rel="noopener noreferrer"
-                className="flex flex-col font-bold underline"
-              >
-                Facebook
-                <span className="social-link-underline w-20"></span>
+            <a
+              href="https://twitter.com/jj_goose"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
               </a>
-            </span>
           </li>
         </ul>
       </div>
@@ -136,7 +116,6 @@ const Footer = () => (
           <li>
             <Link to="/consulting">Freelance Consultant</Link>
           </li>
-          <li>Resume (download)</li>
         </ul>
       </div>
     </article>

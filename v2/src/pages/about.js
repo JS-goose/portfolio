@@ -5,9 +5,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
 
-const H1 = ({ children }) => <h1 className="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl py-6">{children}</h1>;
-
+const H1 = ({ children }) => <p className="sm:text-2xl lg:text-3xl xl:text-4xl py-6 font-bold">{children}</p>;
 function AboutPage() {
+  const svgSizes = { height: 35, width: 35, devHeight: 23, devWidth: 53 }
   const query = useStaticQuery(graphql`{
   golfing: file(relativePath: {eq: "me_and_wifey_golfing-min.jpg"}) {
     childImageSharp {
@@ -35,7 +35,7 @@ function AboutPage() {
     <section className="flex flex-col min-w-full max-w-screen items-center">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <p className="mb-4">Howdy! I&apos;m Jonathan Sexton.</p>
+        <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton.</h1>
         <GatsbyImage
           image={query.golfing.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm shadow-lg border-2 border-solid border-gray-100"
@@ -65,7 +65,8 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.working.childImageSharp.gatsbyImageData}
-          className="aboutImg justify-self-center rounded-sm" />
+          className="aboutImg justify-self-center rounded-sm"
+          alt="a computer with stickers on it" />
         <H1>What I Do</H1>
         <p className="mb-4">
           <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
@@ -97,7 +98,8 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.wedding.childImageSharp.gatsbyImageData}
-          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100" />
+          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
+          alt="Jonathan kissing his wife at their wedding" />
         <div className="about-copy-containers">
           <H1>What I Love</H1>
           <p className="mb-4">
@@ -126,7 +128,8 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
-          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100" />
+          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
+          alt="Jonathan Sexton's free code camp profile" />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
@@ -178,15 +181,18 @@ function AboutPage() {
               please use the form below to get in touch!{" "}
             </i>
           </p>
-            <p className="mb-4 font-bold">Let's Connect!</p>
-            <ul className="about-social-list flex align-center mt-4">
+          <div className="flex h-20 p-2 items-center justify-around">
+            <p className="text-myPurple font-bold sm:text-2xl lg:text-3xl xl:text-4xl">Let's be friends!</p>
+            <ul className="about-social-list flex align-center">
               <SocialList
                 svgClassName={"social-icons"}
                 devIconStyling={"mt-2"}
                 mediumFillColor={"#FFF"}
                 liClassName={"mr-6"}
+                svgSizes={svgSizes}
               />
             </ul>{" "}
+          </div>
         </div>
       </article>
       <article

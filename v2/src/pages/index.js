@@ -36,6 +36,7 @@ function IndexPage() {
   //     }
   //   }
   // `);
+  const svgSizes = {height: 25, width:25, devHeigh: 13, devWidth: 33}
   return (
     <>
       <SEO
@@ -47,7 +48,7 @@ function IndexPage() {
         <Image fluid={query.astronaut.childImageSharp.fluid} className='astronaut' />
         <Image fluid={query.rocket.childImageSharp.fluid} className='rocket' /> */}
         <CTA />
-        <SocialSection socialContainerClassName={'lg:mb-24'} />
+        <SocialSection socialContainerClassName={'lg:mb-24'} svgSizes={svgSizes}/>
       </div>
       <ServicesList />
       <GetStarted />
