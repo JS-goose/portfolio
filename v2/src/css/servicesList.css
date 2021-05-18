@@ -27,27 +27,27 @@
   z-index: 10;
 }
 
-li p a {
+.services-list li p a {
   position: relative;
 }
 
-li p a:hover {
+.services-list li p a:hover {
   text-decoration: underline;
   color: var(--myDarkGray);
 }
 
-li p a:before {
-  background: var(--myRed);
-  height: 1.5rem !important;
+.services-list li p a:before {
+  height: 1.5rem;
   position: absolute;
+  background: var(--myRed);
   content: "";
   width: 100%;
   bottom: -2px;
   z-index: -1;
 }
 
-li p a:hover:before {
-  height: 0.3rem !important;
+.services-list li p a:hover:before {
+  height: 0.3rem;
   transform: skew(1deg, 1deg);
   transition: all ease-in-out 0.1s;
 

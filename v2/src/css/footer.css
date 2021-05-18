@@ -13,13 +13,13 @@ footer article:first-of-type {
   background-color: var(--myDarkPurple10);
 }
 
-ul li a {
+footer article ul li a {
   text-decoration: underline;
   height: 101%;
   width: 101%;
 }
 
-ul li a:hover {
+footer article ul li a:hover {
   background-color: var(--myRed);
 }
 

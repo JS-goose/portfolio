@@ -16,16 +16,16 @@
   z-index: 10;
 }
 
-p a {
+.about-copy-containers p a {
   position: relative;
 }
 
-p a:hover {
+.about-copy-containers p a:hover {
   text-decoration: underline;
   color: var(--myDarkGray);
 }
 
-p a:before {
+.about-copy-containers p a:before {
   height: 1.5rem;
   position: absolute;
   background: var(--myRed);
@@ -35,7 +35,7 @@ p a:before {
   z-index: -1;
 }
 
-p a:hover:before {
+.about-copy-containers p a:hover:before {
   height: 0.3rem;
   transform: skew(1deg, 1deg);
   transition: all ease-in-out 0.1s;

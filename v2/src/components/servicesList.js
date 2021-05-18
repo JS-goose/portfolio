@@ -71,7 +71,7 @@ const ServicesList = () => {
             <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
               <p>
                 1. Provide a&nbsp;{' '}
-                <a className="bacon" href='/consulting'>
+                <a href='/consulting'>
                   consultation
                 </a>{' '}
                 &nbsp;to discuss any pain points you have with your web presence.
