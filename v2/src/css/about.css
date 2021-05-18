@@ -49,7 +49,9 @@
 
 .aboutImg {
   width: 100% !important;
-  max-width: 500px;
+  /* height: 100%; */
+  max-width: 1000px;
+  max-height: 500px;
 }
 
 .social-icons {

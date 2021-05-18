@@ -98,7 +98,7 @@ function AboutPage() {
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.wedding.childImageSharp.gatsbyImageData}
-          className="transform rotate-3 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
+          className="aboutImg justify-self-center rounded-sm"
           alt="Jonathan kissing his wife at their wedding" />
         <div className="about-copy-containers">
           <H1>What I Love</H1>
@@ -126,9 +126,10 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
+        {/* This image needs work as it is not responsive below 565px */}
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
-          className="transform -rotate-2 aboutImg rounded-sm shadow-lg border-2 border-solid border-gray-100"
+          className="aboutImg justify-self-center rounded-sm"
           alt="Jonathan Sexton's free code camp profile" />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
