@@ -126,15 +126,14 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
-        {/* This image needs work as it is not responsive below 565px */}
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
-          className="aboutImg justify-self-center rounded-sm"
+          className="aboutImg fcc"
           alt="Jonathan Sexton's free code camp profile" />
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
-            <span>I believe it&apos;s important to be active in the community</span> (virtual and physical) you love.
+            <span>I believe it&apos;s important to be active in the community</span> you love.
           </p>
           <p className="mb-4">
             I write articles about programming/coding/technology as a way to give back to the{" "}
@@ -182,7 +181,7 @@ function AboutPage() {
               please use the form below to get in touch!{" "}
             </i>
           </p>
-          <div className="flex h-20 p-2 items-center justify-around">
+          <div className="h-20 p-2 items-center justify-around hidden sm:flex">
             <p className="text-myPurple font-bold sm:text-2xl lg:text-3xl xl:text-4xl">Let's be friends!</p>
             <ul className="about-social-list flex align-center">
               <SocialList

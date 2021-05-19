@@ -50,11 +50,30 @@
 .aboutImg {
   width: 100% !important;
   /* height: 100%; */
-  max-width: 1000px;
-  max-height: 500px;
+  max-width: 900px;
+  max-height: 450px;
+}
+
+.fcc{
+  justify-self: center;
+  border-radius: 0.125rem;
 }
 
 .social-icons {
   fill: black !important;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 565px) {
+  .fcc{
+    width: 90% !important;
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .fcc{
+    width: 80% !important;
+    justify-self: flex-start;
+  }
 }

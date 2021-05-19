@@ -16,7 +16,17 @@ textarea {
 
 @media screen and (max-width: 800px) {
   .contact-form-container {
-    padding: 1rem;
-    margin-left: 1.5rem;
+    padding: 0.6rem;
+    /* margin-left: 1.5rem; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form-container {
+    width: 90%;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100% !important;
   }
 }
