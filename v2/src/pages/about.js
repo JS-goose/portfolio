@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
 
-const H1 = ({ children }) => <p className="sm:text-2xl lg:text-3xl xl:text-4xl py-6 font-bold">{children}</p>;
+const H1 = ({ children }) => <p className="sm:text-2xl lg:text-3xl xl:text-4xl py-10 font-bold">{children}</p>;
 function AboutPage() {
   const svgSizes = { height: 35, width: 35, devHeight: 23, devWidth: 53 }
   const query = useStaticQuery(graphql`{

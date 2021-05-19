@@ -112,13 +112,13 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="testimonials-container-3">
+        <div className="testimonials-container-3 pt-6">
           <p className="text-myPurple font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
-          <p className="pt-4 sm:text-base md:text-xl">
+          <p className="pt-6 sm:text-base md:text-xl">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life.
           </p>
           <p className="pt-4 sm:text-base md:text-xl">Let me put that passion to work for you.</p>
-          <div className="mt-6">
+          <div className="mt-10">
             <span
               className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
             justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
