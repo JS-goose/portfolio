@@ -57,8 +57,7 @@ function AboutPage() {
             experience and knowledge to use for my clients.
           </p>
           <p className="mb-4">
-            Fast forward and I&apos;m now a full time developer working on projects that excite me, fascinate me, and still give me
-            that same sense of wonder I got the first time I saw one of my programs run.
+            Fast forward and I&apos;m now a full time developer working on projects that I love, helping my clients with the projects I build, and still fascinated with technology (Side note - If you'd like to know what tech I use check out this <a href="/uses">page</a>).
           </p>
         </div>
       </article>
