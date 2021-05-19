@@ -36,7 +36,7 @@ const services = [
   },
   {
     number: `9`,
-    desc: `Take care of any updates, changes, edits, or technical overhauls of your website via reoccuring service subscription.`,
+    desc: `Provide updates, changes, edits, or technical overhauls to your website via reoccuring service subscription.`,
   },
   { number: `10`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
 ];
@@ -74,7 +74,7 @@ const ServicesList = () => {
                 <a href='/consulting'>
                   consultation
                 </a>{' '}
-                &nbsp;to discuss any pain points you have with your web presence.
+                &nbsp;to discuss any pain points you have with your current (or lack of) web presence.
               </p>
             </li>
             {services.map((service) => (
@@ -83,6 +83,7 @@ const ServicesList = () => {
               </li>
             ))}
           </ul>
+          <p className="pt-6 sm:text-base md:text-lg lg:text-xl">Need more information about my services or wnat to schedule a chat?  <a href="#hire-me">Hire me today!</a></p>
         </div>
       </div>
       <div className='why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl'>

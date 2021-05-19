@@ -59,6 +59,10 @@ html {
   overflow-x: hidden;
 }
 
+body section {
+  width: calc(100vw - 10px);
+}
+
 h1,
 h2,
 h3,

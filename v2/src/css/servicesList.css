@@ -22,21 +22,21 @@
   scale: 1.05;
 } */
 
-.services-list ul { 
+.services-list ul, .services-list p { 
   position: relative;
   z-index: 10;
 }
 
-.services-list li p a {
+.services-list li p a, .services-list p a {
   position: relative;
 }
 
-.services-list li p a:hover {
+.services-list li p a:hover, .services-list p a:hover {
   text-decoration: underline;
   color: var(--myDarkGray);
 }
 
-.services-list li p a:before {
+.services-list li p a:before, .services-list p a:before {
   height: 1.5rem;
   position: absolute;
   background: var(--myRed);
@@ -46,7 +46,7 @@
   z-index: -1;
 }
 
-.services-list li p a:hover:before {
+.services-list li p a:hover:before, .services-list p a:hover:before {
   height: 0.3rem;
   transform: skew(1deg, 1deg);
   transition: all ease-in-out 0.1s;

@@ -1,12 +1,14 @@
-section {
-  width: calc(100vw - 10px);
-}
-
-.consulting-innder-container {
-  max-width: 80%;
+.consulting-inner-container {
+  width: 80%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 .consulting-collab-img {
-  width: 30rem;
-  height: 30rem;
+  justify-self: center;
+  width: 100% !important;
+  max-width: 900px;
+  max-height: 450px;
 }
