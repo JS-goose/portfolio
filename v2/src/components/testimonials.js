@@ -10,6 +10,7 @@ const Testimonials = () => {
       title: `Owner/Developer`,
       comment: `"I've hired Jonathan for multiple Borealis Web Development projects and it is always a pleasure working with him.  He's easygoing, incredibly helpful, and is an excellent developer."`,
       website: `https://borealisweb.ca`,
+      imgAlt: 'a photo of Stu Finn looking stylish in some dope sunglasses'
     },
     {
       name: `Tracy Johnson`,
@@ -17,6 +18,7 @@ const Testimonials = () => {
       title: `Owner`,
       comment: `"Jonathan helped my business see increased growth and revenue with the website he built - I will gladly work with him again on future projects."`,
       website: `https://https://www.tracys-upholstery.com/`,
+      imgAlt: 'Tracy Johnson with a beautiful smile and smashing good looking hair'
     },
     {
       name: `Michael Masor`,
@@ -24,18 +26,21 @@ const Testimonials = () => {
       title: `CEO/Founder`,
       comment: `"Knowledgeable, independent, fair, and trustworthy - working with Jonathan was nothing but a phenomenal experience!"`,
       website: `https://www.annuitymarketpro.com/`,
+      imgAlt: 'Michael Masor looking all snazzied up in his business casual attire'
     },
     {
       name: `Caleb Helton`,
       company: `Long State Breaks`,
       title: `Owner/Founder`,
       comment: `"Jonathan was able to identify pain points with our previous website and then remedy those issues with the website he built. He's my go-to for any future projects."`,
+      imgAlt: 'A handsome individual named Caleb Helton in a bright orange shirt'
     },
     {
       name: `Keith Olson`,
       company: `Conduit PC Shop`,
       title: `Owner`,
       comment: `"I came to Jonathan with only a vision. He worked with me every step of the way through frequent communication and brought that vision to life. I'm very happy with the results."`,
+      imgAlt: 'Keith Olson looking dapper in his military dress uniform'
     },
     // {name: `Steve Flannery`, company: `Steve's PC Shop`, comment: `Testimonial here`, website: `https://www.localcomputer.expert/`},
   ];
@@ -101,7 +106,7 @@ const Testimonials = () => {
                     : ""
                 }
                 className="testimonials-images rounded-sm shadow-lg"
-                alt=""
+                alt={card.imgAlt}
               />
               <div className="pl-4 sm:text-lg md:text-xl">
                 <h4 className="lg:text-2xl font-bold">{card.name}</h4>
