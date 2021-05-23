@@ -10,6 +10,10 @@ const Consulting = () => {
         extension
         publicURL
       }
+      search: file(relativePath: { eq: "undraw_the_search_s0xf.svg" }) {
+        extension
+        publicURL
+      }
     }
   `);
   return (
@@ -27,7 +31,7 @@ const Consulting = () => {
       />
       <article className='consulting-inner-container bg-white p-4 sm:text-base md:text-lg lg:text-xl'>
         <div className='consulting-img-container'>
-          <img src={query.collab.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
+          <img src={query.search.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
         </div>
         <div className='consulting-content-container p-4'>
           <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
