@@ -83,7 +83,7 @@ const ServicesList = () => {
               </li>
             ))}
           </ul>
-          <p className="pt-6 sm:text-base md:text-lg lg:text-xl">Need more information about my services or wnat to schedule a chat?  <a href="#hire-me">Hire me today!</a></p>
+          <p className="pt-6 sm:text-base md:text-lg lg:text-xl">Need more information about my services <a href="#hire-me">Get in touch today!</a></p>
         </div>
       </div>
       <div className='why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl'>
