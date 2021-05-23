@@ -6,9 +6,9 @@
   align-items: center;
 }
 
-.consulting-collab-img {
-  justify-self: center;
-  width: 100% !important;
-  max-width: 900px;
-  max-height: 450px;
+.form-container {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
 }

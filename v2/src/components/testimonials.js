@@ -74,7 +74,7 @@ const Testimonials = () => {
     <section className="bg-white w-full flex items-center justify-center">
       <article className="testimonials-container w-full items-center p-12 md:gap-4">
         <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg sm:mb-6 md:mb-4 lg:mb-0">
-          <h3 className="text-myPurple font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
+          <h3 className="font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
             Some of the Great Companies & People I&apos;ve Helped
           </h3>
         </div>
@@ -104,7 +104,7 @@ const Testimonials = () => {
                 alt=""
               />
               <div className="pl-4 sm:text-lg md:text-xl">
-                <h4 className="lg:text-2xl text-myPurple font-bold">{card.name}</h4>
+                <h4 className="lg:text-2xl font-bold">{card.name}</h4>
                 <p className="text-sm text-myBlack hidden md:inline">{card.title} - </p>
                 <p className="text-sm text-myBlack hidden md:inline">{card.company}</p>
                 <p className="sm:max-w-full md:max-w-md lg:max-w-lg italic">{card.comment}</p>
@@ -113,7 +113,7 @@ const Testimonials = () => {
           ))}
         </div>
         <div className="testimonials-container-3 pt-6">
-          <p className="text-myPurple font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
+          <p className="font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-6 sm:text-base md:text-xl">
             If you have a project or an idea, I&apos;d love to work with you to bring it to life.
           </p>

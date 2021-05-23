@@ -29,14 +29,14 @@ const Consulting = () => {
         ]}
         title='Consulting'
       />
-      <article className='consulting-inner-container bg-white p-4 sm:text-base md:text-lg lg:text-xl'>
-        <div className='consulting-img-container'>
-          <img src={query.collab.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
+      <article className='consulting-inner-container bg-white p-6 sm:text-base md:text-lg lg:text-xl'>
+        <h1 className='text-myBlack md:pb-6 lg:pb-14 md:pt-6 lg:pt-6 sm:text-2xl lg:text-3xl xl:text-4xl'>
+          In Need of an Extra Team Member or Help With Your Existing Website?
+        </h1>
+        <div className="flex justify-center">
+          <img src={query.collab.publicURL} alt='people collaborating on a project' />
         </div>
-        <div className='consulting-content-container p-4'>
-          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
-            Looking for a reliable partner to help with your existing website or application?
-          </h1>
+        <div className='consulting-content-container p-6'>
           <p>Here are some ways I can help you with your current solution: </p>
           <ul>
             <li>An honest, trustworthy developer who can imporove upon your existing user interaction</li>
@@ -51,18 +51,19 @@ const Consulting = () => {
           </ul>
         </div>
       </article>
-      <article>
+      <article className="form-container items-center bg-white p-6">
         <ContactForm formTitle={"Let's work together!"} bgColor={'bg-white'} />
       </article>
-      <article className='consulting-inner-container bg-white p-4 sm:text-base md:text-lg lg:text-xl'>
-        <div className='consulting-img-container'>
+      <article className='consulting-inner-container bg-white p-6 sm:text-base md:text-lg lg:text-xl'>
+        <h1 className='text-myBlack md:pb-6 lg:pb-14 sm:text-2xl lg:text-3xl xl:text-4xl'>
+          Searching for a Trusted, Knowledgable Developer to Build a New Website?
+          </h1>
+        <div className="flex justify-center">
           <img src={query.search.publicURL} className='consulting-collab-img' alt='people collaborating on a project' />
         </div>
-        <div className='consulting-content-container p-4'>
-          <h1 className='sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'>
-            Don't have a website and are in need of something built from the ground up?
-          </h1>
-          <p>Here are some ways I can help you with your current solution: </p>
+        <div className='consulting-content-container p-6'>
+          <p className="pb-4">Building a web presence that not only brings in leads but converts visitors to paying customers can be daunting.
+          Let me help get your project off on the right foot.  Here are some services I can provide:</p>
           <ul>
             <li>An honest, trustworthy developer who can imporove upon your existing user interaction</li>
             <li>A full thorough audit of your current website</li>
@@ -74,6 +75,7 @@ const Consulting = () => {
             <li>Someone to advise you on technical decisions affecting your business</li>
             <li>Project planning from start to finish</li>
           </ul>
+          <button type="button">Take me to the form</button>
         </div>
       </article>
     </section>

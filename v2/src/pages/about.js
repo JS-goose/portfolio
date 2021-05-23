@@ -61,7 +61,7 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
+      <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.working.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
@@ -94,7 +94,7 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
+      <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.wedding.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
@@ -124,7 +124,7 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className="about-containers bg-white p-4 sm:text-base md:text-lg lg:text-xl">
+      <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
           className="aboutImg fcc"
@@ -195,7 +195,7 @@ function AboutPage() {
         </div>
       </article>
       <article
-        className="form-parent-container bg-white p-4 flex flex-col items-center sm:text-base md:text-lg lg:text-xl"
+        className="form-parent-container bg-white p-6 flex flex-col items-center sm:text-base md:text-lg lg:text-xl"
         id="hire-me"
       >
         <ContactForm formTitle={`I'm available for hire!`} bgColor={`myPurple`} />
