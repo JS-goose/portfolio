@@ -132,7 +132,7 @@ function AboutPage() {
         <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
-            <span>I believe it&apos;s important to be active in the community</span> you love.
+            <span>I believe it&apos;s important to be active in the communities you love.</span>
           </p>
           <p className="mb-4">
             I write articles about programming/coding/technology as a way to give back to the{" "}
