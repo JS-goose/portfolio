@@ -62,11 +62,11 @@ const ContactForm = (props) => {
         </fieldset>
         <button
           type="submit"
-          className="flex text-white shadow-lg bg-myRed p2 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myDarkRed"
+          className="flex text-white shadow-lg bg-myRed p-1 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myDarkRed"
         >
           <span className="contact-form-button-span">Submit Request</span>{" "}
           <svg
-            className="mt-1 md:mt-2 lg:mt-3 pr-1"
+            className="mt-1 md:mt-2 pr-1"
             width="24"
             height="24"
             viewBox="0 0 24 24"

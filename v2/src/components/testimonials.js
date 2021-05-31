@@ -96,14 +96,14 @@ const Testimonials = () => {
                   index + 1 === 1
                     ? query.stu.childImageSharp.gatsbyImageData
                     : index + 1 === 2
-                    ? query.tracy.childImageSharp.gatsbyImageData
-                    : index + 1 === 3
-                    ? query.mike.childImageSharp.gatsbyImageData
-                    : index + 1 === 4
-                    ? query.caleb.childImageSharp.gatsbyImageData
-                    : index + 1 === 5
-                    ? query.keith.childImageSharp.gatsbyImageData
-                    : ""
+                      ? query.tracy.childImageSharp.gatsbyImageData
+                      : index + 1 === 3
+                        ? query.mike.childImageSharp.gatsbyImageData
+                        : index + 1 === 4
+                          ? query.caleb.childImageSharp.gatsbyImageData
+                          : index + 1 === 5
+                            ? query.keith.childImageSharp.gatsbyImageData
+                            : ""
                 }
                 className="testimonials-images rounded-sm shadow-lg"
                 alt={card.imgAlt}
@@ -120,16 +120,17 @@ const Testimonials = () => {
         <div className="testimonials-container-3 pt-6">
           <p className="font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-6 sm:text-base md:text-xl">
-            If you have a project or an idea, I&apos;d love to work with you to bring it to life.
+            If you have a project idea, I&apos;d love to work with you to bring it to life. In an effort to give my absolute best to the people and companies I work with, 
+            I take on a limited number of clients each month.  Don&apos;t take the chance on missing out.
           </p>
-          <p className="pt-4 sm:text-base md:text-xl">Let me put that passion to work for you.</p>
+          <p className="pt-4 sm:text-base md:text-xl">How do we start the process? Glad you asked!</p>
           <div className="mt-10">
             <span
               className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
             justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
              hover:underline"
             >
-              <a href="#hire-me">Get Started Today!</a>
+              <a href="#hire-me">Take your business to the next level!</a>
             </span>
           </div>
         </div>

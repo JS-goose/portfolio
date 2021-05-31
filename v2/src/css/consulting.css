@@ -7,12 +7,11 @@
 }
 
 .form-container {
-  width: 80%;
-  max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.consulting-inner-container ol {
+/* .consulting-inner-container ol {
   list-style: decimal;
-}
+} */

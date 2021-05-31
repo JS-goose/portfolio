@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         myPurple: "#421ED2",
         myDarkPurple: '#200396',
+        myDarkPurple10: 'rgba(32, 3, 150, 0.1)',
         myRed: "#fc000d",
         myDarkRed: '#d8000a',
         myBlack: "#161514",
