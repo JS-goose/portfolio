@@ -4,41 +4,45 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 const services = [
   // {
   //   number: `1`,
-  //   // TODO This needs work as it does not have the intended result
+  //  title: '',
   //   desc: 'Provide a' +
   //       `${<Link to="/consulting">consulting</Link>}` +
   //       'to discuss any pain points you have with your web presence (or lack of).',
   // },
-  {
-    number: `2`,
-    desc: `Assess your current website to identify issues, propose solutions, and ultimately correct those issues.`,
-  },
+  // {
+  //   number: `2`,
+  //   title: '',
+  //   desc: `Assess your current website to identify issues, propose solutions, and ultimately correct those issues.`,
+  // },
   {
     number: `3`,
+    title: 'Website Design',
     desc: `Design a custom website from start to finish that you sign off on before any build work is started.`,
   },
   {
     number: `4`,
+    title: 'Personalized Development',
     desc: `Tailor that solution with ease of use in mind to draw in more customers and expand your presence.`,
   },
   {
     number: `5`,
+    title: 'Marketing Solutions',
     desc: `Ensure SEO is at the forefront of the work I do so you're website reaches your audience`,
   },
-  {
-    number: `6`,
-    desc: `Handle the building, hosting, deployment, and maintenance of your website so you can focus on your business. `,
-  },
-  { number: `7`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
-  {
-    number: `8`,
-    desc: `Communicate openly and honestly with you and/or your stakeholders about the cost/time/progress of the project.`,
-  },
-  {
-    number: `9`,
-    desc: `Provide updates, changes, edits, or technical overhauls to your website via reoccuring service subscription.`,
-  },
-  { number: `10`, desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
+  // {
+  //   number: `6`,
+  //   desc: `Handle the building, hosting, deployment, and maintenance of your website so you can focus on your business. `,
+  // },
+  // { number: `7`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
+  // {
+  //   number: `8`,
+  //   desc: `Communicate openly and honestly with you and/or your stakeholders about the cost/time/progress of the project.`,
+  // },
+  // {
+  //   number: `9`,
+  //   desc: `Provide updates, changes, edits, or technical overhauls to your website via reoccuring service subscription.`,
+  // },
+  { number: `10`, title: 'Continued Support', desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
 ];
 
 const ServicesList = () => {
@@ -52,12 +56,16 @@ const ServicesList = () => {
         extension
         publicURL
       }
+      meeting: file(relativePath: { eq: "icons/consulting_transparentBG.svg" }) {
+        extension
+        publicURL
+      }
     }
   `);
 
   return (
     <section className='flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full'>
-      <div className='services-list-container text-lg items-center'>
+      <article className='services-list-container text-lg items-center'>
         <div className='services-list'>
           <h1 id="services" className='md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl'>
             What Can I Do For You and Your Business?
@@ -67,15 +75,20 @@ const ServicesList = () => {
             <img src={query.decisions.publicURL} alt='a man in a suit pointing at charts' />
           </div>
           <ul className="mt-8">
-            {/* I couldn't get the link to work correctly when this was part of the services object so it has been hard coded here */}
             <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
-              <p>
-                1. Provide a&nbsp;{' '}
-                <a href='/consulting'>
-                  consultation
-                </a>{' '}
-                &nbsp;to discuss any pain points you have with your current (or lack of) web presence.
-              </p>
+              <article className="flex flex-col">
+                <div className="flex items-center p-1 w-100">
+                  <img src={query.meeting.publicURL} alt='two people having a great conversation with chat bubbles above their heads' />
+                  <p className="text-2xl">Website Audit</p>
+                </div>
+                <div className="w-96 p-1">
+                  Provide a&nbsp;{' '}
+                  <a href='/consulting'>
+                    consultation
+                  </a>{' '}
+                  &nbsp;to discuss any pain points you have with your current (or lack of) web presence
+                 </div>
+              </article>
             </li>
             {services.map((service) => (
               <li key={service.number} className='pb-4 sm:text-base md:text-lg lg:text-xl'>
@@ -85,8 +98,8 @@ const ServicesList = () => {
           </ul>
           <p className="pt-6 sm:text-base md:text-lg lg:text-xl">Need more information about my services?  Get in touch today by using the <a href="#hire-me">contact form</a>!</p>
         </div>
-      </div>
-      <div className='why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl'>
+      </article>
+      <article className='why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl'>
         <div>
           <h1 className='md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl'>
             Why Hire Me As Your Developer?
@@ -135,7 +148,7 @@ const ServicesList = () => {
             the initial meeting, through the design and build process, all the way to launching your website we&apos;ll be there together.
           </p>
         </div>
-      </div>
+      </article>
     </section>
   );
 };

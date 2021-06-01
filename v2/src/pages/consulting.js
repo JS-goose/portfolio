@@ -54,7 +54,7 @@ const Consulting = () => {
             Whatever your needs may be with your current solution, here are some ways I can help you and your business:{" "}
           </p>
           <ol className="pb-8 pl-6">
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A full thorough audit of your current website/application to ensure we start out </li>
+            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A developer who can lead or integrate into your current team</li>
