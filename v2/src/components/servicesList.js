@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 const services = [
   {
@@ -24,11 +24,13 @@ const services = [
     number: `3`,
     title: "Personalized Development",
     desc: `With your goals at the forefront of development, I build a website that's easy to maintain and update. I focus on growth by keeping the technical debt to a minimum.`,
+    imgAlt: `a computer monitor with a page popping off it`
   },
   {
     number: `4`,
     title: "Marketing Solutions",
     desc: `Getting your message and products to your audience is essential to your business. That's why SEO is always a priority in my work.`,
+    imgAlt: `a letter with a dollar sign on paper`
   },
   // {
   //   number: `6`,
@@ -47,8 +49,14 @@ const services = [
     number: `5`,
     title: "Content Solutions",
     desc: `Filling your website with content can be laborious - especially if it's written content like articles or blog posts. I can handle this task while I build your website.`,
+    imgAlt: `a book with an image icon`
   },
-  { number: `6`, title: "Continued Support", desc: `I guarantee my work for a minimum of 6 months after the launch of the project and then on a monthly retainer so you can focus on your business.` },
+  {
+    number: `6`,
+    title: "Continued Support",
+    desc: `I guarantee my work for a minimum of 6 months after the launch of the project and then on a monthly retainer so you can focus on your business.`,
+    imgAlt: `a head with a headset on`
+  },
 ];
 
 const ServicesList = () => {
@@ -101,21 +109,6 @@ const ServicesList = () => {
             <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts" />
           </div>
           <div className="flex flex-row flex-wrap w-100 mt-8">
-            {/* <li className='pb-4 sm:text-base md:text-lg lg:text-xl'>
-              <article className="flex flex-col">
-                <div className="flex items-center p-1 w-100">
-                  <img src={query.meeting.publicURL} alt='two people having a great conversation with chat bubbles above their heads' />
-                  <p className="text-2xl">Website Audit</p>
-                </div>
-                <div className="w-96 p-1">
-                  Provide a&nbsp;{' '}
-                  <a href='/consulting'>
-                    consultation
-                  </a>{' '}
-                  &nbsp;to discuss any pain points you have with your current (or lack of) web presence
-                 </div>
-              </article>
-            </li> */}
             {services.map((service) => (
               <article key={service.number} className="mb-12 mr-12 sm:text-base md:text-lg lg:text-xl">
                 <div className="flex flex-col">
@@ -140,14 +133,14 @@ const ServicesList = () => {
           </div>
           <p className="pt-6 sm:text-base md:text-lg lg:text-xl">
             Need more information about my services or ready to start working together? Get in touch today and let's grow your business!<div className="mt-10">
-            <span
-              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
+              <span
+                className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
             justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
              hover:underline"
-            >
-              <a href="#hire-me">Take me to the form</a>
-            </span>
-          </div>
+              >
+                <a href="#hire-me">Take me to the form</a>
+              </span>
+            </div>
           </p>
         </div>
       </article>
