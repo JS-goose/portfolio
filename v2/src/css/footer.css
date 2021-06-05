@@ -4,7 +4,7 @@
   width: 60px;
   margin-top: -5px;
   /* background: linear-gradient(25deg, #421ed2, rgb(3, 223, 204)); */
-  background-color: #421ed2;
+  /* background-color: #421ed2; */
   transform: skew(30deg) rotate(-3deg);
   z-index: 0;
 }

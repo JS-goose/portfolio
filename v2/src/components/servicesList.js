@@ -94,7 +94,7 @@ const ServicesList = () => {
       <article className="services-list-container text-lg items-center">
         <div className="services-list">
           <h1 id="services" className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">
-            What Can I Do For You and Your Business?
+            How Can I Help Your Business and Customer Base Grow?
           </h1>
           <div>
             {/* Image courtesy of https://undraw.co */}
@@ -153,7 +153,7 @@ const ServicesList = () => {
       </article>
       <article className="why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl">
         <div>
-          <h1 className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">Why Hire Me As Your Developer?</h1>
+          <h1 className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">Why Should You Hire Me As Your Developer?</h1>
           <div className="mb-8">
             {/* Image courtesy of https://undraw.co */}
             <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="why-hire-me-container-books-img" />
