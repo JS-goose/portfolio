@@ -6,8 +6,8 @@ const services = [
     number: `1`,
     title: "Website Audit",
     desc:
-      "A thorough review of your current website to identify any performance/user experience issues that might prevent you from converting that visitor into a customer and then propose solutions to those potential roadblocks",
-    imgAlt: "two people having a great conversation with chat bubbles above their heads",
+      `A thorough review of your current website to identify any performance/user experience issues that could be pain points for users.`,
+    imgAlt: `two people having a great conversation with chat bubbles above their heads`,
   },
   // {
   //   number: `2`,
@@ -16,18 +16,19 @@ const services = [
   // },
   {
     number: `2`,
-    title: "Website Design",
-    desc: `Design a custom website from start to finish that you sign off on before any build work is started.`,
+    title: "User Focused Design",
+    desc: `The design I create for your website is focused on user experience from the start to ensure ease of use and get users the information they need.`,
+    imgAlt: `a pencil and a ruler`
   },
   {
     number: `3`,
     title: "Personalized Development",
-    desc: `Tailor that solution with ease of use in mind to draw in more customers and expand your presence.`,
+    desc: `With your goals at the forefront of development, I build a website that's easy to maintain and update. I focus on growth by keeping the technical debt to a minimum.`,
   },
   {
     number: `4`,
     title: "Marketing Solutions",
-    desc: `Ensure SEO is at the forefront of the work I do so you're website reaches your audience`,
+    desc: `Getting your message and products to your audience is essential to your business. That's why SEO is always a priority in my work.`,
   },
   // {
   //   number: `6`,
@@ -45,9 +46,9 @@ const services = [
   {
     number: `5`,
     title: "Content Solutions",
-    desc: `Filling your website with content can be laborious - especially if it's written content like articles.  Let me handle that for you!`,
+    desc: `Filling your website with content can be laborious - especially if it's written content like articles or blog posts. I can handle this task while I build your website.`,
   },
-  { number: `6`, title: "Continued Support", desc: `Guarantee my work for a minimum of 6 months after the launch of the project.` },
+  { number: `6`, title: "Continued Support", desc: `I guarantee my work for a minimum of 6 months after the launch of the project and then on a monthly retainer so you can focus on your business.` },
 ];
 
 const ServicesList = () => {
@@ -116,27 +117,37 @@ const ServicesList = () => {
               </article>
             </li> */}
             {services.map((service) => (
-              <article key={service.number} className="pb-4 sm:text-base md:text-lg lg:text-xl">
+              <article key={service.number} className="mb-12 mr-12 sm:text-base md:text-lg lg:text-xl">
                 <div className="flex flex-col">
-                  <div className="flex p-1 w-100">
+                  <div className="flex p-1 mb-2 w-100">
                     <img
-                      src={service.number === "1" ? query.meeting.publicURL : 
-                      service.number === "2" ? query.design.publicURL : 
-                      service.number === "3" ? query.development.publicURL : 
-                      service.number === "4" ? query.marketing.publicURL :
-                      service.number === "5" ? query.content.publicURL :
-                      service.number === "6" ? query.support.publicURL : ""}
+                      src={service.number === "1" ? query.meeting.publicURL :
+                        service.number === "2" ? query.design.publicURL :
+                          service.number === "3" ? query.development.publicURL :
+                            service.number === "4" ? query.marketing.publicURL :
+                              service.number === "5" ? query.content.publicURL :
+                                service.number === "6" ? query.support.publicURL : ""}
                       alt={service.imgAlt}
                     />
-                    <p className="pl-4 text-2xl">{service.title}</p>
+                    <p className="pl-4 font-bold text-xl xl:text-2xl">{service.title}</p>
                   </div>
-                  <div className="max-w-md p-1">{service.desc}</div>
+                  <div className="max-w-full lg:max-w-md p-1">
+                    <p className="text-base md:text-lg lg:text-xl">{service.desc}</p>
+                  </div>
                 </div>
               </article>
             ))}
           </div>
           <p className="pt-6 sm:text-base md:text-lg lg:text-xl">
-            Need more information about my services? Get in touch today by using the <a href="#hire-me">contact form</a>!
+            Need more information about my services or ready to start working together? Get in touch today and let's grow your business!<div className="mt-10">
+            <span
+              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
+            justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
+             hover:underline"
+            >
+              <a href="#hire-me">Take me to the form</a>
+            </span>
+          </div>
           </p>
         </div>
       </article>

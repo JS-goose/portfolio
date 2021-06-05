@@ -22,7 +22,7 @@
   scale: 1.05;
 } */
 
-.services-list ul, .services-list p { 
+/* .services-list ul, .services-list p { 
   position: relative;
   z-index: 10;
 }
@@ -51,7 +51,7 @@
   transform: skew(1deg, 1deg);
   transition: all ease-in-out 0.1s;
 
-}
+} */
 
 .services-list-container,
 .why-hire-me-container {
