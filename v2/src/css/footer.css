@@ -1,25 +1,15 @@
-.social-link-underline {
-  height: 4px;
-  display: block;
-  width: 60px;
-  margin-top: -5px;
-  /* background: linear-gradient(25deg, #421ed2, rgb(3, 223, 204)); */
-  /* background-color: #421ed2; */
-  transform: skew(30deg) rotate(-3deg);
-  z-index: 0;
-}
-
 footer article:first-of-type {
   background-color: var(--myDarkPurple10);
 }
 
-footer article ul li a {
-  text-decoration: underline;
+footer article ul li a, footer article p a {
   height: 101%;
   width: 101%;
+  padding: 4px;
 }
 
-footer article ul li a:hover {
+footer article ul li a:hover, footer article p a:hover {
   background-color: var(--myRed);
+  text-decoration: underline;
 }
 

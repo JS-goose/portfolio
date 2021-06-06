@@ -101,7 +101,7 @@ const ServicesList = () => {
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full">
       <article className="services-list-container text-lg items-center">
         <div className="services-list">
-          <h1 id="services" className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">
+          <h1 id="#services" className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">
             How Can I Help Your Business and Customer Base Grow?
           </h1>
           <div>

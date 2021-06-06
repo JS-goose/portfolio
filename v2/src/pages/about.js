@@ -35,7 +35,7 @@ function AboutPage() {
     <section className="flex flex-col min-w-full max-w-screen items-center">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton.</h1>
+        <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
         <GatsbyImage
           image={query.golfing.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm shadow-lg border-2 border-solid border-gray-100"
@@ -57,8 +57,9 @@ function AboutPage() {
             experience and knowledge to use for my clients.
           </p>
           <p className="mb-4">
-            Fast forward and I&apos;m now a full time developer working on projects that I love, helping my clients with the projects I build, and still fascinated with technology <em>(Side note - If you'd like to know what tech I use check out this <a href="/uses">page</a>)</em>.
+            Fast forward and I&apos;m now a full time developer working on projects that I love, helping my clients with the projects I build, and still fascinated with technology.
           </p>
+          {/* <em>(Side note - If you'd like to know what tech I use check out this <a href="/uses">page</a>)</em>. */}
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
