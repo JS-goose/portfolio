@@ -1,25 +1,25 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+// import { GatsbyImage } from "gatsby-plugin-image";
 
-function Header() {
+const Header = () => {
   const [isExpanded, toggleExpansion] = useState(false);
   // let [hovered, setHovered] = useState(false);
   // const toggleHover = () => setHovered(true);
   // const toggleHover2 = () => setHovered(false);
-  const queryData = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      brand: file(relativePath: { eq: "icons/Brand-min.png" }) {
-        childImageSharp {
-          gatsbyImageData(quality: 100, width: 200, layout: CONSTRAINED)
-        }
-      }
+  // query SiteTitleQuery {
+  //   site {
+  //     siteMetadata {
+  //       title
+  //     }
+  //   }
+  const query = useStaticQuery(graphql`
+  query {
+    brand: file(relativePath: {eq: "icons/Logo.svg"}) {
+      extension
+      publicURL
     }
+  }
   `);
 
   // className={hovered ? 'logoNotHovered' : 'logo'} />
@@ -28,13 +28,13 @@ function Header() {
       <div className="flex flex-wrap items-center justify-between md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full">
         <span className="flex items-center">
           <Link to="/">
-            <GatsbyImage
-              image={queryData.brand.childImageSharp.gatsbyImageData}
+            <img
+              src={query.brand.publicURL}
               alt="the letters JS on a space background"
               className="logo"
             />
           </Link>
-          <p className="hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:lg md:text-xl lg:text-2xl">Jonathan Sexton</p>
+          {/* <p className="hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:lg md:text-xl lg:text-2xl">Jonathan Sexton</p> */}
         </span>
 
         <button

@@ -1,10 +1,27 @@
 .about-containers {
-  width: 80%;
-  max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   /* overflow-wrap: anywhere; */
+}
+
+.about-containers:nth-of-type(1), .about-containers:nth-of-type(3) {
+  width: 80%;
+  max-width: 1000px;
+}
+
+.about-containers:nth-of-type(2), .about-containers:nth-of-type(4) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-copy-containers:nth-of-type(odd) {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-containers p span {
@@ -22,14 +39,13 @@
 
 .about-copy-containers p a:hover {
   text-decoration: underline;
-  color: var(--myDarkGray);
 }
 
 .about-copy-containers p a:before {
   height: 1.5rem;
   position: absolute;
   background: var(--myRed);
-  content: "";
+  content: '';
   width: 100%;
   bottom: -2px;
   z-index: -1;
@@ -39,7 +55,6 @@
   height: 0.3rem;
   transform: skew(1deg, 1deg);
   transition: all ease-in-out 0.1s;
-
 }
 
 .form-parent-container {
@@ -50,11 +65,11 @@
 .aboutImg {
   width: 100% !important;
   /* height: 100%; */
-  max-width: 900px;
-  max-height: 500px;
+  max-width: 1000px;
+  max-height: 600px;
 }
 
-.fcc{
+.fcc {
   justify-self: center;
   border-radius: 0.125rem;
 }
@@ -65,14 +80,14 @@
 }
 
 @media screen and (max-width: 565px) {
-  .fcc{
+  .fcc {
     width: 90% !important;
     justify-self: flex-start;
   }
 }
 
 @media screen and (max-width: 510px) {
-  .fcc{
+  .fcc {
     width: 80% !important;
     justify-self: flex-start;
   }

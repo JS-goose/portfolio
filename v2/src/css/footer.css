@@ -1,5 +1,5 @@
 footer article:first-of-type {
-  background-color: var(--myDarkPurple10);
+  background-color: var(--myDarkPurple);
 }
 
 footer article ul li a, footer article p a {

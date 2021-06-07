@@ -34,7 +34,7 @@ function AboutPage() {
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
-      <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
+      <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
         <GatsbyImage
           image={query.golfing.childImageSharp.gatsbyImageData}
@@ -63,6 +63,7 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
+        <div className="about-copy-containers">
         <GatsbyImage
           image={query.working.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
@@ -72,7 +73,6 @@ function AboutPage() {
           <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
           &quot;one-stop-shop&quot; for their website/web application solution.
         </p>
-        <div className="about-copy-containers">
           <p className="mb-4">
             What exactly does that mean you ask? It means I can design, build, publish, and maintain your website, take care of the
             technical details involved in that, and provide a solution instead of a distraction for you so you can focus on running
@@ -95,12 +95,12 @@ function AboutPage() {
           </p>
         </div>
       </article>
-      <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
+      <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
+        <div className="about-copy-containers">
         <GatsbyImage
           image={query.wedding.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
           alt="Jonathan kissing his wife at their wedding" />
-        <div className="about-copy-containers">
           <H1>What I Love</H1>
           <p className="mb-4">
             <span>
@@ -126,11 +126,11 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
+        <div className="about-copy-containers">
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
           className="aboutImg fcc"
           alt="Jonathan Sexton's free code camp profile" />
-        <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
             <span>I believe it&apos;s important to be active in the communities you love.</span>
@@ -196,10 +196,10 @@ function AboutPage() {
         </div>
       </article>
       <article
-        className="form-parent-container bg-white p-6 flex flex-col items-center sm:text-base md:text-lg lg:text-xl"
+        className="form-parent-container p-6 flex flex-col items-center sm:text-base md:text-lg lg:text-xl"
         id="hire-me"
       >
-        <ContactForm formTitle={`I'm available for hire!`} bgColor={`myPurple`} />
+        <ContactForm formTitle={`I'm available for hire!`} bgColor={`white`} />
       </article>
     </section>
   );

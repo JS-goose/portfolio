@@ -45,7 +45,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         // theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
-        icon: `src/images/icons/Brand-min.png`,
+        icon: `src/images/icons/PersonalBrand.svg`,
       },
     },
     {
