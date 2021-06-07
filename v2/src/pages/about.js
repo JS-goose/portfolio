@@ -32,16 +32,16 @@ function AboutPage() {
 }
 `);
   return (
-    <section className="flex flex-col min-w-full max-w-screen items-center">
+    <section className="flex flex-col min-w-full max-w-screen items-center text-left">
       <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
       <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
         <GatsbyImage
           image={query.golfing.childImageSharp.gatsbyImageData}
-          className="aboutImg justify-self-center rounded-sm shadow-lg border-2 border-solid border-gray-100"
+          className="aboutImg justify-self-center rounded-sm shadow-lg"
           alt="my wife and I on the golf course with black sunglasses on" />
         <H1>The Lowdown on yours truly...</H1>
-        <div className="about-copy-containers mt-4">
+        <div className="about-copy-containers">
           <p className="mb-4">
             I live in Texas and I&apos;ve been creating in one form or another since I began exploring the internet in the late
             90&apos;s.
@@ -63,14 +63,14 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <div className="about-copy-containers">
         <GatsbyImage
           image={query.working.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
           alt="a computer with stickers on it" />
+        <div className="about-copy-containers">
         <H1>What I Do</H1>
-        <p className="mb-4">
-          <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
+          <p className="mb-4">
+            <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
           &quot;one-stop-shop&quot; for their website/web application solution.
         </p>
           <p className="mb-4">
@@ -96,12 +96,12 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <div className="about-copy-containers">
         <GatsbyImage
           image={query.wedding.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm"
           alt="Jonathan kissing his wife at their wedding" />
-          <H1>What I Love</H1>
+        <H1>What I Love</H1>
+        <div className="about-copy-containers">
           <p className="mb-4">
             <span>
               When I&apos;m not working I enjoy spending time with my <del>girlfriend</del> &nbsp;
@@ -126,11 +126,11 @@ function AboutPage() {
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <div className="about-copy-containers">
         <GatsbyImage
           image={query.fcc.childImageSharp.gatsbyImageData}
           className="aboutImg fcc"
           alt="Jonathan Sexton's free code camp profile" />
+        <div className="about-copy-containers">
           <H1>Community Involvement</H1>
           <p className="mb-4">
             <span>I believe it&apos;s important to be active in the communities you love.</span>

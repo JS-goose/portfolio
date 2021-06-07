@@ -1,12 +1,11 @@
 import React from 'react';
-import ProjectItem from './projectItem';
-// import projectItem from './projectItem';
+
 
 const projects = [
   {
     projectName: `Annuity Market Pro`,
     image: ``,
-    link: `https://www.annuitymarketpro.com/`,
+    link: `https://annuitymarketpro.netlify.app/`,
     key: Math.random(),
     problem: `This customer had no online presence and needed a way to bring services to customers in an engaging way`,
     results: `Created a web presence that is functional, easy to use, and responsive while helping client extend their reach to customers.`,
@@ -46,9 +45,10 @@ const ProjectList = () => {
     <ul>
       {projects.map((item) => {
         return (
-          <li key={item?.key}>
-            <ProjectItem key={item?.key} projects={item} />
-          </li>
+          <div className="shadow-xl text-white" key={item?.key}>
+            <p>{item.projectName}</p>
+            <p>{item.link}</p>
+          </div>
         );
       })}
     </ul>

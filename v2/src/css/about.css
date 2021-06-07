@@ -2,12 +2,6 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  /* overflow-wrap: anywhere; */
-}
-
-.about-containers:nth-of-type(1), .about-containers:nth-of-type(3) {
-  width: 80%;
-  max-width: 1000px;
 }
 
 .about-containers:nth-of-type(2), .about-containers:nth-of-type(4) {
@@ -17,8 +11,7 @@
   justify-content: center;
 }
 
-.about-copy-containers:nth-of-type(odd) {
-  width: 80%;
+.about-copy-containers {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -64,7 +57,6 @@
 
 .aboutImg {
   width: 100% !important;
-  /* height: 100%; */
   max-width: 1000px;
   max-height: 600px;
 }
