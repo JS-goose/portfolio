@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Testimonials = () => {
+const Testimonials = (props) => {
   const testimonials = [
     {
       name: `Stu Finn`,
@@ -76,7 +76,7 @@ const Testimonials = () => {
   `);
 
   return (
-    <section className="bg-white w-full flex items-center justify-center">
+    <section className={`bg-${props.bgColor} ${props.textColor} w-full flex items-center justify-center`}>
       <article className="testimonials-container w-full items-center p-12 md:gap-4">
         <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg sm:mb-6 md:mb-4 lg:mb-0">
           <h3 className="font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
@@ -110,8 +110,8 @@ const Testimonials = () => {
               />
               <div className="pl-4 sm:text-lg md:text-xl">
                 <h4 className="lg:text-2xl font-bold">{card.name}</h4>
-                <p className="text-sm text-myBlack hidden md:inline">{card.title} - </p>
-                <p className="text-sm text-myBlack hidden md:inline">{card.company}</p>
+                <p className="text-sm hidden md:inline">{card.title} - </p>
+                <p className="text-sm hidden md:inline">{card.company}</p>
                 <p className="sm:max-w-full md:max-w-md lg:max-w-lg italic">{card.comment}</p>
               </div>
             </div>

@@ -52,7 +52,7 @@ function IndexPage() {
       </div>
       <ServicesList />
       <GetStarted />
-      <Testimonials />
+      <Testimonials bgColor='white'/>
     </>
   );
 }

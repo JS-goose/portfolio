@@ -88,7 +88,7 @@ const ProjectList = () => {
     }
   `);
   return (
-    <ul>
+    <>
       {projects.map((item) => {
         return (
           <div className="text-white" key={item?.key}>
@@ -101,7 +101,7 @@ const ProjectList = () => {
           </div>
         );
       })}
-    </ul>
+    </>
   );
 };
 
