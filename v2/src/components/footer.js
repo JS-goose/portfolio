@@ -41,6 +41,11 @@ const Footer = () => (
               Blog
             </a>
           </li>
+          <li>
+            <a href="https://jonathansexton.me" target="__blank" rel="noopener noreferrer">
+              Home
+            </a>
+          </li>
         </ul>
       </div>
       <div>
@@ -108,13 +113,16 @@ const Footer = () => (
             <h4 className="text-myRed text-xl underline">WORK</h4>
           </li>
           <li>
-            <Link to="#services">Services</Link>
+            <Link className="bg-myRed" to="#hire-me">Hire Me Today!</Link>
           </li>
           <li>
-            <Link to="#hire-me">Hire Me Today</Link>
+            <a href="https://jonathansexton.me/#services" rel="noreferrer noopener">Services</a>
           </li>
           <li>
             <Link to="/consulting">Freelance Consultant</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
           </li>
         </ul>
       </div>

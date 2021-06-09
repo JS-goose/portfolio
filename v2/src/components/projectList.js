@@ -49,7 +49,7 @@ const ProjectList = () => {
         childImageSharp {
           gatsbyImageData(
             quality: 100, 
-            width: 600, 
+            width: 800, 
             placeholder: BLURRED, 
             formats: [AUTO, WEBP]
             )
@@ -59,7 +59,7 @@ const ProjectList = () => {
         childImageSharp {
           gatsbyImageData(
             quality: 100, 
-            width: 600, 
+            width: 800, 
             placeholder: BLURRED, 
             formats: [AUTO, WEBP]
             )
@@ -69,7 +69,7 @@ const ProjectList = () => {
         childImageSharp {
           gatsbyImageData(
             quality: 100, 
-            width: 600, 
+            width: 800, 
             placeholder: BLURRED, 
             formats: [AUTO, WEBP]
             )
@@ -79,7 +79,7 @@ const ProjectList = () => {
         childImageSharp {
           gatsbyImageData(
             quality: 100, 
-            width: 600, 
+            width: 800, 
             placeholder: BLURRED, 
             formats: [AUTO, WEBP]
             )
@@ -91,10 +91,10 @@ const ProjectList = () => {
     <ul>
       {projects.map((item) => {
         return (
-          <div className="shadow-xl text-white" key={item?.key}>
+          <div className="text-white" key={item?.key}>
             <p>{item.projectName}</p>
             <p>{item.link}</p>
-            <GatsbyImage image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
+            <GatsbyImage className="rounded-sm" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
             item.number === 2 ? query.wawakpewin.childImageSharp.gatsbyImageData :
             item.number === 3 ? query.tracy.childImageSharp.gatsbyImageData : 
             item.number === 4 ? query.annuity.childImageSharp.gatsbyImageData : ''} alt={item.imgAlt} />
