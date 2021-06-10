@@ -31,7 +31,7 @@ const CallToAction = () => {
       <article className='p-3 sm:text-sm md:text-base lg:text-lg'>
         <div className='flex flex-col justify-evenly max-w-3xl h-full'>
           <h1 className='sm:text-lg md:text-2xl lg:text-3xl xl:text-5xl underline'>
-            I build blazing fast (and beautiful) websites that help small businesses convert visitors into customers!
+            I build blazing fast websites that help small businesses like yours convert visitors into customers!
           </h1>
           <p>
             I&apos;m a freelance developer specializing in helping people and businesses expand their online presence,

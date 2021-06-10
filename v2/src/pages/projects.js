@@ -18,7 +18,7 @@ const Projects = () => (
       </article>
     </section>
     {/* Turn the title here into a prop */}
-    <Testimonials bgColor='myPurple' textColor='text-white' />
+    <Testimonials bgColor='myPurple' textColor='text-white' sectionTitle="You'll Join a Great Group of Companies and People"/>
   </>
 );
 

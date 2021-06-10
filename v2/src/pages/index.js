@@ -52,7 +52,7 @@ function IndexPage() {
       </div>
       <ServicesList />
       <GetStarted />
-      <Testimonials bgColor='white'/>
+      <Testimonials bgColor='white' sectionTitle="Some of the Great Companies and People Who've Hired Me"/>
     </>
   );
 }

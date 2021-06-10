@@ -80,7 +80,7 @@ const Testimonials = (props) => {
       <article className="testimonials-container w-full items-center p-12 md:gap-4">
         <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg sm:mb-6 md:mb-4 lg:mb-0">
           <h3 className="font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
-            Some of the Great Companies & People I&apos;ve Helped
+            {props.sectionTitle}
           </h3>
         </div>
         <div className="testimonials-container-2">
