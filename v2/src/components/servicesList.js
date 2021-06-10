@@ -17,19 +17,19 @@ const services = [
   {
     number: `2`,
     title: "User Focused Design",
-    desc: `The design I create for your website is focused on user experience from the start to ensure ease of use and get users the information they need.`,
+    desc: `The designs I create are focused on user experience from the start to ensure ease of use and get users the information they need.`,
     imgAlt: `a pencil and a ruler`
   },
   {
     number: `3`,
     title: "Personalized Development",
-    desc: `With your goals at the forefront of development, I build a website that's easy to maintain and update. I focus on growth by keeping the technical debt to a minimum.`,
+    desc: `With your goals at the forefront of development, I build a website that's easy to maintain, update, and grow.`,
     imgAlt: `a computer monitor with a page popping off it`
   },
   {
     number: `4`,
     title: "Marketing Solutions",
-    desc: `Getting your message and products to your audience is essential to your business. That's why SEO is always a priority in my work.`,
+    desc: `Getting your message and products in front of your audience is essential to your business. That's why SEO is always a priority in my work.`,
     imgAlt: `a letter with a dollar sign on paper`
   },
   // {
@@ -48,13 +48,13 @@ const services = [
   {
     number: `5`,
     title: "Content Solutions",
-    desc: `Filling your website with content can be laborious - especially if it's written content like articles or blog posts. I can handle this task while I build your website.`,
+    desc: `Filling your website with written content like articles or blog posts can be tedious. Let me handle it while you focus on your business.`,
     imgAlt: `a book with an image icon`
   },
   {
     number: `6`,
     title: "Continued Support",
-    desc: `I guarantee my work for a minimum of 6 months after the launch of the project and then on a monthly retainer so you can focus on your business.`,
+    desc: `I guarantee my work for 6 months after the launch of your project (and on a monthly basis after that to help with any changes).`,
     imgAlt: `a head with a headset on`
   },
 ];
