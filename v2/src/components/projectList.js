@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 const projects = [
   {
@@ -8,6 +8,10 @@ const projects = [
     link: `https://www.nofnec.ca/`,
     imgAlt: ``,
     key: Math.random(),
+    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
     number: 1,
   },
   {
@@ -15,6 +19,10 @@ const projects = [
     link: `https://wawakapewin.netlify.app/`,
     imgAlt: ``,
     key: Math.random(),
+    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
     number: 2,
   },
   {
@@ -22,6 +30,10 @@ const projects = [
     link: `https://tracys-upholstery.com`,
     imgAlt: ``,
     key: Math.random(),
+    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
     number: 3,
   },
   {
@@ -91,10 +103,14 @@ const ProjectList = () => {
     <>
       {projects.map((item) => {
         return (
-          <div className="text-white" key={item?.key}>
-            <p>{item.projectName}</p>
-            <p>{item.link}</p>
-            <GatsbyImage className="rounded-sm" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
+          <div className="text-white flex flex-auto mx-3 my-10 items-center" key={item?.key}>
+            <div className="max-w-2xl">
+            <p className="sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">{item.projectName}</p>
+            <img src="../images/icons/ExternalWebsite.svg" alt="" />
+            <p>The problem: {item.problem}</p>
+            <p>The solution: {item.results}</p>
+            </div>
+            <GatsbyImage className="rounded-sm flex-1" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
             item.number === 2 ? query.wawakpewin.childImageSharp.gatsbyImageData :
             item.number === 3 ? query.tracy.childImageSharp.gatsbyImageData : 
             item.number === 4 ? query.annuity.childImageSharp.gatsbyImageData : ''} alt={item.imgAlt} />
