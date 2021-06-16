@@ -8,13 +8,12 @@ const Projects = () => (
   <>
     <section className="flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO keywords={[`freelance`, `about`, `jonathan`, `sexton`, `development`, `website`]} title="Projects" />
-      <p className="sm:text-2xl lg:text-3xl xl:text-4xl font-bold">Projects</p>
-      <div className="w-3/4">
+      {/* <p className="sm:text-2xl lg:text-3xl xl:text-4xl font-bold">Projects</p> */}
+      {/* <div className="w-3/4">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.
+          This was left in because I might want to add something here in the future
         </p>
-      </div>
+      </div> */}
       <article>
         <ProjectList />
       </article>

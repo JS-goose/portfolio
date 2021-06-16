@@ -103,17 +103,18 @@ const ProjectList = () => {
     <>
       {projects.map((item) => {
         return (
-          <div className="text-white flex flex-auto mx-3 my-10 items-center" key={item?.key}>
-            <div className="max-w-2xl">
-            <p className="sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">{item.projectName}</p>
-            <img src="../images/icons/ExternalWebsite.svg" alt="" />
-            <p>The problem: {item.problem}</p>
-            <p>The solution: {item.results}</p>
-            </div>
-            <GatsbyImage className="rounded-sm flex-1" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
+          <div className="text-white flex flex-col lg:flex-row flex-auto sm:mx-3 mx-1 lg:my-10 lg:items-center" key={item?.key}>
+            <GatsbyImage className="rounded-sm flex-1 shadow-xl" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
             item.number === 2 ? query.wawakpewin.childImageSharp.gatsbyImageData :
             item.number === 3 ? query.tracy.childImageSharp.gatsbyImageData : 
             item.number === 4 ? query.annuity.childImageSharp.gatsbyImageData : ''} alt={item.imgAlt} />
+            <div className="ml-2 lg:max-w-2xl max-w-3xl">
+            <p className="sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">
+              <a href={item.link} class="p-1 hover:p-2 hover:bg-myRed hover:underline" target="_blank" rel="noopener noreferrer">{item.projectName}</a>
+              </p>
+            <p>The problem: {item.problem}</p>
+            <p>The solution: {item.results}</p>
+            </div>
           </div>
         );
       })}
