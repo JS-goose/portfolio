@@ -108,12 +108,15 @@ const ProjectList = () => {
             item.number === 2 ? query.wawakpewin.childImageSharp.gatsbyImageData :
             item.number === 3 ? query.tracy.childImageSharp.gatsbyImageData : 
             item.number === 4 ? query.annuity.childImageSharp.gatsbyImageData : ''} alt={item.imgAlt} />
-            <div className="ml-2 lg:max-w-2xl max-w-3xl">
-            <p className="sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">
-              <a href={item.link} class="p-1 hover:p-2 hover:bg-myRed hover:underline" target="_blank" rel="noopener noreferrer">{item.projectName}</a>
-              </p>
-            <p>The problem: {item.problem}</p>
-            <p>The solution: {item.results}</p>
+            <div className="ml-2 lg:max-w-2xl max-w-3xl max-h-60 flex flex-col justify-between">
+            <p className="pb-6 sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">
+              {item.projectName}
+            </p>
+            <p className="pb-6"><span className="text-xl bold">The problem:</span> {item.problem}</p>
+            <p className="pb-6"><span className="text-xl bold">The solution:</span> {item.results}</p>
+            <p>
+              <a href={item.link} class="text-xl p-1 hover:p-2 hover:bg-myRed hover:underline" target="_blank" rel="noopener noreferrer">See the live website <span className="text-3xl">&#8594;</span></a>
+            </p>
             </div>
           </div>
         );
