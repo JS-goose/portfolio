@@ -41,9 +41,9 @@ const projects = [
     link: `https://annuitymarketpro.netlify.app/`,
     imgAlt: `a website showing two empty chairs on the beach`,
     key: Math.random(),
-    problem: `This customer had no online presence and needed a way to bring services to customers in an engaging way`,
-    results: `Created a web presence that is functional, easy to use, and responsive while helping client extend their reach to customers.`,
-    number: 4
+    problem: `Michael had no online presence and needed a way to bring services to his customers in an engaging way. He also needed a way for his customers to schedule meetings with him.`,
+    results: `The website (while still in progress) is functional, easy to use, and responsive and presents visitors with the information they're looking for right up front.`,
+    number: 4,
   },
   // {
   //   projectName: `Luna Repair`,
@@ -59,42 +59,22 @@ const ProjectList = () => {
     query {
       annuity: file(relativePath: { eq: "projects/annuity.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            quality: 100, 
-            width: 800, 
-            placeholder: BLURRED, 
-            formats: [AUTO, WEBP]
-            )
+          gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       nofnec: file(relativePath: { eq: "projects/nofnec.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            quality: 100, 
-            width: 800, 
-            placeholder: BLURRED, 
-            formats: [AUTO, WEBP]
-            )
+          gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       tracy: file(relativePath: { eq: "projects/tracy.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            quality: 100, 
-            width: 800, 
-            placeholder: BLURRED, 
-            formats: [AUTO, WEBP]
-            )
+          gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
       wawakpewin: file(relativePath: { eq: "projects/wawakpewin.png" }) {
         childImageSharp {
-          gatsbyImageData(
-            quality: 100, 
-            width: 800, 
-            placeholder: BLURRED, 
-            formats: [AUTO, WEBP]
-            )
+          gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
     }
@@ -103,21 +83,47 @@ const ProjectList = () => {
     <>
       {projects.map((item) => {
         return (
-          <div className="text-white flex flex-col lg:flex-row flex-auto sm:mx-3 mx-1 lg:my-10 lg:items-center" key={item?.key}>
-            <GatsbyImage className="rounded-sm flex-1 shadow-xl" image={item.number === 1 ? query.nofnec.childImageSharp.gatsbyImageData : 
-            item.number === 2 ? query.wawakpewin.childImageSharp.gatsbyImageData :
-            item.number === 3 ? query.tracy.childImageSharp.gatsbyImageData : 
-            item.number === 4 ? query.annuity.childImageSharp.gatsbyImageData : ''} alt={item.imgAlt} />
-            <div className="ml-2 lg:max-w-2xl max-w-3xl max-h-60 flex flex-col justify-between">
-            <p className="pb-6 sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold">
-              {item.projectName}
-            </p>
-            <p className="pb-6"><span className="text-xl bold">The problem:</span> {item.problem}</p>
-            <p className="pb-6"><span className="text-xl bold">The solution:</span> {item.results}</p>
-            <p>
-              <a href={item.link} class="text-xl p-1 hover:p-2 hover:bg-myRed hover:underline" target="_blank" rel="noopener noreferrer">See the live website <span className="text-3xl">&#8594;</span></a>
-            </p>
+          <div className="text-white flex flex-col md:my-8" key={item?.key}>
+            <p className="py-10 sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold underline">{item.projectName}</p>
+            <GatsbyImage
+              className="project-image rounded-sm shadow-xl mb-8"
+              image={
+                item.number === 1
+                  ? query.nofnec.childImageSharp.gatsbyImageData
+                  : item.number === 2
+                  ? query.wawakpewin.childImageSharp.gatsbyImageData
+                  : item.number === 3
+                  ? query.tracy.childImageSharp.gatsbyImageData
+                  : item.number === 4
+                  ? query.annuity.childImageSharp.gatsbyImageData
+                  : ""
+              }
+              alt={item.imgAlt}
+            />
+            <div className="flex mb-8">
+              <div className="flex flex-col">
+                <p className="pb-4">
+                  <span className="text-xl bold">The problem:</span>
+                </p>
+                <p>{item.problem}</p>
+              </div>
+              <div className="flex flex-col">
+                <p className="pb-4">
+                  <span className="text-xl bold">The solution:</span>
+                </p>
+                <p>{item.results}</p>
+              </div>
             </div>
+            <p>
+              <a
+                href={item.link}
+                class="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myRed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See the live website <span className="text-3xl">&#8594;</span>
+              </a>
+            </p>
           </div>
         );
       })}
