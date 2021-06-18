@@ -2,16 +2,16 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
+const Borealis = () => <small>This project was a collaboration with <a href="http://borealisweb.ca" target="_blank" rel="noopener noreferrer">Borealis Web Development</a></small>
+
 const projects = [
   {
     projectName: `Northern Ontario First Nations Environment Conference`,
     link: `https://www.nofnec.ca/`,
     imgAlt: ``,
     key: Math.random(),
-    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
-    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    problem: `The Northern Ontario First Nations Environment Conference was in need of a website redesign that was easy to use, bright, and most of all engaging to users.`,
+    results: `The new website brings usability, a spiffy new design, and presents the most important information upfront without sacrificing on the details.`,
     number: 1,
   },
   {
@@ -101,23 +101,24 @@ const ProjectList = () => {
               alt={item.imgAlt}
             />
             <div className="flex mb-8">
-              <div className="flex flex-col">
+              <div className="flex flex-col pr-1">
                 <p className="pb-4">
-                  <span className="text-xl bold">The problem:</span>
+                  <span className="text-xl bold underline">The problem:</span>
                 </p>
                 <p>{item.problem}</p>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col pl-1">
                 <p className="pb-4">
-                  <span className="text-xl bold">The solution:</span>
+                  <span className="text-xl bold underline">The solution:</span>
                 </p>
                 <p>{item.results}</p>
+                <p>{item.number === 1 || item.number === 2 ? <Borealis /> : null}</p>
               </div>
             </div>
             <p>
               <a
                 href={item.link}
-                class="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myRed"
+                className="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myRed"
                 target="_blank"
                 rel="noopener noreferrer"
               >
