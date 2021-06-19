@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const Borealis = () => <small>This project was a collaboration with <a href="http://borealisweb.ca" target="_blank" rel="noopener noreferrer">Borealis Web Development</a></small>
+const Borealis = () => <small>* This project was a collaboration with <a href="http://borealisweb.ca" className="hover:underline hover:bg-myRed" target="_blank" rel="noopener noreferrer">Borealis Web Development</a></small>
 
 const projects = [
   {
@@ -10,8 +10,8 @@ const projects = [
     link: `https://www.nofnec.ca/`,
     imgAlt: ``,
     key: Math.random(),
-    problem: `The Northern Ontario First Nations Environment Conference was in need of a website redesign that was easy to use, bright, and most of all engaging to users.`,
-    results: `The new website brings usability, a spiffy new design, and presents the most important information upfront without sacrificing on the details.`,
+    problem: `The Northern Ontario First Nations Environment Conference was in need of a website redesign that was easy to use, bright, and most of all engaging to users. With their previous solution, visitors were getting frustrated by not being able to find the information they needed quickly`,
+    results: `The new website brings usability, a spiffy new design (all while being responsive), and presents the most important information upfront to visitors without sacrificing on performance. With the new website, users find as much or as little information as they want while being directed towards the sign up section.`,
     number: 1,
   },
   {
@@ -19,10 +19,8 @@ const projects = [
     link: `https://wawakapewin.netlify.app/`,
     imgAlt: ``,
     key: Math.random(),
-    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
-    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    problem: `The Wawakapewin are a First Nation community and wanted a website refresh - one that would provide members with a community hub of resources.  Their previous website was showing it's age and limitations around speed and performance.`,
+    results: `The new website (while still under development) is blazingly fast giving users the content they're looking for in no time!  It also has general information about the community, contact information, governance information, news, and links to members services/programs.`,
     number: 2,
   },
   {
@@ -41,8 +39,8 @@ const projects = [
     link: `https://annuitymarketpro.netlify.app/`,
     imgAlt: `a website showing two empty chairs on the beach`,
     key: Math.random(),
-    problem: `Michael had no online presence and needed a way to bring services to his customers in an engaging way. He also needed a way for his customers to schedule meetings with him.`,
-    results: `The website (while still in progress) is functional, easy to use, and responsive and presents visitors with the information they're looking for right up front.`,
+    problem: `Michael had no online presence and needed a way to bring the services he offers in person to virtual users in an engaging way. He also needed a way for his customers to get relevant information about the legalities of their financial choices.`,
+    results: `The website (while still in progress) is functional, easy to use, and responsive. Visitors get information about services, location, supplemental financial information, and contact info in an easy to use format. `,
     number: 4,
   },
   // {
@@ -77,6 +75,10 @@ const ProjectList = () => {
           gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
+      rightArrow: file(relativePath: { eq: "icons/right_arrow.svg"}) {
+        extension
+        publicURL
+      }
     }
   `);
   return (
@@ -101,18 +103,18 @@ const ProjectList = () => {
               alt={item.imgAlt}
             />
             <div className="flex mb-8">
-              <div className="flex flex-col pr-1">
+              <div className="flex flex-1 flex-col pr-1">
                 <p className="pb-4">
                   <span className="text-xl bold underline">The problem:</span>
                 </p>
                 <p>{item.problem}</p>
               </div>
-              <div className="flex flex-col pl-1">
+              <div className="flex flex-1 flex-col pl-1">
                 <p className="pb-4">
                   <span className="text-xl bold underline">The solution:</span>
                 </p>
                 <p>{item.results}</p>
-                <p>{item.number === 1 || item.number === 2 ? <Borealis /> : null}</p>
+                <p className="pt-4">{item.number === 1 || item.number === 2 ? <Borealis /> : null}</p>
               </div>
             </div>
             <p>
@@ -122,7 +124,7 @@ const ProjectList = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                See the live website <span className="text-3xl">&#8594;</span>
+                <span className="flex">See the live website <img src={query.rightArrow.publicURL} alt="a right arrow" /></span>
               </a>
             </p>
           </div>
