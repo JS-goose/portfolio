@@ -28,8 +28,7 @@ const projects = [
     link: `https://tracys-upholstery.com`,
     imgAlt: ``,
     key: Math.random(),
-    problem: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    problem: `Tracy had operated for years by nothing more than word of mouth advertisement. she`,
     results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
     number: 3,

@@ -24,7 +24,7 @@ const Testimonials = (props) => {
       name: `Michael Masor`,
       company: `Annuity Market Pro`,
       title: `CEO/Founder`,
-      comment: `"Knowledgeable, independent, fair, and trustworthy - working with Jonathan was nothing but a phenomenal experience!"`,
+      comment: `"Knowledgeable, independent, fair, and trustworthy - working with Jonathan is nothing short of a phenomenal experience!"`,
       website: `https://www.annuitymarketpro.com/`,
       imgAlt: 'Michael Masor looking all snazzied up in his business casual attire'
     },

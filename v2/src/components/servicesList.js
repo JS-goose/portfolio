@@ -132,7 +132,7 @@ const ServicesList = () => {
             ))}
           </div>
           <p className="pt-6 sm:text-base md:text-lg lg:text-xl">
-            Need more information about my services or ready to start working together? Get in touch today and let's grow your business!<div className="mt-10">
+            Need more information about my services or ready to start working together? Get in touch today and let&apos;s grow your business!<div className="mt-10">
               <span
                 className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
             justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed

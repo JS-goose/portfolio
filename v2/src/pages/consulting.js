@@ -43,11 +43,11 @@ const Consulting = () => {
           </p>
           <p className="pb-4">
             {" "}
-            I've worked on teams of all sizes so I'm comfortable integrating into your team, taking direction, and doing my part to get
+            I&apos;ve worked on teams of all sizes so I&apos;m comfortable integrating into your team, taking direction, and doing my part to get
             us over the finish line.
           </p>
           <p className="pb-4">
-            Or maybe you're looking for someone to lead your team - someone that can give direction, take feedback, and turn that into
+            Or maybe you&apos;re looking for someone to lead your team - someone that can give direction, take feedback, and turn that into
             results for you and your customers.
           </p>
           <p className="pb-8">
@@ -89,7 +89,7 @@ const Consulting = () => {
           <p className="pb-8">While you won&apos;t find all of the ways I can help your business until we start working together, here are some services I provide:</p>
           <ol className="pb-8 pl-6">
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Planning, collaborating, and communicating about your needs before any work is started</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Visual design of your website that you're in control of</li>
+            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Visual design of your website that you&apos;re in control of</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Building and deploying your website using the most up to date technologies</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> <a href="https://moz.com/learn/seo/what-is-seo" target="__blank" rel="noopener noreferrer">Search engine optimization</a> (SEO) and <a href="https://moz.com/learn/seo/conversion-rate-optimization" target="__blank" rel="noopener noreferrer">conversion rate optimization</a> (CRO)</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Handling the <a href="https://en.wikipedia.org/wiki/Domain_name" target="_blank" rel="noopener noreferrer">domain name services</a> and file hosting of your new website</li>

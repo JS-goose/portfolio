@@ -182,7 +182,7 @@ function AboutPage() {
             </i>
           </p>
           <div className="h-20 p-2 items-center justify-around hidden sm:flex">
-            <p className="text-myPurple font-bold sm:text-2xl lg:text-3xl xl:text-4xl">Let's be friends!</p>
+            <p className="text-myPurple font-bold sm:text-2xl lg:text-3xl xl:text-4xl">Let&apos;s be friends!</p>
             <ul className="about-social-list flex align-center">
               <SocialList
                 svgClassName={"social-icons"}
