@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Borealis = () => <small>* This project was a collaboration with <a href="http://borealisweb.ca" className="hover:underline hover:bg-myRed" target="_blank" rel="noopener noreferrer">Borealis Web Development</a></small>
+const Borealis = () => <small>* I worked as part of the <a href="http://borealisweb.ca" className="underline hover:bg-myRed" target="_blank" rel="noopener noreferrer">Borealis Web Development</a> team to build this website.</small>
 const Tracy = () => <small>* Tracy was the first freelance client I ever had and I&apos;m happy to report she&apos;s now a repeat customer after hiring me for a website redesign! </small>
 
 const projects = [
