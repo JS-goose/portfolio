@@ -94,8 +94,8 @@ const ProjectList = () => {
                   : item.number === 2
                     ? query.wawakpewin.childImageSharp.gatsbyImageData
                     : item.number === 3
-                      ? query.tracyupholstery.childImageSharp.gatsbyImageData
-                      : item.number === 4
+                      // ? query.tracyupholstery.childImageSharp.gatsbyImageData
+                      // : item.number === 4
                         ? query.annuity.childImageSharp.gatsbyImageData
                         : ""
               }
