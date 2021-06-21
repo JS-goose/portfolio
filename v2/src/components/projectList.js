@@ -64,7 +64,7 @@ const ProjectList = () => {
           gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
       }
-      tracy: file(relativePath: { eq: "projects/tracy.png" }) {
+      tracyupholstery: file(relativePath: { eq: "projects/tracy.png" }) {
         childImageSharp {
           gatsbyImageData(quality: 100, width: 1000, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
         }
@@ -94,7 +94,7 @@ const ProjectList = () => {
                   : item.number === 2
                     ? query.wawakpewin.childImageSharp.gatsbyImageData
                     : item.number === 3
-                      ? query.tracy.childImageSharp.gatsbyImageData
+                      ? query.tracyupholstery.childImageSharp.gatsbyImageData
                       : item.number === 4
                         ? query.annuity.childImageSharp.gatsbyImageData
                         : ""
