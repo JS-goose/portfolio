@@ -3,6 +3,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Borealis = () => <small>* This project was a collaboration with <a href="http://borealisweb.ca" className="hover:underline hover:bg-myRed" target="_blank" rel="noopener noreferrer">Borealis Web Development</a></small>
+const Tracy = () => <small>* Tracy was the first freelance client I ever had and I&apos;m happy to report she&apos;s now a repeat customer after hiring me for a website redesign! </small>
 
 const projects = [
   {
@@ -28,9 +29,8 @@ const projects = [
     link: `https://tracys-upholstery.com`,
     imgAlt: ``,
     key: Math.random(),
-    problem: `Tracy had operated for years by nothing more than word of mouth advertisement. she`,
-    results: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Et leo duis ut diam. Nec feugiat nisl pretium fusce id velit ut. Id diam maecenas ultricies mi eget mauris.`,
+    problem: `Tracy had operated for years mostly by word of mouth advertisement but wanted a better way to get her services in front of her customers. She needed a website to showcase images of her work and some information about her business.`,
+    results: `I built a simple, but effective, website for Tracy that has an image gallery, an overview of her services, and contact information. With that, she increased her customer conversion rate and revenue by almost 20% over 6 months! `,
     number: 3,
   },
   {
@@ -92,12 +92,12 @@ const ProjectList = () => {
                 item.number === 1
                   ? query.nofnec.childImageSharp.gatsbyImageData
                   : item.number === 2
-                  ? query.wawakpewin.childImageSharp.gatsbyImageData
-                  : item.number === 3
-                  ? query.tracy.childImageSharp.gatsbyImageData
-                  : item.number === 4
-                  ? query.annuity.childImageSharp.gatsbyImageData
-                  : ""
+                    ? query.wawakpewin.childImageSharp.gatsbyImageData
+                    : item.number === 3
+                      ? query.tracy.childImageSharp.gatsbyImageData
+                      : item.number === 4
+                        ? query.annuity.childImageSharp.gatsbyImageData
+                        : ""
               }
               alt={item.imgAlt}
             />
@@ -114,6 +114,7 @@ const ProjectList = () => {
                 </p>
                 <p>{item.results}</p>
                 <p className="pt-4">{item.number === 1 || item.number === 2 ? <Borealis /> : null}</p>
+                <p className="pt-4">{item.number === 3 ? <Tracy /> : null}</p>
               </div>
             </div>
             <p>
