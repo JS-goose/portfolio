@@ -3,7 +3,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Borealis = () => <small>* I worked as part of the <a href="http://borealisweb.ca" className="underline hover:bg-myRed" target="_blank" rel="noopener noreferrer">Borealis Web Development</a> team to build this website.</small>
-const Tracy = () => <small>* Tracy was the first freelance client I ever had and I&apos;m happy to report she&apos;s now a repeat customer after hiring me for a website redesign! </small>
+const Tracy = () => <small>* Tracy was the first freelance client I had and I&apos;m happy to report she&apos;s now a repeat customer after hiring me for a redesign/rebuild! </small>
 
 const projects = [
   {
@@ -84,7 +84,7 @@ const ProjectList = () => {
     <>
       {projects.map((item) => {
         return (
-          <div className="text-white flex flex-col md:my-8" key={item?.key}>
+          <div className="tracking-wide text-white flex flex-col md:my-8" key={item?.key}>
             <p className="py-10 sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold underline">{item.projectName}</p>
             <GatsbyImage
               className="project-image rounded-sm shadow-xl mb-8"

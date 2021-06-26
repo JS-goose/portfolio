@@ -59,7 +59,6 @@ function AboutPage() {
           <p className="mb-4">
             Fast forward and I&apos;m now a full time developer working on projects that I love, helping my clients with the projects I build, and still fascinated with technology.
           </p>
-          {/* <em>(Side note - If you'd like to know what tech I use check out this <a href="/uses">page</a>)</em>. */}
         </div>
       </article>
       <article className="about-containers bg-white p-6 sm:text-base md:text-lg lg:text-xl">
@@ -68,11 +67,11 @@ function AboutPage() {
           className="aboutImg justify-self-center rounded-sm"
           alt="a computer with stickers on it" />
         <div className="about-copy-containers">
-        <H1>What I Do</H1>
+          <H1>What I Do</H1>
           <p className="mb-4">
             <span>I&apos;m a freelance web developer who specializes in working with small businesses</span> looking for a
-          &quot;one-stop-shop&quot; for their website/web application solution.
-        </p>
+            &quot;one-stop-shop&quot; for their website/web application solution.
+          </p>
           <p className="mb-4">
             What exactly does that mean you ask? It means I can design, build, publish, and maintain your website, take care of the
             technical details involved in that, and provide a solution instead of a distraction for you so you can focus on running
@@ -86,6 +85,7 @@ function AboutPage() {
             If you have any questions about me or would like to talk, all my social media links can be found at the top and bottom of
             this page. I would love to connect with you!
           </p>
+          {/* <em>(Side note - If you'd like to know what tech I use check out this <a href="/uses">page</a>)</em>. */}
           <p className="mb-4">
             I also enjoy writing and sharing the knowledge I have gained on my &nbsp;
             <a href="http://jonathansexton.me/blog" target="_blank" rel="noopener noreferrer">
@@ -117,9 +117,9 @@ function AboutPage() {
           <p>
             When the circumstances allow, we enjoy visiting parks around the state, going to the river, hiking, fishing, or just
             sitting around the fire sharing stories. Most summers you&apos;ll be hard pressed to find us indoors. If we are inside, you
-            can bet we are playing a board game (read as: I&apos;m losing that board game) or messing around on the{" "}
+            can bet we are playing a board game (read as: I&apos;m losing at that game) or playing something on the{" "}
             <a href="https://en.wikipedia.org/wiki/Nintendo_Switch" rel="noreferrer noopener">
-              Swtich
+              Nintendo Swtich
             </a>{" "}
             :)
           </p>

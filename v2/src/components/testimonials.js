@@ -117,7 +117,7 @@ const Testimonials = (props) => {
             </div>
           ))}
         </div>
-        <div className="testimonials-container-3 pt-6">
+        <div className="testimonials-container-3 pt-6 tracking-wide">
           <p className="font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-6 sm:text-base md:text-xl">
             If you have a project idea, I&apos;d love to work with you to bring it to life. In an effort to give my absolute best to the people and companies I work with, 
