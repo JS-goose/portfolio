@@ -1,57 +1,6 @@
 .services-list-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center; */
   margin: 6rem;
-  /* column-gap: 2rem; */
 }
-
-/* .services-list p a::before {
-  height: 4px;
-  position: absolute;
-  background: #421ed2;
-  content: '';
-  width: 7rem;
-  transform: skew(10deg) rotate(1.3deg);
-  margin-top: 1.5rem;
-}
-
-.services-list p a:hover::before {
-  transition: all 0.2s;
-  background-color: #ff4945;
-  scale: 1.05;
-} */
-
-/* .services-list ul, .services-list p { 
-  position: relative;
-  z-index: 10;
-}
-
-.services-list li p a, .services-list p a {
-  position: relative;
-}
-
-.services-list li p a:hover, .services-list p a:hover {
-  text-decoration: underline;
-  color: var(--myDarkGray);
-}
-
-.services-list li p a:before, .services-list p a:before {
-  height: 1.5rem;
-  position: absolute;
-  background: var(--myRed);
-  content: "";
-  width: 100%;
-  bottom: -2px;
-  z-index: -1;
-}
-
-.services-list li p a:hover:before, .services-list p a:hover:before {
-  height: 0.3rem;
-  transform: skew(1deg, 1deg);
-  transition: all ease-in-out 0.1s;
-
-} */
 
 .services-list-container,
 .why-hire-me-container {
@@ -59,11 +8,7 @@
 }
 
 .why-hire-me-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center; */
   margin: 6rem;
-  /* column-gap: 2rem; */
 }
 
 @media screen and (max-width: 1000px) {
