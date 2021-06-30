@@ -36,11 +36,11 @@ function IndexPage() {
   //     }
   //   }
   // `);
-  const svgSizes = {height: 25, width:25, devHeigh: 13, devWidth: 33}
+  const svgSizes = { height: 25, width: 25, devHeigh: 13, devWidth: 33 }
   return (
     <>
       <SEO
-        keywords={[`freelance`, `home`, `jonathan`, `sexton`, `development`, `website`, `small business`]}
+        keywords={["boerne web developer", "small business website", "tile laying website", "freelance", "home", "jonathan", "sexton", "development", "website", "small business"]}
         title='Home'
       />
       <div className='index-wrapper'>
@@ -48,11 +48,11 @@ function IndexPage() {
         <Image fluid={query.astronaut.childImageSharp.fluid} className='astronaut' />
         <Image fluid={query.rocket.childImageSharp.fluid} className='rocket' /> */}
         <CTA />
-        <SocialSection socialContainerClassName={'lg:mb-24'} svgSizes={svgSizes}/>
+        <SocialSection socialContainerClassName={'lg:mb-24'} svgSizes={svgSizes} />
       </div>
       <ServicesList />
       <GetStarted />
-      <Testimonials bgColor='white' sectionTitle="Some of the Great Companies and People Who've Hired Me"/>
+      <Testimonials bgColor='white' sectionTitle="Some of the Great Companies and People Who've Hired Me" />
     </>
   );
 }
