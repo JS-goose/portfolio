@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 import SEO from '../components/seo';
 
@@ -17,15 +17,20 @@ function NotFoundPage() {
       <SEO
         keywords={["boerne web developer", "small business website", "tile laying website", "freelance", "home", "jonathan", "sexton", "development", "website", "small business"]}
         title="404: Not found" />
-      <div className="max-w-5xl">
+      <div className="max-w-5xl flex flex-col items-center">
         <h2 className="sm:text-2xl lg:text-3xl xl:text-4xl font-bold inline-block my-8 p-3">
-          Oh no!  It looks like this page didn&apos;t make the cut :(
+          Nothing to see here - not even the page you&apos;re looking for :(
         </h2>
-        {/* Image courtesy of https://undraw.co */}
+        <div className="my-6">
+          <p className="pb-6 sm:text-base md:text-lg lg:text-xl">Let&apos;s get you back on track!
+          </p>
+        </div>
+        <div className="mb-8">
+          <Link to="/" className='bg-myRed p-2 rounded-sm mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:w-full sm:text-sm md:text-base xl:text-lg hover:underline hover:bg-myDarkRed'>Take me home</Link>
+
+        </div>          {/* Image courtesy of https://undraw.co */}
         <img src={query.lost.publicURL} alt="three blobs lost in the bushes" />
 
-        <p>Let me help guide you back to the right path :)</p>
-        <a href="https://jonathansexton.me" target="_blank" rel="noopener noreferrer">Take me home</a>
       </div>
     </section>
   );
