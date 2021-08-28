@@ -4,7 +4,7 @@ import SocialList from './socialList';
 const SocialSection = (props) => {
   return (
     <div className={`${props.socialContainerClassName} social-container`}>
-      <ul className='social-list'>
+      <ul className='social-list mt-8'>
         <li>
           <div className='vertical-text'>Let&apos;s Connect!</div>
         </li>

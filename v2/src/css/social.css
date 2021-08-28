@@ -48,9 +48,9 @@
   padding-right: 0.1rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
   .social-container {
-    padding-left: 2rem !important;
+    visibility: hidden;
   }
 }
 
