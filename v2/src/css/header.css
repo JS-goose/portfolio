@@ -27,27 +27,9 @@ a.nav-link:hover {
   }
 }
 
-/* .logoNotHovered {
-  transition: transform 0.5s ease-in;
-  transform: rotate(0);
-  height: 8rem;
-  width: 8rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -0.8rem;
-  cursor: pointer;
-} */
 .logo {
-  height: 8rem;
-  width: 8rem;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -0.8rem; */
+  height: 3rem;
+  width: 3rem;
   cursor: pointer;
 }
-/* .logo:hover {
-  transition: transform 0.5s ease-out;
-  transform: rotate(-45deg);
-} */
+

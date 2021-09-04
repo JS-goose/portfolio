@@ -1,41 +1,25 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { Link } from "gatsby";
 import React, { useState } from "react";
-// import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-  // let [hovered, setHovered] = useState(false);
-  // const toggleHover = () => setHovered(true);
-  // const toggleHover2 = () => setHovered(false);
-  // query SiteTitleQuery {
-  //   site {
-  //     siteMetadata {
-  //       title
-  //     }
-  //   }
-  const query = useStaticQuery(graphql`
-  query {
-    brand: file(relativePath: {eq: "icons/Logo.svg"}) {
-      extension
-      publicURL
-    }
-  }
-  `);
 
-  // className={hovered ? 'logoNotHovered' : 'logo'} />
   return (
     <header className="bg-myPurple text-white">
       <div className="flex flex-wrap items-center justify-between md:justify-center lg:justify-evenly max-w-6xl lg:max-w-full">
-        <span className="flex items-center">
           <Link to="/">
-            <img
-              src={query.brand.publicURL}
-              alt="the letters JS on a space background"
+        <div className="flex ml-4 my-4">
+            <StaticImage
+              src="../images/icons/logoPNG.png"
+              alt="jonathan sexton with glasses on and a smile"
               className="logo"
+              placeholder="blurred"
+              layout="fullWidth"
             />
+          <p className="hidden md:inline pl-2 pt-2 mb-2 md:mb-4 lg:mb-6 text-base">Jonathan Sexton</p>
+        </div>
           </Link>
-          {/* <p className="hidden md:inline mb-2 md:mb-4 lg:mb-6 sm:lg md:text-xl lg:text-2xl">Jonathan Sexton</p> */}
-        </span>
 
         <button
           type="button"
