@@ -9,11 +9,6 @@ const services = [
       `A thorough review of your current website to identify any performance/user experience issues that could be pain points for users.`,
     imgAlt: `two people having a great conversation with chat bubbles above their heads`,
   },
-  // {
-  //   number: `2`,
-  //   title: '',
-  //   desc: `Assess your current website to identify issues, propose solutions, and ultimately correct those issues.`,
-  // },
   {
     number: `2`,
     title: "User Focused Design",
@@ -32,19 +27,6 @@ const services = [
     desc: `Getting your message and products in front of your audience is essential to your business. That's why SEO is always a priority in my work.`,
     imgAlt: `a letter with a dollar sign on paper`
   },
-  // {
-  //   number: `6`,
-  //   desc: `Handle the building, hosting, deployment, and maintenance of your website so you can focus on your business. `,
-  // },
-  // { number: `7`, desc: `Bring industry knowledge, experience, and follow-through to your exisiting or new project.` },
-  // {
-  //   number: `8`,
-  //   desc: `Communicate openly and honestly with you and/or your stakeholders about the cost/time/progress of the project.`,
-  // },
-  // {
-  //   number: `9`,
-  //   desc: `Provide updates, changes, edits, or technical overhauls to your website via reoccuring service subscription.`,
-  // },
   {
     number: `5`,
     title: "Content Solutions",
@@ -110,7 +92,7 @@ const ServicesList = () => {
           </div>
           <div className="flex flex-row flex-wrap w-100 mt-8">
             {services.map((service) => (
-              <article key={service.number} className="mb-12 mr-12 sm:text-base md:text-lg lg:text-xl">
+              <article key={service.number} className="w-full xl:max-w-md mb-12 mr-12 sm:text-base md:text-lg lg:text-xl">
                 <div className="flex flex-col">
                   <div className="flex p-1 mb-2 w-100">
                     <img
@@ -124,7 +106,7 @@ const ServicesList = () => {
                     />
                     <p className="pl-4 font-bold text-xl xl:text-2xl">{service.title}</p>
                   </div>
-                  <div className="max-w-full lg:max-w-md p-1">
+                  <div className="p-1">
                     <p className="text-base md:text-lg lg:text-xl">{service.desc}</p>
                   </div>
                 </div>
