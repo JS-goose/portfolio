@@ -24,7 +24,6 @@ const CallToAction = () => {
         <GatsbyImage image={query.me.childImageSharp.gatsbyImageData} alt="Jonathan Sexton pretending to write something clever in his journal while sitting at a desk" className='me-img' />
         <div className='flex flex-row justify-center sm:pt-2'>
           <h5 className='md:text-base lg:text-lg font-Rubik'>Hi, I&apos;m Jonathan :)</h5>
-          {/* <Image fluid={query.hand.childImageSharp.fluid} className='h-8 w-8 ml-2' /> */}
         </div>
       </article>
       <span className='hidden md:visible border border-right border-myRed inline-block mt-6 mb-8 ml-1 mr-4' />

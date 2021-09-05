@@ -42,7 +42,6 @@ const Testimonials = (props) => {
       comment: `"I came to Jonathan with only a vision. He worked with me every step of the way through frequent communication and brought that vision to life. I'm very happy with the results."`,
       imgAlt: 'Keith Olson looking dapper in his military dress uniform'
     },
-    // {name: `Steve Flannery`, company: `Steve's PC Shop`, comment: `Testimonial here`, website: `https://www.localcomputer.expert/`},
   ];
 
   const query = useStaticQuery(graphql`
@@ -90,7 +89,6 @@ const Testimonials = (props) => {
               data-key={index + 1}
               className="customer-testimonial-container flex sm:p-2 md:p-4 lg:p-6 items-center md:justify-center lg:justify-around max-w-3xl sm:text-sm md:text-base"
             >
-              {/* //! Need to set the alt for each of these !// */}
               <GatsbyImage
                 image={
                   index + 1 === 1
@@ -120,7 +118,7 @@ const Testimonials = (props) => {
         <div className="testimonials-container-3 pt-6 tracking-wide">
           <p className="font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-6 sm:text-base md:text-xl">
-            If you have a project idea, I&apos;d love to work with you to bring it to life. In an effort to give my absolute best to the people and companies I work with, 
+            If you have a project idea, I&apos;d love to work with you to bring it to life. In an effort to give my absolute best to the people and companies I work with,
             I take on a limited number of clients each month.  Don&apos;t take the chance on missing out.
           </p>
           <p className="pt-4 sm:text-base md:text-xl">How do we start the process? Glad you asked!</p>

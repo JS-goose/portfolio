@@ -1,7 +1,5 @@
 import React from 'react';
 import propTypes from 'prop-types';
-// import Image from 'gatsby-image';
-// import BackgroundImage from 'gatsby-background-image';
 
 const ProjectItem = (props) => {
   return (

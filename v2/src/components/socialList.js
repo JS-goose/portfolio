@@ -7,7 +7,6 @@ const SocialList = (props) => {
       link: 'https://twitter.com/jj_goose',
       linkName: 'Twitter',
       icon: (
-        // TODO I need to implement props passing of SVG height/width //
         <svg
           className={props.svgClassName}
           width={props.svgSizes.width}
