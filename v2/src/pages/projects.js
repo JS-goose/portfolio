@@ -8,12 +8,6 @@ const Projects = () => (
   <>
     <section className="projects-section-container flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO keywords={[`freelance`, `about`, `jonathan`, `sexton`, `development`, `website`]} title="Projects" />
-      {/* <p className="sm:text-2xl lg:text-3xl xl:text-4xl font-bold">Projects</p> */}
-      {/* <div className="w-3/4">
-        <p>
-          This was left in because I might want to add something here in the future
-        </p>
-      </div> */}
       <article className="projects-list-container">
         <ProjectList />
       </article>
@@ -23,8 +17,7 @@ const Projects = () => (
         <ContactForm formTitle="Let's get started today!" bgColor="white" />
       </article>
     </section>
-    {/* Turn the title here into a prop */}
-    <Testimonials bgColor="myPurple" textColor="text-white" sectionTitle="You'll Join a Great Group of Companies and People" />
+    <Testimonials bgColor="myPurple" textColor="text-white" sectionTitle="You'll Join a Group of Great Companies and People" />
   </>
 );
 
