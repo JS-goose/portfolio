@@ -41,14 +41,7 @@ const projects = [
     problem: `Michael had no online presence and needed a way to bring the services he offers in person to virtual users in an engaging way. He also needed a way for his customers to get relevant information about the legalities of their financial choices.`,
     results: `The website (while still in progress) is functional, easy to use, and responsive. Visitors get information about services, location, supplemental financial information, and contact info in an easy to use format. `,
     number: 4,
-  },
-  // {
-  //   projectName: `Luna Repair`,
-  //   link: `https://netlify.lunarepair.com`,
-  //  imgAlt: ``,
-  //   key: Math.random(),
-  //   number: 5,
-  // }
+  }
 ];
 
 const ProjectList = () => {
