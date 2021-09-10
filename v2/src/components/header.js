@@ -45,7 +45,7 @@ const Header = () => {
               classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
             {
-              route: `blog.jonathansexton.me`,
+              route: `/blog`,
               title: `Blog`,
               classname: `nav-link block mt-4 no-underline md:inline-block md:mt-0 md:ml-6 sm:text-base md:text-lg lg:text-xl hover:text-myRed`,
             },
@@ -60,8 +60,8 @@ const Header = () => {
               classname: `pt-2 pr-2 pl-2 pb-1 rounded-sm sm:lg md:text-xl lg:text-2xl hover:text-myRed ml-4 bg-myRed hover:bg-white hover:underline`,
             },
           ].map((link) =>
-            link.route === "https://jonathansexton.me/blog" ? (
-              <a href="https://jonathansexton.me/blog" className={link.classname} key={link.title}>
+            link.title === "Blog" ? (
+              <a href="https://blog.jonathansexton.me" className={link.classname} key={link.title}>
                 Blog
               </a>
             ) : (
