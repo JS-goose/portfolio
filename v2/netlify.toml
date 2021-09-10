@@ -4,6 +4,6 @@ to = "blog.jonathansexton.me"
 status = 301
 
 [[redirects]]
-from = "jonathansexton.me/blog"
-to = "blog.jonathansexton.me"
+from = "/blog/*"
+to = "blog.jonathansexton.me/*"
 status = 301
