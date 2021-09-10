@@ -3,7 +3,7 @@ from = "/blog"
 to = "https://blog.jonathansexton.me"
 status = 301
 
-[[redirects]]
-from = "https://jonathansexton.me/blog/*"
-to = "https://blog.jonathansexton.me/*"
-status = 301
+#[[redirects]]
+#from = "https://jonathansexton.me/blog/*"
+#to = "https://blog.jonathansexton.me/*"
+#status = 301
