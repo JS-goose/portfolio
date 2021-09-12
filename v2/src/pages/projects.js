@@ -14,7 +14,7 @@ const Projects = () => (
     </section>
     <section id="hire-me" className="flex flex-col min-w-full max-w-screen items-center bg-white">
       <article className="mt-8">
-        <ContactForm formTitle="Let's get started today!" bgColor="white" />
+        <ContactForm bgColor={"white"} />
       </article>
     </section>
     <Testimonials bgColor="myPurple" textColor="text-white" sectionTitle="You'll Join a Group of Great Companies and People" />

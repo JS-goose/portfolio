@@ -72,7 +72,7 @@ const Consulting = () => {
         </div>
       </article>
       <article className="text-myBlack form-container items-center bg-white my-10 pb-6 pt-12" id="hire-me">
-        <ContactForm formTitle={"Let's work together!"} bgColor={"bg-white"} />
+        <ContactForm bgColor={"white"} />
       </article>
       <article className="consulting-inner-container p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="md:pb-6 lg:pb-14 sm:text-2xl lg:text-3xl xl:text-4xl">

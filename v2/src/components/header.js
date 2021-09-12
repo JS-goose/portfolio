@@ -61,7 +61,7 @@ const Header = () => {
             },
           ].map((link) =>
             link.title === "Blog" ? (
-              <a href="https://blog.jonathansexton.me" className={link.classname} key={link.title}>
+              <a href="https://jonathansexton.me/blog" className={link.classname} key={link.title}>
                 Blog
               </a>
             ) : (

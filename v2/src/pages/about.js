@@ -199,7 +199,7 @@ function AboutPage() {
         className="form-parent-container p-6 flex flex-col items-center sm:text-base md:text-lg lg:text-xl"
         id="hire-me"
       >
-        <ContactForm formTitle={`I'm available for hire!`} bgColor={`white`} />
+        <ContactForm bgColor={`white`} />
       </article>
     </section>
   );
