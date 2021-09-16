@@ -4,8 +4,8 @@ import propTypes from "prop-types";
 const ContactForm = (props) => {
   return (
     <article className={`bg-${props.bgColor} contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8`}>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4swftgjFHG9qrhOJWC-5h2ij58Xkk3D9348QintJBdYYtBg/viewform?embedded=true" width="740" height="795" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-{/* Commented out in favor of Google Form */}
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4swftgjFHG9qrhOJWC-5h2ij58Xkk3D9348QintJBdYYtBg/viewform?embedded=true" title="The contact form to reach Jonathan Sexton by email" width="740" height="795" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+      {/* Commented out in favor of Google Form */}
       {/* <h2 className="text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">{props.formTitle}</h2>
       <p>I respond to all contact within 24 hours :)</p>
       <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">

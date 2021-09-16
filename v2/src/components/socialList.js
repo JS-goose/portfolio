@@ -120,7 +120,7 @@ const SocialList = (props) => {
   return socialLinks.map((link) => {
     return (
       <li key={link.linkName} className={props.liClassName}>
-        <a href={link.link} rel='noopener noreferrer' target='__blank'>
+        <a href={link.link} name={link.linkName} rel='noopener noreferrer' target='__blank'>
           {link.icon}
         </a>
       </li>
