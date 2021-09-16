@@ -28,7 +28,7 @@ const Footer = () => (
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-myRed text-xl underline">ME</h4>
+            <h4 className="text-white text-xl underline">Me</h4>
           </li>
           <li>
             <a href="mailto:hello@jonathansexton.me?subject=Email_inquiry_from_jonathansexton.me">Email Me</a>
@@ -51,7 +51,7 @@ const Footer = () => (
       <div>
         <ul className="w-full">
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-myRed text-xl underline">CONNECT</h4>
+            <h4 className="text-white text-xl underline">Connect</h4>
           </li>
           <li>
             <a
@@ -94,7 +94,7 @@ const Footer = () => (
       <div className="hidden md:inline">
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-myRed text-xl underline">Recent Articles</h4>
+            <h4 className="text-white text-xl underline">Recent Articles</h4>
           </li>
           {articles.map((article, index) => {
             return (
@@ -110,7 +110,7 @@ const Footer = () => (
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">
-            <h4 className="text-myRed text-xl underline">WORK</h4>
+            <h4 className="text-white text-xl underline">Work</h4>
           </li>
           <li>
             <Link className="bg-myRed" to="#hire-me">Hire Me Today!</Link>
