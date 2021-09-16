@@ -113,7 +113,7 @@ const ProjectList = () => {
             <p>
               <a
                 href={item.link}
-                className="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myRed"
+                className="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myDarkRed"
                 target="_blank"
                 rel="noopener noreferrer"
               >

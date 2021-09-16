@@ -124,8 +124,8 @@ const Testimonials = (props) => {
           <p className="pt-4 sm:text-base md:text-xl">How do we start the process? Glad you asked!</p>
           <div className="mt-10">
             <span
-              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myRed rounded-sm text-white max-w-3/4
-            justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myDarkRed
+              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myDarkRed rounded-sm text-white max-w-3/4
+            justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myRed
              hover:underline"
             >
               <a href="#hire-me">Take your business to the next level!</a>

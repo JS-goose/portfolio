@@ -93,7 +93,6 @@ const ContactForm = (props) => {
 };
 
 ContactForm.propTypes = {
-  formTitle: propTypes.string.isRequired,
   bgColor: propTypes.string.isRequired,
 };
 

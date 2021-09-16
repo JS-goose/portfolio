@@ -54,14 +54,14 @@ const Consulting = () => {
             Whatever your needs may be with your current solution, here are some ways I can help you and your business:{" "}
           </p>
           <ol className="pb-8 pl-6">
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A developer who can lead or integrate into your current team</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A proven leader with experience, knowledge, and communication skills</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Someone to advise you on technical decisions affecting your business</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Project planning from start to finish</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> A subject matter expert you can trust to give you actionable insights</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A developer who can lead or integrate into your current team</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A proven leader with experience, knowledge, and communication skills</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Someone to advise you on technical decisions affecting your business</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Project planning from start to finish</li>
+            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A subject matter expert you can trust to give you actionable insights</li>
           </ol>
 
           <p className="pb-4">If any of these services sound like what you are looking for, use the form below to start the process.
@@ -99,7 +99,7 @@ const Consulting = () => {
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Marketing services such as <a href="https://ads.google.com/home/#!/" target="_blank" rel="noopener noreferrer">Google Ads</a> and social media advertising</li>
           </ol>
           <p className="pb-8">If any of these describe what you are looking for, use the form above to get started today!  I respond to all inquires within 24 hours.</p>
-          <button className="text-white shadow-lg bg-myRed p-2 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myDarkRed">
+          <button className="text-white shadow-lg bg-myDarkRed p-2 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myRed">
             <a href="#hire-me" className="">Take me to the form</a>
           </button>
         </div>

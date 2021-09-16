@@ -113,7 +113,7 @@ const Footer = () => (
             <h4 className="text-white text-xl underline">Work</h4>
           </li>
           <li>
-            <Link className="bg-myRed" to="#hire-me">Hire Me Today!</Link>
+            <Link className="bg-myDarkRed" to="#hire-me">Hire Me Today!</Link>
           </li>
           <li>
             <a href="https://jonathansexton.me/#services" rel="noreferrer noopener">Services</a>

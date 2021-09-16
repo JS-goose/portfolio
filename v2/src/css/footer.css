@@ -9,7 +9,7 @@ footer article ul li a, footer article p a {
 }
 
 footer article ul li a:hover, footer article p a:hover {
-  background-color: var(--myRed);
+  background-color: var(--myDarkRed);
   text-decoration: underline;
 }
 

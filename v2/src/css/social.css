@@ -23,7 +23,7 @@
 }
 
 .social-list-svg:hover {
-  fill: #ff4945 !important;
+  fill: #d8000a !important;
   animation: rotate 2.5s;
 }
 
