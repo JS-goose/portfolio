@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+/* eslint-disable import/namespace */
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';

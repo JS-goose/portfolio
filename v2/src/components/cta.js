@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+/* eslint-disable import/namespace */
 import React from 'react';
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from 'gatsby';

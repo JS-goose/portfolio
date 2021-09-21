@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+/* eslint-disable import/namespace */
 import { Link } from "gatsby";
 import React from "react";
 

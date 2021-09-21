@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+/* eslint-disable import/namespace */
 import { useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";

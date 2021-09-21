@@ -1,3 +1,5 @@
+/* eslint-disable import/named */
+/* eslint-disable import/namespace */
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -77,7 +79,7 @@ const ProjectList = () => {
     <>
       {projects.map((item) => {
         return (
-          <div className="tracking-wide text-white flex flex-col md:my-8" key={item?.key}>
+          <div className="tracking-wide text-white flex flex-col md:my-8" key={item.key}>
             <p className="py-10 sm:text-xl lg:text-2xl xl:text-3xl text-lg font-bold underline">{item.projectName}</p>
             <GatsbyImage
               className="project-image rounded-sm shadow-xl mb-8"
