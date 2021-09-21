@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        myPurple: "#421ED2",
+        // myPurple: "#421ED2",
+        myPurple: "#2f1eaa",
         myDarkPurple: '#200396',
         myDarkPurple10: 'rgba(32, 3, 150, 0.1)',
         // myRed: "#fc000d",

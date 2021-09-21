@@ -5,7 +5,7 @@
     "node": true
   },
   // https://github.com/babel/babel-eslint
-  "parser": "eslint",
+  // "parser": "babel-eslint",
   "rules": {
     // https://eslint.org/docs/2.0.0/rules/strict
     "strict": 0,
