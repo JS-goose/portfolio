@@ -4,11 +4,9 @@ import propTypes from "prop-types";
 const ContactForm = (props) => {
   return (
     <article className={`bg-${props.bgColor} contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8`}>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4swftgjFHG9qrhOJWC-5h2ij58Xkk3D9348QintJBdYYtBg/viewform?embedded=true" title="The contact form to reach Jonathan Sexton by email" width="740" height="795" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-      {/* Commented out in favor of Google Form */}
-      {/* <h2 className="text-myRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">{props.formTitle}</h2>
+      <h2 className="text-myDarkRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">{props.formTitle || "Let's get started on your project"}</h2>
       <p>I respond to all contact within 24 hours :)</p>
-      <form className="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bots-say-what">
+      <form className="contact-form" name="contact" method="POST" action="contact.php">
         <p className="invisible">
           <label htmlFor="bots-say-what">
             Bots say what? <input type="text" name="bots-say-what" id="bots-say-what" />
@@ -17,40 +15,41 @@ const ContactForm = (props) => {
         <legend className="invisible">Information About You</legend>
         <fieldset>
           <p className="flex flex-col pb-4">
-            <label htmlFor="name">What you like to be addressed as</label>
+            <label htmlFor="visitor_name">What you like to be addressed as</label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="visitor_name"
+              id="visitor_name"
+              pattern="[A-Z\sa-z]{3,30}"
               aria-required
               required
-              minLength="5"
-              maxLength="100"
+              minLength="3"
+              maxLength="30"
               className="border border-1 p-2 rounded-sm"
-              placeholder="First and Last (optional) Names"
-              aria-placeholder="First and Last (optional) Names"
+              placeholder="First Name"
+              aria-placeholder="First Name"
             />
           </p>
           <p className="flex flex-col pb-4">
-            <label htmlFor="email">Your Email</label>
+            <label htmlFor="visitor_email">Your Email</label>
             <input
               type="email"
-              name="email"
-              id="email"
+              name="visitor_email"
+              id="visitor_email"
               aria-required
               required
               minLength="5"
-              maxLength="100"
+              maxLength="60"
               className="border border-1 p-2 rounded-sm"
               placeholder="e.g. dave@gmail.com"
               aria-placeholder="e.g. dave@gmail.com"
             />
           </p>
           <p className="flex flex-col pb-4">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="visitor_message">Message</label>
             <textarea
-              name="message"
-              id="message"
+              name="visitor_message"
+              id="visitor_message"
               cols="50"
               rows="2"
               aria-required
@@ -64,9 +63,9 @@ const ContactForm = (props) => {
         </fieldset>
         <button
           type="submit"
-          className="flex text-white shadow-lg bg-myRed p-1 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myDarkRed"
+          className="flex text-white shadow-lg bg-myDarkRed p-1 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myDarkRed"
         >
-          <span className="contact-form-button-span">Submit Request</span>{" "}
+          <span className="contact-form-button-span">Submit Message</span>{" "}
           <svg
             className="mt-1 md:mt-2 pr-1"
             width="24"
@@ -87,13 +86,14 @@ const ContactForm = (props) => {
             </g>
           </svg>
         </button>
-      </form> */}
+      </form>
     </article>
   );
 };
 
 ContactForm.propTypes = {
   bgColor: propTypes.string.isRequired,
+  formTitle: propTypes.string.isRequired
 };
 
 export default ContactForm;
