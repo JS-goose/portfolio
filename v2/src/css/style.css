@@ -21,7 +21,7 @@
 :root {
   /* --myPurple: #421ed2; */
   --myPurple: #2f1eaa;
-  --myDarkPurple: #200396;
+  --myDarkPurple: rgb(29, 2, 136);
   --myDarkPurple10: rgba(32, 3, 150, 0.1);
   --myRed: #ff4945;
   --myDarkRed: #d8000a;
@@ -35,7 +35,7 @@
   scrollbar-color: white var(--myPurple);
   scrollbar-width: thin;
   box-sizing: border-box;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 /* Chrome/Edge/Safari */

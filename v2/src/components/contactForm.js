@@ -4,14 +4,9 @@ import propTypes from "prop-types";
 const ContactForm = (props) => {
   return (
     <article className={`bg-${props.bgColor} contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8`}>
-      <h2 className="text-myDarkRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl">{props.formTitle || "Let's get started on your project"}</h2>
-      <p>I respond to all contact within 24 hours :)</p>
+      <h2 className="text-myDarkRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl pb-4">{"Let's get started on your project today!"}</h2>
+      <small>I respond to all contact within 24 hours :)</small>
       <form className="contact-form" name="contact" method="POST" action="contact.php">
-        <p className="invisible">
-          <label htmlFor="bots-say-what">
-            Bots say what? <input type="text" name="bots-say-what" id="bots-say-what" />
-          </label>
-        </p>
         <legend className="invisible">Information About You</legend>
         <fieldset>
           <p className="flex flex-col pb-4">
@@ -93,7 +88,6 @@ const ContactForm = (props) => {
 
 ContactForm.propTypes = {
   bgColor: propTypes.string.isRequired,
-  formTitle: propTypes.string.isRequired
 };
 
 export default ContactForm;

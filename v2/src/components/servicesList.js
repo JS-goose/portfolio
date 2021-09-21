@@ -119,13 +119,9 @@ const ServicesList = () => {
             Need more information about my services or ready to start working together? Get in touch today and let&apos;s grow your business!
           </p>
           <div className="mt-10">
-            <span
-              className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myDarkRed rounded-sm text-white max-w-3/4
+            <a href="#hire-me" className="inline-block shadow-lg pt-3 pl-4 pr-4 pb-2 bg-myDarkRed rounded-sm text-white max-w-3/4
             justify-center mb-4 transform hover:scale-105 transition-all duration-700 ease-in-out sm:text-sm md:text-base xl:text-lg hover:bg-myRed
-             hover:underline"
-            >
-              <a href="#hire-me">Take me to the form</a>
-            </span>
+             hover:underline">Take me to the form</a>
           </div>
         </div>
       </article>
