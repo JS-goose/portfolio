@@ -46,18 +46,16 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n";
       
+    // *TODO build Gatsby contact page and have this script redirect to that page
     if(mail($recipient, $email_title, $email_body, $headers)) {?>
         <script language="javascript" type="text/javascript">
-          alert('Thank you for the message. I respond to all contact within 24hrs.');
-          window.location = 'https://jonathansexton.me/contactsent';
+          window.location = 'https://www.jonathansexton.me/contactsent';
           </script>
         <?php
       }
-      // *TODO build Gatsby contact page and have this script redirect to that page
       else { ?>
           <script language="javascript" type="text/javascript">
-            alert('Message failed to send. Please, send your email to hello@jonathansexton.me');
-            window.location = 'https://jonathansexton.me/';
+            window.location = 'https://www.jonathansexton.me/';
           </script>
           <?php
     }
