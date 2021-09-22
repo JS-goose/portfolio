@@ -14,7 +14,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Open Sans', 'Roboto', 'Kumbh Sans', 'Rubik'],
+          families: ['Open Sans'],
         },
       },
     },

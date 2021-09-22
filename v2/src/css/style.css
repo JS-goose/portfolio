@@ -56,7 +56,7 @@ body,
 html {
   scroll-behavior: smooth;
   font-size: 14px;
-  font-family: 'Kumbh Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
+  font-family: 'Open Sans', Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', system-ui, -apple-system, sans-serif !important;
   background-color: var(--myPurple);
   display: flex;
   overflow-x: hidden;
@@ -64,15 +64,6 @@ html {
 
 body section {
   width: calc(100vw - 10px);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Rubik', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
 }
 
 h1 {
