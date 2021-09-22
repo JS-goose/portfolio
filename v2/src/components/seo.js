@@ -13,7 +13,11 @@ function SEO({ description, lang, meta, keywords, title }) {
           title
           description
           author
+          siteUrl
         }
+      }
+      favicon: file(name: {eq: "favicon"}) {
+        publicURL
       }
     }
   `);
