@@ -13,10 +13,12 @@ function SEO({ description, lang, meta, keywords, title }) {
           title
           description
           author
-          siteUrl
+          url,
+          twitterUsername,
+          image
         }
       }
-      favicon: file(name: {eq: "favicon"}) {
+      favicon: file(name: {eq: "logoPNG.png"}) {
         publicURL
       }
     }
@@ -39,8 +41,16 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: title,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:name`,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:type`,
@@ -52,7 +62,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
@@ -85,9 +95,9 @@ SEO.defaultProps = {
 };
 
 SEO.propTypes = {
-  description: PropTypes.string,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  lang: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  keywords: PropTypes.arrayOf(PropTypes.string).isRequired,
+  lang: PropTypes.string.isRequired,
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
 };
