@@ -35,7 +35,11 @@ function AboutPage() {
 `);
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center text-left">
-      <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
+      <SEO
+        description="Images and information that give you a better picture of who Jonathan Sexton is"
+        lang="en"
+        title="About"
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} />
       <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
         <GatsbyImage
