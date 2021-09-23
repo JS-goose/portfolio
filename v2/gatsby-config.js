@@ -6,8 +6,11 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `Jonathan Sexton | Freelance Web Developer`,
-    description: `A Gatsby website for a freelance web developer specializing in establishing & extending the web presence of small businesses`,
+    description: `Freelance web developer specializing in establishing & extending the web presence of small businesses`,
     author: `@JS-goose`,
+    url: `https://jonathansexton.me`,
+    twitterUsername: `@jj_goose`,
+    image: `/images/icons/logoPNG.png`
   },
   plugins: [
     {
