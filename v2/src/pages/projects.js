@@ -12,7 +12,12 @@ import ContactForm from "../components/contactForm";
 const Projects = () => (
   <>
     <section className="projects-section-container flex flex-col min-w-full max-w-screen items-center text-white">
-      <SEO keywords={[`freelance`, `about`, `jonathan`, `sexton`, `development`, `website`]} title="Projects" />
+      <SEO 
+      description="A listing of the current projects for Jonathan Sexton"
+      lang="en"
+      title="Projects"
+      keywords={[`freelance`, `about`, `jonathan`, `sexton`, `development`, `website`]} 
+       />
       <article className="projects-list-container">
         <ProjectList />
       </article>
