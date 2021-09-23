@@ -8,11 +8,11 @@ import ContactForm from "../components/contactForm";
 const Consulting = () => {
   const query = useStaticQuery(graphql`
     query {
-      collab: file(relativePath: { eq: "undraw_Online_collaboration_re_bkpm.svg" }) {
+      collab: file(relativePath: { eq: "people_working_together.svg" }) {
         extension
         publicURL
       }
-      search: file(relativePath: { eq: "undraw_the_search_s0xf.svg" }) {
+      search: file(relativePath: { eq: "person_searching_with_magnifying_glass.svg" }) {
         extension
         publicURL
       }
@@ -21,6 +21,9 @@ const Consulting = () => {
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO
+        description="The consulting page showing some of the services offered by Jonathan Sexton"
+        title="Consulting"
+        lang="en"
         keywords={[
           `boerne web developer`,
           `web developer`,
@@ -29,7 +32,6 @@ const Consulting = () => {
           `jonathan sexton`,
           `consulting`,
         ]}
-        title="Consulting"
       />
       <article className="consulting-inner-container bg-myPurple p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="md:pb-6 lg:pb-14 md:pt-6 lg:pt-6 sm:text-2xl lg:text-3xl xl:text-4xl">
@@ -67,8 +69,8 @@ const Consulting = () => {
           </ol>
 
           <p className="pb-4">If any of these services sound like what you are looking for, use the form below to start the process.
-          I want to provide the best service to all of my customers. In order to do that, I only work with a set amount of clients each month.
-           </p>
+            I want to provide the best service to all of my customers. In order to do that, I only work with a set amount of clients each month.
+          </p>
           <p>Don&apos;t take the chance on missing an opportunity to expand your reach and grow your business - get in touch today!
           </p>
         </div>
