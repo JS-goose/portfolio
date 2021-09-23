@@ -17,6 +17,8 @@ function NotFoundPage() {
   return (
     <section className="flex flex-col min-w-full max-w-screen h-full items-center text-left text-white">
       <SEO
+        description="The 404 Not Found page of jonathansexton.me"
+        lang="en"
         keywords={["boerne web developer", "small business website", "tile laying website", "freelance", "home", "jonathan", "sexton", "development", "website", "small business"]}
         title="404: Not found" />
       <div className="max-w-5xl flex flex-col items-center">
