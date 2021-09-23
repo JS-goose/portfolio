@@ -46,11 +46,11 @@ const services = [
 const ServicesList = () => {
   const query = useStaticQuery(graphql`
     query {
-      decisions: file(relativePath: { eq: "undraw_business_decisions_gjwy.svg" }) {
+      decisions: file(relativePath: { eq: "business_decisions.svg" }) {
         extension
         publicURL
       }
-      shop: file(relativePath: { eq: "undraw_business_shop_qw5t.svg" }) {
+      shop: file(relativePath: { eq: "business_shop.svg" }) {
         extension
         publicURL
       }
