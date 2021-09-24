@@ -19,7 +19,7 @@ function NotFoundPage() {
       <SEO
         description="The 404 Not Found page of jonathansexton.me"
         lang="en"
-        keywords={["boerne web developer", "small business website", "tile laying website", "freelance", "home", "jonathan", "sexton", "development", "website", "small business"]}
+        keywords={["404 not found","boerne web developer", "small business website", "small business", "how to build small business website", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]}
         title="404: Not found" />
       <div className="max-w-5xl flex flex-col items-center">
         <h2 className="sm:text-2xl lg:text-3xl xl:text-4xl font-bold inline-block my-8 p-3">

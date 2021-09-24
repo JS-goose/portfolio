@@ -16,7 +16,7 @@ const Projects = () => (
       description="A listing of the current projects for Jonathan Sexton"
       lang="en"
       title="Projects"
-      keywords={[`freelance`, `about`, `jonathan`, `sexton`, `development`, `website`]} 
+      keywords={["jonathan sexton projects","boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} 
        />
       <article className="projects-list-container">
         <ProjectList />

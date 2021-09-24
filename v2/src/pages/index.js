@@ -11,10 +11,10 @@ function IndexPage() {
   return (
     <>
       <SEO
-        description="The home page of Jonathan Sexton's freelance web developer website"
+        description="The home page of Jonathan Sexton's freelance web development website"
         lang="en"
         title='Home'
-        keywords={["boerne web developer", "small business website", "tile laying website", "freelance", "home", "jonathan", "sexton", "development", "website", "small business"]}
+        keywords={["boerne web developer", "small business website", "small business", "how to build small business website", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]}
       />
       <div className='index-wrapper'>
         <CTA />

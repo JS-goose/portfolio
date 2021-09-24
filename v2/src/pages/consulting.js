@@ -24,13 +24,7 @@ const Consulting = () => {
         description="The consulting page showing some of the services offered by Jonathan Sexton"
         title="Consulting"
         lang="en"
-        keywords={[
-          `boerne web developer`,
-          `web developer`,
-          `web developer in boerne, tx`,
-          `jonathan`,
-          `jonathan sexton`,
-          `consulting`,
+        keywords={["boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"
         ]}
       />
       <article className="consulting-inner-container bg-myPurple p-6 sm:text-base md:text-lg lg:text-xl">
@@ -38,7 +32,7 @@ const Consulting = () => {
           In Need of an Extra Team Member or Help With Your Existing Website?
         </h1>
         <div className="flex justify-center">
-          <img src={query.collab.publicURL} alt="people collaborating on a project" />
+          <img src={query.collab.publicURL} alt="people collaborating on a freelance project in boerne" />
         </div>
         <div className="consulting-content-container p-6">
           <p className="pb-4">
@@ -83,7 +77,7 @@ const Consulting = () => {
           Searching for a Trusted, Knowledgeable Developer to Build a New Website?
         </h1>
         <div className="flex justify-center">
-          <img src={query.search.publicURL} className="consulting-collab-img" alt="people collaborating on a project" />
+          <img src={query.search.publicURL} className="consulting-collab-img" alt="a person using a magnifying glass looking at a freelance website on a phone" />
         </div>
         <div className="consulting-content-container p-6">
           <p className="pb-4">
