@@ -46,7 +46,6 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n";
       
-    // *TODO build Gatsby contact page and have this script redirect to that page
     if(mail($recipient, $email_title, $email_body, $headers)) {?>
         <script language="javascript" type="text/javascript">
           window.location = 'https://www.jonathansexton.me/contactsent';
@@ -55,12 +54,15 @@ if($_POST) {
       }
       else { ?>
           <script language="javascript" type="text/javascript">
-            window.location = 'https://www.jonathansexton.me/';
+            window.location = 'https://www.jonathansexton.me/contacterror';
           </script>
           <?php
     }
       
-} else {
-    echo '<p>Something went wrong</p>';
+} else {?>
+  <script language="javascript" type="text/javascript">
+    window.location = 'https://www.jonathansexton.me/contacterror';
+  </script>
+  <?php
 }
 ?>
