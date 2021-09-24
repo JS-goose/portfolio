@@ -27,14 +27,14 @@ const Consulting = () => {
         keywords={["boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"
         ]}
       />
-      <article className="consulting-inner-container bg-myPurple p-6 sm:text-base md:text-lg lg:text-xl">
-        <h1 className="md:pb-6 lg:pb-14 md:pt-6 lg:pt-6 sm:text-2xl lg:text-3xl xl:text-4xl">
+      <article className="consulting-inner-container bg-myPurple p-2 md:p-4 lg:p-6 sm:text-base md:text-lg lg:text-xl">
+        <h1 className="pb-8 md:pb-10 lg:pb-14 md:pt-6 lg:pt-6 sm:text-2xl lg:text-3xl xl:text-4xl">
           In Need of an Extra Team Member or Help With Your Existing Website?
         </h1>
         <div className="flex justify-center">
           <img src={query.collab.publicURL} alt="people collaborating on a freelance project in boerne" />
         </div>
-        <div className="consulting-content-container p-6">
+        <div className="consulting-content-container p-2 md:p-6">
           <p className="pb-4">
             Sometimes you need a fresh pair of eyes or a new perspective. Other times you might just need another developer to help
             with your existing team.
@@ -51,7 +51,7 @@ const Consulting = () => {
           <p className="pb-8">
             Whatever your needs may be with your current solution, here are some ways I can help you and your business:{" "}
           </p>
-          <ol className="pb-8 pl-6">
+          <ol className="pb-8 pl-2 md:pl-6">
             <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
             <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
             <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
@@ -72,20 +72,20 @@ const Consulting = () => {
       <article className="text-myBlack form-container items-center bg-white my-10 pb-6 pt-12" id="hire-me">
         <ContactForm bgColor={"white"} />
       </article>
-      <article className="consulting-inner-container p-6 sm:text-base md:text-lg lg:text-xl">
-        <h1 className="md:pb-6 lg:pb-14 sm:text-2xl lg:text-3xl xl:text-4xl">
+      <article className="consulting-inner-container p-2 md:p-4 lg:p-6 sm:text-base md:text-lg lg:text-xl">
+        <h2 className="font-bold pb-8 md:pb-10 lg:pb-14 md:pt-6 lg:pt-6 sm:text-2xl lg:text-3xl xl:text-4xl">
           Searching for a Trusted, Knowledgeable Developer to Build a New Website?
-        </h1>
+        </h2>
         <div className="flex justify-center">
           <img src={query.search.publicURL} className="consulting-collab-img" alt="a person using a magnifying glass looking at a freelance website on a phone" />
         </div>
-        <div className="consulting-content-container p-6">
+        <div className="consulting-content-container p-2 md:p-6">
           <p className="pb-4">
             Building a web presence that not only brings in leads but converts visitors to paying customers can be daunting and confusing. Let me
             get your project off on the right foot.
           </p>
           <p className="pb-8">While you won&apos;t find all of the ways I can help your business until we start working together, here are some services I provide:</p>
-          <ol className="pb-8 pl-6">
+          <ol className="pb-8 pl-2 md:pl-6">
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Planning, collaborating, and communicating about your needs before any work is started</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Visual design of your website that you&apos;re in control of</li>
             <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Building and deploying your website using the most up to date technologies</li>

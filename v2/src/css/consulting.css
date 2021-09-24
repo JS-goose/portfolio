@@ -1,6 +1,4 @@
 .consulting-inner-container {
-  width: 80%;
-  max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -10,6 +8,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.consulting-content-container {
+  max-width: 1000px;
 }
 
 .consulting-content-container ol {
