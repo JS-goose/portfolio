@@ -17,7 +17,6 @@
 @import './consulting.css';
 @import './projects.css';
 @import './projectList.css';
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 :root {
   /* --myPurple: #421ed2; */
@@ -58,7 +57,7 @@ body,
 html {
   scroll-behavior: smooth;
   font-size: 14px;
-  font-family: 'Open Sans', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Roboto, BlinkMacSystemFont, system-ui, -apple-system, sans-serif !important;
+  font-family: 'Gill Sans', sans-serif, system-ui, -apple-system !important;
   background-color: var(--myPurple);
   display: flex;
   overflow-x: hidden;
