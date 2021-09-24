@@ -15,7 +15,6 @@
     "gatsby-plugin-react-helmet": "4.14.0",
     "gatsby-plugin-sharp": "^3.14.0",
     "gatsby-plugin-sitemap": "^4.10.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-source-wordpress": "^5.14.0",
     "gatsby-transformer-sharp": "^3.14.0",
