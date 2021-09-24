@@ -17,6 +17,7 @@
 @import './consulting.css';
 @import './projects.css';
 @import './projectList.css';
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 :root {
   /* --myPurple: #421ed2; */
@@ -29,6 +30,7 @@
   --myLightGray: #b0a8ba;
   --myDarkGray: #46434b;
 }
+
 
 /* Firefox only - for now */
 * {
@@ -56,7 +58,7 @@ body,
 html {
   scroll-behavior: smooth;
   font-size: 14px;
-  font-family: 'Open Sans', Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', system-ui, -apple-system, sans-serif !important;
+  font-family: 'Open Sans', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Roboto, BlinkMacSystemFont, system-ui, -apple-system, sans-serif !important;
   background-color: var(--myPurple);
   display: flex;
   overflow-x: hidden;
