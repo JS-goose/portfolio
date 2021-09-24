@@ -18,16 +18,7 @@ export default function ContactSent() {
                 lang="en"
                 title="Contact Sent"
                 keywords={[
-                    `boerne web developer`,
-                    `web developer`,
-                    `web developer in boerne, tx`,
-                    `small business website`,
-                    `freelance developer`,
-                    `build website for tile laying`,
-                    `freelance web developer`,
-                    `jonathan`,
-                    `jonathan sexton`,
-                    `consulting`,
+                    `contact sent`
                 ]}
             />
             <article className="h-full p-6 sm:text-base md:text-lg lg:text-xl flex flex-col justify-evenly">
