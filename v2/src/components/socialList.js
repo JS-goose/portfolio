@@ -8,6 +8,8 @@ const SocialList = (props) => {
       linkName: 'Twitter',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="twitterTitle twitterDesc"
           className={props.svgClassName}
           width={props.svgSizes.width}
           height={props.svgSizes.height}
@@ -15,6 +17,8 @@ const SocialList = (props) => {
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
           <path d='M9.71114 5.3203L9.75452 6.18541L9.03195 6.07947C6.40187 5.67343 4.10416 4.29635 2.15318 1.98364L1.19947 0.836136L0.953794 1.68353C0.433511 3.57259 0.765876 5.56749 1.84974 6.90916C2.42778 7.65072 2.29771 7.75666 1.30062 7.31531C0.953794 7.17406 0.650267 7.06812 0.62143 7.12103C0.520283 7.24468 0.867109 8.85114 1.14163 9.48676C1.51738 10.3695 2.28325 11.2345 3.12144 11.7465L3.82955 12.1525L2.99137 12.1702C2.18211 12.1702 2.15318 12.1878 2.23995 12.5585C2.52893 13.706 3.67056 14.9243 4.94225 15.4538L5.83829 15.8246L5.05786 16.3895C3.90178 17.2017 2.54339 17.6606 1.18501 17.6959C0.534659 17.7136 0 17.7842 0 17.8372C0 18.0137 1.76306 19.0024 2.78907 19.3907C5.86712 20.5382 9.52331 20.044 12.269 18.0844C14.2199 16.6897 16.1708 13.9179 17.0812 11.2345C17.5725 9.80447 18.0639 7.19166 18.0639 5.93822C18.0639 5.12614 18.1072 5.0202 18.9165 4.04926C19.3934 3.48426 19.8413 2.86634 19.9281 2.68989C20.0725 2.35447 20.0582 2.35447 19.3211 2.65457C18.0928 3.18416 17.9194 3.11353 18.5263 2.31916C18.9743 1.75416 19.509 0.730198 19.509 0.430094C19.509 0.377177 19.2922 0.465407 19.0465 0.624261C18.7865 0.800823 18.2084 1.06561 17.7748 1.22457L16.9945 1.52468L16.2864 0.942074C15.8963 0.624261 15.347 0.27124 15.0581 0.165302C14.321 -0.0818855 13.1939 -0.0465725 12.5291 0.235928C10.7227 1.03041 9.58107 3.07822 9.71114 5.3203Z' />
+          <title id="twitterTitle">Twitter</title>
+          <desc id="twitterDesc">The twitter bird icon</desc>
         </svg>
       ),
     },
@@ -23,6 +27,8 @@ const SocialList = (props) => {
       linkName: 'LinkedIn',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="linkedinTitle linkedinDesc"
           className={props.svgClassName}
           width={props.svgSizes.width}
           height={props.svgSizes.height}
@@ -34,6 +40,8 @@ const SocialList = (props) => {
             clipRule='evenodd'
             d='M4.8226 2.33088C4.8226 3.62659 3.89169 4.66338 2.39696 4.66338H2.36956C0.930396 4.66338 0 3.62659 0 2.33088C0 1.00777 0.958732 0 2.42521 0C3.89169 0 4.79477 1.00777 4.8226 2.33088ZM4.54031 6.50524V19.9996H0.25354V6.50524H4.54031ZM19.9998 19.9996L20 12.2624C20 8.11747 17.8852 6.18837 15.0643 6.18837C12.7883 6.18837 11.7693 7.49814 11.2004 8.41697V6.5056H6.91309C6.96959 7.77184 6.91309 20 6.91309 20H11.2004V12.4636C11.2004 12.0603 11.2282 11.658 11.3415 11.3692C11.6514 10.5635 12.3568 9.72934 13.5411 9.72934C15.0929 9.72934 15.7132 10.9667 15.7132 12.7801V19.9996H19.9998Z'
           />
+          <title id="linkedinTitle">Linkedin</title>
+          <desc id="linkedinDesc">The linkedin letters i n</desc>
         </svg>
       ),
     },
@@ -42,6 +50,8 @@ const SocialList = (props) => {
       linkName: 'Github',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="githubTitle githubDesc"
           className={props.svgClassName}
           width={props.svgSizes.width}
           height={props.svgSizes.height}
@@ -56,6 +66,8 @@ const SocialList = (props) => {
           <path d='M7.37225 20.7339C7.34208 20.8333 7.20179 20.8785 7.06047 20.8362C6.91935 20.7927 6.827 20.6763 6.85551 20.5759C6.88485 20.4758 7.02576 20.4288 7.16812 20.4739C7.30902 20.5172 7.40159 20.6328 7.37225 20.7339Z' />
           <path d='M8.39333 20.81C8.39685 20.9146 8.27701 21.0014 8.12866 21.0033C7.97949 21.0067 7.85883 20.922 7.85718 20.819C7.85718 20.7133 7.97433 20.6274 8.1235 20.6249C8.27185 20.6219 8.39333 20.706 8.39333 20.81Z' />
           <path d='M9.34361 20.6454C9.36138 20.7476 9.25828 20.8524 9.11097 20.8804C8.96613 20.9073 8.83204 20.8442 8.81365 20.7429C8.79568 20.6383 8.90063 20.5334 9.04526 20.5063C9.19278 20.4803 9.32481 20.5416 9.34361 20.6454Z' />
+          <title id="githubTitle">GitHub</title>
+          <desc id="githubDesc">The GitHub cat icon</desc>
         </svg>
       ),
     },
@@ -64,6 +76,8 @@ const SocialList = (props) => {
       linkName: 'Medium',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="mediumTitle mediumDesc"
           className={props.svgClassName}
           width={props.svgSizes.width}
           height={props.svgSizes.height}
@@ -79,6 +93,8 @@ const SocialList = (props) => {
             d='M6.14309 8.49162C6.1638 8.28224 6.08578 8.07528 5.93301 7.93435L4.37683 6.01575V5.72916H9.20876L12.9436 14.1121L16.2271 5.72916H20.8334V6.01575L19.5029 7.32136C19.3882 7.41084 19.3313 7.55792 19.355 7.70349V17.2965C19.3313 17.4421 19.3882 17.5891 19.5029 17.6786L20.8023 18.9842V19.2708H14.2663V18.9842L15.6124 17.6468C15.7447 17.5114 15.7447 17.4716 15.7447 17.2646V9.51063L12.0021 19.239H11.4963L7.13905 9.51063V16.0307C7.10272 16.3048 7.19167 16.5808 7.38026 16.779L9.13096 18.9524V19.239H4.16675V18.9524L5.91745 16.779C6.10466 16.5805 6.18843 16.3027 6.14309 16.0307V8.49162Z'
             fill={props.mediumFillColor}
           />
+          <title id="mediumTitle">Medium</title>
+          <desc id="mediumDesc">The Medium M with a circle around it</desc>
         </svg>
       ),
     },
@@ -87,6 +103,8 @@ const SocialList = (props) => {
       linkName: 'DEV',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="devtoTitle devtoDesc"
           className={props.svgClassName + ' ' + devIconStyling}
           width={props.svgSizes.devWidth}
           height={props.svgSizes.devHeight}
@@ -94,6 +112,8 @@ const SocialList = (props) => {
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
           <path d='M0.142578 13V0.203125H4.08008C5.20508 0.203125 6.20996 0.458008 7.09473 0.967773C7.98535 1.47168 8.67969 2.19238 9.17773 3.12988C9.67578 4.06152 9.9248 5.12207 9.9248 6.31152V6.90039C9.9248 8.08984 9.67871 9.14746 9.18652 10.0732C8.7002 10.999 8.01172 11.7168 7.12109 12.2266C6.23047 12.7363 5.22559 12.9941 4.10645 13H0.142578ZM2.7793 2.33887V10.8818H4.05371C5.08496 10.8818 5.87305 10.5449 6.41797 9.87109C6.96289 9.19727 7.24121 8.2334 7.25293 6.97949V6.30273C7.25293 5.00195 6.9834 4.01758 6.44434 3.34961C5.90527 2.67578 5.11719 2.33887 4.08008 2.33887H2.7793ZM19.5488 7.4541H14.4863V10.8818H20.4277V13H11.8496V0.203125H20.4102V2.33887H14.4863V5.38867H19.5488V7.4541ZM26.7031 9.82715L29.6035 0.203125H32.5391L28.083 13H25.332L20.8936 0.203125H23.8203L26.7031 9.82715Z' />
+          <title id="devtoTitle">DEV.to</title>
+          <desc id="devtoDesc">The letters D E V</desc>
         </svg>
       ),
     },
@@ -102,6 +122,8 @@ const SocialList = (props) => {
       linkName: 'Facebook',
       icon: (
         <svg
+          role="img"
+          aria-labelledby="facebookTitle facebookDesc"
           className={props.svgClassName}
           width={props.svgSizes.width}
           height={props.svgSizes.height}
@@ -113,6 +135,8 @@ const SocialList = (props) => {
             clipRule='evenodd'
             d='M0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5ZM13.8029 19.8497V13.0491H15.6802L15.929 10.7055H13.8029L13.8061 9.53255C13.8061 8.92132 13.8642 8.59381 14.7421 8.59381H15.9157V6.25H14.0381C11.7829 6.25 10.9891 7.38687 10.9891 9.29873V10.7058H9.58333V13.0493H10.9891V19.8497H13.8029Z'
           />
+          <title id="facebookTitle">Facebook</title>
+          <desc id="facebookDesc">The Facebook letter f in a circle</desc>
         </svg>
       ),
     },
@@ -120,7 +144,7 @@ const SocialList = (props) => {
   return socialLinks.map((link) => {
     return (
       <li key={link.linkName} className={props.liClassName}>
-        <a href={link.link} name={link.linkName} rel='noopener noreferrer' target='__blank'>
+        <a href={link.link} name={link.linkName} rel='noopener noreferrer' target='__blank' >
           {link.icon}
         </a>
       </li>
