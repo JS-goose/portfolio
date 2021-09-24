@@ -2,16 +2,13 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  max-width: 1000px;
 }
 
 .form-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.consulting-content-container {
-  max-width: 1000px;
 }
 
 .consulting-content-container ol {
