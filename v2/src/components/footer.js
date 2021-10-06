@@ -66,7 +66,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://twitter.com/jj_goose"
+              href="https://www.linkedin.com/in/jj-goose/"
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://twitter.com/jj_goose"
+              href="https://www.instagram.com/js_goose/"
               target="__blank"
               rel="noopener noreferrer"
             >
@@ -84,7 +84,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://twitter.com/jj_goose"
+              href="https://www.facebook.com/jonathansextonwebdev"
               target="__blank"
               rel="noopener noreferrer"
             >
