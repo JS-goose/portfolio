@@ -59,7 +59,7 @@ const Header = () => {
             {
               route: `#hire-me`,
               title: `Hire Me`,
-              classname: `pt-2 pr-2 pl-2 pb-1 rounded-sm sm:lg md:text-xl lg:text-2xl hover:text-myDarkRed ml-4 bg-myDarkRed hover:bg-white hover:underline`,
+              classname: `flex items-center md:inline-block md:pt-2 px-2 md:pb-2 rounded-sm sm:lg md:text-xl lg:text-2xl hover:text-myDarkRed ml-4 bg-myDarkRed hover:bg-white hover:underline`,
             },
           ].map((link) =>
             link.title === "Blog" ? (

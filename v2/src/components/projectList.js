@@ -96,7 +96,7 @@ const ProjectList = () => {
               }
               alt={item.imgAlt}
             />
-            <div className="flex mb-8">
+            <div className="flex flex-col md:flex-row mb-8">
               <div className="flex flex-1 flex-col pr-1">
                 <p className="pb-4">
                   <span className="text-xl bold underline">The problem:</span>
@@ -112,7 +112,7 @@ const ProjectList = () => {
                 <p className="pt-4">{item.number === 3 ? <Tracy /> : null}</p>
               </div>
             </div>
-            <p>
+            <p className="see-live-website">
               <a
                 href={item.link}
                 className="inline-block transform hover:translate-x-3 transition-all duration-700 ease-in-out text-xl hover:underline hover:bg-myDarkRed"

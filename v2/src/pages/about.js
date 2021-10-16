@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import ContactForm from "../components/contactForm";
 import SocialList from "../components/socialList";
 
-const H1 = ({ children }) => <p className="sm:text-2xl lg:text-3xl xl:text-4xl py-10 font-bold">{children}</p>;
+const H1 = ({ children }) => <p className="text-md md:text-xl lg:text-2xl xl:text-3xl py-10 font-bold">{children}</p>;
 function AboutPage() {
   const svgSizes = { height: 35, width: 35, devHeight: 23, devWidth: 53 }
   const query = useStaticQuery(graphql`{
@@ -41,7 +41,7 @@ function AboutPage() {
         title="About"
         keywords={["about jonathan sexton", "boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} />
       <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
-        <h1 className="mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
+        <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4">Howdy! I&apos;m Jonathan Sexton</h1>
         <GatsbyImage
           image={query.golfing.childImageSharp.gatsbyImageData}
           className="aboutImg justify-self-center rounded-sm shadow-lg"

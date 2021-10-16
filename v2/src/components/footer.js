@@ -26,7 +26,7 @@ const articles = [
 ];
 const Footer = () => (
   <footer className="text-white sm:text-base md:text-lg">
-    <article className="flex justify-between mx-auto md:p-8">
+    <article className="flex justify-between mx-auto p-4 md:p-8">
       <div>
         <ul>
           <li className="pb-4 hidden lg:inline-block">
@@ -93,7 +93,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="hidden md:inline">
+      <div className="hidden lg:inline">
         <ul>
           <li className="pb-4 hidden lg:inline-block">
             <h4 className="text-white text-xl underline">Recent Articles</h4>

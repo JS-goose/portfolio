@@ -2,3 +2,7 @@
   object-fit: contain !important;
   width: 100% !important;
 }
+
+.see-live-website:last-of-type {
+  padding-bottom: 2rem;
+}

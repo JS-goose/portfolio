@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 const ContactForm = (props) => {
   return (
     <article className={`bg-${props.bgColor} contact-form-container border border-1 sm:p-2 lg:p-12 rounded-sm shadow mb-8`}>
-      <h2 className="text-myDarkRed sm:text-xlg md:text-2xl lg:text-3xl xl:text-4xl pb-4">{"Let's get started on your project today!"}</h2>
+      <h2 className="text-myDarkRed text-xl md:text-2xl lg:text-3xl xl:text-4xl pb-4">{"Let's get started on your project today!"}</h2>
       <small>I respond to all contact within 24 hours :)</small>
       <form className="contact-form" name="contact" method="POST" action="contact.php">
         <legend className="invisible">Information About You</legend>
@@ -62,7 +62,7 @@ const ContactForm = (props) => {
         >
           <span className="contact-form-button-span">Submit Message</span>{" "}
           <svg
-            className="mt-1 md:mt-2 pr-1"
+            className="mt-2 lg:mt-4 pr-1"
             width="24"
             height="24"
             viewBox="0 0 24 24"

@@ -85,9 +85,9 @@ const ServicesList = () => {
     <section className="flex flex-col mt-16 mb-16 bg-white grid-row-3 items-center w-full tracking-wide">
       <article className="services-list-container text-lg items-center">
         <div className="services-list">
-          <h1 id="services" className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">
+          <h2 id="services" className="pb-8 lg:pb-12 text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
             How Can I Help Your Business and Customer Base Grow?
-          </h1>
+          </h2>
           <div>
             {/* Image courtesy of https://undraw.co */}
             <img src={query.decisions.publicURL} alt="a man in a suit pointing at charts" />
@@ -106,7 +106,7 @@ const ServicesList = () => {
                                 service.number === "6" ? query.support.publicURL : ""}
                       alt={service.imgAlt}
                     />
-                    <p className="pl-4 font-bold text-xl xl:text-2xl">{service.title}</p>
+                    <p className="pl-4 md:font-bold text-lg md:text-xl xl:text-2xl">{service.title}</p>
                   </div>
                   <div className="p-1">
                     <p className="text-base md:text-lg lg:text-xl">{service.desc}</p>
@@ -127,7 +127,7 @@ const ServicesList = () => {
       </article>
       <article className="why-hire-me-container items-center sm:text-base md:text-lg lg:text-xl">
         <div>
-          <h1 className="md:pb-6 lg:pb-12 sm:text-2xl lg:text-3xl xl:text-4xl">Why Should You Hire Me As Your Developer?</h1>
+          <h2 className="pb-6 lg:pb-12 text-xl md:text-2xl lg:text-3xl xl:text-4xl">Why Should You Hire Me As Your Developer?</h2>
           <div className="mb-8">
             {/* Image courtesy of https://undraw.co */}
             <img src={query.shop.publicURL} alt="a man standing outside a shop of books" className="why-hire-me-container-books-img" />

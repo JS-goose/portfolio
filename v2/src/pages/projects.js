@@ -23,7 +23,7 @@ const Projects = () => (
       </article>
     </section>
     <section id="hire-me" className="flex flex-col min-w-full max-w-screen items-center bg-white">
-      <article className="mt-8">
+      <article className="mt-8 ml-8 md:ml-0">
         <ContactForm bgColor={"white"} />
       </article>
     </section>

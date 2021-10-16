@@ -20,10 +20,6 @@
   position: relative;
 }
 
-.consulting-content-container ol a:hover {
-  text-decoration: underline;
-}
-
 .consulting-content-container ol a:before {
   height: 1.5rem;
   position: absolute;

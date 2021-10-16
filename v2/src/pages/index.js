@@ -11,7 +11,7 @@ function IndexPage() {
   return (
     <>
       <SEO
-        description="The home page of Jonathan Sexton's freelance web development website"
+        description="I'm a freelance web developer who specializes in helping businesses grow through well designed, conversion centered websites"
         lang="en"
         title='Home'
         keywords={["boerne web developer", "small business website", "small business", "how to build small business website", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]}

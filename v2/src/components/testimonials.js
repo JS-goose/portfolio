@@ -80,9 +80,9 @@ const Testimonials = (props) => {
     <section className={`bg-${props.bgColor} ${props.textColor} w-full flex items-center justify-center`}>
       <article className="testimonials-container w-full items-center p-12 md:gap-4">
         <div className="testimonials-container-1 sm:text-sm md:text-base lg:text-lg sm:mb-6 md:mb-4 lg:mb-0">
-          <h3 className="font-bold sm:text-2xl lg:text-3xl xl:text-4xl">
+          <h2 className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
             {props.sectionTitle}
-          </h3>
+          </h2>
         </div>
         <div className="testimonials-container-2">
           {testimonials.map((card, index) => (
@@ -118,7 +118,7 @@ const Testimonials = (props) => {
           ))}
         </div>
         <div className="testimonials-container-3 pt-6 tracking-wide">
-          <p className="font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
+          <p className="font-semibold md:font-bold sm:text-xl lg:text-2xl xl:text-3xl">Ready to Turn Your Idea Into a Reality?</p>
           <p className="pt-6 sm:text-base md:text-xl">
             If you have a project idea, I&apos;d love to work with you to bring it to life. In an effort to give my absolute best to the people and companies I work with,
             I take on a limited number of clients each month.  Don&apos;t take the chance on missing out.

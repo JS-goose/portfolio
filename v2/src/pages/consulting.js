@@ -21,7 +21,7 @@ const Consulting = () => {
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO
-        description="The consulting page showing some of the services offered by Jonathan Sexton"
+        description="I'm a trusted development consultant to businesses of all sizes.  Hire me today to help make your project a success!"
         title="Consulting"
         lang="en"
         keywords={["boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"
@@ -52,14 +52,14 @@ const Consulting = () => {
             Whatever your needs may be with your current solution, here are some ways I can help you and your business:{" "}
           </p>
           <ol className="pb-8 pl-2 md:pl-6">
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A developer who can lead or integrate into your current team</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A proven leader with experience, knowledge, and communication skills</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Someone to advise you on technical decisions affecting your business</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> Project planning from start to finish</li>
-            <li className="pb-2"><span className="text-3xl text-myDarkRed">&#x21e8;</span> A subject matter expert you can trust to give you actionable insights</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> A full thorough audit of your current website to ensure we start on the right foot </li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> An honest, trustworthy developer who can improve upon your existing user interaction</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> Someone who can navigate the ever changing technical landscape with confidence</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> A developer who can lead or integrate into your current team</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> A proven leader with experience, knowledge, and communication skills</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> Someone to advise you on technical decisions affecting your business</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> Project planning from start to finish</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myDarkRed">&#x21e8;</span> A subject matter expert you can trust to give you actionable insights</li>
           </ol>
 
           <p className="pb-4">If any of these services sound like what you are looking for, use the form below to start the process.
@@ -86,15 +86,15 @@ const Consulting = () => {
           </p>
           <p className="pb-8">While you won&apos;t find all of the ways I can help your business until we start working together, here are some services I provide:</p>
           <ol className="pb-8 pl-2 md:pl-6">
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Planning, collaborating, and communicating about your needs before any work is started</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Visual design of your website that you&apos;re in control of</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Building and deploying your website using the most up to date technologies</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> <a href="https://moz.com/learn/seo/what-is-seo" target="__blank" rel="noopener noreferrer">Search engine optimization</a> (SEO) and <a href="https://moz.com/learn/seo/conversion-rate-optimization" target="__blank" rel="noopener noreferrer">conversion rate optimization</a> (CRO)</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Handling the <a href="https://en.wikipedia.org/wiki/Domain_name" target="_blank" rel="noopener noreferrer">domain name services</a> and file hosting of your new website</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Provide maintenance to ensure your website is always update and secure</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Written content creation/article writing services</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Adding, editing, and (if need be) removing content from your website</li>
-            <li className="pb-2"><span className="text-3xl text-myRed">&#x21e8;</span> Marketing services such as <a href="https://ads.google.com/home/#!/" target="_blank" rel="noopener noreferrer">Google Ads</a> and social media advertising</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Planning, collaborating, and communicating about your needs before any work is started</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Visual design of your website that you&apos;re in control of</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Building and deploying your website using the most up to date technologies</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> <a href="https://moz.com/learn/seo/what-is-seo" target="__blank" rel="noopener noreferrer">Search engine optimization</a> (SEO) and <a href="https://moz.com/learn/seo/conversion-rate-optimization" target="__blank" rel="noopener noreferrer">conversion rate optimization</a> (CRO)</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Handling the <a href="https://en.wikipedia.org/wiki/Domain_name" target="_blank" rel="noopener noreferrer">domain name services</a> and file hosting of your new website</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Provide maintenance to ensure your website is always update and secure</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Written content creation/article writing services</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Adding, editing, and (if need be) removing content from your website</li>
+            <li className="pb-2"><span className="font-bold text-3xl text-myRed">&#x21e8;</span> Marketing services such as <a href="https://ads.google.com/home/#!/" target="_blank" rel="noopener noreferrer">Google Ads</a> and social media advertising</li>
           </ol>
           <p className="pb-8">If any of these describe what you are looking for, use the form above to get started today!  I respond to all inquires within 24 hours.</p>
           <button className="text-white shadow-lg bg-myDarkRed p-2 rounded transform hover:scale-105 transition-all duration-700 ease-in-out hover:underline hover:bg-myRed">
