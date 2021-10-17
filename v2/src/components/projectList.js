@@ -103,7 +103,7 @@ const ProjectList = () => {
                 </p>
                 <p>{item.problem}</p>
               </div>
-              <div className="flex flex-1 flex-col pl-1">
+              <div className="flex flex-1 flex-col pt-8 md:pt-0 md:pl-1 pl-0">
                 <p className="pb-4">
                   <span className="text-xl bold underline">The solution:</span>
                 </p>

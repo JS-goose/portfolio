@@ -14,7 +14,7 @@ export default function ContactSent() {
     return (
         <section className="flex flex-col min-w-full max-w-screen items-center text-white h-screen">
             <SEO
-                description="The page displayed to a user after sending an email to Jonathan Sexton"
+                description="Your email was successfully sent to me - I respond to all contact for freelance web consulting within 24 hours"
                 lang="en"
                 title="Contact Sent"
                 keywords={[

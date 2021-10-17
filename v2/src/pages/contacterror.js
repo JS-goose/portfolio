@@ -14,7 +14,7 @@ export default function ContactError() {
     return (
         <section className="flex flex-col min-w-full max-w-screen items-center text-white h-screen">
             <SEO
-                description="The page displayed to a user after an error in sending an email to Jonathan Sexton"
+                description="Unfortunately ther was an error when sending an email to me - please try again or send your email to hello@jonathansexton.me"
                 lang="en"
                 title="Contact Error"
                 keywords={[

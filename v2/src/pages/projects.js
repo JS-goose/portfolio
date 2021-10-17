@@ -13,7 +13,7 @@ const Projects = () => (
   <>
     <section className="projects-section-container flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO 
-      description="A listing of the current projects for Jonathan Sexton"
+      description="I help businesses and people see increased traffic, customers, and revenue with their projects.  Hire me today and let's make your project a success!"
       lang="en"
       title="Projects"
       keywords={["jonathan sexton projects","boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} 

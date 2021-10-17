@@ -36,7 +36,7 @@ function AboutPage() {
   return (
     <section className="flex flex-col min-w-full max-w-screen items-center text-left">
       <SEO
-        description="Images and information that give you a better picture of who Jonathan Sexton is"
+        description="I'm a freelance web development consultant working with businesses and individuals from my home near San Antonio, Texas"
         lang="en"
         title="About"
         keywords={["about jonathan sexton", "boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} />
