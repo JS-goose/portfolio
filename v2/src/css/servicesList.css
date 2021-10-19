@@ -1,0 +1,57 @@
+.services-list-container {
+  margin: 6rem;
+}
+
+.services-list-container,
+.why-hire-me-container {
+  max-width: 1000px;
+}
+
+.why-hire-me-container {
+  margin: 6rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .services-list-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .why-hire-me-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-list {
+    margin-top: 3rem;
+  }
+
+  .why-hire-me-container-books-img {
+    max-width: 40rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .why-hire-me-container-books-img {
+    max-width: 18rem !important;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  .services-list-container {
+    margin: 1.5rem;
+  }
+  .why-hire-me-container {
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .services-list-container {
+    margin: 3rem;
+  }
+
+  .why-hire-me-container {
+    margin: 3rem;
+  }
+}

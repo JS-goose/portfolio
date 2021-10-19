@@ -1,0 +1,31 @@
+.contact-form input:valid {
+  border: 3px solid #421ed2;
+}
+
+input,
+textarea {
+  background-color: rgb(245, 245, 245);
+}
+
+@media screen and (min-width: 400px) {
+  .contact-form-button-span {
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form-container {
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form-container {
+    width: 90%;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100% !important;
+  }
+}

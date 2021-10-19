@@ -1,0 +1,86 @@
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+@import './layout.css';
+@import './header.css';
+@import './cta.css';
+@import './index.css';
+@import './social.css';
+@import './servicesList.css';
+@import './testimonials.css';
+@import './contactForm.css';
+@import './about.css';
+@import './footer.css';
+@import './consulting.css';
+@import './projects.css';
+@import './projectList.css';
+
+:root {
+  /* --myPurple: #421ed2; */
+  --myPurple: #2f1eaa;
+  --myDarkPurple: rgb(29, 2, 136);
+  --myDarkPurple10: rgba(32, 3, 150, 0.1);
+  --myRed: #ff4945;
+  --myDarkRed: #d8000a;
+  --myBlack: #161514;
+  --myLightGray: #b0a8ba;
+  --myDarkGray: #46434b;
+}
+
+
+/* Firefox only - for now */
+* {
+  scrollbar-color: white var(--myPurple);
+  scrollbar-width: thin;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+/* Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--myPurple);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2px;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+  font-family: 'Gill Sans', sans-serif, system-ui, -apple-system !important;
+  background-color: var(--myPurple);
+  display: flex;
+  overflow-x: hidden;
+}
+
+body section {
+  width: calc(100vw - 10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body,
+  html {
+    font-size: 16px;
+  }
+}

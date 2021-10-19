@@ -1,0 +1,15 @@
+footer article {
+  background-color: var(--myDarkPurple);
+}
+
+footer article ul li a, footer article p a {
+  height: 101%;
+  width: 101%;
+  padding: 4px;
+}
+
+footer article ul li a:hover, footer article p a:hover {
+  background-color: var(--myDarkRed);
+  text-decoration: underline;
+}
+

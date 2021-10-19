@@ -1,0 +1,35 @@
+a.nav-link,
+a.nav-link:visited {
+  text-decoration: none;
+  background-image: linear-gradient(transparent 2px, #d8000a 2px, #d8000a 10px, transparent 4px),
+    linear-gradient(transparent 2px, #d8dce9 2px, #d8dce9 4px, transparent 4px);
+  background-size: 0% 6px, 0% 6px;
+  background-position: 0 bottom, 0 bottom;
+  transition: background-size 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  padding-bottom: 4px;
+  border-bottom: 10px solid transparent;
+}
+
+a.nav-link:hover {
+  background-size: 100% 6px;
+}
+
+@supports (-ms-ime-align: auto) {
+  a.nav-link,
+  a.nav-link:visited {
+    background-image: linear-gradient(#d8000a, #d8000a), linear-gradient(#d8dce9, #d8dce9);
+    background-size: 0% 2px, 100% 2px;
+    padding-bottom: 2px;
+  }
+  a.nav-link:hover {
+    background-size: 100% 2px;
+  }
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
