@@ -16,7 +16,7 @@ export default function ContactError() {
             <SEO
                 description="Unfortunately ther was an error when sending an email to me - please try again or send your email to hello@jonathansexton.me"
                 lang="en"
-                title="Contact Error"
+                title="Contact Error | Jonathan Sexton"
                 keywords={[
                     `error`
                 ]}

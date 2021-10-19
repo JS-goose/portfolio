@@ -38,7 +38,7 @@ function AboutPage() {
       <SEO
         description="I'm a freelance web development consultant working with businesses and individuals from my home near San Antonio, Texas"
         lang="en"
-        title="About"
+        title="About Jonathan Sexton | Freelance Web Developer"
         keywords={["about jonathan sexton", "boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} />
       <article className="about-containers bg-myPurple text-white p-6 sm:text-base md:text-lg lg:text-xl">
         <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-4">Howdy! I&apos;m Jonathan Sexton</h1>

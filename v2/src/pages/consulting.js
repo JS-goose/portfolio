@@ -22,7 +22,7 @@ const Consulting = () => {
     <section className="flex flex-col min-w-full max-w-screen items-center text-white">
       <SEO
         description="I'm a trusted development consultant to businesses of all sizes.  Hire me today to help make your project a success!"
-        title="Consulting"
+        title="Freelance Web Development Consultant for Small Business | Jonathan Sexton"
         lang="en"
         keywords={["boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"
         ]}

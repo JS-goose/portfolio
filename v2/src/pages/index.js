@@ -13,7 +13,7 @@ function IndexPage() {
       <SEO
         description="I'm a freelance web developer who specializes in helping businesses grow through well designed, conversion centered websites"
         lang="en"
-        title='Home'
+        title='Freelance Web Developer | Jonathan Sexton'
         keywords={["boerne web developer", "small business website", "small business", "how to build small business website", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]}
       />
       <div className='index-wrapper'>

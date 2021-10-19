@@ -15,7 +15,7 @@ const Projects = () => (
       <SEO 
       description="I help businesses and people see increased traffic, customers, and revenue with their projects.  Hire me today and let's make your project a success!"
       lang="en"
-      title="Projects"
+      title="Client Project I Have Worked On | Jonathan Sexton"
       keywords={["jonathan sexton projects","boerne web developer", "web developer", "web developer in boerne", "developer in boerne", "small business website", "small business", "how to build small business website", "small business consultant", "tile laying website", "freelance", "home", "jonathan sexton", "jonathan", "sexton", "development", "website"]} 
        />
       <article className="projects-list-container p-2 md:p-4 lg:p-6 sm:text-base md:text-lg lg:text-xl">

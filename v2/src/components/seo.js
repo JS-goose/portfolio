@@ -49,6 +49,14 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
+          name: `og:image`,
+          content: site.siteMetadata.image,
+        },
+        {
+          name: `og:image:alt`,
+          content: `Freelance Web Developer`,
+        },
+        {
           property: `og:name`,
           content: site.siteMetadata.title,
         },
@@ -58,7 +66,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_images`,
         },
         {
           name: `twitter:creator`,
@@ -71,6 +79,14 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: `Freelance Web Developer`,
         },
       ]
         .concat(

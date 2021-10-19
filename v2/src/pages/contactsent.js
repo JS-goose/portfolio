@@ -16,7 +16,7 @@ export default function ContactSent() {
             <SEO
                 description="Your email was successfully sent to me - I respond to all contact for freelance web consulting within 24 hours"
                 lang="en"
-                title="Contact Sent"
+                title="Contact Sent | Jonathan Sexton "
                 keywords={[
                     `contact sent`
                 ]}
