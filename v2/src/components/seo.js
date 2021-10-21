@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `og:image`,
-          content: site.siteMetadata.image,
+          content: `https://www.jonathansexton.me/static/819e2adf0806e8d3bb4d805665aba164/de391/logoPNG.png`,
         },
         {
           name: `og:image:alt`,
@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: `https://www.jonathansexton.me/static/819e2adf0806e8d3bb4d805665aba164/de391/logoPNG.png`,
         },
         {
           name: `twitter:image:alt`,
