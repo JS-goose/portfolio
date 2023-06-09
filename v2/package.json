@@ -4,7 +4,7 @@
   "version": "4.0.0",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
-    "gatsby": "3.14.3",
+    "gatsby": "4.25.7",
     "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.14.1",
